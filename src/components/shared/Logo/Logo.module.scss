@@ -1,0 +1,27 @@
+.LogoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  padding-top: 70px;
+}
+
+.animation {
+  height: 56px;
+  width: 56px;
+  background: rgba(14, 11, 14, 0.6);
+  border-radius: 16px;
+  border: 1px solid #9e9d9e;
+
+  .Logo {
+    height: 32px;
+    width: 28px;
+  }
+}
+
+.Logo {
+  width: 59px;
+  height: 67px;
+}

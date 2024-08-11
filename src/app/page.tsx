@@ -1,14 +1,28 @@
-import Header from '@/widgets/Header/index';
-import Subtitle from '../components/shared/Subtitle/index';
-import Title from '../components/shared/Title/index';
+import Header from "@/widgets/Header";
+import Subtitle from "@/components/shared/Subtitle/index";
+import Title from "@/components/shared/Title";
 import styles from "./page.module.scss";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Header animated={true}/>
-      <Title text="дизайн × продакшн × реклама"/>
-      <Subtitle text="Здесь вы можете заказать разработку сайта, айдентики, промо-видео, необычного фото и многого другого ;)"/>
-    </main>
+    <>
+      <Header />
+      <main className={styles.main}>
+        <div
+          style={{
+            width: "100vw",
+            height: "100vh",
+            background: "#06082c",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          GG
+        </div>
+        <Title text="дизайн × продакшн × реклама" />
+        <Subtitle text="Здесь вы можете заказать разработку сайта, айдентики, промо-видео, необычного фото и многого другого ;)" />
+      </main>
+    </>
   );
 }
