@@ -4,6 +4,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0px;
+  top: 70px;
+  z-index: 999;
+  padding-bottom: 20px;
+}
+
+.wrapperAnimated {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 48px;
   z-index: 999;
 }
