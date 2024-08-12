@@ -9,8 +9,8 @@ export const ArrowIcon = () => (
     <path
       d="M1 4.5L17 4.5M17 4.5L12.6418 1M17 4.5L12.6418 8"
       stroke="url(#paint0_linear_1682_1586)"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <defs>
       <linearGradient
@@ -21,9 +21,9 @@ export const ArrowIcon = () => (
         y2="5.11257"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.0001" stop-color="#FF66D0" />
-        <stop offset="0.452486" stop-color="#9F9DFF" />
-        <stop offset="1" stop-color="white" />
+        <stop offset="0.0001" stopColor="#FF66D0" />
+        <stop offset="0.452486" stopColor="#9F9DFF" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
     </defs>
   </svg>
