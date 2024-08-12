@@ -5,6 +5,8 @@ import { ArrowIcon } from "@/shared/assets/icons/arrow";
 import { services } from "@/shared/assets/services";
 import Link from "next/link";
 import cls from "./ServicesList.module.scss";
+import { Typography } from "@/shared/ui/Typography";
+import { RouterLink } from "@/shared/ui/RouterLink";
 
 interface ServicesListProps {
   className?: string;
@@ -27,10 +29,13 @@ export const ServicesList = ({ className }: ServicesListProps) => {
 
           <Link href={s.link}>
             <div className={cls.itemDescription}>
-              <h4>{s.text}</h4>
-              <div className={cls.item__link}>
-                <ArrowIcon />
-              </div>
+              <Typography
+                variant="p"
+                style={{ fontWeight: "600", lineHeight: "120%" }}
+              >
+                {s.text}
+              </Typography>
+              <RouterLink />
             </div>
           </Link>
         </div>

@@ -1,5 +1,24 @@
 .main {
-  padding-top: 137px;
+  padding-top: 169px;
+}
+.hiddenTitle {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  & > svg {
+    position: relative;
+    top: 5px;
+  }
 }
 
 .subtitle {
@@ -21,7 +40,6 @@
   margin-top: 46px;
   & img {
     width: 100%;
-    height: 437px;
     object-fit: cover;
   }
 }

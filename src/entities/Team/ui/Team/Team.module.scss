@@ -1,2 +1,61 @@
 .Team {
+  margin-top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  .sectionTitle {
+    display: flex;
+    height: max-content;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 63px;
+    & > svg {
+      position: relative;
+      top: 5px;
+    }
+  }
+
+  .sectionContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .leftBlock {
+      max-width: 399px;
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+    }
+
+    .rightBlock {
+      display: grid;
+      direction: rtl;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 32px;
+      row-gap: 48px;
+
+      .persona {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .personaInfo {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 8px;
+
+          .persona__name {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            align-items: flex-end;
+          }
+        }
+      }
+    }
+  }
 }
