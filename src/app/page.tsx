@@ -18,7 +18,7 @@ export default function Home() {
             <Image
               src="/images/services/services.png"
               alt="image"
-              width={500}
+              width={1181}
               height={437}
             />
             <ServicesList />

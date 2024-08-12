@@ -19,7 +19,7 @@ export const ServicesList = ({ className }: ServicesListProps) => {
             src={s.image}
             alt="image"
             className={cls.item__image}
-            width={154}
+            width={280}
             height={154}
           />
 
