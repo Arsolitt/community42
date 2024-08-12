@@ -3,7 +3,7 @@ import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 
 import { classNames } from "@/features/helpers/className";
-import { Logo, LogoTheme } from "@/shared/Logo";
+import { Logo, LogoTheme } from "@/shared/ui/Logo";
 import styles from "./header.module.scss";
 
 interface HeaderProps {

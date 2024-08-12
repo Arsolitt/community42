@@ -1,26 +1,29 @@
+import Image from "next/image";
+
 import Header from "@/widgets/Header";
-import Subtitle from "@/shared/Subtitle/index";
-import Title from "@/shared/Title";
+import Subtitle from "@/shared/ui/Subtitle/index";
+import Title from "@/shared/ui/Title";
 import styles from "./page.module.scss";
+import { ServicesList } from "@/entities/Services";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main className={styles.main}>
-        <div
-          style={{
-            width: "100vw",
-            height: "100vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          GG
+        <div className="container">
+          <Title text="дизайн × продакшн × реклама" />
+          <Subtitle text="Здесь вы можете заказать разработку сайта, айдентики, промо-видео, необычного фото и многого другого ;)" />
+          <section className={styles.services}>
+            <Image
+              src="/images/services/services.png"
+              alt="image"
+              width={500}
+              height={437}
+            />
+            <ServicesList />
+          </section>
         </div>
-        <Title text="дизайн × продакшн × реклама" />
-        <Subtitle text="Здесь вы можете заказать разработку сайта, айдентики, промо-видео, необычного фото и многого другого ;)" />
       </main>
     </>
   );

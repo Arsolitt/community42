@@ -10,6 +10,12 @@ body {
   background: rgb(var(--background-rgb));
 }
 
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
