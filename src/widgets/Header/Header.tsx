@@ -10,7 +10,7 @@ interface HeaderProps {
   className?: string;
 }
 
-export default function Header({ className }: HeaderProps) {
+export const Header = ({ className }: HeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = useCallback(() => {
@@ -43,4 +43,4 @@ export default function Header({ className }: HeaderProps) {
       </motion.div>
     </header>
   );
-}
+};

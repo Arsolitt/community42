@@ -1,12 +1,14 @@
 import Image from "next/image";
 
-import Header from "@/widgets/Header";
+import { Header } from "@/widgets/Header";
+import { Footer } from "@/widgets/Footer";
 import { ServicesList } from "@/entities/Services";
 import { Team } from "@/entities/Team";
+import { Clients } from "@/entities/Clients";
+
 import { Typography } from "@/shared/ui/Typography";
 import { CloseIcon } from "@/shared/assets/icons/close";
 import styles from "./page.module.scss";
-import { Clients } from "@/entities/Clients";
 
 export default function Home() {
   return (
@@ -48,6 +50,7 @@ export default function Home() {
           <Team />
           <Clients />
         </div>
+        <Footer />
       </main>
     </>
   );
