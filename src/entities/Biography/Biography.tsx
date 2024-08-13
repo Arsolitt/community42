@@ -1,5 +1,12 @@
+"use client";
+import { useParams } from "next/navigation";
+import { useMemo } from "react";
+
 import { classNames } from "@/features/helpers/className";
 import { BiographyLeftBlock, BiographyRightBlock } from "./Blocks";
+import { Projects } from "./Projects";
+
+import { team } from "@/shared/assets/team";
 import cls from "./Biography.module.scss";
 
 interface BiographyProps {
@@ -7,12 +14,22 @@ interface BiographyProps {
 }
 
 export const Biography = ({ className }: BiographyProps) => {
+  const collaboratorSlug = useParams().slug;
+  const collaborator = useMemo(
+    () => team.find((t) => t.link === collaboratorSlug),
+    [collaboratorSlug],
+  );
+
   return (
     <section className={classNames(cls.Biography, {}, [className])}>
       <div className="container">
-        <BiographyLeftBlock />
-        <BiographyRightBlock />
+        <BiographyLeftBlock collaborator={collaborator} />
+        <BiographyRightBlock
+          name={collaborator?.name}
+          fullSizeImage={collaborator?.image}
+        />
       </div>
+      <Projects collaboratorSlug={collaborator?.link} />
     </section>
   );
 };
