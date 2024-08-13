@@ -1,0 +1,26 @@
+.Biography > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .leftBlock {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .socials {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 35px;
+    }
+  }
+
+  .image {
+    max-width: 400px;
+    max-height: 309px;
+    border-radius: 10px;
+  }
+}

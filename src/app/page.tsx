@@ -15,9 +15,7 @@ export default function Home() {
     <>
       <Header />
       <main className={styles.main}>
-        <h1 className={styles.hiddenTitle}>
-          Комьюнити. Дизайн. Продакшн. Реклама
-        </h1>
+        <h1 className="hiddenTitle">Комьюнити. Дизайн. Продакшн. Реклама</h1>
         <div className="container">
           <div className={styles.mainTitle}>
             <Typography variant="h2" style={{ textAlign: "center" }}>
