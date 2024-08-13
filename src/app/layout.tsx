@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 
+import { Navbar } from "@/widgets/Navbar";
 import "@/core/styles/globals.scss";
 
 const raleway = Raleway({ subsets: ["latin", "cyrillic"] });
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={raleway.className}>{children}</body>
+      <Navbar />
     </html>
   );
 }
