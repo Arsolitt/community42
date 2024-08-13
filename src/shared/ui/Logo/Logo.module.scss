@@ -33,11 +33,11 @@
   flex-direction: row;
   gap: 10px;
   align-items: center;
-  padding: 14px 12px;
-  transition: all 0.25s;
+  transition: background 0.25s;
   border-radius: 16px;
 
   &:hover {
+    padding: 14px 12px;
     background: rgba(61, 59, 61, 0.8);
   }
   &:active {
