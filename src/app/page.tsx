@@ -1,13 +1,13 @@
-import Image from "next/image";
 
-import { Header } from "@/widgets/Header";
-import { Footer } from "@/widgets/Footer";
+import { Clients } from "@/entities/Clients";
 import { ServicesList } from "@/entities/Services";
 import { Team } from "@/entities/Team";
-import { Clients } from "@/entities/Clients";
+import { Footer } from "@/widgets/Footer";
+import { Header } from "@/widgets/Header";
 
-import { Typography } from "@/shared/ui/Typography";
 import { CloseIcon } from "@/shared/assets/icons/close";
+import { Typography } from "@/shared/ui/Typography";
+import Video from '../components/Video';
 import styles from "./page.module.scss";
 
 export default function Home() {
@@ -37,12 +37,13 @@ export default function Home() {
             </Typography>
           </div>
           <section className={styles.services}>
-            <Image
+            {/* <Image
               src="/images/services/services.png"
               alt="image"
               width={1181}
               height={437}
-            />
+            /> */}
+            <Video />
             <ServicesList />
           </section>
           <Team />
