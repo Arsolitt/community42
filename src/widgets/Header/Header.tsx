@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 
@@ -39,7 +40,9 @@ export const Header = ({ className }: HeaderProps) => {
         exit={{ y: 10, opacity: 0 }}
         transition={{ ease: "easeOut", duration: 0.25 }}
       >
-        <Logo theme={scrolled ? LogoTheme.ANIMATION : LogoTheme.NORMAL} />
+        <Link href="/">
+          <Logo theme={scrolled ? LogoTheme.ANIMATION : LogoTheme.NORMAL} />
+        </Link>
       </motion.div>
     </header>
   );
