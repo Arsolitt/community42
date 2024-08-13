@@ -5,3 +5,4 @@ export { ArrowIcon } from "./arrow";
 export { VkIcon } from "./vk";
 export { TelegramIcon } from "./telegram";
 export { WhatsappIcon } from "./whatsapp";
+export { LikeIcon } from "./like";
