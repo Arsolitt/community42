@@ -6,3 +6,4 @@ export { VkIcon } from "./vk";
 export { TelegramIcon } from "./telegram";
 export { WhatsappIcon } from "./whatsapp";
 export { LikeIcon } from "./like";
+export { MarketIcon } from "./market";
