@@ -26,7 +26,7 @@ export const Biography = ({ className }: BiographyProps) => {
         <BiographyLeftBlock collaborator={collaborator} />
         <BiographyRightBlock
           name={collaborator?.name}
-          fullSizeImage={collaborator?.image}
+          fullSizeImage={collaborator?.fullsizeImage}
         />
       </div>
       <Projects collaboratorSlug={collaborator?.link} />
