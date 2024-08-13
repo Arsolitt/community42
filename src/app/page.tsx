@@ -1,11 +1,12 @@
 import Image from "next/image";
 
 import Header from "@/widgets/Header";
-import styles from "./page.module.scss";
 import { ServicesList } from "@/entities/Services";
 import { Team } from "@/entities/Team";
 import { Typography } from "@/shared/ui/Typography";
 import { CloseIcon } from "@/shared/assets/icons/close";
+import styles from "./page.module.scss";
+import { Clients } from "@/entities/Clients";
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
             <ServicesList />
           </section>
           <Team />
+          <Clients />
         </div>
       </main>
     </>
