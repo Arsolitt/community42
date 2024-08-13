@@ -18,8 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={raleway.className}>{children}</body>
-      <Navbar />
+      <body className={raleway.className}>
+        {children}
+        <Navbar />
+      </body>
     </html>
   );
 }

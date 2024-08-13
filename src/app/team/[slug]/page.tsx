@@ -1,4 +1,13 @@
+import { Header } from "@/widgets/Header";
+
 const Collaborator = () => {
-  return <div>Collaborator</div>;
+  return (
+    <>
+      <Header manualScrolled />
+      <main>
+        <div>Collaborator</div>
+      </main>
+    </>
+  );
 };
 export default Collaborator;
