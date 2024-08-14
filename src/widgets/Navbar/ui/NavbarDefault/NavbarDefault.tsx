@@ -3,13 +3,15 @@ import { MarketIcon, MessageIcon } from "@/shared/assets/icons/";
 
 interface NavbarDefaultProps {
   className?: string;
+  openContacts: () => void;
 }
 
-export const NavbarDefault = ({ className }: NavbarDefaultProps) => {
+export const NavbarDefault = (props: NavbarDefaultProps) => {
+  const { className, openContacts } = props;
   return (
     <ul className={cls.NavbarDefault}>
       <li>
-        <button>
+        <button onClick={openContacts}>
           <MessageIcon />
           контакты
         </button>
