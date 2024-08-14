@@ -11,8 +11,8 @@ export const WhatsappIcon = () => (
       stroke="url(#paint0_linear_1744_917)"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M14.0094 1.00183C20.7211 0.994497 26.3872 6.10224 26.9505 12.6667C27.5377 19.5137 22.8417 25.5718 16.1889 26.7368C13.2786 27.2469 10.5615 26.8359 8.03587 25.4471C6.9526 24.8515 6.05336 25.1559 5.1433 25.4639C4.82545 25.5715 4.50627 25.6795 4.17747 25.7498C3.98945 25.79 3.79575 25.8749 3.60125 25.96C3.12165 26.1701 2.63715 26.3823 2.22066 25.9333C1.81833 25.4991 2.09084 24.9398 2.33256 24.4437C2.38502 24.3361 2.43603 24.2314 2.47838 24.1316C3.15765 22.5428 3.0969 21.1924 2.28693 19.5192C-1.85679 10.9751 4.52539 1.01101 14.0094 1V1.00183Z"
       stroke="url(#paint1_linear_1744_917)"
     />
@@ -25,8 +25,8 @@ export const WhatsappIcon = () => (
         y2="2.99249"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#9D41FF" />
-        <stop offset="1" stop-color="#FFABF7" />
+        <stop stopColor="#9D41FF" />
+        <stop offset="1" stopColor="#FFABF7" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1744_917"
@@ -36,8 +36,8 @@ export const WhatsappIcon = () => (
         y2="2.99249"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#9D41FF" />
-        <stop offset="1" stop-color="#FFABF7" />
+        <stop stopColor="#9D41FF" />
+        <stop offset="1" stopColor="#FFABF7" />
       </linearGradient>
     </defs>
   </svg>

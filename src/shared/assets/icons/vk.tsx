@@ -19,8 +19,8 @@ export const VkIcon = () => (
         y2="-0.72514"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#9D41FF" />
-        <stop offset="1" stop-color="#FFABF7" />
+        <stop stopColor="#9D41FF" />
+        <stop offset="1" stopColor="#FFABF7" />
       </linearGradient>
     </defs>
   </svg>

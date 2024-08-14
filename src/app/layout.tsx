@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={raleway.className}>
+      <body className={raleway.className} suppressHydrationWarning={true}>
         {children}
         <Navbar />
       </body>

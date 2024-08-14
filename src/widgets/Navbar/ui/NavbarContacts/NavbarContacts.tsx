@@ -7,6 +7,6 @@ interface NavbarContactsProps {
 
 export const NavbarContacts = ({ className }: NavbarContactsProps) => {
   return (
-    <div className={classNames(cls.NavbarContacts, {}, [className])}></div>
+    <nav className={classNames(cls.NavbarContacts, {}, [className])}></nav>
   );
 };
