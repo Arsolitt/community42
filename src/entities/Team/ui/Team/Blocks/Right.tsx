@@ -30,7 +30,11 @@ export const TeamRightBlock = () => (
               </Typography>
               <Typography
                 variant="span"
-                style={{ fontWeight: "500", fontSize: "14px" }}
+                style={{
+                  fontWeight: "500",
+                  fontSize: "14px",
+                  textAlign: "left",
+                }}
               >
                 {t.position}
               </Typography>
