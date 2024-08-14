@@ -1,7 +1,5 @@
 .LogoContainer {
-  transition: all 0.5s ease-in;
   & > span {
-    transition: all 0.25s;
     display: none;
   }
 }
@@ -23,7 +21,6 @@
 
   .Logo {
     height: 32px;
-    transition: all 0.25s;
     width: 28px;
   }
 }
@@ -33,7 +30,7 @@
   flex-direction: row;
   gap: 10px;
   align-items: center;
-  transition: all 0.25s;
+  transition: all 0.3s;
   border-radius: 16px;
 
   &:hover {
