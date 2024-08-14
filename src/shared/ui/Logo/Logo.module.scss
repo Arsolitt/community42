@@ -33,11 +33,11 @@
   flex-direction: row;
   gap: 10px;
   align-items: center;
-  transition: background 0.25s;
+  transition: all 0.25s;
   border-radius: 16px;
 
   &:hover {
-    padding: 14px 12px;
+    padding: 6px 14px;
     background: rgba(61, 59, 61, 0.8);
   }
   &:active {
@@ -49,8 +49,8 @@
   }
 
   &:hover > .LogoWrapper {
-    height: 32px;
     width: 28px;
+    height: 32px;
     top: 48px;
     background: none;
     border-radius: none;
