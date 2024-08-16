@@ -5,7 +5,7 @@
 replicaCount: ${REPLICAS}
 
 image:
-  repository: ${REGISTRY_HOST}/${REGISTRY_REPO}/community42
+  repository: ${REGISTRY_URL}/community
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ${IMAGE_TAG}
