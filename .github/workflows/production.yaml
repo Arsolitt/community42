@@ -8,8 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: harbor.arsolitt.ru/hub/goetzc/kaniko-ci:1.23.2
+    # container:
+    #   image: harbor.arsolitt.ru/hub/goetzc/kaniko-ci:1.23.2
     # environment: production
     steps:
       - uses: actions/checkout@v2
