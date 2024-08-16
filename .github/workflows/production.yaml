@@ -72,20 +72,19 @@ jobs:
 
       - name: Export Variables
         run: |
-          export REPLICAS=${{ vars.REPLICAS }}
+          export REPLICAS="${{ vars.REPLICAS }}"
           export REGISTRY_URL=${{ vars.REGISTRY_URL }}
           export IMAGE_TAG=${{ steps.short-sha.outputs.sha }}
-          export REPLICAS=${{ vars.REPLICAS }}
-          export APP_SUBDOMAIN=${{ vars.APP_SUBDOMAIN }}
+          export APP_SUBDOMAIN="${{ vars.APP_SUBDOMAIN }}"
           export PROJECT_DOMAIN=${{ vars.PROJECT_DOMAIN }}
-          export REQUEST_CPU=${{ vars.REQUEST_CPU }}
-          export REQUEST_MEMORY=${{ vars.REQUEST_MEMORY }}
-          export LIMIT_CPU=${{ vars.LIMIT_CPU }}
-          export LIMIT_MEMORY=${{ vars.LIMIT_MEMORY }}
-          export MIN_REPLICAS=${{ vars.MIN_REPLICAS }}
-          export MAX_REPLICAS=${{ vars.MAX_REPLICAS }}
-          export TARGET_CPU_UTILIZATION=${{ vars.TARGET_CPU_UTILIZATION }}
-          export TARGET_MEMORY_UTILIZATION=${{ vars.TARGET_MEMORY_UTILIZATION }}
+          export REQUEST_CPU="${{ vars.REQUEST_CPU }}"
+          export REQUEST_MEMORY="${{ vars.REQUEST_MEMORY }}"
+          export LIMIT_CPU="${{ vars.LIMIT_CPU }}"
+          export LIMIT_MEMORY="${{ vars.LIMIT_MEMORY }}"
+          export MIN_REPLICAS="${{ vars.MIN_REPLICAS }}"
+          export MAX_REPLICAS="${{ vars.MAX_REPLICAS }}"
+          export TARGET_CPU_UTILIZATION="${{ vars.TARGET_CPU_UTILIZATION }}"
+          export TARGET_MEMORY_UTILIZATION="${{ vars.TARGET_MEMORY_UTILIZATION }}"
 
       - name: Hydrate Values File
         run: envsubst < .kubernetes/community/values.yaml > .kubernetes/values-hydrated.yaml
