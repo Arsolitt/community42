@@ -29,7 +29,7 @@ jobs:
           tags: ${{ vars.REGISTRY_URL }}/community:${{ steps.short-sha.outputs.sha }}
           cache: true
           file: .docker/prod.dockerfile
-          kaniko-args: --snapshot-mode=redo #--cache-copy-layers=false --snapshot-mode=redo --use-new-run --skip-tls-verify
+          kaniko-args: --snapshot-mode=redo --cache-copy-layers=false #--snapshot-mode=redo --use-new-run --skip-tls-verify
 
       # - name: Build and push php
       #   uses: aevea/action-kaniko@master
