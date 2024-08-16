@@ -1,0 +1,88 @@
+name: Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Short SHA
+        uses: benjlevesque/short-sha@v3.0
+        id: short-sha
+        with:
+          length: 7
+
+      - name: Docker Login
+        uses: docker/login-action@v3.3.0
+        with:
+          registry: ${{ vars.REGISTRY_URL }}
+          username: ${{ secrets.REGISTRY_USER }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Kaniko Build
+        uses: int128/kaniko-action@v1.35.0
+        with:
+          push: true
+          tags: ${{ vars.REGISTRY_URL }}/community:${{ steps.short-sha.outputs.sha }}
+          cache: true
+          file: .docker/prod.dockerfile
+          kaniko-args: |
+            --snapshot-mode=redo 
+            --cache-copy-layers=false 
+            --snapshot-mode=redo 
+            --use-new-run 
+            --skip-tls-verify
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs:
+    - build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Short SHA
+        uses: benjlevesque/short-sha@v3.0
+        id: short-sha
+        with:
+          length: 7
+          
+      - name: Install Helm
+        uses: azure/setup-helm@v3
+
+      - name: Decode kubeconfig
+        id: decode_kubeconfig
+        uses: timheuer/base64-to-file@v1.2
+        with:
+          fileName: 'kubeconfig'
+          fileDir: '${{ runner.temp }}'
+          encodedString: ${{ secrets.KUBE_CONFIG }}
+
+      - name: Hydrate Values File
+        run: |
+          export REPLICAS="${{ vars.REPLICAS }}"
+          export REGISTRY_URL="${{ vars.REGISTRY_URL }}"
+          export IMAGE_TAG="${{ steps.short-sha.outputs.sha }}"
+          export APP_SUBDOMAIN="${{ vars.APP_SUBDOMAIN }}"
+          export PROJECT_DOMAIN="${{ vars.PROJECT_DOMAIN }}"
+          export REQUEST_CPU="${{ vars.REQUEST_CPU }}"
+          export REQUEST_MEMORY="${{ vars.REQUEST_MEMORY }}"
+          export LIMIT_CPU="${{ vars.LIMIT_CPU }}"
+          export LIMIT_MEMORY="${{ vars.LIMIT_MEMORY }}"
+          export MIN_REPLICAS="${{ vars.MIN_REPLICAS }}"
+          export MAX_REPLICAS="${{ vars.MAX_REPLICAS }}"
+          export TARGET_CPU_UTILIZATION="${{ vars.TARGET_CPU_UTILIZATION }}"
+          export TARGET_MEMORY_UTILIZATION="${{ vars.TARGET_MEMORY_UTILIZATION }}"
+          envsubst < .kubernetes/community/values.yaml > .kubernetes/values-hydrated.yaml
+
+      - name: Template Helm
+        run: helm template -n ${{ vars.K8S_NAMESPACE }} --create-namespace ${{ vars.RELEASE_NAME }} --kubeconfig=${{ steps.decode_kubeconfig.outputs.filePath }} .kubernetes/community -f .kubernetes/values-hydrated.yaml
+
+      - name: Deploy Helm
+        run: helm upgrade --install -n ${{ vars.K8S_NAMESPACE }} --create-namespace ${{ vars.RELEASE_NAME }} --kubeconfig=${{ steps.decode_kubeconfig.outputs.filePath }} .kubernetes/community -f .kubernetes/values-hydrated.yaml
