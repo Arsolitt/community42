@@ -22,7 +22,7 @@ COPY package.json yarn.lock ./
 RUN yarn --frozen-lockfile --ignore-scripts --production=true
 COPY --chown=node --from=builder /src/app/public ./public
 COPY --chown=node --from=builder /src/app/.next .next
-COPY --chown=node --from=builder /src/app/next.config.js .
+COPY --chown=node --from=builder /src/app/next.config.mjs .
 COPY --chown=node --from=builder /src/app/robots.txt .
 ENTRYPOINT ["yarn"]
 CMD ["start"]
