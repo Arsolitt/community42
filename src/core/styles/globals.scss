@@ -8,6 +8,9 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
 }
 
 .container {
@@ -22,6 +25,7 @@ body {
   top: 0;
   left: 0;
 }
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

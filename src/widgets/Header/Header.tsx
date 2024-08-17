@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState, useCallback } from "react";
-import { motion } from "framer-motion";
+import { useCallback, useEffect, useState } from "react";
 
 import { classNames } from "@/features/helpers/className";
 import { Logo, LogoTheme } from "@/shared/ui/Logo";
+import { motion } from "framer-motion";
 import styles from "./header.module.scss";
 
 interface HeaderProps {
@@ -42,7 +42,7 @@ export const Header = (props: HeaderProps) => {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 10, opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 0.25 }}
+        transition={{ ease: "easeOut", duration: 0.35 }}
       >
         <Link href="/">
           <Logo theme={scrolled ? LogoTheme.ANIMATION : LogoTheme.NORMAL} />

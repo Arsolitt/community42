@@ -7,3 +7,5 @@ export { TelegramIcon } from "./telegram";
 export { WhatsappIcon } from "./whatsapp";
 export { LikeIcon } from "./like";
 export { MarketIcon } from "./market";
+export { EmailIcon } from "./Email";
+export { CloseContactsIcon } from "./closeContacts";

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 
-import { Navbar } from "@/widgets/Navbar";
 import "@/core/styles/globals.scss";
+import { Navbar } from "@/widgets/Navbar";
 
-const raleway = Raleway({ subsets: ["latin", "cyrillic"] });
+const raleway = Raleway({ subsets: ["latin", "cyrillic"], preload: true });
 
 export const metadata: Metadata = {
   title: "Комьюнити",
