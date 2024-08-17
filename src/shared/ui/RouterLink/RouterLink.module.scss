@@ -6,4 +6,16 @@
     linear-gradient(to right, #fff1f1, #9f9dff, #ff66d0) border-box;
   border-radius: 6px;
   border: 1px solid transparent;
+
+  &:hover {
+    background:
+      linear-gradient(#141114, #141114) padding-box,
+      linear-gradient(to left, #A653FF, #FFABF7) border-box;
+  }
+
+  &:active {
+    background:
+      linear-gradient(#010B42, #010B42) padding-box,
+      linear-gradient(to left, #A653FF, #FFABF7) border-box;
+  }
 }
