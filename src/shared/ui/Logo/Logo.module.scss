@@ -1,6 +1,7 @@
 .LogoContainer {
-  & > span {
+  &>span {
     display: none;
+    transition: ease-in-out 1s;
   }
 }
 
@@ -11,13 +12,11 @@
 }
 
 .animation .LogoWrapper {
-  height: 56px;
-  width: 56px;
+  padding: 12px 14px;
   top: 48px;
   background: rgba(14, 11, 14, 0.6);
   border-radius: 16px;
   border: 1px solid #9e9d9e;
-  transition: all 0.37s;
 
   .Logo {
     height: 32px;
@@ -30,24 +29,23 @@
   flex-direction: row;
   gap: 10px;
   align-items: center;
-  transition: all 0.3s;
   border-radius: 16px;
 
   &:hover {
     padding: 6px 14px;
     background: rgba(61, 59, 61, 0.8);
   }
+
   &:active {
     background: #323859;
   }
 
-  &:hover > span {
+  &:hover>span {
     display: flex;
   }
 
-  &:hover > .LogoWrapper {
-    width: 28px;
-    height: 32px;
+  &:hover>.LogoWrapper {
+    padding: 6px 7px 6px 0px;
     top: 48px;
     background: none;
     border-radius: none;
