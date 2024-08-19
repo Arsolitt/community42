@@ -7,6 +7,7 @@ import {
   EmailIcon,
   CloseContactsIcon,
 } from "@/shared/assets/icons";
+import { Typography } from "@/shared/ui/Typography";
 
 interface NavbarContactsProps {
   className?: string;
@@ -16,22 +17,25 @@ interface NavbarContactsProps {
 export const NavbarContacts = (props: NavbarContactsProps) => {
   const { className, closeContacts } = props;
   return (
-    <ul className={classNames(cls.NavbarContacts, {}, [className])}>
+    <div className={classNames(cls.NavbarContacts, {}, [className])}>
       <button onClick={closeContacts}>
-        <CloseContactsIcon /> закрыть контакты
+        <CloseContactsIcon />
+        <Typography variant="span">закрыть контакты</Typography>
       </button>
-      <li>
-        <VkIcon />
-      </li>
-      <li>
-        <TelegramIcon />
-      </li>
-      <li>
-        <WhatsappIcon />
-      </li>
-      <li>
-        <EmailIcon />
-      </li>
-    </ul>
+      <div>
+        <li>
+          <VkIcon />
+        </li>
+        <li>
+          <TelegramIcon />
+        </li>
+        <li>
+          <WhatsappIcon />
+        </li>
+        <li>
+          <EmailIcon />
+        </li>
+      </div>
+    </div>
   );
 };
