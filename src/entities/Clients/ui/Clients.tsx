@@ -28,7 +28,11 @@ export const Clients = ({ className }: ClientsProps) => {
               <Image src={c.image} alt="image" width={108} height={108} />
               <Typography
                 variant="p"
-                style={{ fontWeight: "700", fontSize: "16px" }}
+                style={{
+                  fontWeight: "700",
+                  fontSize: "16px",
+                  textAlign: "center",
+                }}
               >
                 {c.name}
               </Typography>
