@@ -9,6 +9,9 @@ const raleway = Raleway({ subsets: ["latin", "cyrillic"], preload: true });
 export const metadata: Metadata = {
   title: "Комьюнити",
   description: "Прикольное описание",
+  verification: {
+    yandex: "e1b495ca3573a6c8",
+  },
 };
 
 export default function RootLayout({
