@@ -19,7 +19,7 @@ export const NavbarDefault = (props: NavbarDefaultProps) => {
         transition={{ ease: "easeInOut", duration: 0.5 }}
       >
         <li>
-          <button onClick={openContacts}>
+          <button onClick={openContacts} className={cls.contacts}>
             <MessageIcon />
             контакты
           </button>
