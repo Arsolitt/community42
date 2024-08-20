@@ -1,9 +1,11 @@
 "use client";
 
-export default function Video() {
+import cls from "./Video.module.scss";
 
+export const Video = () => {
 	return (
 		<video
+			className={cls.video}
 			autoPlay
 			loop
 			muted

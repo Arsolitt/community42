@@ -5,7 +5,7 @@ import { Team } from "@/entities/Team";
 import { Footer } from "@/widgets/Footer";
 import { Header } from "@/widgets/Header";
 
-import Video from '@/components/Video';
+import { Video } from '@/components/Video';
 import { CloseIcon } from "@/shared/assets/icons/close";
 import { Typography } from "@/shared/ui/Typography";
 import styles from "./page.module.scss";

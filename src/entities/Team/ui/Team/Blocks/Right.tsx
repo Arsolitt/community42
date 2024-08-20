@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { RouterLink } from "@/shared/ui/RouterLink";
 import { Typography } from "@/shared/ui/Typography";
 
 import { team } from "@/shared/assets/team";
+import { RouterLink } from "@/shared/ui/RouterLink";
 import cls from "../Team.module.scss";
 
 export const TeamRightBlock = () => (
@@ -20,29 +20,35 @@ export const TeamRightBlock = () => (
             style={{ borderRadius: "12px" }}
           />
         </Link>
-        <Link href={`/team/${t.link}`}>
-          <div className={cls.personaInfo}>
-            <RouterLink />
-            <div className={cls.persona__name}>
+
+        <div className={cls.personaInfo}>
+          <div className={cls.persona__name}>
+            <Link href={`/team/${t.link}`}>
               <Typography
                 variant="p"
                 style={{ fontWeight: "600", fontSize: "18px" }}
               >
                 {t.name}
               </Typography>
-              <Typography
-                variant="span"
-                style={{
-                  fontWeight: "500",
-                  fontSize: "14px",
-                  textAlign: "left",
-                }}
-              >
-                {t.position}
-              </Typography>
-            </div>
+            </Link>
+            <RouterLink />
           </div>
-        </Link>
+          <div className={cls.persona__position}>
+
+            <Typography
+              variant="span"
+              style={{
+                fontWeight: "500",
+                fontSize: "14px",
+                textAlign: "left",
+              }}
+            >
+              {t.position}
+            </Typography>
+          </div>
+
+        </div>
+
       </div>
     ))}
   </div>
