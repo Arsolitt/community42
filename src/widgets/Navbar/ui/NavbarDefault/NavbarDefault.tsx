@@ -13,8 +13,8 @@ export const NavbarDefault = (props: NavbarDefaultProps) => {
     <ul className={cls.NavbarDefault}>
       <motion.div
         key={openContacts ? "shown" : "normal"}
-        initial={{ x: 50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
       >
