@@ -27,7 +27,7 @@ export const AnimatedTitle = (props: AnimatedTitleProps) => {
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
-        viewport={{ once: false, amount: 1 }}
+        exit={{ x: 0, opacity: 1 }}
       >
         <Typography variant="h2">{header.first}</Typography>
       </motion.div>
@@ -35,7 +35,7 @@ export const AnimatedTitle = (props: AnimatedTitleProps) => {
         initial={{ marginLeft: 40, transform: "rotate(0deg)" }}
         whileInView={{ transform: "rotate(90deg)" }}
         transition={{ ease: "easeOut", duration: 0.5 }}
-        viewport={{ once: false }}
+        exit={{ transform: "rotate(0deg)" }}
       >
         <CloseIcon />
       </motion.div>
@@ -46,7 +46,7 @@ export const AnimatedTitle = (props: AnimatedTitleProps) => {
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
-        viewport={{ once: false }}
+        exit={{ x: 0, opacity: 1 }}
       >
         <Typography variant="h2">{header.second}</Typography>
       </motion.div>
