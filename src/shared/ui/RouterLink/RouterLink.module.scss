@@ -10,12 +10,13 @@
   &:hover {
     background:
       linear-gradient(#141114, #141114) padding-box,
-      linear-gradient(to left, #A653FF, #FFABF7) border-box;
+      linear-gradient(to left, #a653ff, #ffabf7) border-box;
   }
 
   &:active {
     background:
-      linear-gradient(#010B42, #010B42) padding-box,
-      linear-gradient(to left, #A653FF, #FFABF7) border-box;
+      linear-gradient(#010b42, #010b42) padding-box,
+      linear-gradient(to left, #a653ff, #ffabf7) border-box;
   }
 }
+
