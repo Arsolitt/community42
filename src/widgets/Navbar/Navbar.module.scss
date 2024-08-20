@@ -15,6 +15,7 @@
     background: rgba(20, 17, 20, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(19.65px);
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
   }
   & > div > button {
     width: 46px;
