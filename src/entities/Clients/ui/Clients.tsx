@@ -1,13 +1,12 @@
 import Image from "next/image";
 
 import { classNames } from "@/features/helpers/className";
-import { CloseIcon } from "@/shared/assets/icons/close";
 import { Typography } from "@/shared/ui/Typography";
 
 import { clients } from "@/shared/assets/clients";
+import { AnimatedTitle } from "@/shared/ui/AnimatedTitle/AnimatedTitle";
 import Link from "next/link";
 import cls from "./Clients.module.scss";
-import { AnimatedTitle } from "@/shared/ui/AnimatedTitle/AnimatedTitle";
 
 interface ClientsProps {
   className?: string;
@@ -18,7 +17,7 @@ export const Clients = ({ className }: ClientsProps) => {
     <section className={classNames(cls.Clients, {}, [className])}>
       <AnimatedTitle
         header={{ first: "коллабы", second: "заказчики" }}
-        customTransformX={{ positive: "95%", negative: "111%" }}
+        customTransformX={{ positive: "89%", negative: "104%" }}
       />
 
       <div className={cls.sectionContent}>
