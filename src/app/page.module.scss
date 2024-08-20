@@ -1,5 +1,5 @@
 .main {
-  padding-top: 169px;
+  padding-top: 207px;
 }
 
 .mainTitle {
@@ -9,7 +9,8 @@
   justify-content: center;
   gap: 16px;
   margin-bottom: 32px;
-  & > svg {
+
+  &>svg {
     position: relative;
     top: 5px;
   }
@@ -19,6 +20,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
   h5 {
     max-width: 687px;
   }
@@ -32,6 +34,7 @@
   flex-direction: column;
   gap: 54px;
   margin-top: 46px;
+
   & img {
     width: 100%;
     object-fit: cover;

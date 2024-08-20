@@ -70,7 +70,7 @@ export const team = [
   {
     id: 5,
     name: "Полина",
-    position: "Служба поддержки",
+    position: "Поддержка",
     image: "/images/team/wooman.png",
     fullsizeImage: "/images/team/full-size/polina.png",
     description:
