@@ -1,4 +1,10 @@
 .NavbarDefault {
+  & > div {
+    width: 390px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
   li > button {
     width: max-content;
     display: flex;
