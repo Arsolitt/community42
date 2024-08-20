@@ -7,6 +7,7 @@ import { Typography } from "@/shared/ui/Typography";
 import { clients } from "@/shared/assets/clients";
 import Link from "next/link";
 import cls from "./Clients.module.scss";
+import { AnimatedTitle } from "@/shared/ui/AnimatedTitle/AnimatedTitle";
 
 interface ClientsProps {
   className?: string;
@@ -15,11 +16,10 @@ interface ClientsProps {
 export const Clients = ({ className }: ClientsProps) => {
   return (
     <section className={classNames(cls.Clients, {}, [className])}>
-      <div className={cls.sectionTitle}>
-        <Typography variant="h2">коллабы</Typography>
-        <CloseIcon />
-        <Typography variant="h2">заказчики</Typography>
-      </div>
+      <AnimatedTitle
+        header={{ first: "коллабы", second: "заказчики" }}
+        customTransformX={{ positive: "95%", negative: "111%" }}
+      />
 
       <div className={cls.sectionContent}>
         {clients.map((c) => (

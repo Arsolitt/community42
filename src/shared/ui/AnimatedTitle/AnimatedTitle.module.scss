@@ -1,0 +1,12 @@
+.sectionTitle {
+  display: flex;
+  height: max-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 63px;
+  & > svg {
+    position: relative;
+    top: 5px;
+  }
+}
