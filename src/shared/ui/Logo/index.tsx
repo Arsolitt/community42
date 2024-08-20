@@ -26,12 +26,13 @@ export const Logo = (props: LogoProps) => {
           height={67}
         />
       </div>
-      <Typography
-        variant="span"
-        style={{ fontSize: "29px", fontWeight: "500" }}
-      >
-        комьюнити
-      </Typography>
+      <Image
+        src="/images/community.svg"
+        alt="community"
+        width={156}
+        height={21}
+        className={cls.hiddenLogo}
+      />
     </div>
   );
 };

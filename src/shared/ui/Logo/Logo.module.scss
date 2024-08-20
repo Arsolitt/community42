@@ -1,7 +1,6 @@
 .LogoContainer {
-  &>span {
+  & > .hiddenLogo {
     display: none;
-    transition: ease-in-out 1s;
   }
 }
 
@@ -33,18 +32,19 @@
 
   &:hover {
     padding: 6px 14px;
-    background: rgba(61, 59, 61, 0.8);
+    background: rgba(14, 11, 14, 0.6);
+    border: 1px solid pink;
   }
 
   &:active {
     background: #323859;
   }
 
-  &:hover>span {
-    display: flex;
+  &:hover > .hiddenLogo {
+    display: unset;
   }
 
-  &:hover>.LogoWrapper {
+  &:hover > .LogoWrapper {
     padding: 6px 7px 6px 0px;
     top: 48px;
     background: none;
@@ -57,3 +57,4 @@
   width: 59px;
   height: 67px;
 }
+
