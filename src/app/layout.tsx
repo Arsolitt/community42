@@ -9,7 +9,9 @@ const raleway = Raleway({ subsets: ["latin", "cyrillic"], preload: true });
 
 export const metadata: Metadata = {
   title: "Комьюнити",
-  description: "Прикольное описание",
+  description:
+    "Комьюнити - команда специалистов креативной индустрии. Разрабатываем дизайн, запускаем рекламные кампании, создаём фото и видео продукты.",
+  keywords: ["Комьюнити", "Комьюнити. Дизайн. Продакшн. Реклама"],
   verification: {
     yandex: "e1b495ca3573a6c8",
   },
