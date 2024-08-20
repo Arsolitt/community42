@@ -11,9 +11,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 63px;
-  & > svg {
+
+  &>svg {
     position: relative;
     top: 5px;
   }
@@ -24,11 +25,11 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 14px;
+  // gap: 14px;
 }
 
-.client > a {
-  padding: 0 6px;
+.client>a {
+  // padding: 0 6px;
   display: flex;
   flex-direction: column;
   align-items: center;

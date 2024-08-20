@@ -26,13 +26,13 @@ export const AnimatedTitle = (props: AnimatedTitleProps) => {
           x: `-${customTransformX?.negative ?? "157%"}`,
           opacity: 1,
         }}
-        transition={{ ease: "easeOut", duration: 0.75 }}
+        transition={{ ease: "easeOut", duration: 0.5 }}
         viewport={{ once: false, amount: 1 }}
       >
         <Typography variant="h2">{header.first}</Typography>
       </motion.div>
       <motion.div
-        initial={{ transform: "rotate(0deg)" }}
+        initial={{ marginLeft: 40, transform: "rotate(0deg)" }}
         whileInView={{ transform: "rotate(90deg)" }}
         transition={{ ease: "easeOut", duration: 0.5 }}
         viewport={{ once: false }}
