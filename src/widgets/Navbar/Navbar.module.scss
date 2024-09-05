@@ -10,28 +10,11 @@
   gap: 4px;
   ul {
     width: 390px;
-    padding: 4px 14.5px;
+    padding: 5.75px 14.5px;
     border-radius: 16px;
     background: rgba(20, 17, 20, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(19.65px);
     filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
-  }
-  & > div > button {
-    width: 46px;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #141114;
-    border: 1px solid #898889;
-    border-radius: 16px;
-    background: rgba(20, 17, 20, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(19.65px);
-    transition: background 0.3s;
-    &:hover {
-      background: rgba(200, 168, 216, 0.25);
-    }
   }
 }
