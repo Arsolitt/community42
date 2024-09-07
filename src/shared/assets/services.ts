@@ -1,6 +1,5 @@
 export interface Service {
   id: number;
-  image: string;
   text: string;
   link: string;
   isNew?: boolean
@@ -10,7 +9,6 @@ export interface Service {
 export const services: Service[] = [
   {
     id: 1,
-    image: "/images/services/ux-ui-design-1.png",
     text: "UX/UI дизайн",
     link: "/services/ux-ui-desing",
     images: [
@@ -22,52 +20,59 @@ export const services: Service[] = [
   },
   {
     id: 2,
-    image: "/images/services/graphical-design.png",
     text: "Графический дизайн",
     link: "/services/graphical-design",
-    images: []
+    images: [
+      "/images/services/graphical-design.png",
+    ]
   },
   {
     id: 3,
-    image: "/images/services/graphical-design.png",
     text: "Брендинг и айдентика",
     link: "/services/branding-and-identity",
-    images: []
+    images: [
+      "/images/services/graphical-design.png",
+    ]
   },
   {
     id: 4,
-    image: "/images/services/graphical-design.png",
     text: "Промышленный дизайн",
     link: "/services/industrial-design.png",
-    images: []
+    images: [
+      "/images/services/graphical-design.png",
+    ]
   },
   {
     id: 5,
-    image: "/images/services/motion.png",
     text: "Motion и 3D",
     link: "/services/motion",
-    images: []
+    images: [
+      "/images/services/motion.png",
+    ]
   },
   {
     id: 6,
-    image: "/images/services/photoshoots.png",
     text: "Фотосессии и ретушь",
     link: "/services/photoshoots",
-    images: []
+    images: [
+      "/images/services/photoshoots.png",
+    ]
   },
   {
     id: 7,
-    image: "/images/services/ux-ui-design.png",
     text: "Видео-продакшн",
     link: "/services/video-production",
-    images: []
+    images: [
+      "/images/services/ux-ui-design.png",
+    ]
   },
   {
     id: 8,
-    image: "/images/services/albums.png",
     text: "Выпускные альбомы",
     link: "/services/albums",
     isNew: true,
-    images: []
+    images: [
+      "/images/services/albums.png",
+    ]
   },
 ];
