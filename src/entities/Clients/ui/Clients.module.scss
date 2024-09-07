@@ -46,6 +46,15 @@
   &:hover {
     opacity: 1;
   }
+
+  & svg>path {
+    stroke: #fff;
+  }
+
+  & svg {
+    width: 22px;
+    height: 11px;
+  }
 }
 
 .container {
