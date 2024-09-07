@@ -19,6 +19,7 @@ export const ImageSet = (props: Props) => {
     let interval;
 
     if (isHovering && props.images.length > 0) {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % props.images.length);
       interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % props.images.length);
       }, 1000);

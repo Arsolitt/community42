@@ -1,13 +1,11 @@
-import Image from "next/image";
 
 import { classNames } from "@/features/helpers/className";
 import { services } from "@/shared/assets/services";
 import { RouterLink } from "@/shared/ui/RouterLink";
 import { Typography } from "@/shared/ui/Typography";
 import Link from "next/link";
-import cls from "./ServicesList.module.scss";
-import { useState } from "react";
 import { ImageSet } from '../../../../shared/ui/ImageSet/ImageSet';
+import cls from "./ServicesList.module.scss";
 
 interface ServicesListProps {
   className?: string;
