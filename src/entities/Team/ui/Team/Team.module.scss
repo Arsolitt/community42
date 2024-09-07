@@ -30,10 +30,11 @@
         display: flex;
         flex-direction: column;
         // gap: 20px;
+        transition: color 0.2s;
 
         &:hover {
-          color: #D1D1D1;
-          transition: color 0.2s;
+          color: var(--link-hover-gray);
+
         }
 
         .personaInfo {

@@ -73,6 +73,6 @@
   cursor: pointer;
 
   &:hover {
-    color: #D1D1D1;
+    color: var(--link-hover-gray);
   }
 }
