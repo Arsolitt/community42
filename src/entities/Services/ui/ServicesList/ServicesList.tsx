@@ -6,27 +6,24 @@ import { RouterLink } from "@/shared/ui/RouterLink";
 import { Typography } from "@/shared/ui/Typography";
 import Link from "next/link";
 import cls from "./ServicesList.module.scss";
+import { useState } from "react";
+import { ImageSet } from '../../../../shared/ui/ImageSet/ImageSet';
 
 interface ServicesListProps {
   className?: string;
 }
 
+
 export const ServicesList = ({ className }: ServicesListProps) => {
+
   return (
     <div className={classNames(cls.ServicesList, {}, [className])}>
       {services.map((s) => (
         <div key={s.id} className={cls.item}>
           <Link href={s.link}>
-            <Image
-              src={s.image}
-              alt="image"
-              className={cls.item__image}
-              width={280}
-              height={154}
-            />
+            <ImageSet image={s.image} images={s.images} className={cls.item__image} />
           </Link>
           {s.isNew && <div className={cls.item__new}>Новое</div>}
-
           <Link href={s.link}>
             <div className={cls.itemDescription}>
               <Typography
