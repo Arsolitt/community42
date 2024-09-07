@@ -40,7 +40,7 @@ export const ImageSet = (props: Props) => {
       height={154}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
-      priority={true}
+      priority={false}
     />
   );
 };
