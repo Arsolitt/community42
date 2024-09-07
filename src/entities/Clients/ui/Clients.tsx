@@ -32,6 +32,7 @@ export const Clients = ({ className }: ClientsProps) => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
+                  fontWeight: "500",
                 }}>
                   К проекту
                   <ArrowIcon />
