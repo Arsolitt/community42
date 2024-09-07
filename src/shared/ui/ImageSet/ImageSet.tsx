@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 
 interface Props {
   className?: string;
-  image: Service["image"]
   images: Service["images"]
 }
 
@@ -30,7 +29,7 @@ export const ImageSet = (props: Props) => {
     return () => clearInterval(interval);
   }, [isHovering, props.images.length]);
 
-  const img = props.images[currentImageIndex] || props.image;
+  const img = props.images[currentImageIndex];
 
   return (
     <Image

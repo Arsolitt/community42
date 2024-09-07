@@ -19,7 +19,7 @@ export const ServicesList = ({ className }: ServicesListProps) => {
       {services.map((s) => (
         <div key={s.id} className={cls.item}>
           <Link href={s.link}>
-            <ImageSet image={s.image} images={s.images} className={cls.item__image} />
+            <ImageSet images={s.images} className={cls.item__image} />
           </Link>
           {s.isNew && <div className={cls.item__new}>Новое</div>}
           <Link href={s.link}>
