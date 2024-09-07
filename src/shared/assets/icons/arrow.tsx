@@ -1,10 +1,15 @@
-export const ArrowIcon = () => (
+interface Props {
+  className?: string;
+}
+
+export const ArrowIcon = (props: Props) => (
   <svg
     width="18"
     height="9"
     viewBox="0 0 18 9"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
   >
     <path
       d="M1 4.5L17 4.5M17 4.5L12.6418 1M17 4.5L12.6418 8"

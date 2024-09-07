@@ -1,9 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { Typography } from "@/shared/ui/Typography";
 
 import { team } from "@/shared/assets/team";
+import { ImageSet } from "@/shared/ui/ImageSet/ImageSet";
 import { RouterLink } from "@/shared/ui/RouterLink";
 import cls from "../Team.module.scss";
 
@@ -11,19 +11,13 @@ export const TeamRightBlock = () => (
   <div className={cls.rightBlock}>
     {team.map((t) => (
       <div className={cls.persona} key={t.id}>
-        <Link href={`/team/${t.link}`}>
-          <Image
-            src={t.image}
-            alt={`Фотография сотрудника команды ${t.name}`}
-            width={154}
-            height={154}
-            style={{ borderRadius: "12px" }}
-          />
+        <Link href={`/team/${t.slug}`}>
+          <ImageSet images={t.images} className={cls.persona__image} width={154} height={154} />
         </Link>
 
         <div className={cls.personaInfo}>
           <div className={cls.persona__name}>
-            <Link href={`/team/${t.link}`}>
+            <Link href={`/team/${t.slug}`}>
               <Typography
                 variant="p"
                 style={{ fontWeight: "600", fontSize: "18px" }}

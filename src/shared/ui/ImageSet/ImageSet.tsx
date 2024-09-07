@@ -8,16 +8,18 @@ import { useEffect, useState } from "react";
 interface Props {
   className?: string;
   images: Service["images"]
+  height: number
+  width: number
 }
 
 export const ImageSet = (props: Props) => {
-  const [isHovering, setIsHovering] = useState(false);
+  const [isHover, setIsHover] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     let interval;
 
-    if (isHovering && props.images.length > 0) {
+    if (isHover && props.images.length > 0) {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % props.images.length);
       interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % props.images.length);
@@ -27,7 +29,7 @@ export const ImageSet = (props: Props) => {
     }
 
     return () => clearInterval(interval);
-  }, [isHovering, props.images.length]);
+  }, [isHover, props.images.length]);
 
   const img = props.images[currentImageIndex];
 
@@ -36,10 +38,10 @@ export const ImageSet = (props: Props) => {
       src={img}
       alt="image"
       className={props.className}
-      width={280}
-      height={154}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
+      width={props.width}
+      height={props.height}
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
       priority={false}
     />
   );
