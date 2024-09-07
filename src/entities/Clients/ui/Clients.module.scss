@@ -28,15 +28,42 @@
   // gap: 14px;
 }
 
-.client>a {
-  // padding: 0 6px;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: opacity 0.5s ease;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid #FF66D0;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.client {
+  &>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.2s;
+  }
+
+  cursor: pointer;
 
   &:hover {
     color: #D1D1D1;
-    transition: color 0.2s;
   }
 }
