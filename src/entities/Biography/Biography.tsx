@@ -16,7 +16,7 @@ interface BiographyProps {
 export const Biography = ({ className }: BiographyProps) => {
   const collaboratorSlug = useParams().slug;
   const collaborator = useMemo(
-    () => team.find((t) => t.link === collaboratorSlug),
+    () => team.find((t) => t.slug === collaboratorSlug),
     [collaboratorSlug],
   );
 
@@ -29,7 +29,7 @@ export const Biography = ({ className }: BiographyProps) => {
           fullSizeImage={collaborator?.fullsizeImage}
         />
       </div>
-      <Projects collaboratorSlug={collaborator?.link} />
+      <Projects collaboratorSlug={collaborator?.slug} />
     </section>
   );
 };
