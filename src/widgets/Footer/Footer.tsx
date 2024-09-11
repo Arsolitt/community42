@@ -56,13 +56,16 @@ export const Footer = ({ className }: FooterProps) => {
 
             <div className={cls.services}>
               {services.map((service) => (
-                <Link
-                  key={service.id}
-                  href={service.link}
-                  className={cls.services__link}
-                >
-                  {service.text}
-                </Link>
+                <div key={service.id} className={cls.services__item}>
+                  <Link
+                    key={service.id}
+                    href={service.link}
+                    className={cls.services__link}
+                  >
+                    {service.text}
+                  </Link>
+                  <div className={cls.underline} />
+                </div>
               ))}
             </div>
 
