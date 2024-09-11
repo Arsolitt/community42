@@ -1,0 +1,16 @@
+.Likes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  svg {
+    width: 18px;
+    height: 16px;
+  }
+}
