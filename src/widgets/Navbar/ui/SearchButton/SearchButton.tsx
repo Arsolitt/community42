@@ -26,7 +26,7 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
           exit={{ opacity: 0 }}
           transition={{ ease: "easeInOut", duration: 0.5 }}
         >
-          {openSearch ? <SearchIcon /> : <CloseContactsIcon />}
+          {!openSearch ? <SearchIcon /> : <CloseContactsIcon />}
         </motion.div>
       </button>
     </div>
