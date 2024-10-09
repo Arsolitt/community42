@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   top: 70px;
-  z-index: 999;
+  z-index: var(--widget-z-index);
 }
 
 .wrapperAnimated {
@@ -15,5 +15,5 @@
   align-items: center;
   justify-content: center;
   top: 48px;
-  z-index: 999;
+  z-index: var(--widget-z-index);
 }

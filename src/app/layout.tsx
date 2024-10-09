@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 
-import { LocomativeScrollProvider } from "@/core/providers/locomativeScroll";
+import { LocomativeScrollProvider } from "@/core/providers/LocomativeScroll";
 import { Navbar } from "@/widgets/Navbar";
 import "@/core/styles/globals.scss";
+import { PageTransitionsProvider } from "@/core/providers/PageTransitions";
 
 const raleway = Raleway({ subsets: ["latin", "cyrillic"], preload: true });
 
@@ -25,7 +26,11 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={raleway.className} suppressHydrationWarning={true}>
-        <LocomativeScrollProvider>{children}</LocomativeScrollProvider>
+        <PageTransitionsProvider>
+          <LocomativeScrollProvider>
+            {children}
+          </LocomativeScrollProvider>
+        </PageTransitionsProvider>
         <Navbar />
       </body>
     </html>

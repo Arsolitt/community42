@@ -4,16 +4,19 @@ import { classNames } from "@/features/helpers/className";
 import { CloseContactsIcon, SearchIcon } from "@/shared/assets/icons";
 import cls from "./NavbarSearchButton.module.scss";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface SearchButtonProps {
   className?: string;
 }
 
 export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
+  const router = useRouter();
   const [openSearch, setOpenSearch] = useState(false);
 
   const onToggleSearch = () => {
     setOpenSearch((prev) => !prev);
+    router.push(!openSearch ? '/search' : '/');
   };
 
   return (
