@@ -1,10 +1,11 @@
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
-import { classNames } from "@/features/helpers/className";
-import { CloseContactsIcon, SearchIcon } from "@/shared/assets/icons";
-import cls from "./NavbarSearchButton.module.scss";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { classNames } from '@/features/helpers/className';
+import { CloseContactsIcon, SearchIcon } from '@/shared/assets/icons';
+
+import cls from './NavbarSearchButton.module.scss';
 
 interface SearchButtonProps {
   className?: string;
@@ -21,13 +22,13 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
 
   return (
     <div className={classNames(cls.SearchButton, {}, [className])}>
-      <button onClick={onToggleSearch}>
+      <button onClick={onToggleSearch} type='button'>
         <motion.div
-          key={openSearch ? "shown" : "normal"}
+          key={openSearch ? 'shown' : 'normal'}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ ease: "easeInOut", duration: 0.5 }}
+          transition={{ ease: 'easeInOut', duration: 0.5 }}
         >
           {!openSearch ? <SearchIcon /> : <CloseContactsIcon />}
         </motion.div>
