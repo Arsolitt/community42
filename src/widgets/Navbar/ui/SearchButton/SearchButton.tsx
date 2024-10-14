@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 import { classNames } from '@/features/helpers/className';
 import { CloseContactsIcon, SearchIcon } from '@/shared/assets/icons';
@@ -13,7 +13,16 @@ interface SearchButtonProps {
 
 export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
   const router = useRouter();
+  const pathName = usePathname();
   const [openSearch, setOpenSearch] = useState(false);
+
+  useEffect(() => {
+    if (pathName === '/search') {
+      setOpenSearch(true);
+    } else {
+      setOpenSearch(false);
+    }
+  }, [pathName]);
 
   const onToggleSearch = () => {
     setOpenSearch((prev) => !prev);
