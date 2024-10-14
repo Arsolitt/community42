@@ -5,7 +5,7 @@ export const SearchBlock = () => {
 
     <div className='main_search'>
       <div className='container'>
-        <div className='flex w-full h-full items-center justify-center text-center'>
+        <div className='flex w-full h-full items-center justify-center text-center border-b border-[#FFF] border-opacity-50 pb-[6px]'>
           <input
             placeholder='поиск работ'
             className='placeholder:text-[#fff] placeholder:text-[16px] bg-transparent placeholder:opacity-25 caret-[#666666] text-center h-full w-full focus:border-none focus:outline-none border-none appearance-none outline-none'
