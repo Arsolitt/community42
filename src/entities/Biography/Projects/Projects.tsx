@@ -9,7 +9,7 @@ import { Typography } from '@/shared/ui/Typography';
 import cls from './Projects.module.scss';
 
 interface ProjectsProps {
-  collaboratorSlug: string;
+  collaboratorSlug?: string;
   className?: string;
 }
 
@@ -20,9 +20,11 @@ export const Projects = (props: ProjectsProps) => {
     return projects.filter((p) => p.collaborators.includes(collaboratorSlug));
   }, [collaboratorSlug]);
 
+  const finalProjects = collaboratorSlug ? filteredProjects : projects;
+
   return (
     <section className={classNames(cls.Projects, {}, [className])}>
-      {filteredProjects.map((p) => (
+      {finalProjects.map((p) => (
         <div className={cls.project} key={p.id}>
           <Image
             src={p.image}

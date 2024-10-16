@@ -4,7 +4,6 @@ import { ServicesList } from '@/entities/Services';
 import { Team } from '@/entities/Team';
 import { CloseIcon } from '@/shared/assets/icons/close';
 import { Typography } from '@/shared/ui/Typography';
-import { Footer } from '@/widgets/Footer';
 import { Header } from '@/widgets/Header';
 
 import styles from './page.module.scss';
@@ -48,7 +47,6 @@ const Home = () => {
           <Team />
           <Clients />
         </div>
-        <Footer />
       </main>
     </>
   );
