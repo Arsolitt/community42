@@ -13,6 +13,14 @@ body {
   font-feature-settings: "lnum";
 }
 
+.main {
+  padding-top: 172px;
+
+  &_search {
+    padding-top: 182px
+  }
+}
+
 .container {
   max-width: 1180px;
   width: 100%;

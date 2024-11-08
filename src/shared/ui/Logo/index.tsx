@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { classNames } from "@/features/helpers/className";
 import cls from "./Logo.module.scss";
-import { Typography } from "../Typography";
 
 export enum LogoTheme {
   ANIMATION = "animation",
