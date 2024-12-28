@@ -10,6 +10,9 @@ jobs:
     name: Build and push
     runs-on: ubuntu-latest
     steps:
+      - name: Test
+        run:
+          curl -v https://harbor.arsolitt.tech
       - name: Checkout
         uses: actions/checkout@v4
       - name: Short SHA
