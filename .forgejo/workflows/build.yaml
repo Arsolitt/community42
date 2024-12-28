@@ -12,9 +12,7 @@ on:
 
 jobs:
   docker:
-    runs-on:
-      container:
-        image: ubuntu:24.10
+    runs-on: ubuntu-latest
     steps:
       - name: Test
         run: |
