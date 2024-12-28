@@ -1,6 +1,6 @@
 name: build
 
-runs-on: docker
+# runs-on: 
 # container:
 #   image: harbor.arsolitt.tech/hub/node:22-bookworm-slim
 
