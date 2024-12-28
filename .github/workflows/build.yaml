@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build and push
-    runs-on: node22
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: https://github.com/actions/checkout@v4
