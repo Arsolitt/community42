@@ -30,5 +30,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: 
-            - ${{ vars.REGISTRY_HOST }}/${{ vars.REGISTRY_REPO }}/portfolio:latest
+          tags: ${{ vars.REGISTRY_HOST }}/${{ vars.REGISTRY_REPO }}/portfolio:latest
