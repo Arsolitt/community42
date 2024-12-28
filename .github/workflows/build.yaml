@@ -31,4 +31,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
+          cache-from: ${{ vars.REGISTRY_HOST }}/${{ vars.REGISTRY_REPO }}/portfolio:latest
           tags: ${{ vars.REGISTRY_HOST }}/${{ vars.REGISTRY_REPO }}/portfolio:latest,${{ vars.REGISTRY_HOST }}/${{ vars.REGISTRY_REPO }}/portfolio:${{ steps.short-sha.outputs.sha }}
