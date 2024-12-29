@@ -1,4 +1,4 @@
-FROM node:22-bookworm-slim AS builder
+FROM harbor.arsolitt.tech/hub/node:22-bookworm-slim AS builder
 ENV TZ=Europe/Moscow
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV HUSKY_SKIP_INSTALL=1
@@ -9,7 +9,7 @@ RUN yarn --frozen-lockfile --ignore-scripts
 COPY . .
 RUN yarn build
 
-FROM node:22-bookworm-slim
+FROM harbor.arsolitt.tech/hub/node:22-bookworm-slim
 ENV TZ=Europe/Moscow
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV HUSKY_SKIP_INSTALL=1
