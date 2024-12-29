@@ -25,3 +25,4 @@ RUN yarn --frozen-lockfile --ignore-scripts --production=true
 COPY --chown=node --from=builder /src/app/public ./public
 COPY --chown=node --from=builder /src/app/.next .next
 CMD ["yarn", "start"]
+#
