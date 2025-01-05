@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import Image from 'next/image';
 
 import { classNames } from '@/features/helpers/className';
@@ -11,22 +10,22 @@ import cls from './Projects.module.scss';
 
 interface ProjectsProps {
   projects: Project[];
-  collaboratorSlug?: string;
+  // collaboratorSlug?: string;
   className?: string;
 }
 
 export const Projects = (props: ProjectsProps) => {
-  const { projects, collaboratorSlug, className } = props;
+  const { projects, className } = props;
 
-  const filteredProjects = useMemo(() => {
-    return projects.filter((p) => p.collaborators.includes(collaboratorSlug));
-  }, [collaboratorSlug]);
-
-  const finalProjects = collaboratorSlug ? filteredProjects : projects;
+  // const filteredProjects = useMemo(() => {
+  //   return projects.filter((p) => p.collaborators.includes(collaboratorSlug));
+  // }, [collaboratorSlug]);
+  //
+  // const finalProjects = collaboratorSlug ? filteredProjects : projects;
 
   return (
     <section className={classNames(cls.Projects, {}, [className])}>
-      {finalProjects.map((p) => (
+      {projects.map((p) => (
         <div className={cls.project} key={p.id}>
           <Image src={p.image} alt='image' layout='responsive' width={444} height={251} />
           <div className={cls.projectInfo}>
