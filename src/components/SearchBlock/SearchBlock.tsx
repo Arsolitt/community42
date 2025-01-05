@@ -16,9 +16,20 @@ export const SearchBlock = () => {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const results = projects.filter((project) => project.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    let results = projects;
+
+    if (searchTerm) {
+      results = results.filter((project) => project.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    }
+
+    if (activeServiceIds.length > 0) {
+      results = results.filter((project) =>
+        activeServiceIds.every((tagId) => project.tags.some((tag) => tag.id === tagId))
+      );
+    }
+
     setFilteredProjects(results);
-  }, [searchTerm, projects]);
+  }, [searchTerm, activeServiceIds, projects]);
 
   useEffect(() => {
     const tagsParam = searchParams.get('tags');

@@ -31,6 +31,10 @@ export const projects: Project[] = [
       {
         id: '2',
         name: 'Геймдизайн'
+      },
+      {
+        id: '3',
+        name: 'UX/UI дизайн'
       }
     ]
   },
@@ -49,6 +53,10 @@ export const projects: Project[] = [
       {
         id: '2',
         name: 'Геймдизайн'
+      },
+      {
+        id: '4',
+        name: 'Промышленный дизайн'
       }
     ]
   },
@@ -67,6 +75,10 @@ export const projects: Project[] = [
       {
         id: '2',
         name: 'Геймдизайн'
+      },
+      {
+        id: '3',
+        name: 'UX/UI дизайн'
       }
     ]
   },
@@ -85,6 +97,14 @@ export const projects: Project[] = [
       {
         id: '2',
         name: 'Геймдизайн'
+      },
+      {
+        id: '5',
+        name: 'Motion и 3D'
+      },
+      {
+        id: '6',
+        name: 'Фотосессии и ретушь'
       }
     ]
   },
@@ -121,6 +141,10 @@ export const projects: Project[] = [
       {
         id: '2',
         name: 'Геймдизайн'
+      },
+      {
+        id: '7',
+        name: 'Видео-продакшн'
       }
     ]
   },
@@ -139,6 +163,10 @@ export const projects: Project[] = [
       {
         id: '2',
         name: 'Геймдизайн'
+      },
+      {
+        id: '8',
+        name: 'Выпускные альбомы'
       }
     ]
   }
