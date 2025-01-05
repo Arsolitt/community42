@@ -46,10 +46,8 @@ export const SearchBlock = () => {
     } else {
       params.delete('tags');
     }
-    // console.log(newActiveServiceIds);
     router.push(`${window.location.pathname}?${params.toString()}`);
   };
-  console.log(activeServiceIds);
   return (
     <div className='main_search'>
       <div className='container'>
