@@ -1,14 +1,14 @@
 export interface Service {
-  id: number;
+  id: string;
   text: string;
   link: string;
-  isNew?: boolean
-  images: string[]
+  isNew?: boolean;
+  images: string[];
 }
 
 export const services: Service[] = [
   {
-    id: 1,
+    id: '019435db-b9e4-7455-8044-74a315471f38',
     text: 'UX/UI дизайн',
     link: '/services/ux-ui-desing',
     images: [
@@ -19,7 +19,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: 2,
+    id: '019435db-d372-70f7-a9b6-6e1179c072a6',
     text: 'Графический дизайн',
     link: '/services/graphical-design',
     images: [
@@ -30,7 +30,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: 3,
+    id: '019435db-e434-7388-ae84-43bf91fa5cc3',
     text: 'Брендинг и айдентика',
     link: '/services/branding-and-identity',
     images: [
@@ -41,7 +41,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: 4,
+    id: '019435db-f551-79f0-995d-153f237cea7b',
     text: 'Промышленный дизайн',
     link: '/services/industrial-design.png',
     images: [
@@ -52,7 +52,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: 5,
+    id: '019435dc-0473-781c-af3c-c9fd29294eec',
     text: 'Motion и 3D',
     link: '/services/motion',
     images: [
@@ -63,7 +63,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: 6,
+    id: '019435dc-1813-7511-9a9b-27ae7919684f',
     text: 'Фотосессии и ретушь',
     link: '/services/photoshoots',
     images: [
@@ -74,7 +74,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: 7,
+    id: '019435dc-26c2-77b7-9475-4d58fbe8943f',
     text: 'Видео-продакшн',
     link: '/services/video-production',
     images: [
@@ -85,7 +85,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: 8,
+    id: '019435dc-34bf-7cda-9420-43c890a14312',
     text: 'Выпускные альбомы',
     link: '/services/albums',
     isNew: true,
