@@ -114,5 +114,19 @@ export const projects: Project[] = [
         priority: 1
       }
     ]
+  },
+  {
+    id: '7',
+    name: 'Графическая выставка в Севастополе',
+    likes: 15,
+    image: '/images/last-project.png',
+    link: '/project-1',
+    collaborators: ['polina-customer-support', 'egor-3d-specialist'],
+    tags: [
+      {
+        id: '3D',
+        priority: 1
+      }
+    ]
   }
 ];
