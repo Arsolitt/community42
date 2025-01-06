@@ -3,8 +3,6 @@ import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
 
 import { LocomativeScrollProvider } from '@/core/providers/LocomativeScroll';
-import { projects } from '@/shared/assets/projects';
-import { Footer } from '@/widgets/Footer';
 import { Navbar } from '@/widgets/Navbar';
 
 import '@/core/styles/globals.scss';
@@ -24,10 +22,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <html lang='ru'>
       <body className={raleway.className} suppressHydrationWarning>
-        <LocomativeScrollProvider>
-          {children}
-          <Footer lastProject={projects[7]} />
-        </LocomativeScrollProvider>
+        <LocomativeScrollProvider>{children}</LocomativeScrollProvider>
         <Navbar />
       </body>
     </html>
