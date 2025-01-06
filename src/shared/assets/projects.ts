@@ -1,4 +1,5 @@
-import type { Service } from '@/shared/assets/services';
+import type { Tag } from '@/shared/assets/tags';
+import type { Member } from '@/shared/assets/team';
 
 export interface Project {
   id: string;
@@ -6,18 +7,18 @@ export interface Project {
   likes: number;
   image: string;
   link: string;
-  collaborators: string[];
-  tags: Tag[];
+  collaborators: Member['slug'][];
+  tags: ProjectTag[];
 }
 
-interface Tag {
-  id: Service['id'];
-  name: Service['text'];
+interface ProjectTag {
+  id: Tag['slug'];
+  priority: number;
 }
 
 export const projects: Project[] = [
   {
-    id: '1',
+    id: '0',
     name: 'Project 1',
     likes: 10,
     image: '/images/projects/project-1.png',
@@ -25,21 +26,13 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: '1',
-        name: 'Графический дизайн'
-      },
-      {
-        id: '2',
-        name: 'Геймдизайн'
-      },
-      {
-        id: '3',
-        name: 'UX/UI дизайн'
+        id: 'ux-ui',
+        priority: 1
       }
     ]
   },
   {
-    id: '2',
+    id: '1',
     name: 'Project 2',
     likes: 10,
     image: '/images/projects/project-1.png',
@@ -48,20 +41,12 @@ export const projects: Project[] = [
     tags: [
       {
         id: '1',
-        name: 'Графический дизайн'
-      },
-      {
-        id: '2',
-        name: 'Геймдизайн'
-      },
-      {
-        id: '4',
-        name: 'Промышленный дизайн'
+        priority: 1
       }
     ]
   },
   {
-    id: '3',
+    id: '2',
     name: 'Project 3',
     likes: 10,
     image: '/images/projects/project-1.png',
@@ -69,21 +54,13 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: '1',
-        name: 'Графический дизайн'
-      },
-      {
-        id: '2',
-        name: 'Геймдизайн'
-      },
-      {
-        id: '3',
-        name: 'UX/UI дизайн'
+        id: 'logotypes',
+        priority: 1
       }
     ]
   },
   {
-    id: '4',
+    id: '3',
     name: 'Project 4',
     likes: 10,
     image: '/images/projects/project-1.png',
@@ -91,25 +68,13 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: '1',
-        name: 'Графический дизайн'
-      },
-      {
-        id: '2',
-        name: 'Геймдизайн'
-      },
-      {
-        id: '5',
-        name: 'Motion и 3D'
-      },
-      {
-        id: '6',
-        name: 'Фотосессии и ретушь'
+        id: 'branding',
+        priority: 1
       }
     ]
   },
   {
-    id: '5',
+    id: '4',
     name: 'Project 5',
     likes: 10,
     image: '/images/projects/project-1.png',
@@ -117,17 +82,13 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: '1',
-        name: 'Графический дизайн'
-      },
-      {
-        id: '2',
-        name: 'Геймдизайн'
+        id: 'aydentika',
+        priority: 1
       }
     ]
   },
   {
-    id: '6',
+    id: '5',
     name: 'Project 6',
     likes: 10,
     image: '/images/projects/project-1.png',
@@ -135,21 +96,13 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: '1',
-        name: 'Графический дизайн'
-      },
-      {
-        id: '2',
-        name: 'Геймдизайн'
-      },
-      {
-        id: '7',
-        name: 'Видео-продакшн'
+        id: 'motion',
+        priority: 1
       }
     ]
   },
   {
-    id: '7',
+    id: '6',
     name: 'Project 7',
     likes: 10,
     image: '/images/projects/project-1.png',
@@ -157,16 +110,8 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: '1',
-        name: 'Графический дизайн'
-      },
-      {
-        id: '2',
-        name: 'Геймдизайн'
-      },
-      {
-        id: '8',
-        name: 'Выпускные альбомы'
+        id: '3D',
+        priority: 1
       }
     ]
   }
