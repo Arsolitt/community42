@@ -1,19 +1,22 @@
 'use client';
 
+import type { SetStateAction } from 'react';
 import { useEffect, useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 
 import { Projects } from '@/entities/Biography/Projects';
 import { projects } from '@/shared/assets/projects';
-import { services } from '@/shared/assets/services';
+import { tags } from '@/shared/assets/tags';
 
 export const SearchBlock = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredProjects, setFilteredProjects] = useState(projects);
 
-  const [activeServiceIds, setActiveServiceIds] = useState([]);
+  const [activeTags, setActiveTags] = useState([]);
   const router = useRouter();
   const searchParams = useSearchParams();
+
+  const pathname = usePathname();
 
   useEffect(() => {
     let results = projects;
@@ -22,34 +25,34 @@ export const SearchBlock = () => {
       results = results.filter((project) => project.name.toLowerCase().includes(searchTerm.toLowerCase()));
     }
 
-    if (activeServiceIds.length > 0) {
+    if (activeTags.length > 0) {
       results = results.filter((project) =>
-        activeServiceIds.every((tagId) => project.tags.some((tag) => tag.id === tagId))
+        activeTags.every((tagSlug) => project.tags.some((tag) => tag.slug === tagSlug))
       );
     }
 
     setFilteredProjects(results);
-  }, [searchTerm, activeServiceIds, projects]);
+  }, [searchTerm, activeTags, projects]);
 
   useEffect(() => {
     const tagsParam = searchParams.get('tags');
     if (tagsParam) {
-      setActiveServiceIds(tagsParam.split(','));
+      setActiveTags(tagsParam.split(','));
     }
   }, [searchParams]);
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: { target: { value: SetStateAction<string> } }) => {
     setSearchTerm(event.target.value);
   };
 
   const handleServiceClick = (serviceId: string) => {
-    let newActiveServiceIds;
-    if (activeServiceIds.includes(serviceId)) {
-      newActiveServiceIds = activeServiceIds.filter((id: string) => id !== serviceId);
+    let newActiveServiceIds: SetStateAction<any[]>;
+    if (activeTags.includes(serviceId)) {
+      newActiveServiceIds = activeTags.filter((id: string) => id !== serviceId);
     } else {
-      newActiveServiceIds = [...activeServiceIds, serviceId];
+      newActiveServiceIds = [...activeTags, serviceId];
     }
-    setActiveServiceIds(newActiveServiceIds);
+    setActiveTags(newActiveServiceIds);
 
     const params = new URLSearchParams(searchParams.toString());
     if (newActiveServiceIds.length > 0) {
@@ -57,7 +60,7 @@ export const SearchBlock = () => {
     } else {
       params.delete('tags');
     }
-    router.push(`${window.location.pathname}?${params.toString()}`);
+    router.push(`${pathname}?${params.toString()}`);
   };
   return (
     <div className='main_search'>
@@ -74,16 +77,16 @@ export const SearchBlock = () => {
       <div className='container'>
         <div className='bubbleTags'>
           <div className='flex flex-row flex-wrap w-full h-full pt-[28.5px] items-center justify-center gap-[8px]'>
-            {services.map((s) => (
-              <div key={s.id} className='inline-flex gap-[8px]'>
+            {tags.map((t) => (
+              <div key={t.slug} className='inline-flex gap-[8px]'>
                 <button
                   className={`rounded-[10px] border px-[10px] py-[4.5px] max-w-max text-[16px] font-medium ${
-                    activeServiceIds.includes(s.id) ? 'border-purple-400 text-purple-400' : 'border-white'
+                    activeTags.includes(t.slug) ? 'border-purple-400 text-purple-400' : 'border-white'
                   }`}
                   type='button'
-                  onClick={() => handleServiceClick(s.id)}
+                  onClick={() => handleServiceClick(t.slug)}
                 >
-                  {s.text}
+                  {t.text}
                 </button>
               </div>
             ))}

@@ -12,7 +12,7 @@ export interface Project {
 }
 
 interface ProjectTag {
-  id: Tag['slug'];
+  slug: Tag['slug'];
   priority: number;
 }
 
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: 'ux-ui',
+        slug: 'ux-ui',
         priority: 1
       }
     ]
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: '1',
+        slug: '1',
         priority: 1
       }
     ]
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: 'logotypes',
+        slug: 'logotypes',
         priority: 1
       }
     ]
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: 'branding',
+        slug: 'branding',
         priority: 1
       }
     ]
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: 'aydentika',
+        slug: 'aydentika',
         priority: 1
       }
     ]
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: 'motion',
+        slug: 'motion',
         priority: 1
       }
     ]
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: '3D',
+        slug: '3D',
         priority: 1
       }
     ]
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        id: '3D',
+        slug: '3D',
         priority: 1
       }
     ]
