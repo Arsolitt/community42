@@ -17,12 +17,6 @@ interface ProjectsProps {
 export const Projects = (props: ProjectsProps) => {
   const { projects, className } = props;
 
-  // const filteredProjects = useMemo(() => {
-  //   return projects.filter((p) => p.collaborators.includes(collaboratorSlug));
-  // }, [collaboratorSlug]);
-  //
-  // const finalProjects = collaboratorSlug ? filteredProjects : projects;
-
   return (
     <section className={classNames(cls.Projects, {}, [className])}>
       {projects.map((p) => (
