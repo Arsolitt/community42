@@ -27,7 +27,7 @@ export const Projects = (props: ProjectsProps) => {
     <section className={classNames(cls.Projects, {}, [className])}>
       {projects.map((p) => (
         <div className={cls.project} key={p.id}>
-          <Image src={p.image} alt='image' layout='responsive' width={444} height={251} />
+          <Image src={p.image} alt='image' width={444} height={251} />
           <div className={cls.projectInfo}>
             <Typography variant='h4' style={{ fontWeight: '600', fontSize: '18px' }}>
               {p.name}
