@@ -14,10 +14,7 @@ export const Typography = (props: TypographyProps) => {
   const Tag = variant as keyof JSX.IntrinsicElements;
 
   return (
-    <Tag
-      className={classNames(cls.typography, {}, [className, cls[variant]])}
-      style={style}
-    >
+    <Tag className={classNames(cls.typography, {}, [className, cls[variant]])} style={style}>
       {children}
     </Tag>
   );

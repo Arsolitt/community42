@@ -24,7 +24,6 @@ export const Clients = ({ className }: ClientsProps) => {
       <div className={cls.sectionContent}>
         {clients.map((c) => (
           <div key={c.id} className={cls.client}>
-
             <div className={cls.container}>
               <Image alt='image' className={cls.image} height={108} src={c.image} width={108} />
               <div className={cls.overlay}>
@@ -55,7 +54,6 @@ export const Clients = ({ className }: ClientsProps) => {
                 {c.name}
               </Typography>
             </Link>
-
           </div>
         ))}
       </div>

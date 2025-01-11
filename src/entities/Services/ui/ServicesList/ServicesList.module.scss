@@ -20,12 +20,11 @@
       align-items: center;
       margin-top: 20px;
 
-      &>h4 {
+      & > h4 {
         font-weight: 600;
         font-size: 18px;
         line-height: 120%;
       }
-
     }
 
     transition: color 0.2s;

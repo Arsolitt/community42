@@ -14,10 +14,7 @@ export const BiographyLeftBlock = ({ collaborator }) => {
       <Typography style={{ fontWeight: '700' }} variant='h2'>
         {collaborator?.name}
       </Typography>
-      <Typography
-        style={{ fontSize: '20px', fontWeight: '500', lineHeight: '140%' }}
-        variant='p'
-      >
+      <Typography style={{ fontSize: '20px', fontWeight: '500', lineHeight: '140%' }} variant='p'>
         {collaborator?.description}
       </Typography>
 

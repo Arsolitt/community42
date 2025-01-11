@@ -7,9 +7,9 @@ import type { Service } from '@/shared/assets/services';
 
 interface Props {
   className?: string;
-  height: number
-  images: Service['images']
-  width: number
+  height: number;
+  images: Service['images'];
+  width: number;
 }
 
 export const ImageSet = (props: Props) => {

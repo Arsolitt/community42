@@ -2,22 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./reset";
-@import "./variables";
+@import './reset';
+@import './variables';
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-  -webkit-font-feature-settings: "lnum";
-  -moz-font-feature-settings: "lnum";
-  font-feature-settings: "lnum";
+  -webkit-font-feature-settings: 'lnum';
+  -moz-font-feature-settings: 'lnum';
+  font-feature-settings: 'lnum';
 }
 
 .main {
   padding-top: 172px;
 
   &_search {
-    padding-top: 182px
+    padding-top: 182px;
   }
 }
 
