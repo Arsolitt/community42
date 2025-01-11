@@ -31,7 +31,7 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
 
   return (
     <div className={classNames(cls.SearchButton, {}, [className])}>
-      <button type='button' onClick={onToggleSearch}>
+      <button type="button" onClick={onToggleSearch}>
         <motion.div
           key={openSearch ? 'shown' : 'normal'}
           animate={{ opacity: 1 }}

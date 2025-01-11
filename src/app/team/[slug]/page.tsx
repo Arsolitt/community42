@@ -5,8 +5,8 @@ const Collaborator = () => {
   return (
     <>
       <Header manualScrolled />
-      <main className='main'>
-        <h1 className='hiddenTitle'>Комьюнити. Дизайн. Продакшн. Реклама</h1>
+      <main className="main">
+        <h1 className="hiddenTitle">Комьюнити. Дизайн. Продакшн. Реклама</h1>
         <Biography />
       </main>
     </>

@@ -7,17 +7,14 @@ export const BiographyLeftBlock = ({ collaborator }) => {
   const socialIcons = {
     vk: <VkIcon />,
     telegram: <TelegramIcon />,
-    whatsapp: <WhatsappIcon />
+    whatsapp: <WhatsappIcon />,
   };
   return (
     <div className={cls.leftBlock}>
-      <Typography style={{ fontWeight: '700' }} variant='h2'>
+      <Typography style={{ fontWeight: '700' }} variant="h2">
         {collaborator?.name}
       </Typography>
-      <Typography
-        style={{ fontSize: '20px', fontWeight: '500', lineHeight: '140%' }}
-        variant='p'
-      >
+      <Typography style={{ fontSize: '20px', fontWeight: '500', lineHeight: '140%' }} variant="p">
         {collaborator?.description}
       </Typography>
 

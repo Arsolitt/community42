@@ -20,11 +20,11 @@ interface FooterProps {
 export const Footer = ({ className, lastProject }: FooterProps) => {
   return (
     <footer className={classNames(cls.footer, {}, [className])}>
-      <div className='container'>
+      <div className="container">
         <div className={classNames(cls.footerWrapper, {}, [])}>
           {lastProject ? (
             <div className={cls.lastProject}>
-              <Typography variant='h6'>Оцените нашу последнюю работу</Typography>
+              <Typography variant="h6">Оцените нашу последнюю работу</Typography>
               <Image
                 alt={lastProject.name}
                 className={cls.lastProject__image}
@@ -34,7 +34,7 @@ export const Footer = ({ className, lastProject }: FooterProps) => {
                 width={1180}
               />
               <div className={cls.lastProject__characteristics}>
-                <Typography style={{ fontSize: '18px', fontWeight: 600 }} variant='p'>
+                <Typography style={{ fontSize: '18px', fontWeight: 600 }} variant="p">
                   {lastProject.name}
                 </Typography>
                 <Likes likes={lastProject.likes} />
@@ -63,18 +63,18 @@ export const Footer = ({ className, lastProject }: FooterProps) => {
             </div>
 
             <div className={cls.description}>
-              <Typography className={cls.descriptionTitle} variant='p'>
+              <Typography className={cls.descriptionTitle} variant="p">
                 г. Кемерово
               </Typography>
-              <Typography className={cls.descriptionText} variant='span'>
+              <Typography className={cls.descriptionText} variant="span">
                 съёмка видео и фото происходит в основном в этом городе
               </Typography>
             </div>
           </div>
           <div className={cls.copyright}>
-            <Typography variant='p'>© 2024. Все права защищены</Typography>
-            <Typography variant='p'>Заходите к нам чаще за новой порцией креативчика ;)</Typography>
-            <Typography variant='p'>творческая команда Комьюнити</Typography>
+            <Typography variant="p">© 2024. Все права защищены</Typography>
+            <Typography variant="p">Заходите к нам чаще за новой порцией креативчика ;)</Typography>
+            <Typography variant="p">творческая команда Комьюнити</Typography>
           </div>
         </div>
       </div>

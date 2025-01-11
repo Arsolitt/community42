@@ -24,9 +24,8 @@ export const Clients = ({ className }: ClientsProps) => {
       <div className={cls.sectionContent}>
         {clients.map((c) => (
           <div key={c.id} className={cls.client}>
-
             <div className={cls.container}>
-              <Image alt='image' className={cls.image} height={108} src={c.image} width={108} />
+              <Image alt="image" className={cls.image} height={108} src={c.image} width={108} />
               <div className={cls.overlay}>
                 <Link
                   href={c.link}
@@ -34,28 +33,27 @@ export const Clients = ({ className }: ClientsProps) => {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    fontWeight: '500'
+                    fontWeight: '500',
                   }}
-                  target='_blank'
+                  target="_blank"
                 >
                   К проекту
                   <ArrowIcon />
                 </Link>
               </div>
             </div>
-            <Link href={c.link} target='_blank'>
+            <Link href={c.link} target="_blank">
               <Typography
                 style={{
                   fontWeight: '700',
                   fontSize: '16px',
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
-                variant='p'
+                variant="p"
               >
                 {c.name}
               </Typography>
             </Link>
-
           </div>
         ))}
       </div>

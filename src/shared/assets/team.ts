@@ -27,13 +27,13 @@ export const team: Member[] = [
     socials: [
       {
         name: 'vk',
-        href: 'https://vk.com/konstantin_1'
+        href: 'https://vk.com/konstantin_1',
       },
       {
         name: 'telegram',
-        href: 'https://t.me/konstantin_1'
-      }
-    ]
+        href: 'https://t.me/konstantin_1',
+      },
+    ],
   },
   {
     id: 2,
@@ -47,10 +47,10 @@ export const team: Member[] = [
     socials: [
       {
         name: 'vk',
-        href: 'https://vk.com/konstantin_1'
+        href: 'https://vk.com/konstantin_1',
       },
-      { name: 'whatsapp', href: 'https://t.me/konstantin_1' }
-    ]
+      { name: 'whatsapp', href: 'https://t.me/konstantin_1' },
+    ],
   },
   {
     id: 3,
@@ -64,10 +64,10 @@ export const team: Member[] = [
     socials: [
       {
         name: 'vk',
-        href: 'https://vk.com/konstantin_1'
+        href: 'https://vk.com/konstantin_1',
       },
-      { name: 'whatsapp', href: 'https://t.me/konstantin_1' }
-    ]
+      { name: 'whatsapp', href: 'https://t.me/konstantin_1' },
+    ],
   },
   {
     id: 4,
@@ -81,10 +81,10 @@ export const team: Member[] = [
     socials: [
       {
         name: 'vk',
-        href: 'https://vk.com/konstantin_1'
+        href: 'https://vk.com/konstantin_1',
       },
-      { name: 'whatsapp', href: ' http s ://t.me/konstantin_1' }
-    ]
+      { name: 'whatsapp', href: ' http s ://t.me/konstantin_1' },
+    ],
   },
   {
     id: 5,
@@ -98,9 +98,9 @@ export const team: Member[] = [
     socials: [
       {
         name: 'vk',
-        href: 'https://vk.com/konstantin_1'
+        href: 'https://vk.com/konstantin_1',
       },
-      { name: 'whatsapp', href: 'https://t.me/konstantin_1' }
-    ]
-  }
+      { name: 'whatsapp', href: 'https://t.me/konstantin_1' },
+    ],
+  },
 ];

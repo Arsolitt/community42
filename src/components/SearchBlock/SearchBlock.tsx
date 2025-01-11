@@ -28,7 +28,7 @@ export const SearchBlock = () => {
 
     if (activeTags.length > 0) {
       results = results.filter((project) =>
-        activeTags.every((tagSlug) => project.tags.some((tag) => tag.slug === tagSlug))
+        activeTags.every((tagSlug) => project.tags.some((tag) => tag.slug === tagSlug)),
       );
     }
 
@@ -64,27 +64,27 @@ export const SearchBlock = () => {
     router.push(`${pathname}?${params.toString()}`);
   };
   return (
-    <div className='main_search'>
-      <div className='container'>
-        <div className='flex w-full h-full items-center justify-center text-center border-b border-[#FFF] border-opacity-50 pb-[6px]'>
+    <div className="main_search">
+      <div className="container">
+        <div className="flex w-full h-full items-center justify-center text-center border-b border-[#FFF] border-opacity-50 pb-[6px]">
           <input
-            className='placeholder:text-[#fff] placeholder:text-[16px] bg-transparent placeholder:opacity-25 caret-[#666666] text-center h-full w-full focus:border-none focus:outline-none border-none appearance-none outline-none'
+            className="placeholder:text-[#fff] placeholder:text-[16px] bg-transparent placeholder:opacity-25 caret-[#666666] text-center h-full w-full focus:border-none focus:outline-none border-none appearance-none outline-none"
             value={searchTerm}
             onChange={handleInputChange}
-            placeholder='поиск работ'
+            placeholder="поиск работ"
           />
         </div>
       </div>
-      <div className='container'>
-        <div className='bubbleTags'>
-          <div className='flex flex-row flex-wrap w-full h-full pt-[28.5px] items-center justify-center gap-[8px]'>
+      <div className="container">
+        <div className="bubbleTags">
+          <div className="flex flex-row flex-wrap w-full h-full pt-[28.5px] items-center justify-center gap-[8px]">
             {tags.map((t) => (
-              <div key={t.slug} className='inline-flex gap-[8px]'>
+              <div key={t.slug} className="inline-flex gap-[8px]">
                 <button
                   className={`rounded-[10px] border px-[10px] py-[4.5px] max-w-max text-[16px] font-medium ${
                     activeTags.includes(t.slug) ? 'border-purple-400 text-purple-400' : 'border-white'
                   }`}
-                  type='button'
+                  type="button"
                   onClick={() => handleServiceClick(t.slug)}
                 >
                   {t.text}

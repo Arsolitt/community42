@@ -20,18 +20,18 @@ export const NavbarDefault = (props: NavbarDefaultProps) => {
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
         <li>
-          <button className={cls.contacts} type='button' onClick={openContacts}>
+          <button className={cls.contacts} type="button" onClick={openContacts}>
             <MessageIcon />
             контакты
           </button>
         </li>
         <li>
           <div className={cls.order}>
-            <button type='button'>заказать стилёк</button>
+            <button type="button">заказать стилёк</button>
           </div>
         </li>
         <li>
-          <button type='button'>
+          <button type="button">
             <MarketIcon />
             магазинчик
           </button>

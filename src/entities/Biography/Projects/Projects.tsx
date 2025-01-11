@@ -22,15 +22,15 @@ export const Projects = (props: ProjectsProps) => {
     <section className={classNames(cls.Projects, {}, [className])}>
       {projects.map((p) => (
         <div key={p.id} className={cls.project}>
-          <Image alt='image' height={251} src={p.image} width={444} />
+          <Image alt="image" height={251} src={p.image} width={444} />
           <div className={cls.projectInfo}>
-            <Typography style={{ fontWeight: '600', fontSize: '18px' }} variant='h4'>
+            <Typography style={{ fontWeight: '600', fontSize: '18px' }} variant="h4">
               {p.name}
             </Typography>
 
             <div className={cls.likes}>
               <LikeIcon />
-              <Typography style={{ fontWeight: '500', fontSize: '12px' }} variant='span'>
+              <Typography style={{ fontWeight: '500', fontSize: '12px' }} variant="span">
                 {p.likes}
               </Typography>
             </div>

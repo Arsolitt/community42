@@ -15,23 +15,23 @@ const Home = () => {
     <>
       <Header />
       <main className={styles.main}>
-        <h1 className='hiddenTitle'>Комьюнити. Дизайн. Продакшн. Реклама</h1>
-        <div className='container'>
+        <h1 className="hiddenTitle">Комьюнити. Дизайн. Продакшн. Реклама</h1>
+        <div className="container">
           <div className={styles.mainTitle}>
-            <Typography style={{ textAlign: 'center' }} variant='h2'>
+            <Typography style={{ textAlign: 'center' }} variant="h2">
               дизайн
             </Typography>
             <CloseIcon />
-            <Typography style={{ textAlign: 'center' }} variant='h2'>
+            <Typography style={{ textAlign: 'center' }} variant="h2">
               продакшн
             </Typography>
             <CloseIcon />
-            <Typography style={{ textAlign: 'center' }} variant='h2'>
+            <Typography style={{ textAlign: 'center' }} variant="h2">
               реклама
             </Typography>
           </div>
           <div className={styles.subtitle}>
-            <Typography style={{ textAlign: 'center' }} variant='h5'>
+            <Typography style={{ textAlign: 'center' }} variant="h5">
               Здесь вы можете заказать разработку сайта, айдентики, промо-видео, необычного фото и многого другого ;)
             </Typography>
           </div>

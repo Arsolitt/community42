@@ -1,13 +1,7 @@
 import { motion } from 'framer-motion';
 
 import { classNames } from '@/features/helpers/className';
-import {
-  CloseContactsIcon,
-  EmailIcon,
-  TelegramIcon,
-  VkIcon,
-  WhatsappIcon
-} from '@/shared/assets/icons';
+import { CloseContactsIcon, EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
 import { Typography } from '@/shared/ui/Typography';
 
 import cls from './NavbarContacts.module.scss';
@@ -28,9 +22,9 @@ export const NavbarContacts = (props: NavbarContactsProps) => {
         initial={{ opacity: 0 }}
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
-        <button type='button' onClick={closeContacts}>
+        <button type="button" onClick={closeContacts}>
           <CloseContactsIcon />
-          <Typography variant='span'>закрыть контакты</Typography>
+          <Typography variant="span">закрыть контакты</Typography>
         </button>
         <div>
           <li>

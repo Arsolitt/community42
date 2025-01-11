@@ -24,10 +24,7 @@ export const ServicesList = ({ className }: ServicesListProps) => {
           {s.isNew && <div className={cls.item__new}>Новое</div>}
           <Link href={s.link}>
             <div className={cls.itemDescription}>
-              <Typography
-                style={{ fontWeight: '600', lineHeight: '120%' }}
-                variant='p'
-              >
+              <Typography style={{ fontWeight: '600', lineHeight: '120%' }} variant="p">
                 {s.text}
               </Typography>
               <RouterLink />

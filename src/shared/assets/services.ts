@@ -19,8 +19,8 @@ export const services: Service[] = [
       '/images/services/ux-ui-design-1.png',
       '/images/services/ux-ui-design-2.png',
       '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+      '/images/services/ux-ui-design-4.png',
+    ],
   },
   {
     id: '2',
@@ -31,8 +31,8 @@ export const services: Service[] = [
       '/images/services/graphical-design.png',
       '/images/services/ux-ui-design-2.png',
       '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+      '/images/services/ux-ui-design-4.png',
+    ],
   },
   {
     id: '3',
@@ -43,8 +43,8 @@ export const services: Service[] = [
       '/images/services/graphical-design.png',
       '/images/services/ux-ui-design-2.png',
       '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+      '/images/services/ux-ui-design-4.png',
+    ],
   },
   {
     id: '4',
@@ -55,8 +55,8 @@ export const services: Service[] = [
       '/images/services/graphical-design.png',
       '/images/services/ux-ui-design-2.png',
       '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+      '/images/services/ux-ui-design-4.png',
+    ],
   },
   {
     id: '5',
@@ -67,8 +67,8 @@ export const services: Service[] = [
       '/images/services/motion.png',
       '/images/services/ux-ui-design-2.png',
       '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+      '/images/services/ux-ui-design-4.png',
+    ],
   },
   {
     id: '6',
@@ -79,8 +79,8 @@ export const services: Service[] = [
       '/images/services/photoshoots.png',
       '/images/services/ux-ui-design-2.png',
       '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+      '/images/services/ux-ui-design-4.png',
+    ],
   },
   {
     id: '7',
@@ -91,8 +91,8 @@ export const services: Service[] = [
       '/images/services/ux-ui-design-1.png',
       '/images/services/ux-ui-design-2.png',
       '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+      '/images/services/ux-ui-design-4.png',
+    ],
   },
   {
     id: '8',
@@ -104,7 +104,7 @@ export const services: Service[] = [
       '/images/services/albums.png',
       '/images/services/ux-ui-design-2.png',
       '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
-  }
+      '/images/services/ux-ui-design-4.png',
+    ],
+  },
 ];
