@@ -2,11 +2,11 @@ import type { Tag } from '@/shared/assets/tags';
 
 export interface Service {
   id: string;
-  text: string;
-  link: string;
-  isNew?: boolean;
-  tags: Tag['id'][];
   images: string[];
+  isNew?: boolean;
+  link: string;
+  tags: Tag['id'][];
+  text: string;
 }
 
 export const services: Service[] = [

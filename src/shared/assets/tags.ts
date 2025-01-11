@@ -1,7 +1,7 @@
 export interface Tag {
   id: string;
-  text: string;
   slug: string;
+  text: string;
 }
 
 export const tags: Tag[] = [

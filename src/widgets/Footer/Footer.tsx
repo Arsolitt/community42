@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { classNames } from '@/features/helpers/className';
-import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
 // import { lastProject } from '@/shared/assets/lastProject';
 import type { Project } from '@/shared/assets/projects';
+
+import { classNames } from '@/features/helpers/className';
+import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
 import { services } from '@/shared/assets/services';
 import { Likes } from '@/shared/ui/Likes';
 import { Typography } from '@/shared/ui/Typography';
@@ -26,14 +27,14 @@ export const Footer = ({ className, lastProject }: FooterProps) => {
               <Typography variant='h6'>Оцените нашу последнюю работу</Typography>
               <Image
                 alt={lastProject.name}
-                src={lastProject.image}
-                width={1180}
+                className={cls.lastProject__image}
                 height={440}
                 quality={100}
-                className={cls.lastProject__image}
+                src={lastProject.image}
+                width={1180}
               />
               <div className={cls.lastProject__characteristics}>
-                <Typography variant='p' style={{ fontSize: '18px', fontWeight: 600 }}>
+                <Typography style={{ fontSize: '18px', fontWeight: 600 }} variant='p'>
                   {lastProject.name}
                 </Typography>
                 <Likes likes={lastProject.likes} />
@@ -53,7 +54,7 @@ export const Footer = ({ className, lastProject }: FooterProps) => {
             <div className={cls.services}>
               {services.map((service) => (
                 <div key={service.id} className={cls.services__item}>
-                  <Link key={service.id} href={service.link} className={cls.services__link}>
+                  <Link href={service.link} key={service.id} className={cls.services__link}>
                     {service.text}
                   </Link>
                   <div className={cls.underline} />
@@ -62,10 +63,10 @@ export const Footer = ({ className, lastProject }: FooterProps) => {
             </div>
 
             <div className={cls.description}>
-              <Typography variant='p' className={cls.descriptionTitle}>
+              <Typography className={cls.descriptionTitle} variant='p'>
                 г. Кемерово
               </Typography>
-              <Typography variant='span' className={cls.descriptionText}>
+              <Typography className={cls.descriptionText} variant='span'>
                 съёмка видео и фото происходит в основном в этом городе
               </Typography>
             </div>

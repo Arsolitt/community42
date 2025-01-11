@@ -2,18 +2,18 @@ import type { Tag } from '@/shared/assets/tags';
 import type { Member } from '@/shared/assets/team';
 
 export interface Project {
-  id: string;
-  name: string;
-  likes: number;
-  image: string;
-  link: string;
   collaborators: Member['slug'][];
+  id: string;
+  image: string;
+  likes: number;
+  link: string;
+  name: string;
   tags: ProjectTag[];
 }
 
 interface ProjectTag {
-  slug: Tag['slug'];
   priority: number;
+  slug: Tag['slug'];
 }
 
 export const projects: Project[] = [

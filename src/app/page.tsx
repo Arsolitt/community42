@@ -18,20 +18,20 @@ const Home = () => {
         <h1 className='hiddenTitle'>Комьюнити. Дизайн. Продакшн. Реклама</h1>
         <div className='container'>
           <div className={styles.mainTitle}>
-            <Typography variant='h2' style={{ textAlign: 'center' }}>
+            <Typography style={{ textAlign: 'center' }} variant='h2'>
               дизайн
             </Typography>
             <CloseIcon />
-            <Typography variant='h2' style={{ textAlign: 'center' }}>
+            <Typography style={{ textAlign: 'center' }} variant='h2'>
               продакшн
             </Typography>
             <CloseIcon />
-            <Typography variant='h2' style={{ textAlign: 'center' }}>
+            <Typography style={{ textAlign: 'center' }} variant='h2'>
               реклама
             </Typography>
           </div>
           <div className={styles.subtitle}>
-            <Typography variant='h5' style={{ textAlign: 'center' }}>
+            <Typography style={{ textAlign: 'center' }} variant='h5'>
               Здесь вы можете заказать разработку сайта, айдентики, промо-видео, необычного фото и многого другого ;)
             </Typography>
           </div>
