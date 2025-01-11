@@ -2,12 +2,9 @@ import Image from 'next/image';
 
 import { classNames } from '@/features/helpers/className';
 
-import cls from './Logo.module.scss';
+import { LogoTheme } from './LogoTheme';
 
-export enum LogoTheme {
-  ANIMATION = 'animation',
-  NORMAL = 'normal'
-}
+import cls from './Logo.module.scss';
 
 interface LogoProps {
   className?: string;
