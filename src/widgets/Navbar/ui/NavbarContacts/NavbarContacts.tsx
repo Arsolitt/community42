@@ -22,9 +22,9 @@ export const NavbarContacts = (props: NavbarContactsProps) => {
         initial={{ opacity: 0 }}
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
-        <button type="button" onClick={closeContacts}>
+        <button type='button' onClick={closeContacts}>
           <CloseContactsIcon />
-          <Typography variant="span">закрыть контакты</Typography>
+          <Typography variant='span'>закрыть контакты</Typography>
         </button>
         <div>
           <li>

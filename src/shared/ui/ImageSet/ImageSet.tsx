@@ -35,7 +35,7 @@ export const ImageSet = (props: Props) => {
 
   return (
     <Image
-      alt="image"
+      alt='image'
       className={props.className}
       height={props.height}
       src={img}

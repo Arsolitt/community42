@@ -19,7 +19,7 @@ export const Likes = (props: LikesProps) => {
   return (
     <div className={classNames(cls.Likes, {}, [className])}>
       <LikeIcon />
-      <Typography className={cls.Likes__text} variant="p">
+      <Typography className={cls.Likes__text} variant='p'>
         {likes}
       </Typography>
     </div>

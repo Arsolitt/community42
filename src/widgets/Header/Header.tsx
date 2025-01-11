@@ -40,7 +40,7 @@ export const Header = (props: HeaderProps) => {
         initial={{ y: -10, opacity: 0 }}
         transition={{ ease: 'easeOut', duration: 0.35 }}
       >
-        <Link href="/">
+        <Link href='/'>
           <Logo theme={scrolled ? LogoTheme.ANIMATION : LogoTheme.NORMAL} />
         </Link>
       </motion.div>

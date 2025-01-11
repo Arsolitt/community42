@@ -27,9 +27,9 @@ export const projects: Project[] = [
     tags: [
       {
         slug: 'ux-ui',
-        priority: 1,
-      },
-    ],
+        priority: 1
+      }
+    ]
   },
   {
     id: '1',
@@ -41,9 +41,9 @@ export const projects: Project[] = [
     tags: [
       {
         slug: '1',
-        priority: 1,
-      },
-    ],
+        priority: 1
+      }
+    ]
   },
   {
     id: '2',
@@ -55,9 +55,9 @@ export const projects: Project[] = [
     tags: [
       {
         slug: 'logotypes',
-        priority: 1,
-      },
-    ],
+        priority: 1
+      }
+    ]
   },
   {
     id: '3',
@@ -69,9 +69,9 @@ export const projects: Project[] = [
     tags: [
       {
         slug: 'branding',
-        priority: 1,
-      },
-    ],
+        priority: 1
+      }
+    ]
   },
   {
     id: '4',
@@ -83,9 +83,9 @@ export const projects: Project[] = [
     tags: [
       {
         slug: 'aydentika',
-        priority: 1,
-      },
-    ],
+        priority: 1
+      }
+    ]
   },
   {
     id: '5',
@@ -97,9 +97,9 @@ export const projects: Project[] = [
     tags: [
       {
         slug: 'motion',
-        priority: 1,
-      },
-    ],
+        priority: 1
+      }
+    ]
   },
   {
     id: '6',
@@ -111,9 +111,9 @@ export const projects: Project[] = [
     tags: [
       {
         slug: '3D',
-        priority: 1,
-      },
-    ],
+        priority: 1
+      }
+    ]
   },
   {
     id: '7',
@@ -125,8 +125,8 @@ export const projects: Project[] = [
     tags: [
       {
         slug: '3D',
-        priority: 1,
-      },
-    ],
-  },
+        priority: 1
+      }
+    ]
+  }
 ];

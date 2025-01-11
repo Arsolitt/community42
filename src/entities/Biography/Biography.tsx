@@ -27,7 +27,7 @@ export const Biography = ({ className }: BiographyProps) => {
 
   return (
     <section className={classNames(cls.Biography, {}, [className])}>
-      <div className="container">
+      <div className='container'>
         <BiographyLeftBlock collaborator={collaborator} />
         <BiographyRightBlock fullSizeImage={collaborator?.fullsizeImage} name={collaborator?.name} />
       </div>

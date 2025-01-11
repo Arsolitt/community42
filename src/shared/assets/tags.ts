@@ -8,56 +8,56 @@ export const tags: Tag[] = [
   {
     id: '0',
     text: 'ux/ui',
-    slug: 'ux-ui',
+    slug: 'ux-ui'
   },
   {
     id: '1',
     text: 'векторная графика',
-    slug: 'vektornaya-graphika',
+    slug: 'vektornaya-graphika'
   },
   {
     id: '2',
     text: 'логотипы',
-    slug: 'logotypes',
+    slug: 'logotypes'
   },
   {
     id: '3',
     text: 'брендинг',
-    slug: 'branding',
+    slug: 'branding'
   },
   {
     id: '4',
     text: 'айдентика',
-    slug: 'aydentika',
+    slug: 'aydentika'
   },
   {
     id: '5',
     text: 'motion',
-    slug: 'motion',
+    slug: 'motion'
   },
   {
     id: '6',
     text: '3D',
-    slug: '3D',
+    slug: '3D'
   },
   {
     id: '7',
     text: 'видео',
-    slug: 'video',
+    slug: 'video'
   },
   {
     id: '8',
     text: 'фотосессии',
-    slug: 'fotosessii',
+    slug: 'fotosessii'
   },
   {
     id: '9',
     text: 'рекламная ретушь',
-    slug: 'reklamnaya-retush',
+    slug: 'reklamnaya-retush'
   },
   {
     id: '10',
     text: 'фото',
-    slug: 'photo',
-  },
+    slug: 'photo'
+  }
 ];

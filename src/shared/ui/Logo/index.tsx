@@ -16,9 +16,9 @@ export const Logo = (props: LogoProps) => {
   return (
     <div className={classNames(cls.LogoContainer, {}, [className, cls[theme]])}>
       <div className={classNames(cls.LogoWrapper)}>
-        <Image alt="logotype" className={classNames(cls.Logo)} height={67} src="/logo.svg" width={59} />
+        <Image alt='logotype' className={classNames(cls.Logo)} height={67} src='/logo.svg' width={59} />
       </div>
-      <Image alt="community" className={cls.hiddenLogo} height={21} src="/images/community.svg" width={156} />
+      <Image alt='community' className={cls.hiddenLogo} height={21} src='/images/community.svg' width={156} />
     </div>
   );
 };

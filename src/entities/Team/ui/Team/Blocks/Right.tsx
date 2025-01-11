@@ -18,7 +18,7 @@ export const TeamRightBlock = () => (
         <div className={cls.personaInfo}>
           <div className={cls.persona__name}>
             <Link href={`/team/${t.slug}`}>
-              <Typography style={{ fontWeight: '600', fontSize: '18px' }} variant="p">
+              <Typography style={{ fontWeight: '600', fontSize: '18px' }} variant='p'>
                 {t.name}
               </Typography>
             </Link>
@@ -29,9 +29,9 @@ export const TeamRightBlock = () => (
               style={{
                 fontWeight: '500',
                 fontSize: '14px',
-                textAlign: 'left',
+                textAlign: 'left'
               }}
-              variant="span"
+              variant='span'
             >
               {t.position}
             </Typography>
