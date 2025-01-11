@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
-import { Service } from "@/shared/assets/services";
-import { useEffect, useState } from "react";
+import type { Service } from '@/shared/assets/services';
 
 interface Props {
   className?: string;
-  images: Service["images"]
   height: number
+  images: Service['images']
   width: number
 }
 
@@ -35,11 +35,11 @@ export const ImageSet = (props: Props) => {
 
   return (
     <Image
-      src={img}
-      alt="image"
+      alt='image'
       className={props.className}
-      width={props.width}
       height={props.height}
+      src={img}
+      width={props.width}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       priority={false}

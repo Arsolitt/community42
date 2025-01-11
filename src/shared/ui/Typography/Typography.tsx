@@ -1,11 +1,12 @@
-import { classNames } from "@/features/helpers/className";
-import cls from "./Typography.module.scss";
+import { classNames } from '@/features/helpers/className';
+
+import cls from './Typography.module.scss';
 
 interface TypographyProps {
-  variant: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "p";
   children: React.ReactNode;
   className?: string;
   style?: React.CSSProperties;
+  variant: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
 }
 
 export const Typography = (props: TypographyProps) => {

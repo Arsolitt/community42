@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 import { classNames } from '@/features/helpers/className';
 import { CloseContactsIcon, SearchIcon } from '@/shared/assets/icons';
@@ -31,12 +31,12 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
 
   return (
     <div className={classNames(cls.SearchButton, {}, [className])}>
-      <button onClick={onToggleSearch} type='button'>
+      <button type='button' onClick={onToggleSearch}>
         <motion.div
           key={openSearch ? 'shown' : 'normal'}
-          initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
           transition={{ ease: 'easeInOut', duration: 0.5 }}
         >
           {!openSearch ? <SearchIcon /> : <CloseContactsIcon />}

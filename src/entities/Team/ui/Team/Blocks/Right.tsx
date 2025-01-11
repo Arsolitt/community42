@@ -1,26 +1,26 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { Typography } from "@/shared/ui/Typography";
+import { team } from '@/shared/assets/team';
+import { ImageSet } from '@/shared/ui/ImageSet/ImageSet';
+import { RouterLink } from '@/shared/ui/RouterLink';
+import { Typography } from '@/shared/ui/Typography';
 
-import { team } from "@/shared/assets/team";
-import { ImageSet } from "@/shared/ui/ImageSet/ImageSet";
-import { RouterLink } from "@/shared/ui/RouterLink";
-import cls from "../Team.module.scss";
+import cls from '../Team.module.scss';
 
 export const TeamRightBlock = () => (
   <div className={cls.rightBlock}>
     {team.map((t) => (
-      <div className={cls.persona} key={t.id}>
+      <div key={t.id} className={cls.persona}>
         <Link href={`/team/${t.slug}`}>
-          <ImageSet images={t.images} className={cls.persona__image} width={154} height={154} />
+          <ImageSet className={cls.persona__image} height={154} images={t.images} width={154} />
         </Link>
 
         <div className={cls.personaInfo}>
           <div className={cls.persona__name}>
             <Link href={`/team/${t.slug}`}>
               <Typography
-                variant="p"
-                style={{ fontWeight: "600", fontSize: "18px" }}
+                style={{ fontWeight: '600', fontSize: '18px' }}
+                variant='p'
               >
                 {t.name}
               </Typography>
@@ -30,12 +30,12 @@ export const TeamRightBlock = () => (
           <div className={cls.persona__position}>
 
             <Typography
-              variant="span"
               style={{
-                fontWeight: "500",
-                fontSize: "14px",
-                textAlign: "left",
+                fontWeight: '500',
+                fontSize: '14px',
+                textAlign: 'left'
               }}
+              variant='span'
             >
               {t.position}
             </Typography>

@@ -1,11 +1,10 @@
-import Image from "next/image";
-import { classNames } from "@/features/helpers/className";
-import cls from "./Logo.module.scss";
+import Image from 'next/image';
 
-export enum LogoTheme {
-  ANIMATION = "animation",
-  NORMAL = "normal",
-}
+import { classNames } from '@/features/helpers/className';
+
+import { LogoTheme } from './LogoTheme';
+
+import cls from './Logo.module.scss';
 
 interface LogoProps {
   className?: string;
@@ -18,19 +17,19 @@ export const Logo = (props: LogoProps) => {
     <div className={classNames(cls.LogoContainer, {}, [className, cls[theme]])}>
       <div className={classNames(cls.LogoWrapper)}>
         <Image
+          alt='logotype'
           className={classNames(cls.Logo)}
-          src="/logo.svg"
-          alt="logotype"
-          width={59}
           height={67}
+          src='/logo.svg'
+          width={59}
         />
       </div>
       <Image
-        src="/images/community.svg"
-        alt="community"
-        width={156}
-        height={21}
+        alt='community'
         className={cls.hiddenLogo}
+        height={21}
+        src='/images/community.svg'
+        width={156}
       />
     </div>
   );

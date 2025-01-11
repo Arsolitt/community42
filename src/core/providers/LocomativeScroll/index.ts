@@ -1,1 +1,1 @@
-export { LocomativeScrollProvider } from "./LocomativeScroll";
+export { LocomativeScrollProvider } from './LocomativeScroll';

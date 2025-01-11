@@ -1,18 +1,19 @@
-"use client";
-import { motion } from "framer-motion";
+'use client';
+import { motion } from 'framer-motion';
 
-import { CloseIcon } from "@/shared/assets/icons/close";
-import { Typography } from "@/shared/ui/Typography";
-import cls from "./AnimatedTitle.module.scss";
+import { CloseIcon } from '@/shared/assets/icons/close';
+import { Typography } from '@/shared/ui/Typography';
+
+import cls from './AnimatedTitle.module.scss';
 
 interface AnimatedTitleProps {
-  header: {
-    first: string;
-    second: string;
-  };
   customTransformX?: {
     negative: string;
     positive: string;
+  };
+  header: {
+    first: string;
+    second: string;
   };
 }
 
@@ -21,37 +22,37 @@ export const AnimatedTitle = (props: AnimatedTitleProps) => {
   return (
     <div className={cls.sectionTitle}>
       <motion.div
-        initial={{ x: 0, opacity: 0 }}
         whileInView={{
-          x: `-${customTransformX?.negative ?? "157%"}`,
-          opacity: 1,
+          x: `-${customTransformX?.negative ?? '157%'}`,
+          opacity: 1
         }}
-        transition={{ ease: "easeOut", duration: 0.5 }}
-        viewport={{ once: true, amount: 1 }}
         exit={{ x: 0, opacity: 1 }}
+        initial={{ x: 0, opacity: 0 }}
+        transition={{ ease: 'easeOut', duration: 0.5 }}
+        viewport={{ once: true, amount: 1 }}
       >
-        <Typography variant="h2">{header.first}</Typography>
+        <Typography variant='h2'>{header.first}</Typography>
       </motion.div>
       <motion.div
-        initial={{ marginLeft: 40, transform: "rotate(0deg)" }}
-        whileInView={{ transform: "rotate(90deg)" }}
-        transition={{ ease: "easeOut", duration: 0.75 }}
+        exit={{ transform: 'rotate(0deg)' }}
+        initial={{ marginLeft: 40, transform: 'rotate(0deg)' }}
+        whileInView={{ transform: 'rotate(90deg)' }}
+        transition={{ ease: 'easeOut', duration: 0.75 }}
         viewport={{ once: true, amount: 1 }}
-        exit={{ transform: "rotate(0deg)" }}
       >
         <CloseIcon />
       </motion.div>
       <motion.div
-        initial={{ x: 0, opacity: 0 }}
         whileInView={{
-          x: `${customTransformX?.positive ?? "130%"}`,
-          opacity: 1,
+          x: `${customTransformX?.positive ?? '130%'}`,
+          opacity: 1
         }}
-        transition={{ ease: "easeOut", duration: 0.75 }}
-        viewport={{ once: true, amount: 1 }}
         exit={{ x: 0, opacity: 1 }}
+        initial={{ x: 0, opacity: 0 }}
+        transition={{ ease: 'easeOut', duration: 0.75 }}
+        viewport={{ once: true, amount: 1 }}
       >
-        <Typography variant="h2">{header.second}</Typography>
+        <Typography variant='h2'>{header.second}</Typography>
       </motion.div>
     </div>
   );

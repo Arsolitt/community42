@@ -1,6 +1,7 @@
-import { classNames } from "@/features/helpers/className";
-import { ArrowIcon } from "@/shared/assets/icons/arrow";
-import cls from "./RouterLink.module.scss";
+import { classNames } from '@/features/helpers/className';
+import { ArrowIcon } from '@/shared/assets/icons/arrow';
+
+import cls from './RouterLink.module.scss';
 
 interface RouterLinkProps {
   className?: string;
