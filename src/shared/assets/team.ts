@@ -1,17 +1,17 @@
 export interface Member {
+  description: string;
+  fullsizeImage: string;
   id: number;
+  images: string[];
   name: string;
   position: string;
-  images: string[];
-  fullsizeImage: string;
-  description: string;
   slug: string;
   socials: Socials[];
 }
 
 interface Socials {
-  name: string;
   href: string;
+  name: string;
 }
 
 export const team: Member[] = [

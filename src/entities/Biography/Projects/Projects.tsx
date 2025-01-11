@@ -1,17 +1,18 @@
 import Image from 'next/image';
 
+import type { Project } from '@/shared/assets/projects';
+
 import { classNames } from '@/features/helpers/className';
 import { LikeIcon } from '@/shared/assets/icons';
-import type { Project } from '@/shared/assets/projects';
 // import { projects } from '@/shared/assets/projects';
 import { Typography } from '@/shared/ui/Typography';
 
 import cls from './Projects.module.scss';
 
 interface ProjectsProps {
-  projects: Project[];
   // collaboratorSlug?: string;
   className?: string;
+  projects: Project[];
 }
 
 export const Projects = (props: ProjectsProps) => {
@@ -20,16 +21,16 @@ export const Projects = (props: ProjectsProps) => {
   return (
     <section className={classNames(cls.Projects, {}, [className])}>
       {projects.map((p) => (
-        <div className={cls.project} key={p.id}>
-          <Image src={p.image} alt='image' width={444} height={251} />
+        <div key={p.id} className={cls.project}>
+          <Image alt='image' height={251} src={p.image} width={444} />
           <div className={cls.projectInfo}>
-            <Typography variant='h4' style={{ fontWeight: '600', fontSize: '18px' }}>
+            <Typography style={{ fontWeight: '600', fontSize: '18px' }} variant='h4'>
               {p.name}
             </Typography>
 
             <div className={cls.likes}>
               <LikeIcon />
-              <Typography variant='span' style={{ fontWeight: '500', fontSize: '12px' }}>
+              <Typography style={{ fontWeight: '500', fontSize: '12px' }} variant='span'>
                 {p.likes}
               </Typography>
             </div>
