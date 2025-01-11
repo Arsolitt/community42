@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 
 import { classNames } from '@/features/helpers/className';
-import { Logo, LogoTheme } from '@/shared/ui/Logo';
+import { Logo } from '@/shared/ui/Logo';
+import { LogoTheme } from '@/shared/ui/Logo/LogoTheme';
 
 import styles from './header.module.scss';
 
@@ -31,13 +32,7 @@ export const Header = (props: HeaderProps) => {
   }, [manualScrolled, handleScroll]);
 
   return (
-    <header
-      className={classNames(
-        scrolled ? styles.wrapperAnimated : styles.wrapper,
-        {},
-        [className]
-      )}
-    >
+    <header className={classNames(scrolled ? styles.wrapperAnimated : styles.wrapper, {}, [className])}>
       <motion.div
         key={scrolled ? 'scrolled' : 'normal'}
         animate={{ y: 0, opacity: 1 }}
