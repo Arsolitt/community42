@@ -1,11 +1,12 @@
-"use client";
-import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+'use client';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { useCallback, useEffect, useState } from 'react';
 
-import { classNames } from "@/features/helpers/className";
-import { Logo, LogoTheme } from "@/shared/ui/Logo";
-import { motion } from "framer-motion";
-import styles from "./header.module.scss";
+import { classNames } from '@/features/helpers/className';
+import { Logo, LogoTheme } from '@/shared/ui/Logo';
+
+import styles from './header.module.scss';
 
 interface HeaderProps {
   className?: string;
@@ -22,9 +23,9 @@ export const Header = (props: HeaderProps) => {
 
   useEffect(() => {
     if (!manualScrolled) {
-      window.addEventListener("scroll", handleScroll);
+      window.addEventListener('scroll', handleScroll);
       return () => {
-        window.removeEventListener("scroll", handleScroll);
+        window.removeEventListener('scroll', handleScroll);
       };
     }
   }, [manualScrolled, handleScroll]);
@@ -34,17 +35,17 @@ export const Header = (props: HeaderProps) => {
       className={classNames(
         scrolled ? styles.wrapperAnimated : styles.wrapper,
         {},
-        [className],
+        [className]
       )}
     >
       <motion.div
-        key={scrolled ? "scrolled" : "normal"}
-        initial={{ y: -10, opacity: 0 }}
+        key={scrolled ? 'scrolled' : 'normal'}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 10, opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 0.35 }}
+        initial={{ y: -10, opacity: 0 }}
+        transition={{ ease: 'easeOut', duration: 0.35 }}
       >
-        <Link href="/">
+        <Link href='/'>
           <Logo theme={scrolled ? LogoTheme.ANIMATION : LogoTheme.NORMAL} />
         </Link>
       </motion.div>

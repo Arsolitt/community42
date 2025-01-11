@@ -1,9 +1,9 @@
 export interface Service {
   id: number;
-  text: string;
-  link: string;
-  isNew?: boolean
   images: string[]
+  isNew?: boolean
+  link: string;
+  text: string;
 }
 
 export const services: Service[] = [

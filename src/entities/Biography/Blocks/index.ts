@@ -1,2 +1,2 @@
-export { BiographyLeftBlock } from "./Left";
-export { BiographyRightBlock } from "./Right";
+export { BiographyLeftBlock } from './Left';
+export { BiographyRightBlock } from './Right';

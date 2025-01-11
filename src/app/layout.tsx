@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+
 import { Raleway } from 'next/font/google';
 
 import { LocomativeScrollProvider } from '@/core/providers/LocomativeScroll';

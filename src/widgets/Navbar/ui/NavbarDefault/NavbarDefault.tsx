@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import cls from "./NavbarDefault.module.scss";
-import { MarketIcon, MessageIcon } from "@/shared/assets/icons/";
+import { MarketIcon, MessageIcon } from '@/shared/assets/icons/';
+
+import cls from './NavbarDefault.module.scss';
 
 interface NavbarDefaultProps {
   openContacts: () => void;
@@ -12,25 +13,25 @@ export const NavbarDefault = (props: NavbarDefaultProps) => {
   return (
     <ul className={cls.NavbarDefault}>
       <motion.div
-        key={openContacts ? "shown" : "normal"}
-        initial={{ opacity: 0 }}
+        key={openContacts ? 'shown' : 'normal'}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ ease: "easeInOut", duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
         <li>
-          <button onClick={openContacts} className={cls.contacts}>
+          <button className={cls.contacts} type='button' onClick={openContacts}>
             <MessageIcon />
             контакты
           </button>
         </li>
         <li>
           <div className={cls.order}>
-            <button>заказать стилёк</button>
+            <button type='button'>заказать стилёк</button>
           </div>
         </li>
         <li>
-          <button>
+          <button type='button'>
             <MarketIcon />
             магазинчик
           </button>

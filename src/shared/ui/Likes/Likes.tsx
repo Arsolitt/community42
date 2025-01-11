@@ -1,11 +1,13 @@
-import { classNames } from "@/features/helpers/className";
-import { Typography } from "../Typography";
-import { LikeIcon } from "@/shared/assets/icons";
-import cls from "./Likes.module.scss";
+import { classNames } from '@/features/helpers/className';
+import { LikeIcon } from '@/shared/assets/icons';
+
+import { Typography } from '../Typography';
+
+import cls from './Likes.module.scss';
 
 interface LikesProps {
-  likes: number;
   className?: string;
+  likes: number;
   svg?: {
     width: number;
     height: number;
@@ -13,11 +15,11 @@ interface LikesProps {
 }
 
 export const Likes = (props: LikesProps) => {
-  const { likes, className, svg } = props;
+  const { likes, className } = props;
   return (
     <div className={classNames(cls.Likes, {}, [className])}>
       <LikeIcon />
-      <Typography variant="p" className={cls.Likes__text}>
+      <Typography className={cls.Likes__text} variant='p'>
         {likes}
       </Typography>
     </div>

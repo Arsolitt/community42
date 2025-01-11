@@ -12,9 +12,10 @@ export default eslint({
     'siberiacancode-react/prop-types': 'off',
     'style/max-len': [
       'warn',
-      120,
+      240,
       2,
       { ignoreComments: true, ignoreStrings: true, ignoreTemplateLiterals: true }
-    ]
+    ],
+    'react/prefer-destructuring-assignment': 'off'
   }
 });

@@ -1,6 +1,6 @@
 'use client';
-import { useMemo } from 'react';
 import { useParams } from 'next/navigation';
+import { useMemo } from 'react';
 
 import { classNames } from '@/features/helpers/className';
 import { team } from '@/shared/assets/team';
@@ -26,8 +26,8 @@ export const Biography = ({ className }: BiographyProps) => {
       <div className='container'>
         <BiographyLeftBlock collaborator={collaborator} />
         <BiographyRightBlock
-          name={collaborator?.name}
           fullSizeImage={collaborator?.fullsizeImage}
+          name={collaborator?.name}
         />
       </div>
       <Projects collaboratorSlug={collaborator?.slug} />
