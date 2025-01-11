@@ -1,15 +1,6 @@
 export const CloseContactsIcon = () => (
-  <svg
-    fill='none'
-    height='14'
-    width='14'
-    xmlns='http://www.w3.org/2000/svg'
-    viewBox='0 0 14 14'
-  >
-    <path
-      d='M1 13L13 0.999999M0.999999 1L13 13'
-      stroke='url(#paint0_linear_1844_1853)'
-    />
+  <svg fill='none' height='14' width='14' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'>
+    <path d='M1 13L13 0.999999M0.999999 1L13 13' stroke='url(#paint0_linear_1844_1853)' />
     <defs>
       <linearGradient
         gradientUnits='userSpaceOnUse'

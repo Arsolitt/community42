@@ -1,13 +1,7 @@
 import { motion } from 'framer-motion';
 
 import { classNames } from '@/features/helpers/className';
-import {
-  CloseContactsIcon,
-  EmailIcon,
-  TelegramIcon,
-  VkIcon,
-  WhatsappIcon
-} from '@/shared/assets/icons';
+import { CloseContactsIcon, EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
 import { Typography } from '@/shared/ui/Typography';
 
 import cls from './NavbarContacts.module.scss';

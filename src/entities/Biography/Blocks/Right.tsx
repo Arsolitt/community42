@@ -10,12 +10,6 @@ interface BiographyRightBlockProps {
 export const BiographyRightBlock = (props: BiographyRightBlockProps) => {
   const { fullSizeImage, name } = props;
   return (
-    <Image
-      alt={`Фотография сотрудника ${name}`}
-      className={cls.image}
-      height={310}
-      src={fullSizeImage}
-      width={400}
-    />
+    <Image alt={`Фотография сотрудника ${name}`} className={cls.image} height={310} src={fullSizeImage} width={400} />
   );
 };
