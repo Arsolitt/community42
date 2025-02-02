@@ -135,6 +135,14 @@ export const projects: Project[] = [
       {
         slug: '3D',
         priority: 1
+      },
+      {
+        slug: 'motion',
+        priority: 1
+      },
+      {
+        slug: 'photo',
+        priority: 2
       }
     ]
   }
