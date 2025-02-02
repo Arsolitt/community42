@@ -13,7 +13,7 @@ export const services: Service[] = [
   {
     id: '1',
     text: 'UX/UI дизайн',
-    link: '/services/ux-ui-desing',
+    link: '/search?tags=ux-ui',
     tags: ['0'],
     images: [
       '/images/services/ux-ui-design-1.png',
@@ -25,7 +25,7 @@ export const services: Service[] = [
   {
     id: '2',
     text: 'Графический дизайн',
-    link: '/services/graphical-design',
+    link: '/search?tags=vektornaya-graphika%2Clogotypes',
     tags: ['1', '2'],
     images: [
       '/images/services/graphical-design.png',
@@ -37,7 +37,7 @@ export const services: Service[] = [
   {
     id: '3',
     text: 'Брендинг и айдентика',
-    link: '/services/branding-and-identity',
+    link: '/search?tags=branding%2Caydentika',
     tags: ['3', '4'],
     images: [
       '/images/services/graphical-design.png',
@@ -46,22 +46,22 @@ export const services: Service[] = [
       '/images/services/ux-ui-design-4.png'
     ]
   },
-  {
-    id: '4',
-    text: 'Промышленный дизайн',
-    link: '/services/industrial-design.png',
-    tags: [],
-    images: [
-      '/images/services/graphical-design.png',
-      '/images/services/ux-ui-design-2.png',
-      '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
-  },
+  // {
+  //   id: '4',
+  //   text: 'Промышленный дизайн',
+  //   link: '/services/industrial-design.png',
+  //   tags: [],
+  //   images: [
+  //     '/images/services/graphical-design.png',
+  //     '/images/services/ux-ui-design-2.png',
+  //     '/images/services/ux-ui-design-3.png',
+  //     '/images/services/ux-ui-design-4.png'
+  //   ]
+  // },
   {
     id: '5',
     text: 'Motion и 3D',
-    link: '/services/motion',
+    link: '/search?tags=3D%2Cmotion',
     tags: ['5', '6'],
     images: [
       '/images/services/motion.png',
@@ -73,7 +73,7 @@ export const services: Service[] = [
   {
     id: '6',
     text: 'Фотосессии и ретушь',
-    link: '/services/photoshoots',
+    link: '/search?tags=fotosessii%2Creklamnaya-retush%2Cphoto',
     tags: ['8', '9', '10'],
     images: [
       '/images/services/photoshoots.png',
@@ -85,7 +85,7 @@ export const services: Service[] = [
   {
     id: '7',
     text: 'Видео-продакшн',
-    link: '/services/video-production',
+    link: '/search?tags=video',
     tags: ['7'],
     images: [
       '/images/services/ux-ui-design-1.png',
@@ -97,7 +97,7 @@ export const services: Service[] = [
   {
     id: '8',
     text: 'Выпускные альбомы',
-    link: '/services/albums',
+    link: '/search',
     isNew: true,
     tags: [],
     images: [

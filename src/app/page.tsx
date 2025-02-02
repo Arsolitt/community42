@@ -1,10 +1,10 @@
-import { Video } from '@/components/Video';
 import { Clients } from '@/entities/Clients';
 import { ServicesList } from '@/entities/Services';
 import { Team } from '@/entities/Team';
 import { CloseIcon } from '@/shared/assets/icons/close';
 import { projects } from '@/shared/assets/projects';
 import { Typography } from '@/shared/ui/Typography';
+import { Video } from '@/shared/ui/Video';
 import { Footer } from '@/widgets/Footer';
 import { Header } from '@/widgets/Header';
 
