@@ -29,11 +29,19 @@ export const SearchBlock = () => {
     }
 
     if (activeTags.length > 0) {
-      results = results.filter((project) =>
-        activeTags.every((tagSlug) =>
-          project.tags.some((tag) => tag.slug === tagSlug)
-        )
-      );
+      results = results
+        .map((project) => {
+          const matchingTags = project.tags
+            .filter((tag) => activeTags.includes(tag.slug))
+            .length;
+          return {
+            ...project,
+            matchingTags
+          };
+        })
+        .filter((project) => project.matchingTags > 0)
+        .sort((a, b) => b.matchingTags - a.matchingTags)
+        .map(({ matchingTags, ...project }) => project);
     }
 
     setFilteredProjects(results);
