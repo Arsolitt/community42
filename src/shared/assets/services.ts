@@ -1,20 +1,22 @@
-import type { Tag } from '@/shared/assets/tags';
+import type { Tag } from './tags';
 
-export interface Service {
-  id: string;
+interface ServiceElement {
   images: string[];
   isNew?: boolean;
   link: string;
-  tags: Tag['id'][];
+  slug: string;
+  tags: Tag['slug'][];
   text: string;
 }
 
-export const services: Service[] = [
+export type Service = typeof services[number];
+
+export const services = [
   {
-    id: '1',
+    slug: 'ux-ui-design',
     text: 'UX/UI дизайн',
     link: '/search?tags=ux-ui',
-    tags: ['0'],
+    tags: ['ux-ui'],
     images: [
       '/images/services/ux-ui-design-1.png',
       '/images/services/ux-ui-design-2.png',
@@ -23,10 +25,10 @@ export const services: Service[] = [
     ]
   },
   {
-    id: '2',
+    slug: 'graphic-design',
     text: 'Графический дизайн',
     link: '/search?tags=vektornaya-graphika%2Clogotypes',
-    tags: ['1', '2'],
+    tags: ['logotypes', 'branding'],
     images: [
       '/images/services/graphical-design.png',
       '/images/services/ux-ui-design-2.png',
@@ -35,10 +37,10 @@ export const services: Service[] = [
     ]
   },
   {
-    id: '3',
+    slug: 'branding-i-aydentika',
     text: 'Брендинг и айдентика',
     link: '/search?tags=branding%2Caydentika',
-    tags: ['3', '4'],
+    tags: ['branding', 'aydentika'],
     images: [
       '/images/services/graphical-design.png',
       '/images/services/ux-ui-design-2.png',
@@ -47,7 +49,7 @@ export const services: Service[] = [
     ]
   },
   // {
-  //   id: '4',
+  //   slug: '4',
   //   text: 'Промышленный дизайн',
   //   link: '/services/industrial-design.png',
   //   tags: [],
@@ -59,10 +61,10 @@ export const services: Service[] = [
   //   ]
   // },
   {
-    id: '5',
+    slug: 'motion-i-3d',
     text: 'Motion и 3D',
     link: '/search?tags=3D%2Cmotion',
-    tags: ['5', '6'],
+    tags: ['motion', '3D'],
     images: [
       '/images/services/motion.png',
       '/images/services/ux-ui-design-2.png',
@@ -71,10 +73,10 @@ export const services: Service[] = [
     ]
   },
   {
-    id: '6',
+    slug: 'fotosessii-i-retush',
     text: 'Фотосессии и ретушь',
     link: '/search?tags=fotosessii%2Creklamnaya-retush%2Cphoto',
-    tags: ['8', '9', '10'],
+    tags: ['fotosessii', 'reklamnaya-retush', 'photo'],
     images: [
       '/images/services/photoshoots.png',
       '/images/services/ux-ui-design-2.png',
@@ -83,10 +85,10 @@ export const services: Service[] = [
     ]
   },
   {
-    id: '7',
+    slug: 'video-production',
     text: 'Видео-продакшн',
     link: '/search?tags=video',
-    tags: ['7'],
+    tags: ['video'],
     images: [
       '/images/services/ux-ui-design-1.png',
       '/images/services/ux-ui-design-2.png',
@@ -95,7 +97,7 @@ export const services: Service[] = [
     ]
   },
   {
-    id: '8',
+    slug: 'vypusknye-albumy',
     text: 'Выпускные альбомы',
     link: '/search',
     isNew: true,
@@ -107,4 +109,4 @@ export const services: Service[] = [
       '/images/services/ux-ui-design-4.png'
     ]
   }
-];
+] as const satisfies readonly ServiceElement[];

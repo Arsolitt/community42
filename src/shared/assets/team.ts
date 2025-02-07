@@ -1,4 +1,4 @@
-export interface Member {
+interface TeamElement {
   description: string;
   fullsizeImage: string;
   id: number;
@@ -9,12 +9,14 @@ export interface Member {
   socials: Socials[];
 }
 
+export type Member = typeof team[number];
+
 interface Socials {
   href: string;
   name: string;
 }
 
-export const team: Member[] = [
+export const team = [
   {
     id: 1,
     name: 'Константин',
@@ -103,4 +105,4 @@ export const team: Member[] = [
       { name: 'whatsapp', href: 'https://t.me/konstantin_1' }
     ]
   }
-];
+] as const satisfies readonly TeamElement[];
