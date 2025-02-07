@@ -2,8 +2,8 @@ import type { Tag } from '@/shared/assets/tags';
 
 interface TagsListProps {
   activeTags: string[];
-  tags: Tag[];
-  onTagClick: (tagSlug: string) => void;
+  tags: readonly Tag[];
+  onTagClick: (slug: string) => void;
 }
 
 export const TagsList = ({ tags, activeTags, onTagClick }: TagsListProps) => (

@@ -17,7 +17,7 @@ export const ServicesList = ({ className }: ServicesListProps) => {
   return (
     <div className={classNames(cls.ServicesList, {}, [className])}>
       {services.map((s) => (
-        <div key={s.id} className={cls.item}>
+        <div key={s.slug} className={cls.item}>
           <Link href={s.link}>
             <ImageSet className={cls.item__image} height={154} images={s.images} width={280} />
           </Link>
