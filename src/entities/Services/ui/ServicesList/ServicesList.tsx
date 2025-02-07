@@ -15,7 +15,7 @@ interface ServicesListProps {
 
 export const ServicesList = ({ className }: ServicesListProps) => {
   return (
-    <div className={classNames(cls.ServicesList, {}, [className])}>
+    <div className={classNames(cls.ServicesList, {}, [className])} id='services' style={{ scrollMarginTop: '30px' }}>
       {services.map((s) => (
         <div key={s.slug} className={cls.item}>
           <Link href={s.link}>

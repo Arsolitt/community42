@@ -14,8 +14,8 @@ export const ProjectHeader = ({ project }: ProjectHeaderProps) => {
   );
   const links = [
     {
-      text: 'Главная',
-      href: '/'
+      text: 'Работы',
+      href: '/#services'
     },
     {
       text: mainTag.text,

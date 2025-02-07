@@ -12,7 +12,7 @@ interface TeamProps {
 
 export const Team = ({ className }: TeamProps) => {
   return (
-    <section className={classNames(cls.Team, {}, [className])}>
+    <section className={classNames(cls.Team, {}, [className])} id='team' style={{ scrollMarginTop: '30px' }}>
       <AnimatedTitle
         header={{ first: 'работа', second: 'команда' }}
         customTransformX={{ positive: '122%', negative: '148%' }}
