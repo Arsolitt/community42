@@ -3,6 +3,8 @@
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
+import type { Project } from '@/shared/assets/projects';
+
 import { Projects } from '@/entities/Biography/Projects';
 import { projects } from '@/shared/assets/projects';
 import { tags } from '@/shared/assets/tags';
@@ -12,7 +14,7 @@ import { TagsList } from './TagsList';
 
 export const SearchBlock = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [filteredProjects, setFilteredProjects] = useState<Project[]>([...projects]);
   const [activeTags, setActiveTags] = useState<string[]>([]);
 
   const router = useRouter();
@@ -20,7 +22,7 @@ export const SearchBlock = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    let results = projects;
+    let results: Project[] = [...projects];
 
     if (searchTerm) {
       results = results.filter((project) =>

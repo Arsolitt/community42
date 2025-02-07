@@ -2,7 +2,7 @@ import type { Tag } from './tags';
 
 interface ServiceElement {
   images: string[];
-  isNew?: boolean;
+  isNew: boolean;
   link: string;
   slug: string;
   tags: Tag['slug'][];
@@ -17,6 +17,7 @@ export const services = [
     text: 'UX/UI дизайн',
     link: '/search?tags=ux-ui',
     tags: ['ux-ui'],
+    isNew: false,
     images: [
       '/images/services/ux-ui-design-1.png',
       '/images/services/ux-ui-design-2.png',
@@ -29,6 +30,7 @@ export const services = [
     text: 'Графический дизайн',
     link: '/search?tags=vektornaya-graphika%2Clogotypes',
     tags: ['logotypes', 'branding'],
+    isNew: false,
     images: [
       '/images/services/graphical-design.png',
       '/images/services/ux-ui-design-2.png',
@@ -41,6 +43,7 @@ export const services = [
     text: 'Брендинг и айдентика',
     link: '/search?tags=branding%2Caydentika',
     tags: ['branding', 'aydentika'],
+    isNew: false,
     images: [
       '/images/services/graphical-design.png',
       '/images/services/ux-ui-design-2.png',
@@ -65,6 +68,7 @@ export const services = [
     text: 'Motion и 3D',
     link: '/search?tags=3D%2Cmotion',
     tags: ['motion', '3D'],
+    isNew: false,
     images: [
       '/images/services/motion.png',
       '/images/services/ux-ui-design-2.png',
@@ -77,6 +81,7 @@ export const services = [
     text: 'Фотосессии и ретушь',
     link: '/search?tags=fotosessii%2Creklamnaya-retush%2Cphoto',
     tags: ['fotosessii', 'reklamnaya-retush', 'photo'],
+    isNew: false,
     images: [
       '/images/services/photoshoots.png',
       '/images/services/ux-ui-design-2.png',
@@ -89,6 +94,7 @@ export const services = [
     text: 'Видео-продакшн',
     link: '/search?tags=video',
     tags: ['video'],
+    isNew: false,
     images: [
       '/images/services/ux-ui-design-1.png',
       '/images/services/ux-ui-design-2.png',
