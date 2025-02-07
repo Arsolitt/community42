@@ -51,18 +51,6 @@ export const services = [
       '/images/services/ux-ui-design-4.png'
     ]
   },
-  // {
-  //   slug: '4',
-  //   text: 'Промышленный дизайн',
-  //   link: '/services/industrial-design.png',
-  //   tags: [],
-  //   images: [
-  //     '/images/services/graphical-design.png',
-  //     '/images/services/ux-ui-design-2.png',
-  //     '/images/services/ux-ui-design-3.png',
-  //     '/images/services/ux-ui-design-4.png'
-  //   ]
-  // },
   {
     slug: 'motion-i-3d',
     text: 'Motion и 3D',
