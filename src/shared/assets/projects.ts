@@ -13,10 +13,9 @@ interface ProjectElement {
 
 export type Project = typeof projects[number];
 
-interface ProjectTag {
+type ProjectTag = Tag & {
   priority: number;
-  slug: Tag['slug'];
-}
+};
 
 const PROJECTS_PATH = '/projects';
 
@@ -31,14 +30,17 @@ export const projects = [
     tags: [
       {
         slug: 'logotypes',
+        text: 'Логотипы',
         priority: 3
       },
       {
         slug: 'photo',
+        text: 'Фото',
         priority: 2
       },
       {
         slug: 'flowers',
+        text: 'Цветы',
         priority: 1
       }
     ]
@@ -53,6 +55,7 @@ export const projects = [
     tags: [
       {
         slug: 'vektornaya-graphika',
+        text: 'Векторная графика',
         priority: 1
       }
     ]
@@ -67,6 +70,7 @@ export const projects = [
     tags: [
       {
         slug: 'logotypes',
+        text: 'Логотипы',
         priority: 1
       }
     ]
@@ -81,6 +85,7 @@ export const projects = [
     tags: [
       {
         slug: 'branding',
+        text: 'Брендинг',
         priority: 1
       }
     ]
@@ -95,6 +100,7 @@ export const projects = [
     tags: [
       {
         slug: 'aydentika',
+        text: 'Айдентика',
         priority: 1
       }
     ]
@@ -109,6 +115,7 @@ export const projects = [
     tags: [
       {
         slug: 'motion',
+        text: 'Motion',
         priority: 1
       }
     ]
@@ -123,6 +130,7 @@ export const projects = [
     tags: [
       {
         slug: '3D',
+        text: '3D',
         priority: 1
       }
     ]
@@ -137,14 +145,17 @@ export const projects = [
     tags: [
       {
         slug: '3D',
+        text: '3D',
         priority: 1
       },
       {
         slug: 'motion',
+        text: 'Motion',
         priority: 1
       },
       {
         slug: 'photo',
+        text: 'Фото',
         priority: 2
       }
     ]
