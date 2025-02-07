@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-// import { lastProject } from '@/shared/assets/lastProject';
 import type { Project } from '@/shared/assets/projects';
 
 import { classNames } from '@/features/helpers/className';
