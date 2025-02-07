@@ -1,63 +1,57 @@
-export interface Tag {
-  id: string;
+interface TagElement {
   slug: string;
   text: string;
 }
 
-export const tags: Tag[] = [
+export type Tag = typeof tags[number];
+
+export const tags = [
   {
-    id: '0',
-    text: 'ux/ui',
+    text: 'UX/UI',
     slug: 'ux-ui'
   },
   {
-    id: '1',
-    text: 'векторная графика',
+    text: 'Векторная графика',
     slug: 'vektornaya-graphika'
   },
   {
-    id: '2',
-    text: 'логотипы',
+    text: 'Логотипы',
     slug: 'logotypes'
   },
   {
-    id: '3',
-    text: 'брендинг',
+    text: 'Брендинг',
     slug: 'branding'
   },
   {
-    id: '4',
-    text: 'айдентика',
+    text: 'Айдентика',
     slug: 'aydentika'
   },
   {
-    id: '5',
-    text: 'motion',
+    text: 'Motion',
     slug: 'motion'
   },
   {
-    id: '6',
     text: '3D',
     slug: '3D'
   },
   {
-    id: '7',
-    text: 'видео',
+    text: 'Видео',
     slug: 'video'
   },
   {
-    id: '8',
-    text: 'фотосессии',
+    text: 'Фотосессии',
     slug: 'fotosessii'
   },
   {
-    id: '9',
-    text: 'рекламная ретушь',
+    text: 'Рекламная ретушь',
     slug: 'reklamnaya-retush'
   },
   {
-    id: '10',
-    text: 'фото',
+    text: 'Фото',
     slug: 'photo'
+  },
+  {
+    text: 'Цветы',
+    slug: 'flowers'
   }
-];
+] as const satisfies readonly TagElement[];

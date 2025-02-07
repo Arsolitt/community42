@@ -2,6 +2,8 @@
 import { useParams } from 'next/navigation';
 import { useMemo } from 'react';
 
+import type { Member } from '@/shared/assets/team';
+
 import { classNames } from '@/features/helpers/className';
 import { projects } from '@/shared/assets/projects';
 import { team } from '@/shared/assets/team';
@@ -16,11 +18,14 @@ interface BiographyProps {
 }
 
 export const Biography = ({ className }: BiographyProps) => {
-  const collaboratorSlug: string = useParams().slug.toString();
+  const collaboratorSlug = useParams().slug.toString() as Member['slug'];
   const collaborator = useMemo(() => team.find((t) => t.slug === collaboratorSlug), [collaboratorSlug]);
 
   const filteredProjects = useMemo(() => {
-    return projects.filter((p) => p.collaborators.includes(collaboratorSlug));
+    return projects.filter((p) => {
+      const collabors = p.collaborators as Member['slug'][];
+      return collabors.includes(collaboratorSlug);
+    });
   }, [collaboratorSlug]);
 
   const finalProjects = collaboratorSlug ? filteredProjects : projects;
