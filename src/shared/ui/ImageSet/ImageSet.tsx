@@ -3,16 +3,14 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-import type { Service } from '@/shared/assets/services';
-
-interface Props {
+interface ImageSetProps {
   className?: string;
   height: number;
-  images: Service['images'];
+  images: string[];
   width: number;
 }
 
-export const ImageSet = (props: Props) => {
+export const ImageSet = (props: ImageSetProps) => {
   const [isHover, setIsHover] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
