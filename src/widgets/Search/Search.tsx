@@ -10,9 +10,9 @@ import { projects } from '@/shared/assets/projects';
 import { tags } from '@/shared/assets/tags';
 
 import { SearchInput } from './SearchInput';
-import { TagsList } from './TagsList';
+import { SearchTags } from './SearchTags';
 
-export const SearchBlock = () => {
+export const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([...projects]);
   const [activeTags, setActiveTags] = useState<string[]>([]);
@@ -78,7 +78,7 @@ export const SearchBlock = () => {
         searchTerm={searchTerm}
         onSearchChange={(event) => setSearchTerm(event.target.value)}
       />
-      <TagsList
+      <SearchTags
         activeTags={activeTags}
         tags={tags}
         onTagClick={handleTagClick}
