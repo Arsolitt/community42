@@ -1,0 +1,15 @@
+.LargeImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  
+  @media screen and (min-width: 1920px) {
+    max-width: 1836px;
+    max-height: 1032px;
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1919px) {
+    max-width: 1180px;
+    max-height: 664px;
+  }
+} 
