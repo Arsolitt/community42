@@ -1,17 +1,17 @@
 import { Suspense } from 'react';
 
-import SearchBlock from '@/components/SearchBlock';
 import { Header } from '@/widgets/Header';
+import Search from '@/widgets/Search';
 
-const Search = () => {
+const SearchPage = () => {
   return (
     <>
       <Header manualScrolled />
       <Suspense>
-        <SearchBlock />
+        <Search />
       </Suspense>
     </>
   );
 };
 
-export default Search;
+export default SearchPage;
