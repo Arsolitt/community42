@@ -1,6 +1,6 @@
-import { ProjectHeader } from '@/components/ProjectHeader';
+import { ProjectHeader } from '@/components/ProjectBlocks/Header';
+import { LargeImage } from '@/components/ProjectBlocks/LargeImage';
 import { projects } from '@/shared/assets/projects';
-import { Typography } from '@/shared/ui/Typography';
 
 const project = projects.find((project) => project.slug === 'logotip-magazina-monobuketov-modo');
 
@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <>
       <ProjectHeader project={project} />
-      <Typography variant='h1'>{project?.name}</Typography>
+      <LargeImage alt={project.name} src={project.image} />
     </>
   );
 };

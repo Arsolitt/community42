@@ -1,6 +1,7 @@
 import type { Project } from '@/shared/assets/projects';
 
 import { Breadcrumbs } from '@/shared/ui/Breadcrumbs';
+import { Typography } from '@/shared/ui/Typography';
 
 import { ProjectTags } from './ProjectTags';
 
@@ -30,6 +31,7 @@ export const ProjectHeader = ({ project }: ProjectHeaderProps) => {
     <>
       <Breadcrumbs links={links} />
       <ProjectTags tags={project.tags} />
+      <Typography variant='h1'>{project?.name}</Typography>
     </>
   );
 };
