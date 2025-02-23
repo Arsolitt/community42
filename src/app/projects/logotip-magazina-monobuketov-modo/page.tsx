@@ -1,4 +1,4 @@
-import { ProjectHeader } from '@/components/ProjectBlocks/Header';
+import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
 import { LargeImage } from '@/components/ProjectBlocks/LargeImage';
 import { projects } from '@/shared/assets/projects';
 
