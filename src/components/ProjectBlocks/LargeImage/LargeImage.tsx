@@ -15,10 +15,10 @@ export const LargeImage = ({ className, src, alt }: LargeImageProps) => {
     <div className={classNames(cls.largeImage, {}, [className])}>
       <Image
         alt={alt}
-        height={640}
+        height={1080}
         quality={100}
         src={src}
-        width={1180}
+        width={1920}
       />
     </div>
   );
