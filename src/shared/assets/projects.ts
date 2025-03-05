@@ -26,7 +26,7 @@ export const projects = [
     name: 'Логотип магазина монобукетов Modo',
     date: '28.06.2024',
     slug: 'logotip-magazina-monobuketov-modo',
-    summary: 'Modo – это новый цветочный сервис в Кемерово, ориентированный на моно (иногда и дуо) букеты. Ребята делают монобукеты с акцентом на цветы в категории премиум и люкс. Их магазин базируется в интернете, а заказ можно делать в мессенджерах Телграм, Вотсап и по телефону. Наша задача была в короткие сроки создать логотип, определииться с графическими элементами и создать некоторые шаблоны для оформления сторис, постов, рекламных банеров и т.п.',
+    summary: 'Modo – это новый цветочный сервис в Кемерово, ориентированный на моно (иногда и дуо) букеты. Ребята делают монобукеты с акцентом на цветы в категории премиум и люкс. Их магазин базируется в интернете, а заказ можно делать в мессенджерах Телграм, Вотсап и по телефону. Наша задача была в короткие сроки создать логотип, определииться с графическими элементами и создать некоторые шаблоны для оформления сторис, постов, рекламных банеров и т.п.',
     likes: 10,
     image: '/images/projects/logotip-magazina-monobuketov-modo/main.webp',
     link: `${PROJECTS_PATH}/logotip-magazina-monobuketov-modo`,
@@ -40,7 +40,7 @@ export const projects = [
       {
         slug: 'photo',
         text: 'Фото',
-        priority: 2
+        priority: 1
       },
       {
         slug: 'flowers',
@@ -62,45 +62,90 @@ export const projects = [
       {
         slug: 'motion',
         text: 'Motion',
-        priority: 2
+        priority: 1
       },
       {
         slug: '3D',
         text: '3D',
-        priority: 1
+        priority: 2
       }
     ]
   },
   {
-    name: 'Project 3',
-    date: '01.09.2024',
-    slug: 'project-3',
+    name: 'Ребрендинг производителя электрощитовой продукции «Электрокомплект»',
+    date: '31.08.2024',
+    slug: 'rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/project-1.png',
-    link: `${PROJECTS_PATH}/project-3`,
+    image: '/images/projects/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt/main.png',
+    link: `${PROJECTS_PATH}/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt`,
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
+      {
+        slug: 'aydentika',
+        text: 'Айдентика',
+        priority: 2
+      },
       {
         slug: 'logotypes',
         text: 'Логотипы',
         priority: 1
+      },
+      {
+        slug: 'motion',
+        text: 'Motion',
+        priority: 1
       }
     ]
   },
   {
-    name: 'Project 4',
-    date: '01.09.2024',
-    slug: 'project-4',
+    name: 'Брендинг стоматологии «Эдемика»',
+    date: '15.09.2024',
+    slug: 'brending-stomatologii-edemika',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/project-1.png',
-    link: `${PROJECTS_PATH}/project-4`,
+    image: '/images/projects/brending-stomatologii-edemika/main.png',
+    link: `${PROJECTS_PATH}/brending-stomatologii-edemika`,
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
         slug: 'branding',
         text: 'Брендинг',
+        priority: 2
+      },
+      {
+        slug: 'aydentika',
+        text: 'Айдентика',
+        priority: 1
+      },
+      {
+        slug: 'ux-ui',
+        text: 'UX/UI',
+        priority: 1
+      },
+      {
+        slug: 'logotypes',
+        text: 'Логотипы',
+        priority: 1
+      },
+      {
+        slug: 'motion',
+        text: 'Motion',
+        priority: 1
+      },
+      {
+        slug: '3D',
+        text: '3D',
+        priority: 1
+      },
+      {
+        slug: 'video',
+        text: 'Видео',
+        priority: 1
+      },
+      {
+        slug: 'photo',
+        text: 'Фото',
         priority: 1
       }
     ]
