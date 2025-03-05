@@ -3,6 +3,7 @@ import type { Member } from '@/shared/assets/team';
 
 interface ProjectElement {
   collaborators: Member['slug'][];
+  date: string;
   image: string;
   likes: number;
   link: string;
@@ -23,6 +24,7 @@ const PROJECTS_PATH = '/projects';
 export const projects = [
   {
     name: 'Логотип магазина монобукетов Modo',
+    date: '28.06.2024',
     slug: 'logotip-magazina-monobuketov-modo',
     summary: 'Modo – это новый цветочный сервис в Кемерово, ориентированный на моно (иногда и дуо) букеты. Ребята делают монобукеты с акцентом на цветы в категории премиум и люкс. Их магазин базируется в интернете, а заказ можно делать в мессенджерах Телграм, Вотсап и по телефону. Наша задача была в короткие сроки создать логотип, определииться с графическими элементами и создать некоторые шаблоны для оформления сторис, постов, рекламных банеров и т.п.',
     likes: 10,
@@ -49,6 +51,7 @@ export const projects = [
   },
   {
     name: '3D-видео для новой космической темы оформления Лицея№23',
+    date: '01.09.2024',
     slug: '3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
@@ -70,6 +73,7 @@ export const projects = [
   },
   {
     name: 'Project 3',
+    date: '01.09.2024',
     slug: 'project-3',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
@@ -86,6 +90,7 @@ export const projects = [
   },
   {
     name: 'Project 4',
+    date: '01.09.2024',
     slug: 'project-4',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
@@ -102,6 +107,7 @@ export const projects = [
   },
   {
     name: 'Project 5',
+    date: '01.09.2024',
     slug: 'project-5',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
@@ -118,6 +124,7 @@ export const projects = [
   },
   {
     name: 'Project 6',
+    date: '01.09.2024',
     slug: 'project-6',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
@@ -134,6 +141,7 @@ export const projects = [
   },
   {
     name: 'Project 7',
+    date: '01.09.2024',
     slug: 'project-7',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
@@ -150,6 +158,7 @@ export const projects = [
   },
   {
     name: 'Графическая выставка в Севастополе',
+    date: '01.09.2024',
     slug: 'project-8',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 15,
