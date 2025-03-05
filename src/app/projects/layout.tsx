@@ -5,7 +5,7 @@ const ProjectLayout = ({ children }: Readonly<{ children: React.ReactNode }>) =>
   return (
     <>
       <Header manualScrolled />
-      <div className='pt-[207px]'>{children}</div>
+      <div className='pt-[100px]'>{children}</div>
       <Footer />
     </>
   );

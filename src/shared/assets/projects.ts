@@ -8,6 +8,7 @@ interface ProjectElement {
   link: string;
   name: string;
   slug: string;
+  summary: string;
   tags: ProjectTag[];
 }
 
@@ -23,6 +24,7 @@ export const projects = [
   {
     name: 'Логотип магазина монобукетов Modo',
     slug: 'logotip-magazina-monobuketov-modo',
+    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
     image: '/images/projects/logotip-magazina-monobuketov-modo.png',
     link: `${PROJECTS_PATH}/logotip-magazina-monobuketov-modo`,
@@ -48,6 +50,7 @@ export const projects = [
   {
     name: 'Project 2',
     slug: 'project-2',
+    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-2`,
@@ -63,6 +66,7 @@ export const projects = [
   {
     name: 'Project 3',
     slug: 'project-3',
+    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-3`,
@@ -78,6 +82,7 @@ export const projects = [
   {
     name: 'Project 4',
     slug: 'project-4',
+    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-4`,
@@ -93,6 +98,7 @@ export const projects = [
   {
     name: 'Project 5',
     slug: 'project-5',
+    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-5`,
@@ -108,6 +114,7 @@ export const projects = [
   {
     name: 'Project 6',
     slug: 'project-6',
+    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-6`,
@@ -123,6 +130,7 @@ export const projects = [
   {
     name: 'Project 7',
     slug: 'project-7',
+    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-7`,
@@ -138,6 +146,7 @@ export const projects = [
   {
     name: 'Графическая выставка в Севастополе',
     slug: 'project-8',
+    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 15,
     image: '/images/last-project.png',
     link: '/project-1',
