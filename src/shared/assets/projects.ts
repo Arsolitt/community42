@@ -24,7 +24,7 @@ export const projects = [
   {
     name: 'Логотип магазина монобукетов Modo',
     slug: 'logotip-magazina-monobuketov-modo',
-    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
+    summary: 'Modo – это новый цветочный сервис в Кемерово, ориентированный на моно (иногда и дуо) букеты. Ребята делают монобукеты с акцентом на цветы в категории премиум и люкс. Их магазин базируется в интернете, а заказ можно делать в мессенджерах Телграм, Вотсап и по телефону. Наша задача была в короткие сроки создать логотип, определииться с графическими элементами и создать некоторые шаблоны для оформления сторис, постов, рекламных банеров и т.п.',
     likes: 10,
     image: '/images/projects/logotip-magazina-monobuketov-modo.png',
     link: `${PROJECTS_PATH}/logotip-magazina-monobuketov-modo`,
@@ -48,17 +48,22 @@ export const projects = [
     ]
   },
   {
-    name: 'Project 2',
-    slug: 'project-2',
+    name: '3D-видео для новой космической темы оформления Лицея№23',
+    slug: '3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
     image: '/images/projects/project-1.png',
-    link: `${PROJECTS_PATH}/project-2`,
+    link: `${PROJECTS_PATH}/3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23`,
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
       {
-        slug: 'vektornaya-graphika',
-        text: 'Векторная графика',
+        slug: 'motion',
+        text: 'Motion',
+        priority: 2
+      },
+      {
+        slug: '3D',
+        text: '3D',
         priority: 1
       }
     ]

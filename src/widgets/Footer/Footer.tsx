@@ -42,8 +42,7 @@ export const Footer = ({ className, lastProject }: FooterProps) => {
       <footer className={classNames(cls.footer, {}, [className])}>
         <div className='container'>
           <div className={classNames(cls.footerWrapper, { [cls.footerWrapperNoProject]: !lastProject }, [])}>
-            <div className={cls.separator} />
-
+            {lastProject && (<div className={cls.separator} />)}
             <div className={cls.bottomContent}>
               <div className={cls.socials}>
                 <VkIcon />
@@ -72,6 +71,7 @@ export const Footer = ({ className, lastProject }: FooterProps) => {
                 </Typography>
               </div>
             </div>
+            {!lastProject && (<div className={cls.separator} />)}
             <div className={cls.copyright}>
               <Typography variant='p'>© 2024. Все права защищены</Typography>
               <Typography variant='p'>Заходите к нам чаще за новой порцией креативчика ;)</Typography>
