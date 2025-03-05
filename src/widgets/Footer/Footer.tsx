@@ -41,7 +41,7 @@ export const Footer = ({ className, lastProject }: FooterProps) => {
 
       <footer className={classNames(cls.footer, {}, [className])}>
         <div className='container'>
-          <div className={classNames(cls.footerWrapper, {}, [])}>
+          <div className={classNames(cls.footerWrapper, { [cls.footerWrapperNoProject]: !lastProject }, [])}>
             <div className={cls.separator} />
 
             <div className={cls.bottomContent}>
