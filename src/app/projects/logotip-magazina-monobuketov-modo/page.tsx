@@ -6,7 +6,7 @@ const project = projects.find((project) => project.slug === 'logotip-magazina-mo
 
 const Page = () => {
   return (
-    <div>
+    <div className='max-w-[1920px] mx-auto px-11'>
       <ProjectHeader project={project} />
       <LargeImage alt={project.name} src={project.image} />
     </div>

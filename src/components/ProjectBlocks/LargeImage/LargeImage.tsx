@@ -1,21 +1,25 @@
 import Image from 'next/image';
 
+import { classNames } from '@/features/helpers/className';
+
+import cls from './LargeImage.module.scss';
+
 interface LargeImageProps {
-  alt?: string;
+  alt: string;
   className?: string;
   src: string;
 }
 
-export const LargeImage = ({ src, alt = 'image', className }: LargeImageProps) => {
+export const LargeImage = ({ className, src, alt }: LargeImageProps) => {
   return (
-    <Image
-      alt={alt}
-      className={className}
-      height={1032}
-      quality={100}
-      sizes='(min-width: 1920px) 1836px, 1180px'
-      src={src}
-      width={1836}
-    />
+    <div className={classNames(cls.largeImage, {}, [className])}>
+      <Image
+        alt={alt}
+        height={640}
+        quality={100}
+        src={src}
+        width={1180}
+      />
+    </div>
   );
 };
