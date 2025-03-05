@@ -10,13 +10,14 @@
   }
   
   &Title {
-    font-size: 48px;
+    font-size: 56px;
     line-height: 130%;
     margin-bottom: 16px;
+    font-weight: 700;
   }
   
-  &Description {
-    font-size: 18px;
+  &Summary {
+    font-size: 22px;
     line-height: 130%;
     color: rgba(255, 255, 255, 0.8);
   }

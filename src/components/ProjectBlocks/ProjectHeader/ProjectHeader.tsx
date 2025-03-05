@@ -37,7 +37,8 @@ export const ProjectHeader = ({ project, className }: ProjectHeaderProps) => {
         <ProjectTags tags={project.tags} />
         <Breadcrumbs links={links} />
       </div>
-      <Typography className={cls.headerTitle} variant='h1'>{project?.name}</Typography>
+      <Typography className={cls.headerTitle} variant='h1'>{project.name}</Typography>
+      <Typography className={cls.headerSummary} variant='h5'>{project.summary}</Typography>
     </div>
   );
 };
