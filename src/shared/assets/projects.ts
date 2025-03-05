@@ -26,7 +26,7 @@ export const projects = [
     slug: 'logotip-magazina-monobuketov-modo',
     summary: 'Modo – это новый цветочный сервис в Кемерово, ориентированный на моно (иногда и дуо) букеты. Ребята делают монобукеты с акцентом на цветы в категории премиум и люкс. Их магазин базируется в интернете, а заказ можно делать в мессенджерах Телграм, Вотсап и по телефону. Наша задача была в короткие сроки создать логотип, определииться с графическими элементами и создать некоторые шаблоны для оформления сторис, постов, рекламных банеров и т.п.',
     likes: 10,
-    image: '/images/projects/logotip-magazina-monobuketov-modo.png',
+    image: '/images/projects/logotip-magazina-monobuketov-modo/main.webp',
     link: `${PROJECTS_PATH}/logotip-magazina-monobuketov-modo`,
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
