@@ -4,6 +4,8 @@ import { TextBlock } from '@/components/ProjectBlocks/TextBlock';
 import { TwoImages } from '@/components/ProjectBlocks/TwoImages';
 import { projects } from '@/shared/assets/projects';
 
+import { ThreeImages } from '../../../components/ProjectBlocks/ThreeImages/ThreeImages';
+
 const project = projects.find((project) => project.slug === 'logotip-magazina-monobuketov-modo');
 
 const Page = () => {
@@ -31,6 +33,13 @@ const Page = () => {
       <TextBlock>
         Также были разработаны основные графические элементы: иконки услуг, <br />
         оформления месссенджеров, пиктограммы сравнения размера букета с человеком
+      </TextBlock>
+      <ThreeImages images={[]} />
+      <TextBlock>
+        Примеры фирменных фото:
+      </TextBlock>
+      <TextBlock>
+        Примеры других фото и постов в соц-сетях:
       </TextBlock>
     </div>
 
