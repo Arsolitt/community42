@@ -1,0 +1,1 @@
+export { TwoImages } from './TwoImages';

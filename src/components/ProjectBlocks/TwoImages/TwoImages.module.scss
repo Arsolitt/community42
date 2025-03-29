@@ -1,0 +1,10 @@
+.twoImages {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1280px) {
+  .twoImages {
+    gap: 15px;
+  }
+}
