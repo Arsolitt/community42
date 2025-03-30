@@ -1,5 +1,6 @@
 import { LargeImage } from '@/components/ProjectBlocks/LargeImage';
 import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
+import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
 import { TextBlock } from '@/components/ProjectBlocks/TextBlock';
 import { TwoImages } from '@/components/ProjectBlocks/TwoImages';
 import { projects } from '@/shared/assets/projects';
@@ -41,8 +42,15 @@ const Page = () => {
       <TextBlock>
         Примеры других фото и постов в соц-сетях:
       </TextBlock>
-    </div>
 
+      <ProjectTeam
+        members={[
+          { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+          { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
+          { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+        ]}
+      />
+    </div>
   );
 };
 

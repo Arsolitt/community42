@@ -1,7 +1,6 @@
 interface TeamElement {
   description: string;
   fullsizeImage: string;
-  id: number;
   images: string[];
   name: string;
   position: string;
@@ -18,14 +17,13 @@ interface Socials {
 
 export const team = [
   {
-    id: 1,
+    slug: 'konstantin-graphic-designer',
     name: 'Константин',
     position: 'Граф дизайнер',
     images: ['/images/team/konstantin.png', '/images/team/egor.png'],
     fullsizeImage: '/images/team/full-size/konstantin.png',
     description:
       'Работает в индустрии коммуникаций с 2003 года и успел погрузиться практически во все ее сферы: ATL, BTL, Media, PR, Event. С 2006 года — в брендинге. Ведет собственный проект о рекламе в Центральной Азии — AdAsia, выступает сопродюсером фестиваля Red Jolbors Fest. Неоднократный победитель креативных фестивалей различного уровня, включая Cannes Lion',
-    slug: 'konstantin-graphic-designer',
     socials: [
       {
         name: 'vk',
@@ -38,14 +36,13 @@ export const team = [
     ]
   },
   {
-    id: 2,
+    slug: 'egor-3d-specialist',
     name: 'Егор',
     position: '3D специалист',
     images: ['/images/team/egor.png'],
     fullsizeImage: '/images/team/full-size/polina.png',
     description:
       'Работает в индустрии коммуникаций с 2003 года и успел погрузиться практически во все ее сферы: ATL, BTL, Media, PR, Event. С 2006 года — в брендинге. Ведет собственный проект о рекламе в Центральной Азии — AdAsia, выступает сопродюсером фестиваля Red Jolbors Fest. Неоднократный победитель креативных фестивалей различного уровня, включая Cannes Lion',
-    slug: 'egor-3d-specialist',
     socials: [
       {
         name: 'vk',
@@ -55,14 +52,13 @@ export const team = [
     ]
   },
   {
-    id: 3,
+    slug: 'polina-web-designer',
     name: 'Полина',
     position: 'Веб-дизайнер',
     images: ['/images/team/wooman.png'],
     fullsizeImage: '/images/team/full-size/polina.png',
     description:
       'Работает в индустрии коммуникаций с 2003 года и успел погрузиться практически во все ее сферы: ATL, BTL, Media, PR, Event. С 2006 года — в брендинге. Ведет собственный проект о рекламе в Центральной Азии — AdAsia, выступает сопродюсером фестиваля Red Jolbors Fest. Неоднократный победитель креативных фестивалей различного уровня, включая Cannes Lion',
-    slug: 'polina-web-designer',
     socials: [
       {
         name: 'vk',
@@ -72,14 +68,13 @@ export const team = [
     ]
   },
   {
-    id: 4,
+    slug: 'egor-photographer',
     name: 'Егор',
     position: 'Фотограф',
     images: ['/images/team/egor.png'],
     fullsizeImage: '/images/team/full-size/polina.png',
     description:
       'Работает в индустрии коммуникаций с 2003 года и успел погрузиться практически во все ее сферы: ATL, BTL, Media, PR, Event. С 2006 года — в брендинге. Ведет собственный проект о рекламе в Центральной Азии — AdAsia, выступает сопродюсером фестиваля Red Jolbors Fest. Неоднократный победитель креативных фестивалей различного уровня, включая Cannes Lion',
-    slug: 'egor-photographer',
     socials: [
       {
         name: 'vk',
@@ -89,14 +84,13 @@ export const team = [
     ]
   },
   {
-    id: 5,
+    slug: 'polina-customer-support',
     name: 'Полина',
     position: 'Поддержка',
     images: ['/images/team/wooman.png'],
     fullsizeImage: '/images/team/full-size/polina.png',
     description:
       'Работает в индустрии коммуникаций с 2003 года и успел погрузиться практически во все ее сферы: ATL, BTL, Media, PR, Event. С 2006 года — в брендинге. Ведет собственный проект о рекламе в Центральной Азии — AdAsia, выступает сопродюсером фестиваля Red Jolbors Fest. Неоднократный победитель креативных фестивалей различного уровня, включая Cannes Lion',
-    slug: 'polina-customer-support',
     socials: [
       {
         name: 'vk',
