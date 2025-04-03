@@ -10,7 +10,7 @@ import cls from '../Team.module.scss';
 export const TeamRightBlock = () => (
   <div className={cls.rightBlock}>
     {team.map((t) => (
-      <div key={t.id} className={cls.persona}>
+      <div key={t.slug} className={cls.persona}>
         <Link href={`/team/${t.slug}`}>
           <ImageSet className={cls.persona__image} height={154} images={t.images} width={154} />
         </Link>
