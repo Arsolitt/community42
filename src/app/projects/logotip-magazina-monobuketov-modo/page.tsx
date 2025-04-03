@@ -1,8 +1,8 @@
+import { ImgTwoSquares } from '@/components/ProjectBlocks/ImgTwoSquares';
 import { LargeImage } from '@/components/ProjectBlocks/LargeImage';
 import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
 import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
 import { TextBlock } from '@/components/ProjectBlocks/TextBlock';
-import { TwoImages } from '@/components/ProjectBlocks/TwoImages';
 import { projects } from '@/shared/assets/projects';
 
 import { ThreeImages } from '../../../components/ProjectBlocks/ThreeImages/ThreeImages';
@@ -19,7 +19,7 @@ const Page = () => {
         а также на их щепетильностью к подбору каждого цветочка. Простая и аккуратная форма значка подобрана <br />
         для онлайн-формата магазина
       </TextBlock>
-      <TwoImages
+      <ImgTwoSquares
         images={[
           {
             src: '/images/projects/logotip-magazina-monobuketov-modo/logo_red_background.svg',

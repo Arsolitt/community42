@@ -2,21 +2,21 @@ import Image from 'next/image';
 
 import { classNames } from '@/features/helpers/className';
 
-import cls from './TwoImages.module.scss';
+import cls from './ImgTwoSquares.module.scss';
 
 interface ImageInfo {
   alt: string;
   src: string;
 }
 
-interface TwoImagesProps {
+interface ImgTwoSquaresProps {
   className?: string;
   images: ImageInfo[];
 }
 
-export const TwoImages = ({ className, images }: TwoImagesProps) => {
+export const ImgTwoSquares = ({ className, images }: ImgTwoSquaresProps) => {
   return (
-    <div className={classNames(cls.twoImages, {}, [className])}>
+    <div className={classNames(cls.imgTwoSquares, {}, [className])}>
       {images.map((image, index) => (
         <div key={image.src} className={classNames(cls.gridItem, {}, [cls[`item${index}`]])}>
           <Image

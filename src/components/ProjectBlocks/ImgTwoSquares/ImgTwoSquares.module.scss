@@ -1,4 +1,4 @@
-.twoImages {
+.imgTwoSquares {
   display: flex;
   gap: 20px;
   width: 100%;
@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 1280px) {
-  .twoImages {
+  .imgTwoSquares {
     gap: 15px;
   }
 }
