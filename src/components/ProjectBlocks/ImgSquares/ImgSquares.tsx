@@ -23,6 +23,7 @@ export const ImgSquares = ({ className, images }: ImgSquaresProps) => {
             fill
             alt={image.alt}
             quality={100}
+            sizes='50vw'
             src={image.src}
           />
         </div>

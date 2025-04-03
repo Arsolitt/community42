@@ -24,7 +24,7 @@ export const ImgSquareUWide = ({ className, images }: ImgSquareUWideProps) => {
           fill
           alt={imageSquare.alt}
           quality={100}
-          sizes='579px'
+          sizes='33vw'
           src={imageSquare.src}
         />
       </div>
@@ -33,6 +33,7 @@ export const ImgSquareUWide = ({ className, images }: ImgSquareUWideProps) => {
           fill
           alt={imageWide.alt}
           quality={100}
+          sizes='67vw'
           src={imageWide.src}
         />
       </div>
