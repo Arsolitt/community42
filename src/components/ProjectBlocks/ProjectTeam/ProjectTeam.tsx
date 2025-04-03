@@ -3,6 +3,8 @@ import React from 'react';
 
 import { type Member, team } from '@/shared/assets/team';
 
+import styles from './ProjectTeam.module.scss';
+
 interface ProjectMember {
   role: string;
   slug: Member['slug'];
@@ -28,8 +30,8 @@ export const ProjectTeam: React.FC<ProjectTeamProps> = ({ members }) => {
     <div className='flex flex-wrap gap-16 py-8'>
       {projectMembers.map((projectMember) => (
         <div key={projectMember.slug} className='flex flex-col'>
-          <h3 className='text-white text-xl font-normal mb-2'>{projectMember.role}</h3>
-          <Link href={`/team/${projectMember.slug}`} className='text-[#DB69FF] text-lg hover:underline'>
+          <h3 className={styles.member_position}>{projectMember.role}</h3>
+          <Link href={`/team/${projectMember.slug}`} className={styles.member_name}>
             {projectMember.name}
           </Link>
         </div>
