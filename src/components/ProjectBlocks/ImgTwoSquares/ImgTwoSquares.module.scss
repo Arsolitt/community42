@@ -1,6 +1,7 @@
 .imgTwoSquares {
   display: flex;
   gap: 20px;
+  margin-top: 20px;
   width: 100%;
   border-radius: 24px;
   overflow: hidden;
@@ -15,5 +16,6 @@
 @media (max-width: 1280px) {
   .imgTwoSquares {
     gap: 15px;
+    margin-top: 15px;
   }
 }
