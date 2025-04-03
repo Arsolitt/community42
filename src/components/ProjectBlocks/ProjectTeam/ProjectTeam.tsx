@@ -29,7 +29,7 @@ export const ProjectTeam: React.FC<ProjectTeamProps> = ({ members }) => {
   return (
     <div className='flex flex-wrap gap-16 py-8'>
       {projectMembers.map((projectMember) => (
-        <div key={projectMember.slug} className='flex flex-col'>
+        <div key={`${projectMember.slug}-${projectMember.role}`} className='flex flex-col'>
           <h3 className={styles.member_position}>{projectMember.role}</h3>
           <Link href={`/team/${projectMember.slug}`} className={styles.member_name}>
             {projectMember.name}
