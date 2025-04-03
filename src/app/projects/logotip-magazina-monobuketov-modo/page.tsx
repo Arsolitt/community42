@@ -1,4 +1,5 @@
 import { ImgSquares } from '@/components/ProjectBlocks/ImgSquares';
+import { ImgSquareUWide } from '@/components/ProjectBlocks/ImgSquareUWide/ImgSquareUWide';
 import { LargeImage } from '@/components/ProjectBlocks/LargeImage';
 import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
 import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
@@ -28,6 +29,17 @@ const Page = () => {
             alt: 'Логотип MODO на белом фоне'
           }
         ]}
+      />
+      <ImgSquareUWide images={[
+        {
+          src: '/images/projects/logotip-magazina-monobuketov-modo/logo_mobile.webp',
+          alt: 'Логотип MODO на мобильном устройстве'
+        },
+        {
+          src: '/images/projects/logotip-magazina-monobuketov-modo/logo_uwide.svg',
+          alt: 'Логотип MODO на широком устройстве'
+        }
+      ]}
       />
       <TextBlock>
         Также были разработаны основные графические элементы: иконки услуг, <br />

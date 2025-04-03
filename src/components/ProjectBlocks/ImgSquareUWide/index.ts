@@ -1,0 +1,1 @@
+export { ImgSquareUWide } from './ImgSquareUWide';
