@@ -1,0 +1,1 @@
+export { ImgSquares } from './ImgSquares';

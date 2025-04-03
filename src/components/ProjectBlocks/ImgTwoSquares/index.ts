@@ -1,1 +1,0 @@
-export { ImgTwoSquares } from './ImgTwoSquares';

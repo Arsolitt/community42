@@ -1,11 +1,9 @@
-import { ImgTwoSquares } from '@/components/ProjectBlocks/ImgTwoSquares';
+import { ImgSquares } from '@/components/ProjectBlocks/ImgSquares';
 import { LargeImage } from '@/components/ProjectBlocks/LargeImage';
 import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
 import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
 import { TextBlock } from '@/components/ProjectBlocks/TextBlock';
 import { projects } from '@/shared/assets/projects';
-
-import { ThreeImages } from '../../../components/ProjectBlocks/ThreeImages/ThreeImages';
 
 const project = projects.find((project) => project.slug === 'logotip-magazina-monobuketov-modo');
 
@@ -19,7 +17,7 @@ const Page = () => {
         а также на их щепетильностью к подбору каждого цветочка. Простая и аккуратная форма значка подобрана <br />
         для онлайн-формата магазина
       </TextBlock>
-      <ImgTwoSquares
+      <ImgSquares
         images={[
           {
             src: '/images/projects/logotip-magazina-monobuketov-modo/logo_red_background.svg',
@@ -35,7 +33,6 @@ const Page = () => {
         Также были разработаны основные графические элементы: иконки услуг, <br />
         оформления месссенджеров, пиктограммы сравнения размера букета с человеком
       </TextBlock>
-      <ThreeImages images={[]} />
       <TextBlock>
         Примеры фирменных фото:
       </TextBlock>
