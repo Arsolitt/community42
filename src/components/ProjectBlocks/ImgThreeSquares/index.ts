@@ -1,0 +1,1 @@
+export { ImgThreeSquares } from './ImgThreeSquares';
