@@ -39,7 +39,22 @@ const Page = () => {
       <TextBlock>
         Примеры других фото и постов в соц-сетях:
       </TextBlock>
-
+      <ImgSquares
+        images={[
+          {
+            src: '/images/projects/logotip-magazina-monobuketov-modo/square1.webp',
+            alt: 'Фото 1'
+          },
+          {
+            src: '/images/projects/logotip-magazina-monobuketov-modo/square2.webp',
+            alt: 'Фото 2'
+          },
+          {
+            src: '/images/projects/logotip-magazina-monobuketov-modo/square3.webp',
+            alt: 'Фото 3'
+          }
+        ]}
+      />
       <ProjectTeam
         members={[
           { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
