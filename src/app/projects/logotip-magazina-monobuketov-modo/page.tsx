@@ -1,6 +1,7 @@
 import { ImgSquares } from '@/components/ProjectBlocks/ImgSquares';
 import { ImgSquareUWide } from '@/components/ProjectBlocks/ImgSquareUWide/ImgSquareUWide';
 import { LargeImage } from '@/components/ProjectBlocks/LargeImage';
+import { ProjectFeedback } from '@/components/ProjectBlocks/ProjectFeedback';
 import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
 import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
 import { TextBlock } from '@/components/ProjectBlocks/TextBlock';
@@ -92,6 +93,13 @@ const Page = () => {
           { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
           { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
         ]}
+      />
+      <ProjectFeedback
+        likes={project.likes}
+        creationDate='12.06.2024'
+        creationTimeText='Создано за 10 дней'
+        // onLike={() => {}}
+        // onShare={() => {}}
       />
     </div>
   );
