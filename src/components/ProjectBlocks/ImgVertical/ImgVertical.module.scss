@@ -1,0 +1,29 @@
+.imgVertical {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 0;
+
+  @media (min-width: 1920px) {
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 1280px) and (max-width: 1919px) {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.gridItem {
+  position: relative;
+  aspect-ratio: 10 / 15;
+  overflow: hidden;
+  border-radius: 10px;
+
+  .image {
+    object-fit: cover;
+  }
+}

@@ -6,6 +6,8 @@ import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
 import { TextBlock } from '@/components/ProjectBlocks/TextBlock';
 import { projects } from '@/shared/assets/projects';
 
+import { ImgVertical } from '../../../components/ProjectBlocks/ImgVertical/ImgVertical';
+
 const project = projects.find((project) => project.slug === 'logotip-magazina-monobuketov-modo');
 
 const Page = () => {
@@ -48,6 +50,12 @@ const Page = () => {
       <TextBlock>
         Примеры фирменных фото:
       </TextBlock>
+      <ImgVertical images={[
+        { src: '/images/projects/logotip-magazina-monobuketov-modo/vertical1.webp', alt: 'Image 1' },
+        { src: '/images/projects/logotip-magazina-monobuketov-modo/vertical2.webp', alt: 'Image 2' },
+        { src: '/images/projects/logotip-magazina-monobuketov-modo/vertical3.webp', alt: 'Image 3' }
+      ]}
+      />
       <TextBlock>
         Примеры других фото и постов в соц-сетях:
       </TextBlock>

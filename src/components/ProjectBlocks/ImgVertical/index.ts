@@ -1,0 +1,1 @@
+export { ImgVertical } from './ImgVertical';
