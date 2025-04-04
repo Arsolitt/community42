@@ -15,5 +15,8 @@ export default eslint(
       'style/max-len': ['warn', 240, 2, { ignoreComments: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
       'react/prefer-destructuring-assignment': 'off'
     }
+  },
+  {
+    ignores: ['*.yaml']
   }
 );
