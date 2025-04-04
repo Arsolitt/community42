@@ -47,6 +47,17 @@ const Page = () => {
         Также были разработаны основные графические элементы: иконки услуг, <br />
         оформления месссенджеров, пиктограммы сравнения размера букета с человеком
       </TextBlock>
+      <ImgSquareUWide images={[
+        {
+          src: '/images/projects/logotip-magazina-monobuketov-modo/icon_square.webp',
+          alt: 'Иконка квадратная'
+        },
+        {
+          src: '/images/projects/logotip-magazina-monobuketov-modo/icon_wide.webp',
+          alt: 'Иконка квадратная'
+        }
+      ]}
+      />
       <TextBlock>
         Примеры фирменных фото:
       </TextBlock>
