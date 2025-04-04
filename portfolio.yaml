@@ -14,7 +14,7 @@ spec:
         app: community-portfolio
     spec:
       containers:
-        - image: harbor.arsolitt.tech/community42/portfolio:v0.91
+        - image: harbor.arsolitt.tech/community42/portfolio:v0.92
           livenessProbe:
             failureThreshold: 3
             httpGet:
