@@ -6,6 +6,11 @@ $image-top-offset: 220px;
   position: relative;
   margin-top: $footer-margin-top;
   padding-top: $image-top-offset;
+
+  &.noTopSpacing {
+    margin-top: 100px;
+    padding-top: 0;
+  }
 }
 
 .footer {
@@ -140,4 +145,23 @@ $image-top-offset: 220px;
   background: linear-gradient(90deg, #b663fd 0%, #ffabf7 100%);
   opacity: 0.45;
   margin-top: 52px;
+}
+
+.Footer {
+  margin-top: 100px;
+  padding: 20px 0;
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--border-primary);
+  position: relative;
+  z-index: 10;
+
+  &.noMarginTop {
+    margin-top: 0;
+  }
+}
+
+.text {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
 }

@@ -6,7 +6,7 @@ const ProjectLayout = ({ children }: Readonly<{ children: React.ReactNode }>) =>
     <>
       <Header manualScrolled />
       <div className='pt-[100px]'>{children}</div>
-      <Footer />
+      <Footer isProjectPage />
     </>
   );
 };
