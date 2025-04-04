@@ -2,6 +2,7 @@ import { ImgLarge } from '@/components/ProjectBlocks/ImgLarge';
 import { ImgSquares } from '@/components/ProjectBlocks/ImgSquares';
 import { ImgSquareUWide } from '@/components/ProjectBlocks/ImgSquareUWide/ImgSquareUWide';
 import { ImgVertical } from '@/components/ProjectBlocks/ImgVertical/ImgVertical';
+import { ProjectFeed } from '@/components/ProjectBlocks/ProjectFeed';
 import { ProjectFeedback } from '@/components/ProjectBlocks/ProjectFeedback';
 import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
 import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
@@ -98,6 +99,7 @@ const Page = () => {
         creationDate={project.date}
         creationTimeText='Создано за 10 дней'
       />
+      <ProjectFeed sourceProject={project} />
     </div>
   );
 };

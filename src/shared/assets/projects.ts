@@ -77,7 +77,8 @@ export const projects = [
     slug: 'rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt/main.png',
+    // image: '/images/projects/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt/main.png',
+    image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt`,
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
@@ -104,7 +105,8 @@ export const projects = [
     slug: 'brending-stomatologii-edemika',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/brending-stomatologii-edemika/main.png',
+    // image: '/images/projects/brending-stomatologii-edemika/main.png',
+    image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/brending-stomatologii-edemika`,
     collaborators: ['polina-customer-support', 'egor-3d-specialist'],
     tags: [
