@@ -1,13 +1,12 @@
+import { ImgLarge } from '@/components/ProjectBlocks/ImgLarge';
 import { ImgSquares } from '@/components/ProjectBlocks/ImgSquares';
 import { ImgSquareUWide } from '@/components/ProjectBlocks/ImgSquareUWide/ImgSquareUWide';
-import { LargeImage } from '@/components/ProjectBlocks/LargeImage';
+import { ImgVertical } from '@/components/ProjectBlocks/ImgVertical/ImgVertical';
 import { ProjectFeedback } from '@/components/ProjectBlocks/ProjectFeedback';
 import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
 import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
 import { TextBlock } from '@/components/ProjectBlocks/TextBlock';
 import { projects } from '@/shared/assets/projects';
-
-import { ImgVertical } from '../../../components/ProjectBlocks/ImgVertical/ImgVertical';
 
 const project = projects.find((project) => project.slug === 'logotip-magazina-monobuketov-modo');
 
@@ -15,7 +14,7 @@ const Page = () => {
   return (
     <div className='max-w-[1920px] mx-auto px-11'>
       <ProjectHeader project={project} />
-      <LargeImage alt={project.name} src={project.image} />
+      <ImgLarge alt={project.name} src={project.image} />
       <TextBlock>
         В основе логотипа лежит геометричная форма одного цветка, что делает акцент на моно-формате магазина, <br />
         а также на их щепетильностью к подбору каждого цветочка. Простая и аккуратная форма значка подобрана <br />
@@ -39,7 +38,7 @@ const Page = () => {
           alt: 'Логотип MODO на мобильном устройстве'
         },
         {
-          src: '/images/projects/logotip-magazina-monobuketov-modo/logo_uwide.svg',
+          src: '/images/projects/logotip-magazina-monobuketov-modo/logo_wide.webp',
           alt: 'Логотип MODO на широком устройстве'
         }
       ]}
@@ -98,8 +97,6 @@ const Page = () => {
         likes={project.likes}
         creationDate='12.06.2024'
         creationTimeText='Создано за 10 дней'
-        // onLike={() => {}}
-        // onShare={() => {}}
       />
     </div>
   );

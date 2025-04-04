@@ -1,3 +1,4 @@
+// Шаблон фоток “три вертикальных 10:15“
 import Image from 'next/image';
 
 import { classNames } from '@/features/helpers/className';

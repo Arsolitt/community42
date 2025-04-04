@@ -1,1 +1,0 @@
-export { LargeImage } from './LargeImage';
