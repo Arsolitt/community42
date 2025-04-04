@@ -95,7 +95,7 @@ const Page = () => {
       />
       <ProjectFeedback
         likes={project.likes}
-        creationDate='12.06.2024'
+        creationDate={project.date}
         creationTimeText='Создано за 10 дней'
       />
     </div>
