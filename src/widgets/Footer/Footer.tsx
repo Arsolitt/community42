@@ -60,7 +60,7 @@ export const Footer = memo(({ className, isProjectPage, lastProject }: FooterPro
               <div className={cls.services}>
                 {services.map((service) => (
                   <div key={service.slug} className={cls.services__item}>
-                    <Link href={service.link} className={cls.services__link}>
+                    <Link href={`/search?tags=${service.tags.join('%2C')}`} className={cls.services__link}>
                       {service.text}
                     </Link>
                     <div className={cls.underline} />

@@ -81,12 +81,13 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    nginx.ingress.kubernetes.io/add-base-url: "true"
-    nginx.ingress.kubernetes.io/rewrite-target: /
-  name: community-cf
+    cert-manager.io/cluster-issuer: letsencrypt
+  # nginx.ingress.kubernetes.io/add-base-url: "true"
+  # nginx.ingress.kubernetes.io/rewrite-target: /
+  name: community
   namespace: community
 spec:
-  ingressClassName: cloudflare
+  ingressClassName: nginx
   rules:
     - host: community42.ru
       http:

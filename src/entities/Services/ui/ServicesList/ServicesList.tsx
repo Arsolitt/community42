@@ -18,11 +18,11 @@ export const ServicesList = ({ className }: ServicesListProps) => {
     <div className={classNames(cls.ServicesList, {}, [className])} id='services' style={{ scrollMarginTop: '30px' }}>
       {services.map((s) => (
         <div key={s.slug} className={cls.item}>
-          <Link href={s.link}>
+          <Link href={`/search?tags=${s.tags.join('%2C')}`}>
             <ImageSet className={cls.item__image} height={154} images={s.images} width={280} />
           </Link>
           {s.isNew && <div className={cls.item__new}>Новое</div>}
-          <Link href={s.link}>
+          <Link href={`/search?tags=${s.tags.join('%2C')}`}>
             <div className={cls.itemDescription}>
               <Typography style={{ fontWeight: '600', lineHeight: '120%' }} variant='p'>
                 {s.text}

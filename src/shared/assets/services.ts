@@ -3,7 +3,6 @@ import type { Tag } from './tags';
 interface ServiceElement {
   images: string[];
   isNew: boolean;
-  link: string;
   slug: string;
   tags: Tag['slug'][];
   text: string;
@@ -15,7 +14,6 @@ export const services = [
   {
     slug: 'ux-ui-design',
     text: 'UX/UI дизайн',
-    link: '/search?tags=ux-ui',
     tags: ['ux-ui'],
     isNew: false,
     images: [
@@ -28,7 +26,6 @@ export const services = [
   {
     slug: 'graphic-design',
     text: 'Графический дизайн',
-    link: '/search?tags=vektornaya-graphika%2Clogotypes',
     tags: ['logotypes', 'branding'],
     isNew: false,
     images: [
@@ -41,7 +38,6 @@ export const services = [
   {
     slug: 'branding-i-aydentika',
     text: 'Брендинг и айдентика',
-    link: '/search?tags=branding%2Caydentika',
     tags: ['branding', 'aydentika'],
     isNew: false,
     images: [
@@ -54,7 +50,6 @@ export const services = [
   {
     slug: 'motion-i-3d',
     text: 'Motion и 3D',
-    link: '/search?tags=3D%2Cmotion',
     tags: ['motion', '3D'],
     isNew: false,
     images: [
@@ -67,7 +62,6 @@ export const services = [
   {
     slug: 'fotosessii-i-retush',
     text: 'Фотосессии и ретушь',
-    link: '/search?tags=fotosessii%2Creklamnaya-retush%2Cphoto',
     tags: ['fotosessii', 'reklamnaya-retush', 'photo'],
     isNew: false,
     images: [
@@ -80,7 +74,6 @@ export const services = [
   {
     slug: 'video-production',
     text: 'Видео-продакшн',
-    link: '/search?tags=video',
     tags: ['video'],
     isNew: false,
     images: [
@@ -93,7 +86,6 @@ export const services = [
   {
     slug: 'vypusknye-albumy',
     text: 'Выпускные альбомы',
-    link: '/search',
     isNew: true,
     tags: [],
     images: [
