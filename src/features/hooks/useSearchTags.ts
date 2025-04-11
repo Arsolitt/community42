@@ -1,7 +1,7 @@
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-export const useTags = (initialTags: string[] = []) => {
+export const useSearchTags = (initialTags: string[] = []) => {
   const [activeTags, setActiveTags] = useState<string[]>(initialTags);
   const router = useRouter();
   const searchParams = useSearchParams();

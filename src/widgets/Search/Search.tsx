@@ -2,8 +2,8 @@
 
 import { Projects } from '@/entities/Biography/Projects';
 import { useFilteredProjects } from '@/features/hooks/useFilteredProjects';
+import { useSearchTags } from '@/features/hooks/useSearchTags';
 import { useSearchTerm } from '@/features/hooks/useSearchTerm';
-import { useTags } from '@/features/hooks/useTags';
 import { projects } from '@/shared/assets/projects';
 import { tags } from '@/shared/assets/tags';
 
@@ -12,7 +12,7 @@ import { SearchTags } from './SearchTags';
 
 export const Search = () => {
   const { searchTerm, handleSearchChange } = useSearchTerm();
-  const { activeTags, handleTagClick } = useTags();
+  const { activeTags, handleTagClick } = useSearchTags();
   const filteredProjects = useFilteredProjects(searchTerm, activeTags, projects);
 
   return (
