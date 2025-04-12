@@ -50,8 +50,8 @@ const ServiceItem = ({ service }: { service: Service }) => {
 
   return (
     <div key={service.slug} className={cls.item}>
-      <Link href={`/search?tags=${service.tags.join('%2C')}`}>
-        <ImageSet className={cls.item__image} images={imagesToShow} />
+      <Link href={`/search?tags=${service.tags.join('%2C')}`} className={cls.item__image}>
+        <ImageSet images={imagesToShow} />
       </Link>
       {service.isNew && <div className={cls.item__new}>Новое</div>}
       <Link href={`/search?tags=${service.tags.join('%2C')}`}>
