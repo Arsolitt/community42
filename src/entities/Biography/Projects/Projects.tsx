@@ -26,7 +26,7 @@ export const Projects = (props: ProjectsProps) => {
           </Link>
           <div className={cls.projectInfo}>
             <Typography style={{ fontWeight: '600', fontSize: '18px' }} variant='h4'>
-              <Link href={p.link}>
+              <Link href={p.link} className={cls.projectName}>
                 {p.name}
               </Link>
             </Typography>
