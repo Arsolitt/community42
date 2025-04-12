@@ -15,7 +15,7 @@ interface ProjectElement {
 
 export type Project = typeof projects[number];
 
-type ProjectTag = Tag & {
+export type ProjectTag = Tag & {
   priority: number;
 };
 
