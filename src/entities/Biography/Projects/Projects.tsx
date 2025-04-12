@@ -21,7 +21,7 @@ export const Projects = (props: ProjectsProps) => {
     <section className={classNames(cls.Projects, {}, [className])}>
       {projects.map((p) => (
         <div key={p.slug} className={cls.project}>
-          <Link href={p.link}>
+          <Link href={p.link} className={cls.projectImage}>
             <Image alt='image' height={251} src={p.image} width={444} />
           </Link>
           <div className={cls.projectInfo}>
