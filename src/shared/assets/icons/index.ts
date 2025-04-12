@@ -7,5 +7,6 @@ export { MarketIcon } from './market';
 export { MessageIcon } from './message';
 export { SearchIcon } from './search';
 export { TelegramIcon } from './telegram';
+export { TimeIcon } from './time';
 export { VkIcon } from './vk';
 export { WhatsappIcon } from './whatsapp';

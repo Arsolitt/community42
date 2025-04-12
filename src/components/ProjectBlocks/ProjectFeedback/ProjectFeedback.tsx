@@ -1,17 +1,20 @@
 import { classNames } from '@/features/helpers/className';
 import { LikeIcon } from '@/shared/assets/icons'; // Предполагаем, что иконки есть
+import { ShareIcon } from '@/shared/assets/icons/share';
+
+import { TimeIcon } from '../../../shared/assets/icons/time';
 
 import cls from './ProjectFeedback.module.scss';
 
 interface ProjectFeedbackProps {
   className?: string;
-  creationDate: string; // Например, "12.06.2024"
-  creationTimeText: string; // Например, "Создано за 10 дней"
+  creationDate: string;
+  creationTimeText: string;
   description?: string;
   likes: number;
   title?: string;
-  onLike?: () => void; // Обработчик клика по лайку
-  onShare?: () => void; // Обработчик клика по кнопке "Поделиться"
+  onLike?: () => void;
+  onShare?: () => void;
 }
 
 export const ProjectFeedback = ({
@@ -35,13 +38,13 @@ export const ProjectFeedback = ({
             <span>{likes}</span>
           </button>
           <button aria-label='Поделиться' className={cls.actionButton} type='button' onClick={onShare}>
-            {/* <ShareIcon className={cls.icon} /> */}
+            <ShareIcon className={cls.icon} />
           </button>
         </div>
       </div>
       <div className={cls.rightColumn}>
         <div className={cls.creationInfo}>
-          {/* <ClockIcon className={cls.icon} /> */}
+          <TimeIcon className={cls.icon} />
           <span className={cls.creationTime}>{creationTimeText}</span>
         </div>
         <span className={cls.creationDate}>{creationDate}</span>
