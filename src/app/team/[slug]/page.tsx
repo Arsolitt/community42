@@ -10,8 +10,9 @@ export async function generateStaticParams() {
   }));
 }
 
-const Collaborator = ({ params }: { params: { slug: string } }) => {
-  const member = team.find((m) => m.slug === params.slug);
+const Collaborator = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
+  const member = team.find((m) => m.slug === slug);
 
   if (!member) {
     return notFound();

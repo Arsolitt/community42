@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { type Member, team } from '@/shared/assets/team';
+import type { Member } from '@/shared/assets/team';
+
+import { team } from '@/shared/assets/team';
 
 import styles from './ProjectTeam.module.scss';
 
