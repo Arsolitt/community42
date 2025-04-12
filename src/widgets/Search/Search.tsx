@@ -16,7 +16,7 @@ export const Search = () => {
   const filteredProjects = useFilteredProjects(searchTerm, activeTags, projects);
 
   return (
-    <div className='main_search'>
+    <div className='main_search pb-60'>
       <SearchInput
         searchTerm={searchTerm}
         onSearchChange={handleSearchChange}
