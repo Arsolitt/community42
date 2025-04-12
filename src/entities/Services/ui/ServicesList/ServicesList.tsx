@@ -25,34 +25,28 @@ const ServiceItem = ({ service }: { service: Service }) => {
     if (!project.tags) {
       return undefined;
     }
-    // Используем reduce для поиска тега с максимальным приоритетом
     return project.tags.reduce((highest, current) => {
       return current.priority > highest.priority ? current : highest;
     }, project.tags[0]);
   };
 
-  // Создаем мемоизированный список проектов, где каждый проект содержит только свой тег с наивысшим приоритетом
   const projectsWithHighestTagOnly = useMemo(() => {
     return allProjects.map((project) => {
       const highestTag = findHighestPriorityTag(project);
       return {
         ...project,
-        // Заменяем массив тегов только на самый приоритетный (если он есть)
         tags: highestTag ? [highestTag] : []
       };
     });
-    // Зависимость от allProjects (константа), поэтому пересчет будет только один раз
   }, []);
 
-  // Используем хук с модифицированным списком проектов
-  // Теперь фильтрация будет происходить по единственному (самому приоритетному) тегу проекта
   const filteredProjects = useFilteredProjects('', service.tags, projectsWithHighestTagOnly as unknown as Project[]);
 
   const projectImages = useMemo(() => {
     return filteredProjects.map((project) => project.image).slice(0, 4);
   }, [filteredProjects]);
 
-  const imagesToShow = projectImages.length > 0 ? projectImages : service.images;
+  const imagesToShow = (projectImages.length > 0 && service.tags.length > 0) ? projectImages : service.images;
 
   return (
     <div key={service.slug} className={cls.item}>

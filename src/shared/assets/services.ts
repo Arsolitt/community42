@@ -16,72 +16,42 @@ export const services = [
     text: 'UX/UI дизайн',
     tags: ['ux-ui'],
     isNew: false,
-    images: [
-      '/images/services/ux-ui-design-1.png',
-      '/images/services/ux-ui-design-2.png',
-      '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+    images: []
   },
   {
     slug: 'graphic-design',
     text: 'Графический дизайн',
     tags: ['logotypes', 'branding'],
     isNew: false,
-    images: [
-      '/images/services/graphical-design.png',
-      '/images/services/ux-ui-design-2.png',
-      '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+    images: []
   },
   {
     slug: 'branding-i-aydentika',
     text: 'Брендинг и айдентика',
     tags: ['branding', 'aydentika'],
     isNew: false,
-    images: [
-      '/images/services/graphical-design.png',
-      '/images/services/ux-ui-design-2.png',
-      '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+    images: []
   },
   {
     slug: 'motion-i-3d',
     text: 'Motion и 3D',
     tags: ['motion', '3D'],
     isNew: false,
-    images: [
-      '/images/services/motion.png',
-      '/images/services/ux-ui-design-2.png',
-      '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+    images: []
   },
   {
     slug: 'fotosessii-i-retush',
     text: 'Фотосессии и ретушь',
     tags: ['fotosessii', 'reklamnaya-retush', 'photo'],
     isNew: false,
-    images: [
-      '/images/services/photoshoots.png',
-      '/images/services/ux-ui-design-2.png',
-      '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+    images: []
   },
   {
     slug: 'video-production',
     text: 'Видео-продакшн',
     tags: ['video'],
     isNew: false,
-    images: [
-      '/images/services/ux-ui-design-1.png',
-      '/images/services/ux-ui-design-2.png',
-      '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
-    ]
+    images: []
   },
   {
     slug: 'vypusknye-albumy',
@@ -89,10 +59,7 @@ export const services = [
     isNew: true,
     tags: [],
     images: [
-      '/images/services/albums.png',
-      '/images/services/ux-ui-design-2.png',
-      '/images/services/ux-ui-design-3.png',
-      '/images/services/ux-ui-design-4.png'
+      '/images/services/albums.png'
     ]
   }
 ] as const satisfies readonly ServiceElement[];
