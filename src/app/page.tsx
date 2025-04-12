@@ -1,6 +1,5 @@
 import { Clients } from '@/entities/Clients';
 import { ServicesList } from '@/entities/Services';
-import { Team } from '@/entities/Team';
 import { CloseIcon } from '@/shared/assets/icons/close';
 import { projects } from '@/shared/assets/projects';
 import { Typography } from '@/shared/ui/Typography';
@@ -45,7 +44,7 @@ const Home = () => {
             <Video />
             <ServicesList />
           </section>
-          <Team />
+          {/* <Team /> */}
           <Clients />
         </div>
       </main>

@@ -5,9 +5,9 @@ import { useEffect, useState } from 'react';
 
 interface ImageSetProps {
   className?: string;
-  height: number;
+  // height: number;
   images: string[];
-  width: number;
+  // width: number;
 }
 
 export const ImageSet = (props: ImageSetProps) => {
@@ -33,11 +33,10 @@ export const ImageSet = (props: ImageSetProps) => {
 
   return (
     <Image
+      fill
       alt='image'
       className={props.className}
-      height={props.height}
       src={img}
-      width={props.width}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       priority={false}
