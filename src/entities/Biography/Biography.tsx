@@ -1,6 +1,7 @@
 'use client';
 import { useMemo } from 'react';
 
+import type { ProjectCollaborator } from '@/shared/assets/projects';
 import type { Member } from '@/shared/assets/team';
 
 import { classNames } from '@/features/helpers/className';
@@ -19,15 +20,15 @@ interface BiographyProps {
 export const Biography = ({ className, member }: BiographyProps) => {
   const filteredProjects = useMemo(() => {
     return projects.filter((p) => {
-      const collabors = p.collaborators as Member['slug'][];
-      return collabors.includes(member.slug);
+      const collabors = p.collaborators as ProjectCollaborator[];
+      return collabors.some((c) => c.slug === member.slug);
     });
   }, [member.slug]);
 
   const finalProjects = member.slug ? filteredProjects : projects;
 
   return (
-    <section className={classNames(cls.Biography, {}, [className])}>
+    <section className={classNames(cls.Biography, {}, [className, 'pb-48'])}>
       <div className='container'>
         <BiographyLeftBlock collaborator={member} />
         <BiographyRightBlock fullSizeImage={member.fullsizeImage} name={member.name} />

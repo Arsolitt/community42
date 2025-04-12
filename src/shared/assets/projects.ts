@@ -2,7 +2,7 @@ import type { Tag } from '@/shared/assets/tags';
 import type { Member } from '@/shared/assets/team';
 
 interface ProjectElement {
-  collaborators: Member['slug'][];
+  collaborators: ProjectCollaborator[];
   date: string;
   image: string;
   likes: number;
@@ -11,6 +11,11 @@ interface ProjectElement {
   slug: string;
   summary: string;
   tags: ProjectTag[];
+}
+
+export interface ProjectCollaborator {
+  role: string;
+  slug: Member['slug'];
 }
 
 export type Project = typeof projects[number];
@@ -30,7 +35,11 @@ export const projects = [
     likes: 10,
     image: '/images/projects/logotip-magazina-monobuketov-modo/main.webp',
     link: `${PROJECTS_PATH}/logotip-magazina-monobuketov-modo`,
-    collaborators: ['polina-customer-support', 'egor-3d-specialist'],
+    collaborators: [
+      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+      { role: 'Дизайнер', slug: 'polina-web-designer' },
+      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+    ],
     tags: [
       {
         slug: 'logotypes',
@@ -57,7 +66,11 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23`,
-    collaborators: ['polina-customer-support', 'egor-3d-specialist'],
+    collaborators: [
+      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+      { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
+      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+    ],
     tags: [
       {
         slug: 'motion',
@@ -80,7 +93,11 @@ export const projects = [
     // image: '/images/projects/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt/main.png',
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt`,
-    collaborators: ['polina-customer-support', 'egor-3d-specialist'],
+    collaborators: [
+      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+      { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
+      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+    ],
     tags: [
       {
         slug: 'aydentika',
@@ -108,7 +125,11 @@ export const projects = [
     // image: '/images/projects/brending-stomatologii-edemika/main.png',
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/brending-stomatologii-edemika`,
-    collaborators: ['polina-customer-support', 'egor-3d-specialist'],
+    collaborators: [
+      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+      { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
+      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+    ],
     tags: [
       {
         slug: 'branding',
@@ -160,7 +181,11 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-5`,
-    collaborators: ['polina-customer-support', 'egor-3d-specialist'],
+    collaborators: [
+      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+      { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
+      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+    ],
     tags: [
       {
         slug: 'aydentika',
@@ -177,7 +202,11 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-6`,
-    collaborators: ['polina-customer-support', 'egor-3d-specialist'],
+    collaborators: [
+      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+      { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
+      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+    ],
     tags: [
       {
         slug: 'motion',
@@ -194,7 +223,11 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-7`,
-    collaborators: ['polina-customer-support', 'egor-3d-specialist'],
+    collaborators: [
+      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+      { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
+      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+    ],
     tags: [
       {
         slug: '3D',
@@ -211,7 +244,11 @@ export const projects = [
     likes: 15,
     image: '/images/last-project.png',
     link: '/project-1',
-    collaborators: ['polina-customer-support', 'egor-3d-specialist'],
+    collaborators: [
+      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+      { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
+      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+    ],
     tags: [
       {
         slug: '3D',

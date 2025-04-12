@@ -88,11 +88,7 @@ const Page = () => {
         ]}
       />
       <ProjectTeam
-        members={[
-          { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
-          { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
-          { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
-        ]}
+        members={project.collaborators}
       />
       <ProjectFeedback
         likes={project.likes}
