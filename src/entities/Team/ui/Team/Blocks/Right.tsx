@@ -11,8 +11,8 @@ export const TeamRightBlock = () => (
   <div className={cls.rightBlock}>
     {team.map((t) => (
       <div key={t.slug} className={cls.persona}>
-        <Link href={`/team/${t.slug}`}>
-          <ImageSet className={cls.persona__image} height={154} images={t.images} width={154} />
+        <Link href={`/team/${t.slug}`} className={cls.persona__image}>
+          <ImageSet images={t.images} />
         </Link>
 
         <div className={cls.personaInfo}>
