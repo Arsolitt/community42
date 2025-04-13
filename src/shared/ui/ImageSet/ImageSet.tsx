@@ -36,6 +36,7 @@ export const ImageSet = (props: ImageSetProps) => {
       fill
       alt='image'
       className={props.className}
+      sizes='(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw'
       src={img}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
