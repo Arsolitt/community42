@@ -53,5 +53,9 @@ export const tags = [
   {
     text: 'Цветы',
     slug: 'flowers'
+  },
+  {
+    text: 'Бьюти и медицина',
+    slug: 'beauty-medicine'
   }
 ] as const satisfies readonly TagElement[];

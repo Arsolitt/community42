@@ -28,37 +28,6 @@ const PROJECTS_PATH = '/projects';
 
 export const projects = [
   {
-    name: 'Логотип магазина монобукетов Modo',
-    date: '12.06.2024',
-    slug: 'logotip-magazina-monobuketov-modo',
-    summary: 'Modo – это новый цветочный сервис в Кемерово, ориентированный на моно (иногда и дуо) букеты. Ребята делают монобукеты с акцентом на цветы в категории премиум и люкс. Их магазин базируется в интернете, а заказ можно делать в мессенджерах Телграм, Вотсап и по телефону. Наша задача была в короткие сроки создать логотип, определииться с графическими элементами и создать некоторые шаблоны для оформления сторис, постов, рекламных банеров и т.п.',
-    likes: 10,
-    image: '/images/projects/logotip-magazina-monobuketov-modo/main.webp',
-    link: `${PROJECTS_PATH}/logotip-magazina-monobuketov-modo`,
-    collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
-      { role: 'Дизайнер', slug: 'polina-web-designer' },
-      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
-    ],
-    tags: [
-      {
-        slug: 'logotypes',
-        text: 'Логотипы',
-        priority: 3
-      },
-      {
-        slug: 'photo',
-        text: 'Фото',
-        priority: 1
-      },
-      {
-        slug: 'flowers',
-        text: 'Цветы',
-        priority: 1
-      }
-    ]
-  },
-  {
     name: '3D-видео для новой космической темы оформления Лицея№23',
     date: '01.09.2024',
     slug: '3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23',
@@ -90,7 +59,6 @@ export const projects = [
     slug: 'rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    // image: '/images/projects/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt/main.png',
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt`,
     collaborators: [
@@ -117,12 +85,42 @@ export const projects = [
     ]
   },
   {
+    name: 'Логотип магазина монобукетов Modo',
+    date: '12.06.2024',
+    slug: 'logotip-magazina-monobuketov-modo',
+    summary: 'Modo – это новый цветочный сервис в Кемерово, ориентированный на моно (иногда и дуо) букеты. Ребята делают монобукеты с акцентом на цветы в категории премиум и люкс. Их магазин базируется в интернете, а заказ можно делать в мессенджерах Телграм, Вотсап и по телефону. Наша задача была в короткие сроки создать логотип, определииться с графическими элементами и создать некоторые шаблоны для оформления сторис, постов, рекламных банеров и т.п.',
+    likes: 10,
+    image: '/images/projects/logotip-magazina-monobuketov-modo/main.webp',
+    link: `${PROJECTS_PATH}/logotip-magazina-monobuketov-modo`,
+    collaborators: [
+      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
+      { role: 'Дизайнер', slug: 'polina-web-designer' },
+      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+    ],
+    tags: [
+      {
+        slug: 'logotypes',
+        text: 'Логотипы',
+        priority: 3
+      },
+      {
+        slug: 'photo',
+        text: 'Фото',
+        priority: 1
+      },
+      {
+        slug: 'flowers',
+        text: 'Цветы',
+        priority: 1
+      }
+    ]
+  },
+  {
     name: 'Брендинг стоматологии «Эдемика»',
     date: '15.09.2024',
     slug: 'brending-stomatologii-edemika',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    // image: '/images/projects/brending-stomatologii-edemika/main.png',
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/brending-stomatologii-edemika`,
     collaborators: [
