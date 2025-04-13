@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import type { Project } from '@/shared/assets/projects';
 
+import { PROJECTS_PATH } from '@/core/config/paths';
 import { classNames } from '@/features/helpers/className';
 import { LikeIcon } from '@/shared/assets/icons';
 import { Typography } from '@/shared/ui/Typography';
@@ -21,12 +22,12 @@ export const Projects = (props: ProjectsProps) => {
     <section className={classNames(cls.Projects, {}, [className])}>
       {projects.map((p) => (
         <div key={p.slug} className={cls.project}>
-          <Link href={p.link} className={cls.projectImage}>
+          <Link href={`${PROJECTS_PATH}/${p.slug}`} className={cls.projectImage}>
             <Image alt='image' height={251} src={p.image} width={444} />
           </Link>
           <div className={cls.projectInfo}>
             <Typography style={{ fontWeight: '600', fontSize: '18px' }} variant='h4'>
-              <Link href={p.link} className={cls.projectName}>
+              <Link href={`${PROJECTS_PATH}/${p.slug}`} className={cls.projectName}>
                 {p.name}
               </Link>
             </Typography>

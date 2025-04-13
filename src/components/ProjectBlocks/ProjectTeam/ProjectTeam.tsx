@@ -3,6 +3,7 @@ import React from 'react';
 
 import type { Member } from '@/shared/assets/team';
 
+import { TEAM_PATH } from '@/core/config/paths';
 import { team } from '@/shared/assets/team';
 
 import styles from './ProjectTeam.module.scss';
@@ -33,7 +34,7 @@ export const ProjectTeam: React.FC<ProjectTeamProps> = ({ members }) => {
       {projectMembers.map((projectMember) => (
         <div key={`${projectMember.slug}-${projectMember.role}`} className='flex flex-col'>
           <h3 className={styles.member_position}>{projectMember.role}</h3>
-          <Link href={`/team/${projectMember.slug}`} className={styles.member_name}>
+          <Link href={`${TEAM_PATH}/${projectMember.slug}`} className={styles.member_name}>
             {projectMember.name}
           </Link>
         </div>

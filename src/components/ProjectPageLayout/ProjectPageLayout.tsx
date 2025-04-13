@@ -1,4 +1,3 @@
-import { notFound } from 'next/navigation';
 import React from 'react';
 
 import type { Project } from '@/shared/assets/projects';
@@ -16,10 +15,6 @@ interface ProjectPageLayoutProps {
 }
 
 export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({ project, children }) => {
-  if (!project) {
-    return notFound();
-  }
-
   return (
     <div className='max-w-[1920px] mx-auto px-11'>
       <ProjectHeader project={project} />

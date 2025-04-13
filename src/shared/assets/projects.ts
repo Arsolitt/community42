@@ -1,13 +1,14 @@
 import type { Tag } from '@/shared/assets/tags';
 import type { Member } from '@/shared/assets/team';
 
+import { PROJECT_IMG_URL } from '@/core/config/paths';
+
 interface ProjectElement {
   collaborators: ProjectCollaborator[];
   creationTimeText: string;
   date: string;
   image: string;
   likes: number;
-  link: string;
   name: string;
   slug: string;
   summary: string;
@@ -25,8 +26,6 @@ export type ProjectTag = Tag & {
   priority: number;
 };
 
-const PROJECTS_PATH = '/projects';
-
 export const projects = [
   {
     name: '3D-видео для новой космической темы оформления Лицея№23',
@@ -34,8 +33,7 @@ export const projects = [
     slug: '3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/project-1.png',
-    link: `${PROJECTS_PATH}/3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23`,
+    image: `${PROJECT_IMG_URL}/project-1.png`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
@@ -61,8 +59,7 @@ export const projects = [
     slug: 'rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/project-1.png',
-    link: `${PROJECTS_PATH}/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt`,
+    image: `${PROJECT_IMG_URL}/project-1.png`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
@@ -93,8 +90,7 @@ export const projects = [
     slug: 'logotip-magazina-monobuketov-modo',
     summary: 'Modo – это новый цветочный сервис в Кемерово, ориентированный на моно (иногда и дуо) букеты. Ребята делают монобукеты с акцентом на цветы в категории премиум и люкс. Их магазин базируется в интернете, а заказ можно делать в мессенджерах Телграм, Вотсап и по телефону. Наша задача была в короткие сроки создать логотип, определииться с графическими элементами и создать некоторые шаблоны для оформления сторис, постов, рекламных банеров и т.п.',
     likes: 10,
-    image: '/images/projects/logotip-magazina-monobuketov-modo/main.webp',
-    link: `${PROJECTS_PATH}/logotip-magazina-monobuketov-modo`,
+    image: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
@@ -125,8 +121,7 @@ export const projects = [
     slug: 'brending-stomatologii-edemika',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/project-1.png',
-    link: `${PROJECTS_PATH}/brending-stomatologii-edemika`,
+    image: `${PROJECT_IMG_URL}/project-1.png`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
@@ -182,8 +177,7 @@ export const projects = [
     slug: 'project-5',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/project-1.png',
-    link: `${PROJECTS_PATH}/project-5`,
+    image: `${PROJECT_IMG_URL}/project-1.png`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
@@ -204,8 +198,7 @@ export const projects = [
     slug: 'project-6',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/project-1.png',
-    link: `${PROJECTS_PATH}/project-6`,
+    image: `${PROJECT_IMG_URL}/project-1.png`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
@@ -226,8 +219,7 @@ export const projects = [
     slug: 'project-7',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 10,
-    image: '/images/projects/project-1.png',
-    link: `${PROJECTS_PATH}/project-7`,
+    image: `${PROJECT_IMG_URL}/project-1.png`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
@@ -248,8 +240,7 @@ export const projects = [
     slug: 'project-8',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
     likes: 15,
-    image: '/images/last-project.png',
-    link: '/project-1',
+    image: `${PROJECT_IMG_URL}/project-1.png`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },

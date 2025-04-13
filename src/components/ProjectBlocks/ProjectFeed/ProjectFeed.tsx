@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import type { Project } from '@/shared/assets/projects';
 
+import { PROJECTS_PATH } from '@/core/config/paths';
 import { classNames } from '@/features/helpers/className';
 import { projects as allProjects } from '@/shared/assets/projects';
 
@@ -59,7 +60,7 @@ export const ProjectFeed = ({ className, sourceProject }: ProjectFeedProps) => {
   return (
     <div className={classNames(cls.projectFeed, {}, [className])}>
       {displayedProjects.map((project) => (
-        <Link href={project.link} key={project.slug} className={cls.projectItem}>
+        <Link href={`${PROJECTS_PATH}/${project.slug}`} key={project.slug} className={cls.projectItem}>
           <Image
             fill
             alt={project.name}
