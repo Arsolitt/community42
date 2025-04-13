@@ -3,6 +3,7 @@ import type { Member } from '@/shared/assets/team';
 
 interface ProjectElement {
   collaborators: ProjectCollaborator[];
+  creationTimeText: string;
   date: string;
   image: string;
   likes: number;
@@ -35,6 +36,7 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23`,
+    creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
       { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
@@ -61,6 +63,7 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt`,
+    creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
       { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
@@ -92,6 +95,7 @@ export const projects = [
     likes: 10,
     image: '/images/projects/logotip-magazina-monobuketov-modo/main.webp',
     link: `${PROJECTS_PATH}/logotip-magazina-monobuketov-modo`,
+    creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
       { role: 'Дизайнер', slug: 'polina-web-designer' },
@@ -123,6 +127,7 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/brending-stomatologii-edemika`,
+    creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
       { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
@@ -179,6 +184,7 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-5`,
+    creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
       { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
@@ -200,6 +206,7 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-6`,
+    creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
       { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
@@ -221,6 +228,7 @@ export const projects = [
     likes: 10,
     image: '/images/projects/project-1.png',
     link: `${PROJECTS_PATH}/project-7`,
+    creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
       { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
@@ -242,6 +250,7 @@ export const projects = [
     likes: 15,
     image: '/images/last-project.png',
     link: '/project-1',
+    creationTimeText: 'Создано за 10 дней',
     collaborators: [
       { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
       { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },

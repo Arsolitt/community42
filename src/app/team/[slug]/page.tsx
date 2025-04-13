@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 
 import { Biography } from '@/entities/Biography';
-import { team } from '@/shared/assets/team'; // Импортируем данные команды
+import { team } from '@/shared/assets/team';
 import { Header } from '@/widgets/Header';
 
 export async function generateStaticParams() {

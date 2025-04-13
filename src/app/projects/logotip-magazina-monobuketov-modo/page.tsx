@@ -1,21 +1,15 @@
-import { ImgLarge } from '@/components/ProjectBlocks/ImgLarge';
 import { ImgSquares } from '@/components/ProjectBlocks/ImgSquares';
 import { ImgSquareUWide } from '@/components/ProjectBlocks/ImgSquareUWide/ImgSquareUWide';
 import { ImgVertical } from '@/components/ProjectBlocks/ImgVertical/ImgVertical';
-import { ProjectFeed } from '@/components/ProjectBlocks/ProjectFeed';
-import { ProjectFeedback } from '@/components/ProjectBlocks/ProjectFeedback';
-import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
-import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
 import { TextBlock } from '@/components/ProjectBlocks/TextBlock';
+import { ProjectPageLayout } from '@/components/ProjectPageLayout/ProjectPageLayout';
 import { projects } from '@/shared/assets/projects';
 
 const project = projects.find((project) => project.slug === 'logotip-magazina-monobuketov-modo');
 
 const Page = () => {
   return (
-    <div className='max-w-[1920px] mx-auto px-11'>
-      <ProjectHeader project={project} />
-      <ImgLarge alt={project.name} src={project.image} />
+    <ProjectPageLayout project={project}>
       <TextBlock>
         В основе логотипа лежит геометричная форма одного цветка, что делает акцент на моно-формате магазина, <br />
         а также на их щепетильностью к подбору каждого цветочка. Простая и аккуратная форма значка подобрана <br />
@@ -87,16 +81,7 @@ const Page = () => {
           }
         ]}
       />
-      <ProjectTeam
-        members={project.collaborators}
-      />
-      <ProjectFeedback
-        likes={project.likes}
-        creationDate={project.date}
-        creationTimeText='Создано за 10 дней'
-      />
-      <ProjectFeed sourceProject={project} />
-    </div>
+    </ProjectPageLayout>
   );
 };
 
