@@ -19,22 +19,22 @@ const Page = () => {
       <ImgSquares
         images={[
           {
-            src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/logo_red_background.svg`,
+            src: `${PROJECT_IMG_URL}/${project.slug}/logo_red_background.svg`,
             alt: 'Логотип MODO на красном фоне'
           },
           {
-            src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/logo_white_background.svg`,
+            src: `${PROJECT_IMG_URL}/${project.slug}/logo_white_background.svg`,
             alt: 'Логотип MODO на белом фоне'
           }
         ]}
       />
       <ImgSquareUWide images={[
         {
-          src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/logo_mobile.webp`,
+          src: `${PROJECT_IMG_URL}/${project.slug}/logo_mobile.webp`,
           alt: 'Логотип MODO на мобильном устройстве'
         },
         {
-          src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/logo_wide.webp`,
+          src: `${PROJECT_IMG_URL}/${project.slug}/logo_wide.webp`,
           alt: 'Логотип MODO на широком устройстве'
         }
       ]}
@@ -45,11 +45,11 @@ const Page = () => {
       </TextBlock>
       <ImgSquareUWide images={[
         {
-          src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/icon_square.webp`,
+          src: `${PROJECT_IMG_URL}/${project.slug}/icon_square.webp`,
           alt: 'Иконка квадратная'
         },
         {
-          src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/icon_wide.webp`,
+          src: `${PROJECT_IMG_URL}/${project.slug}/icon_wide.webp`,
           alt: 'Иконка квадратная'
         }
       ]}
@@ -58,9 +58,9 @@ const Page = () => {
         Примеры фирменных фото:
       </TextBlock>
       <ImgVertical images={[
-        { src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/vertical1.webp`, alt: 'Image 1' },
-        { src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/vertical2.webp`, alt: 'Image 2' },
-        { src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/vertical3.webp`, alt: 'Image 3' }
+        { src: `${PROJECT_IMG_URL}/${project.slug}/vertical1.webp`, alt: 'Image 1' },
+        { src: `${PROJECT_IMG_URL}/${project.slug}/vertical2.webp`, alt: 'Image 2' },
+        { src: `${PROJECT_IMG_URL}/${project.slug}/vertical3.webp`, alt: 'Image 3' }
       ]}
       />
       <TextBlock>
@@ -69,15 +69,15 @@ const Page = () => {
       <ImgSquares
         images={[
           {
-            src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/square1.webp`,
+            src: `${PROJECT_IMG_URL}/${project.slug}/square1.webp`,
             alt: 'Фото 1'
           },
           {
-            src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/square2.webp`,
+            src: `${PROJECT_IMG_URL}/${project.slug}/square2.webp`,
             alt: 'Фото 2'
           },
           {
-            src: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/square3.webp`,
+            src: `${PROJECT_IMG_URL}/${project.slug}/square3.webp`,
             alt: 'Фото 3'
           }
         ]}
