@@ -401,11 +401,11 @@ export const projects = [
         slug: 'vektornaya-graphika',
         text: 'Векторная графика',
         priority: 1
-      }  
+      }
     ]
   },
   {
-    name: "Логотип научно-исследовательской эстафеты «По следам Чихачёва»",
+    name: 'Логотип научно-исследовательской эстафеты «По следам Чихачёва»',
     date: '28.03.2021',
     slug: 'logotip-nauchno-issledovatelьskoj-estafety-po-sledam-chihachyova',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
@@ -424,7 +424,7 @@ export const projects = [
     ]
   },
   {
-    name: "Сувенир-иллюстрация карта Кузбасса для Visit Kuzbass",
+    name: 'Сувенир-иллюстрация карта Кузбасса для Visit Kuzbass',
     date: '12.06.2022',
     slug: 'suvenir-illyustraciya-karta-kuzbassa-dlya-visit-kuzbass',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
@@ -443,7 +443,7 @@ export const projects = [
     ]
   },
   {
-    name: "Фирменное Б-ролл видео для стилиста по бровям",
+    name: 'Фирменное Б-ролл видео для стилиста по бровям',
     date: '12.06.2022',
     slug: 'firmennoe-b-roll-video-dlya-stilista-po-brovyam',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',

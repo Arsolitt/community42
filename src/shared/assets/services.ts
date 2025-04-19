@@ -28,7 +28,7 @@ export const services = [
     tags: ['logotypes', 'branding'],
     isNew: false,
     images: [
-      '/images/services/albums.png'
+      `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
