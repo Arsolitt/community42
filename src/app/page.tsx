@@ -11,6 +11,8 @@ import { Header } from '@/widgets/Header';
 import styles from './page.module.scss';
 
 const Home = () => {
+  // const lastProject = [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
+  const lastProject = projects[2];
   return (
     <>
       <Header />
@@ -43,7 +45,7 @@ const Home = () => {
           <Clients />
         </div>
       </main>
-      <Footer lastProject={projects[7]} />
+      <Footer lastProject={lastProject} />
     </>
   );
 };

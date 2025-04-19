@@ -34,7 +34,7 @@ export const Footer = memo(({ className, isProjectPage, lastProject }: FooterPro
             height={506}
             quality={100}
             src={lastProject.image}
-            width={1180}
+            width={1349}
           />
           <div className={cls.lastProject__characteristics}>
             <Typography style={{ fontSize: '18px', fontWeight: 600 }} variant='p'>
