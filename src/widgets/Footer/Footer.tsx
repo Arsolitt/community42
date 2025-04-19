@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { memo } from 'react';
 
@@ -28,14 +27,15 @@ export const Footer = memo(({ className, isProjectPage, lastProject }: FooterPro
       {lastProject && (
         <div className={cls.lastProject}>
           <Typography variant='h6'>Оцените нашу последнюю работу</Typography>
-          <Image
+          {/* <ImgLarge alt={lastProject.name} src={lastProject.image} /> */}
+          {/* <Image
             alt={lastProject.name}
             className={cls.lastProject__image}
             height={440}
             quality={100}
             src={lastProject.image}
             width={1180}
-          />
+          /> */}
           <div className={cls.lastProject__characteristics}>
             <Typography style={{ fontSize: '18px', fontWeight: 600 }} variant='p'>
               {lastProject.name}
