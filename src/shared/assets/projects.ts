@@ -1,5 +1,4 @@
 import type { Tag } from '@/shared/assets/tags';
-import type { Member } from '@/shared/assets/team';
 
 import { PROJECT_IMG_URL } from '@/core/config/paths';
 
@@ -16,8 +15,10 @@ interface ProjectElement {
 }
 
 export interface ProjectCollaborator {
+  link?: string;
+  name?: string;
   role: string;
-  slug: Member['slug'];
+  slug: string;
 }
 
 export type Project = typeof projects[number];

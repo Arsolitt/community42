@@ -1,20 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
 
-import type { Member } from '@/shared/assets/team';
+import type { ProjectCollaborator } from '@/shared/assets/projects';
 
 import { TEAM_PATH } from '@/core/config/paths';
 import { team } from '@/shared/assets/team';
 
 import styles from './ProjectTeam.module.scss';
 
-interface ProjectMember {
-  role: string;
-  slug: Member['slug'];
-}
-
 interface ProjectTeamProps {
-  members: ProjectMember[];
+  members: ProjectCollaborator[];
 }
 
 export const ProjectTeam: React.FC<ProjectTeamProps> = ({ members }) => {
@@ -25,6 +20,8 @@ export const ProjectTeam: React.FC<ProjectTeamProps> = ({ members }) => {
         ...teamMember,
         role: member.role
       };
+    } else if (member.link && member.name) {
+      return member;
     }
     return null;
   }).filter(Boolean);
@@ -34,7 +31,7 @@ export const ProjectTeam: React.FC<ProjectTeamProps> = ({ members }) => {
       {projectMembers.map((projectMember) => (
         <div key={`${projectMember.slug}-${projectMember.role}`} className='flex flex-col'>
           <h3 className={styles.member_position}>{projectMember.role}</h3>
-          <Link href={`${TEAM_PATH}/${projectMember.slug}`} className={styles.member_name}>
+          <Link href={projectMember.link ?? `${TEAM_PATH}/${projectMember.slug}`} className={styles.member_name}>
             {projectMember.name}
           </Link>
         </div>
