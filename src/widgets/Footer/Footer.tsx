@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { memo } from 'react';
 
 import type { Project } from '@/shared/assets/projects';
 
@@ -18,7 +17,7 @@ interface FooterProps {
   lastProject?: Project;
 }
 
-export const Footer = memo(({ className, isProjectPage, lastProject }: FooterProps) => {
+export const Footer = ({ className, isProjectPage, lastProject }: FooterProps) => {
   const containerMods = {
     [cls.noTopSpacing]: isProjectPage
   };
@@ -88,6 +87,4 @@ export const Footer = memo(({ className, isProjectPage, lastProject }: FooterPro
       </footer>
     </div>
   );
-});
-
-Footer.displayName = 'Footer';
+};

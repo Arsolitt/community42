@@ -83,6 +83,7 @@ $image-top-offset: 220px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 27px;
+  margin-top: 8px;
 }
 
 .services {
@@ -121,6 +122,7 @@ $image-top-offset: 220px;
     font-size: 18px;
     font-weight: 600;
     line-height: 130%;
+    margin-bottom: 15px;
   }
 
   &Text {
