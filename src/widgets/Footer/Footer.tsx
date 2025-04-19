@@ -39,7 +39,7 @@ export const Footer = ({ className, isProjectPage, lastProject }: FooterProps) =
             <Typography style={{ fontSize: '18px', fontWeight: 600 }} variant='p'>
               {lastProject.name}
             </Typography>
-            <Likes likes={lastProject.likes} />
+            <Likes className={cls.likes} likes={lastProject.likes} />
           </div>
         </div>
       )}
