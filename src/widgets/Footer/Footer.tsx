@@ -27,18 +27,22 @@ export const Footer = ({ className, isProjectPage, lastProject }: FooterProps) =
       {lastProject && (
         <div className={cls.lastProject}>
           <Typography variant='h6'>Оцените нашу последнюю работу</Typography>
-          <Image
-            alt={lastProject.name}
-            className={cls.lastProject__image}
-            height={506}
-            quality={100}
-            src={lastProject.image}
-            width={1349}
-          />
+          <Link href={`/projects/${lastProject.slug}`}>
+            <Image
+              alt={lastProject.name}
+              className={cls.lastProject__image}
+              height={506}
+              quality={100}
+              src={lastProject.image}
+              width={1349}
+            />
+          </Link>
           <div className={cls.lastProject__characteristics}>
-            <Typography style={{ fontSize: '18px', fontWeight: 600 }} variant='p'>
-              {lastProject.name}
-            </Typography>
+            <Link href={`/projects/${lastProject.slug}`}>
+              <Typography style={{ fontSize: '18px', fontWeight: 600 }} variant='p'>
+                {lastProject.name}
+              </Typography>
+            </Link>
             <Likes className={cls.likes} likes={lastProject.likes} />
           </div>
         </div>
