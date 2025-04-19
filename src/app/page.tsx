@@ -36,12 +36,6 @@ const Home = () => {
             </Typography>
           </div>
           <section className={styles.services}>
-            {/* <Image
-              src="/images/services/services.png"
-              alt="image"
-              width={1181}
-              height={437}
-            /> */}
             <Video />
             <ServicesList />
           </section>

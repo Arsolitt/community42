@@ -18,7 +18,7 @@ export interface ProjectCollaborator {
   link?: string;
   name?: string;
   role: string;
-  slug: string;
+  slug?: string;
 }
 
 export type Project = typeof projects[number];

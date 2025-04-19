@@ -41,8 +41,8 @@ export const team = [
     slug: 'egor-3d-specialist',
     name: 'Егор',
     position: '3D специалист',
-    images: ['/images/team/egor.png'],
-    fullsizeImage: '/images/team/full-size/polina.png',
+    images: [`${TEAM_IMG_URL}/egor.png`],
+    fullsizeImage: `${TEAM_IMG_URL}/full-size/egor.png`,
     description:
       'Работает в индустрии коммуникаций с 2003 года и успел погрузиться практически во все ее сферы: ATL, BTL, Media, PR, Event. С 2006 года — в брендинге. Ведет собственный проект о рекламе в Центральной Азии — AdAsia, выступает сопродюсером фестиваля Red Jolbors Fest. Неоднократный победитель креативных фестивалей различного уровня, включая Cannes Lion',
     socials: [

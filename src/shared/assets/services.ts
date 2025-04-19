@@ -1,3 +1,5 @@
+import { SERVICES_IMG_URL } from '@/core/config/paths';
+
 import type { Tag } from './tags';
 
 interface ServiceElement {
@@ -17,7 +19,7 @@ export const services = [
     tags: ['ux-ui'],
     isNew: false,
     images: [
-      '/images/services/albums.png'
+      `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
@@ -35,7 +37,7 @@ export const services = [
     tags: ['branding', 'aydentika'],
     isNew: false,
     images: [
-      '/images/services/albums.png'
+      `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
@@ -44,7 +46,7 @@ export const services = [
     tags: ['motion', '3D'],
     isNew: false,
     images: [
-      '/images/services/albums.png'
+      `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
@@ -53,7 +55,7 @@ export const services = [
     tags: ['fotosessii', 'reklamnaya-retush', 'photo'],
     isNew: false,
     images: [
-      '/images/services/albums.png'
+      `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
@@ -62,7 +64,7 @@ export const services = [
     tags: ['video'],
     isNew: false,
     images: [
-      '/images/services/albums.png'
+      `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
@@ -71,7 +73,7 @@ export const services = [
     isNew: true,
     tags: [],
     images: [
-      '/images/services/albums.png'
+      `${SERVICES_IMG_URL}/albums.png`
     ]
   }
 ] as const satisfies readonly ServiceElement[];
