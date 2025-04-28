@@ -25,7 +25,7 @@ export const services = [
   {
     slug: 'graphic-design',
     text: 'Графический дизайн',
-    tags: ['logotypes', 'branding'],
+    tags: ['logotypes', 'vektornaya-graphika'],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/albums.png`
