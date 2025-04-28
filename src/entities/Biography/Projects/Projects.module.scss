@@ -50,9 +50,13 @@
       overflow: hidden;
       display: block;
       max-width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-    } 
+      & img {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: center;  
+      }
+    }
+
   }
 
   @media screen and (max-width: 1280px) {
