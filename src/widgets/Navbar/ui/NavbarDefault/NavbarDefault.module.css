@@ -1,7 +1,6 @@
 .navbar_default {
   display: flex;
-  align-items: center;
-  gap: 6px;
+  gap: 7.25px;
 }
 
 .navbar_default button {
