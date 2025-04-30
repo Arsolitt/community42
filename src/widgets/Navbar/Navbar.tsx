@@ -7,7 +7,7 @@ import { NavbarContacts } from './ui/NavbarContacts/NavbarContacts';
 import { NavbarDefault } from './ui/NavbarDefault/NavbarDefault';
 import { NavbarSearchButton } from './ui/SearchButton/SearchButton';
 
-import cls from './Navbar.module.scss';
+import cls from './Navbar.module.css';
 
 interface NavbarProps {
   className?: string;
@@ -16,11 +16,11 @@ interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
   const [isShown, setIsShown] = useState(false);
   return (
-    <nav className={classNames(cls.Navbar, {}, [className])}>
+    <nav className={classNames(cls.navbar, {}, [className])}>
       {!isShown ? (
-        <NavbarDefault openContacts={() => setIsShown(true)} />
+        <NavbarDefault className={cls.navbar_wrapper} openContacts={() => setIsShown(true)} />
       ) : (
-        <NavbarContacts closeContacts={() => setIsShown(false)} />
+        <NavbarContacts className={cls.navbar_wrapper} closeContacts={() => setIsShown(false)} />
       )}
       <NavbarSearchButton />
     </nav>

@@ -30,13 +30,12 @@ export const Footer = ({ className, isProjectPage, lastProject }: FooterProps) =
           <div>
             <Link href={`/projects/${lastProject.slug}`}>
               <Image
-                // fill
                 alt={lastProject.name}
                 className={cls.lastProject__image}
-                height={506}
+                height={443}
                 quality={100}
                 src={lastProject.image}
-                width={1349}
+                width={1180}
               />
             </Link>
           </div>

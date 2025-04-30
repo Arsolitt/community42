@@ -1,42 +1,44 @@
 import { motion } from 'framer-motion';
 
+import { classNames } from '@/features/helpers/className';
 import { MarketIcon, MessageIcon } from '@/shared/assets/icons/';
+import { Typography } from '@/shared/ui/Typography';
 
-import cls from './NavbarDefault.module.scss';
+import cls from './NavbarDefault.module.css';
 
 interface NavbarDefaultProps {
+  className?: string;
   openContacts: () => void;
 }
 
 export const NavbarDefault = (props: NavbarDefaultProps) => {
-  const { openContacts } = props;
+  const { className, openContacts } = props;
   return (
-    <ul className={cls.NavbarDefault}>
+    <div className={classNames(null, {}, [className])}>
       <motion.div
         key={openContacts ? 'shown' : 'normal'}
         animate={{ opacity: 1 }}
+        className={cls.navbar_default}
         exit={{ opacity: 0 }}
         initial={{ opacity: 0 }}
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
-        <li>
-          <button className={cls.contacts} type='button' onClick={openContacts}>
-            <MessageIcon />
-            контакты
-          </button>
-        </li>
-        <li>
-          <div className={cls.order}>
-            <button type='button'>заказать стилёк</button>
-          </div>
-        </li>
-        <li>
-          <button type='button'>
-            <MarketIcon />
-            магазинчик
-          </button>
-        </li>
+        <button
+          className={cls.contacts}
+          type='button'
+          onClick={openContacts}
+        >
+          <MessageIcon />
+          <Typography variant='span'>контакты</Typography>
+        </button>
+        <button className={cls.order_button} type='button'>
+          <Typography variant='span'>заказать стилёк</Typography>
+        </button>
+        <button type='button'>
+          <MarketIcon />
+          <Typography variant='span'>магазинчик</Typography>
+        </button>
       </motion.div>
-    </ul>
+    </div>
   );
 };

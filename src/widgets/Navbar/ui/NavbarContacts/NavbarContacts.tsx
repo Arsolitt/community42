@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 import { classNames } from '@/features/helpers/className';
 import { CloseContactsIcon, EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
 import { Typography } from '@/shared/ui/Typography';
 
-import cls from './NavbarContacts.module.scss';
+import cls from './NavbarContacts.module.css';
 
 interface NavbarContactsProps {
   className?: string;
@@ -14,32 +15,41 @@ interface NavbarContactsProps {
 export const NavbarContacts = (props: NavbarContactsProps) => {
   const { className, closeContacts } = props;
   return (
-    <div className={classNames(cls.NavbarContacts, {}, [className])}>
+    <div className={classNames(null, {}, [className])}>
       <motion.div
         key={closeContacts ? 'shown' : 'normal'}
         animate={{ opacity: 1 }}
+        className={cls.navbar_contacts}
         exit={{ opacity: 0 }}
         initial={{ opacity: 0 }}
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
-        <button type='button' onClick={closeContacts}>
+        <button className={cls.close_contacts} type='button' onClick={closeContacts}>
           <CloseContactsIcon />
           <Typography variant='span'>закрыть контакты</Typography>
         </button>
-        <div>
+        <ul className={cls.contacts_list}>
           <li>
-            <VkIcon />
+            <Link href=''>
+              <VkIcon />
+            </Link>
           </li>
           <li>
-            <TelegramIcon />
+            <Link href=''>
+              <TelegramIcon />
+            </Link>
           </li>
           <li>
-            <WhatsappIcon />
+            <Link href=''>
+              <WhatsappIcon />
+            </Link>
           </li>
           <li>
-            <EmailIcon />
+            <Link href=''>
+              <EmailIcon />
+            </Link>
           </li>
-        </div>
+        </ul>
       </motion.div>
     </div>
   );

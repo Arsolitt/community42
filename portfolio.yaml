@@ -6,7 +6,8 @@ metadata:
 spec:
   replicas: 1
   strategy:
-    type: Recreate
+    # type: Recreate
+    type: RollingUpdate
   selector:
     matchLabels:
       app: community-portfolio
@@ -16,7 +17,7 @@ spec:
         app: community-portfolio
     spec:
       containers:
-        - image: harbor.arsolitt.tech/community42/portfolio:v0.5
+        - image: harbor.arsolitt.tech/community42/portfolio:v0.6
           livenessProbe:
             failureThreshold: 3
             httpGet:

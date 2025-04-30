@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { classNames } from '@/features/helpers/className';
 import { CloseContactsIcon, SearchIcon } from '@/shared/assets/icons';
 
-import cls from './NavbarSearchButton.module.scss';
+import cls from './SearchButton.module.css';
 
 interface SearchButtonProps {
   className?: string;
@@ -30,7 +30,7 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
   };
 
   return (
-    <div className={classNames(cls.SearchButton, {}, [className])}>
+    <div className={classNames(cls.search_button, {}, [className])}>
       <button type='button' onClick={onToggleSearch}>
         <motion.div
           key={openSearch ? 'shown' : 'normal'}
