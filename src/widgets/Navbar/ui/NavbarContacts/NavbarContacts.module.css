@@ -13,6 +13,7 @@
   border-radius: 10px;
   transition: background 0.3s;
   height: 30px;
+  margin: 0 0 0 -1px;
 }
 
 .close_contacts:hover {
