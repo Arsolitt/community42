@@ -7,7 +7,7 @@
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  /* gap: 4px; */
+  gap: 4px;
   z-index: var(--widget-z-index);
 }
 

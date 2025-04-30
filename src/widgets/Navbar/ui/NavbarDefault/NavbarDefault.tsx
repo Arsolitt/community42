@@ -24,7 +24,7 @@ export const NavbarDefault = (props: NavbarDefaultProps) => {
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
         <button
-          className={cls.contacts}
+          className={cls.contacts_button}
           type='button'
           onClick={openContacts}
         >
@@ -34,7 +34,7 @@ export const NavbarDefault = (props: NavbarDefaultProps) => {
         <button className={cls.order_button} type='button'>
           <Typography variant='span'>заказать стилёк</Typography>
         </button>
-        <button type='button'>
+        <button className={cls.shop_button} type='button'>
           <MarketIcon />
           <Typography variant='span'>магазинчик</Typography>
         </button>
