@@ -1,12 +1,13 @@
 .navbar_default {
   display: flex;
-  gap: 8.25px;
+  /* justify-content: space-between; */
+  /* gap: 8.25px; */
 }
 
 .navbar_default button {
   height: 30px;
   border-radius: 10px;
-  padding: 4px 8px 0px 8px;
+  padding: 0px 8px 0px 8px;
   transition: background 0.3s;
   display: flex;
   align-items: center;
@@ -23,6 +24,12 @@
 
 .navbar_default button:hover {
   background: rgba(200, 168, 216, 0.25);
+}
+
+.order_button {
+  /* margin: 0 auto; */
+  white-space: nowrap;
+  margin: 0 10px 0 8px;
 }
 
 .order_button span {
