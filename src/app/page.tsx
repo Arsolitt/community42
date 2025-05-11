@@ -1,9 +1,9 @@
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Typography } from '@/components/Typography';
-import { Clients } from '@/entities/Clients';
-import { ServicesList } from '@/entities/Services';
-import { Team } from '@/entities/Team';
+import { Clients } from '@/components/Clients';
+import { ServicesList } from '@/components/Services';
+import { Team } from '@/components/Team';
 import { CloseIcon } from '@/shared/assets/icons/close';
 import { projects } from '@/shared/assets/projects';
 import { Video } from '@/components/Video';

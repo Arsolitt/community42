@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 
+import { Biography } from '@/components/Biography';
 import { Header } from '@/components/Header';
-import { Biography } from '@/entities/Biography';
 import { team } from '@/shared/assets/team';
 
 export async function generateStaticParams() {

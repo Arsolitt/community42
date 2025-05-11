@@ -1,8 +1,8 @@
 import { AnimatedTitle } from '@/components/AnimatedTitle/AnimatedTitle';
 import { classNames } from '@/features/helpers/className';
 
-import { TeamLeftBlock } from './Blocks/Left';
-import { TeamRightBlock } from './Blocks/Right';
+import { TeamLeftBlock } from './LeftBlock';
+import { TeamRightBlock } from './RightBlock';
 
 import cls from './Team.module.scss';
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { Projects } from '@/entities/Biography/Projects';
+import { Projects } from '@/components/Biography/Projects';
 import { useFilteredProjects } from '@/features/hooks/useFilteredProjects';
 import { useSearchTags } from '@/features/hooks/useSearchTags';
 import { useSearchTerm } from '@/features/hooks/useSearchTerm';
