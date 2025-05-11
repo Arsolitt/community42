@@ -1,25 +1,24 @@
-@use "sass:meta";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@include meta.load-css('reset');
-@include meta.load-css('variables');
+@import './reset.css';
+@import './variables.css';
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   -webkit-font-feature-settings: 'lnum';
-  -moz-font-feature-settings: 'lnum';
+  -moz-font-feature-feature-settings: 'lnum';
   font-feature-settings: 'lnum';
 }
 
 .main {
   padding-top: 172px;
+}
 
-  &_search {
-    padding-top: 182px;
-  }
+.main_search {
+  padding-top: 182px;
 }
 
 .container {

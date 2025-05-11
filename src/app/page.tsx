@@ -1,14 +1,14 @@
+import { Clients } from '@/components/Clients';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-import { Typography } from '@/components/Typography';
-import { Clients } from '@/components/Clients';
 import { ServicesList } from '@/components/Services';
 import { Team } from '@/components/Team';
+import { Typography } from '@/components/Typography';
+import { Video } from '@/components/Video';
 import { CloseIcon } from '@/shared/assets/icons/close';
 import { projects } from '@/shared/assets/projects';
-import { Video } from '@/components/Video';
 
-import styles from './page.module.scss';
+import styles from './page.module.css';
 
 const Home = () => {
   // const lastProject = [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];

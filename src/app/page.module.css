@@ -9,21 +9,21 @@
   justify-content: center;
   gap: 16px;
   margin-bottom: 32px;
+}
 
-  & > svg {
+.mainTitle > svg {
     position: relative;
     top: 5px;
-  }
 }
 
 .subtitle {
   width: 100%;
   display: flex;
   justify-content: center;
+}
 
-  h5 {
+.subtitle h5 {
     max-width: 687px;
-  }
 }
 
 .services {
@@ -34,9 +34,9 @@
   flex-direction: column;
   gap: 54px;
   margin-top: 46px;
+}
 
-  & img {
+.services img {
     width: 100%;
     object-fit: cover;
-  }
 }
