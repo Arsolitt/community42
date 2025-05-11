@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 
-import { Logo } from '@/components/Logo';
+import { Logo } from '@/components/Logo/Logo';
 import { LogoTheme } from '@/components/Logo/LogoTheme';
 import { classNames } from '@/features/helpers/className';
 

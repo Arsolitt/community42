@@ -1,0 +1,25 @@
+.header {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.headerNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headerTitle {
+  font-size: 56px;
+  line-height: 130%;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.headerSummary {
+  font-size: 22px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 70%;
+}

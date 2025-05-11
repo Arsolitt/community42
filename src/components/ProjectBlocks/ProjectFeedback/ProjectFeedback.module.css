@@ -47,14 +47,14 @@
   cursor: pointer;
   color: var(--text-primary, #fff);
   font-size: 16px;
+}
 
-  &:hover {
-    color: var(--accent-color, #a2a2a2);
+.actionButton:hover {
+  color: var(--accent-color, #a2a2a2);
+}
 
-    .icon {
-      fill: var(--accent-color, #a2a2a2);
-    }
-  }
+.actionButton:hover .icon {
+  fill: var(--accent-color, #a2a2a2);
 }
 
 .icon {
@@ -69,10 +69,10 @@
   gap: 8px;
   margin-bottom: 8px;
   color: var(--text-primary, #fff);
+}
 
-  .icon {
-    fill: var(--accent-color, #a2a2a2);
-  }
+.creationInfo .icon {
+  fill: var(--accent-color, #a2a2a2);
 }
 
 .creationTime {
@@ -108,4 +108,4 @@
   .actions {
     justify-content: center;
   }
-} 
+}

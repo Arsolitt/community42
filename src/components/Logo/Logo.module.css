@@ -1,0 +1,57 @@
+.LogoContainer > .hiddenLogo {
+  display: none;
+}
+
+.LogoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation .LogoWrapper {
+  padding: 12px 14px;
+  top: 48px;
+  background: rgba(14, 11, 14, 0.6);
+  border-radius: 16px;
+  border: 1px solid #9e9d9e;
+}
+
+.animation .LogoWrapper .Logo {
+  height: 32px;
+  width: 28px;
+}
+
+.animation {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.animation:hover {
+  padding: 6px 14px;
+  background: rgba(14, 11, 14, 0.6);
+  border: 1px solid pink;
+}
+
+.animation:active {
+  background: #323859;
+}
+
+.animation:hover > .hiddenLogo {
+  display: unset;
+}
+
+.animation:hover > .LogoWrapper {
+  padding: 6px 7px 6px 0px;
+  top: 48px;
+  background: none;
+  border-radius: none;
+  border: none;
+}
+
+.Logo {
+  width: 59px;
+  height: 67px;
+}

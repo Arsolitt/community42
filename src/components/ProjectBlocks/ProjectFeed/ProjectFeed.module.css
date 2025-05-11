@@ -12,14 +12,14 @@
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.2s ease-in-out;
+}
 
-  &:hover {
-    transform: scale(1.03);
-  }
+.projectItem:hover {
+  transform: scale(1.03);
+}
 
-  .image {
-    object-fit: cover;
-  }
+.projectItem .image {
+  object-fit: cover;
 }
 
 @media (max-width: 1024px) {

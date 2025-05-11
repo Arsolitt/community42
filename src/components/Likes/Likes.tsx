@@ -3,7 +3,7 @@ import { LikeIcon } from '@/shared/assets/icons';
 
 import { Typography } from '../Typography';
 
-import cls from './Likes.module.scss';
+import cls from './Likes.module.css';
 
 interface LikesProps {
   className?: string;

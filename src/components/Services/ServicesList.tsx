@@ -14,7 +14,7 @@ import { useFilteredProjects } from '@/features/hooks/useFilteredProjects';
 import { projects as allProjects } from '@/shared/assets/projects';
 import { services as allServices } from '@/shared/assets/services';
 
-import cls from './ServicesList.module.scss';
+import cls from './ServicesList.module.css';
 
 interface ServicesListProps {
   className?: string;

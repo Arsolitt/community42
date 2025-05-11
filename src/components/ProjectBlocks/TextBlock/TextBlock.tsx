@@ -1,7 +1,7 @@
 // Шаблон текста “основной”
 import { classNames } from '@/features/helpers/className';
 
-import cls from './TextBlock.module.scss';
+import cls from './TextBlock.module.css';
 
 interface TextBlockProps {
   children: React.ReactNode;

@@ -1,10 +1,10 @@
-// Шаблон фоток  “два квадрата”
-// Шаблон фоток  “три квадрата”
+// Шаблон фоток  "два квадрата"
+// Шаблон фоток  "три квадрата"
 import Image from 'next/image';
 
 import { classNames } from '@/features/helpers/className';
 
-import cls from './ImgSquares.module.scss';
+import cls from './ImgSquares.module.css';
 
 interface ImageInfo {
   alt: string;

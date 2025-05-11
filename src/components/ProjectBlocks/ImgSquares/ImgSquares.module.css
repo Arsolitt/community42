@@ -1,0 +1,26 @@
+.imgSquares {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.imgSquares .gridItem {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  overflow: hidden;
+  object-position: center 50%;
+}
+
+.imgSquares .gridItem img {
+  object-fit: cover;
+}
+
+@media (max-width: 1280px) {
+  .imgSquares {
+    gap: 20px;
+    margin-top: 15px;
+  }
+}

@@ -6,7 +6,7 @@ import type { ProjectCollaborator } from '@/shared/assets/projects';
 import { TEAM_PATH } from '@/core/config/paths';
 import { team } from '@/shared/assets/team';
 
-import styles from './ProjectTeam.module.scss';
+import styles from './ProjectTeam.module.css';
 
 interface ProjectTeamProps {
   members: ProjectCollaborator[];

@@ -6,7 +6,7 @@ import { Typography } from '@/components/Typography';
 import { TEAM_PATH } from '@/core/config/paths';
 import { team } from '@/shared/assets/team';
 
-import cls from './Team.module.scss';
+import cls from './Team.module.css';
 
 export const TeamRightBlock = () => (
   <div className={cls.rightBlock}>

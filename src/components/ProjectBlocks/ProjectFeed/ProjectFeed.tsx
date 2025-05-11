@@ -7,7 +7,7 @@ import { PROJECTS_PATH } from '@/core/config/paths';
 import { classNames } from '@/features/helpers/className';
 import { projects as allProjects } from '@/shared/assets/projects';
 
-import cls from './ProjectFeed.module.scss';
+import cls from './ProjectFeed.module.css';
 
 const GROUP_1_SLUGS = new Set(['logotypes', 'branding', 'aydentika', 'ux-ui', 'vektornaya-graphika']);
 const GROUP_2_SLUGS = new Set(['photo', 'fotosessii', 'video', 'reklamnaya-retush', 'motion', '3D']);

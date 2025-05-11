@@ -1,6 +1,6 @@
 import { Typography } from '@/components/Typography';
 
-import cls from './Team.module.scss';
+import cls from './Team.module.css';
 
 export const TeamLeftBlock = () => (
   <div className={cls.leftBlock}>

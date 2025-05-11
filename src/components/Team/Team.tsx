@@ -4,7 +4,7 @@ import { classNames } from '@/features/helpers/className';
 import { TeamLeftBlock } from './LeftBlock';
 import { TeamRightBlock } from './RightBlock';
 
-import cls from './Team.module.scss';
+import cls from './Team.module.css';
 
 interface TeamProps {
   className?: string;

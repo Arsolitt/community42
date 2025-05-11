@@ -1,6 +1,6 @@
 import { classNames } from '@/features/helpers/className';
 
-import cls from './Typography.module.scss';
+import cls from './Typography.module.css';
 
 interface TypographyProps {
   children: React.ReactNode;

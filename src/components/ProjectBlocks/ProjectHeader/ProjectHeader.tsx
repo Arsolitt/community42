@@ -6,7 +6,7 @@ import { classNames } from '@/features/helpers/className';
 
 import { ProjectTags } from './ProjectTags';
 
-import cls from './ProjectHeader.module.scss';
+import cls from './ProjectHeader.module.css';
 
 interface ProjectHeaderProps {
   className?: string;

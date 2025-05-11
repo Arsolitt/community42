@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import { classNames } from '@/features/helpers/className';
 
-import cls from './ImgSquareUWide.module.scss';
+import cls from './ImgSquareUWide.module.css';
 
 interface ImageInfo {
   alt: string;

@@ -4,7 +4,7 @@ import { ShareIcon } from '@/shared/assets/icons/share';
 
 import { TimeIcon } from '../../../shared/assets/icons/time';
 
-import cls from './ProjectFeedback.module.scss';
+import cls from './ProjectFeedback.module.css';
 
 interface ProjectFeedbackProps {
   className?: string;
