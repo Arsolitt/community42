@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 
 import { classNames } from '@/features/helpers/className';
-import { Logo } from '@/shared/ui/Logo';
-import { LogoTheme } from '@/shared/ui/Logo/LogoTheme';
+import { Logo } from '@/components/Logo';
+import { LogoTheme } from '@/components/Logo/LogoTheme';
 
 import styles from './header.module.scss';
 

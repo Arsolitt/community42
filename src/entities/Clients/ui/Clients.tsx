@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { AnimatedTitle } from '@/components/AnimatedTitle/AnimatedTitle';
+import { Typography } from '@/components/Typography';
 import { classNames } from '@/features/helpers/className';
 import { clients } from '@/shared/assets/clients';
 import { ArrowIcon } from '@/shared/assets/icons';
-import { AnimatedTitle } from '@/shared/ui/AnimatedTitle/AnimatedTitle';
-import { Typography } from '@/shared/ui/Typography';
 
 import cls from './Clients.module.scss';
 

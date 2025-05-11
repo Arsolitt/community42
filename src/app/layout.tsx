@@ -4,7 +4,7 @@ import { Raleway } from 'next/font/google';
 import React from 'react';
 
 import { LocomativeScrollProvider } from '@/core/providers/LocomativeScroll';
-import { Navbar } from '@/widgets/Navbar';
+import { Navbar } from '@/components/Navbar';
 
 import '@/core/styles/globals.scss';
 

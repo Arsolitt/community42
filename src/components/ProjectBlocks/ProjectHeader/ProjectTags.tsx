@@ -5,8 +5,8 @@ import React from 'react';
 
 import type { Project } from '@/shared/assets/projects';
 
+import { TagItem } from '@/components/TagItem/TagItem';
 import { CrossIcon } from '@/shared/assets/icons/crossIcon';
-import { TagItem } from '@/shared/ui/TagItem/TagItem';
 
 interface ProjectTagsProps {
   tags: Project['tags'];

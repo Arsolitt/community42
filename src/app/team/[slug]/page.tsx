@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 
+import { Header } from '@/components/Header';
 import { Biography } from '@/entities/Biography';
 import { team } from '@/shared/assets/team';
-import { Header } from '@/widgets/Header';
 
 export async function generateStaticParams() {
   return team.map((member) => ({

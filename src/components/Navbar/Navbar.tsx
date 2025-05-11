@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 import { classNames } from '@/features/helpers/className';
 
-import { NavbarContacts } from './ui/NavbarContacts/NavbarContacts';
-import { NavbarDefault } from './ui/NavbarDefault/NavbarDefault';
-import { NavbarSearchButton } from './ui/SearchButton/SearchButton';
+import { NavbarContacts } from './NavbarContacts/NavbarContacts';
+import { NavbarDefault } from './NavbarDefault/NavbarDefault';
+import { NavbarSearchButton } from './SearchButton/SearchButton';
 
 import cls from './Navbar.module.css';
 

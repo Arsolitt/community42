@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
+import { Typography } from '@/components/Typography';
 import { classNames } from '@/features/helpers/className';
 import { CloseContactsIcon, EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
-import { Typography } from '@/shared/ui/Typography';
 
 import cls from './NavbarContacts.module.css';
 

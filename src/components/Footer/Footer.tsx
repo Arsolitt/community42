@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 import type { Project } from '@/shared/assets/projects';
 
+import { Likes } from '@/components/Likes';
+import { Typography } from '@/components/Typography';
 import { classNames } from '@/features/helpers/className';
 import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
 import { services } from '@/shared/assets/services';
-import { Likes } from '@/shared/ui/Likes';
-import { Typography } from '@/shared/ui/Typography';
 
 import cls from './Footer.module.scss';
 

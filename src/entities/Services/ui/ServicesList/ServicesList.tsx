@@ -6,13 +6,13 @@ import { useMemo } from 'react';
 import type { Project, ProjectTag } from '@/shared/assets/projects';
 import type { Service } from '@/shared/assets/services';
 
+import { ImageSet } from '@/components/ImageSet/ImageSet';
+import { RouterLink } from '@/components/RouterLink';
+import { Typography } from '@/components/Typography';
 import { classNames } from '@/features/helpers/className';
 import { useFilteredProjects } from '@/features/hooks/useFilteredProjects';
 import { projects as allProjects } from '@/shared/assets/projects';
 import { services as allServices } from '@/shared/assets/services';
-import { ImageSet } from '@/shared/ui/ImageSet/ImageSet';
-import { RouterLink } from '@/shared/ui/RouterLink';
-import { Typography } from '@/shared/ui/Typography';
 
 import cls from './ServicesList.module.scss';
 

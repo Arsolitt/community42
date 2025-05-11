@@ -1,6 +1,6 @@
 import type { Tag } from '@/shared/assets/tags';
 
-import { TagItem } from '@/shared/ui/TagItem/TagItem';
+import { TagItem } from '@/components/TagItem/TagItem';
 
 interface SearchTagsProps {
   activeTags: string[];

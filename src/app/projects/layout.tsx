@@ -1,5 +1,5 @@
-import { Footer } from '@/widgets/Footer';
-import { Header } from '@/widgets/Header';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
 
 const ProjectLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (

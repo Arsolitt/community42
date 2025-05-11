@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
+import { ImageSet } from '@/components/ImageSet/ImageSet';
+import { RouterLink } from '@/components/RouterLink';
+import { Typography } from '@/components/Typography';
 import { TEAM_PATH } from '@/core/config/paths';
 import { team } from '@/shared/assets/team';
-import { ImageSet } from '@/shared/ui/ImageSet/ImageSet';
-import { RouterLink } from '@/shared/ui/RouterLink';
-import { Typography } from '@/shared/ui/Typography';
 
 import cls from '../Team.module.scss';
 

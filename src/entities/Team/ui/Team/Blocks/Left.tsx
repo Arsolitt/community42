@@ -1,4 +1,4 @@
-import { Typography } from '@/shared/ui/Typography';
+import { Typography } from '@/components/Typography';
 
 import cls from '../Team.module.scss';
 

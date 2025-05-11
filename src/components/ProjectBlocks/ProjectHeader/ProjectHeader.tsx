@@ -1,8 +1,8 @@
 import type { Project } from '@/shared/assets/projects';
 
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { Typography } from '@/components/Typography';
 import { classNames } from '@/features/helpers/className';
-import { Breadcrumbs } from '@/shared/ui/Breadcrumbs';
-import { Typography } from '@/shared/ui/Typography';
 
 import { ProjectTags } from './ProjectTags';
 

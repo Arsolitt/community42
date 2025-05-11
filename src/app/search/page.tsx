@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 
-import { Header } from '@/widgets/Header';
-import Search from '@/widgets/Search';
+import { Header } from '@/components/Header';
+import Search from '@/components/Search';
 
 const SearchPage = () => {
   return (

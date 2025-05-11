@@ -1,8 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
 
+import { Typography } from '@/components/Typography';
 import { CloseIcon } from '@/shared/assets/icons/close';
-import { Typography } from '@/shared/ui/Typography';
 
 import cls from './AnimatedTitle.module.scss';
 

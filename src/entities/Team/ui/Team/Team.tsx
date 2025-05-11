@@ -1,5 +1,5 @@
+import { AnimatedTitle } from '@/components/AnimatedTitle/AnimatedTitle';
 import { classNames } from '@/features/helpers/className';
-import { AnimatedTitle } from '@/shared/ui/AnimatedTitle/AnimatedTitle';
 
 import { TeamLeftBlock } from './Blocks/Left';
 import { TeamRightBlock } from './Blocks/Right';

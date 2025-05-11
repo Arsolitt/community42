@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 import type { Project } from '@/shared/assets/projects';
 
+import { Typography } from '@/components/Typography';
 import { PROJECTS_PATH } from '@/core/config/paths';
 import { classNames } from '@/features/helpers/className';
 import { LikeIcon } from '@/shared/assets/icons';
-import { Typography } from '@/shared/ui/Typography';
 
 import cls from './Projects.module.scss';
 

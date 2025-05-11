@@ -1,5 +1,5 @@
+import { Typography } from '@/components/Typography';
 import { TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
-import { Typography } from '@/shared/ui/Typography';
 
 import cls from '../Biography.module.scss';
 
