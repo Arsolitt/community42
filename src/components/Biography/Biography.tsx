@@ -7,10 +7,11 @@ import type { Member } from '@/shared/assets/team';
 import { classNames } from '@/features/helpers/className';
 import { projects } from '@/shared/assets/projects';
 
-import { BiographyLeftBlock, BiographyRightBlock } from './Blocks';
-import { Projects } from './Projects';
+import { Projects } from '../ProjectsList';
+import { BiographyLeftBlock } from './LeftBlock';
+import { BiographyRightBlock } from './RightBlock';
 
-import cls from './Biography.module.scss';
+import cls from './Biography.module.css';
 
 interface BiographyProps {
   className?: string;

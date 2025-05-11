@@ -13,11 +13,11 @@
   align-items: center;
   justify-content: center;
   gap: 63px;
+}
 
-  & > svg {
-    position: relative;
-    top: 5px;
-  }
+.sectionTitle > svg {
+  position: relative;
+  top: 5px;
 }
 
 .sectionContent {
@@ -25,7 +25,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  // gap: 14px;
+  /* gap: 14px; */
 }
 
 .overlay {
@@ -42,37 +42,37 @@
   align-items: center;
   border-radius: 12px;
   border: 1px solid #ff66d0;
+}
 
-  &:hover {
-    opacity: 1;
-  }
+.overlay:hover {
+  opacity: 1;
+}
 
-  & svg > path {
-    stroke: #fff;
-  }
+.overlay svg > path {
+  stroke: #fff;
+}
 
-  & svg {
-    width: 22px;
-    height: 11px;
-  }
+.overlay svg {
+  width: 22px;
+  height: 11px;
 }
 
 .container {
   position: relative;
 }
 
+.client > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.2s;
+}
+
 .client {
-  & > a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    transition: color 0.2s;
-  }
-
   cursor: pointer;
+}
 
-  &:hover {
-    color: var(--link-hover-gray);
-  }
+.client:hover {
+  color: var(--link-hover-gray);
 }

@@ -3,7 +3,7 @@ import React from 'react';
 
 import { BreadcrumbsArrow } from '@/shared/assets/icons/breadcrumbsArrow';
 
-import cls from './Breadcrumbs.module.scss';
+import cls from './Breadcrumbs.module.css';
 
 interface BreadcrumbLink {
   href: string;

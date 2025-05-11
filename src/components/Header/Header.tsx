@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 
-import { classNames } from '@/features/helpers/className';
 import { Logo } from '@/components/Logo';
 import { LogoTheme } from '@/components/Logo/LogoTheme';
+import { classNames } from '@/features/helpers/className';
 
-import styles from './header.module.scss';
+import styles from './header.module.css';
 
 interface HeaderProps {
   className?: string;

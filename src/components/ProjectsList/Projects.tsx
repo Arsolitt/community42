@@ -8,7 +8,7 @@ import { PROJECTS_PATH } from '@/core/config/paths';
 import { classNames } from '@/features/helpers/className';
 import { LikeIcon } from '@/shared/assets/icons';
 
-import cls from './Projects.module.scss';
+import cls from './Projects.module.css';
 
 interface ProjectsProps {
   className?: string;

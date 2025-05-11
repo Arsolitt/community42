@@ -7,9 +7,10 @@
   top: 70px;
   z-index: var(--widget-z-index);
   pointer-events: none;
-  & a {
-    pointer-events: auto;
-  }
+}
+
+.wrapper a {
+  pointer-events: auto;
 }
 
 .wrapperAnimated {
@@ -21,7 +22,8 @@
   top: 48px;
   z-index: var(--widget-z-index);
   pointer-events: none;
-  & a {
-    pointer-events: auto;
-  }
+}
+
+.wrapperAnimated a {
+  pointer-events: auto;
 }

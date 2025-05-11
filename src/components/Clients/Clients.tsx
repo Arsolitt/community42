@@ -7,7 +7,7 @@ import { classNames } from '@/features/helpers/className';
 import { clients } from '@/shared/assets/clients';
 import { ArrowIcon } from '@/shared/assets/icons';
 
-import cls from './Clients.module.scss';
+import cls from './Clients.module.css';
 
 interface ClientsProps {
   className?: string;

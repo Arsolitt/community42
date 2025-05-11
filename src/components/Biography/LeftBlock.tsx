@@ -1,7 +1,7 @@
 import { Typography } from '@/components/Typography';
 import { TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
 
-import cls from '../Biography.module.scss';
+import cls from './Biography.module.css';
 
 export const BiographyLeftBlock = ({ collaborator }) => {
   const socialIcons = {

@@ -1,0 +1,23 @@
+.Breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Breadcrumbs a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Breadcrumbs a:not(:last-child) {
+  text-decoration: underline;
+}
+
+.Breadcrumbs a:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  margin-left: 8px;
+} 

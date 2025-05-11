@@ -9,7 +9,7 @@ import { classNames } from '@/features/helpers/className';
 import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
 import { services } from '@/shared/assets/services';
 
-import cls from './Footer.module.scss';
+import cls from './Footer.module.css';
 
 interface FooterProps {
   className?: string;
