@@ -4,8 +4,8 @@ import Link from 'next/link';
 import type { Project } from '@/data/projects';
 
 import { PROJECTS_PATH } from '@/core/config/paths';
+import { allProjects } from '@/data/projects';
 import { classNames } from '@/features/helpers/className';
-import { projects as allProjects } from '@/shared/assets/projects';
 
 import cls from './ProjectFeed.module.css';
 
@@ -35,7 +35,7 @@ interface ProjectFeedProps {
 export const ProjectFeed = ({ className, sourceProject }: ProjectFeedProps) => {
   const sourceGroup = getProjectGroup(sourceProject);
 
-  const relevantProjects = allProjects.filter((project) => {
+  const relevantProjects = allProjects().filter((project) => {
     if (project.slug === sourceProject.slug) {
       return false;
     }
