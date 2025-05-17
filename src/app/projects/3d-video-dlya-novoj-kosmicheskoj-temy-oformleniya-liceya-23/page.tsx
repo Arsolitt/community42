@@ -1,7 +1,7 @@
 import { ProjectPageLayout } from '@/components/ProjectPageLayout/ProjectPageLayout';
-import { projects } from '@/shared/assets/projects';
+import { projectBySlug } from '@/data/projects';
 
-const project = projects.find((project) => project.slug === '3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23');
+const project = projectBySlug('3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23');
 
 const Page = () => {
   return (

@@ -3,7 +3,10 @@ import console from 'node:console';
 import fs from 'node:fs';
 import path from 'node:path';
 
+import type { ProjectSlug } from '@/data/projects/data';
+
 import { ProjectPageLayout } from '@/components/ProjectPageLayout/ProjectPageLayout';
+import { projectBySlug } from '@/data/projects';
 import { projects as allProjects } from '@/shared/assets/projects';
 
 export async function generateStaticParams() {
@@ -31,16 +34,14 @@ export async function generateStaticParams() {
 
 const Project = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
-  const project = allProjects.find((project) => project.slug === slug);
+  const project = projectBySlug(slug as ProjectSlug);
 
   if (!project) {
     return notFound();
   }
 
   return (
-    <>
-      <ProjectPageLayout project={project}></ProjectPageLayout>
-    </>
+    <ProjectPageLayout project={project}></ProjectPageLayout>
   );
 };
 
