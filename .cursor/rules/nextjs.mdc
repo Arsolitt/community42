@@ -35,7 +35,6 @@ alwaysApply: false
 
     ### State Management and Data Fetching
     - Use contexts, nextjs fetch and cache to handle global state and data fetching.
-    - Implement validation using Zod for schema validation.
 
     ### Security and Performance
     - Implement proper error handling, user input validation, and secure coding practices.
