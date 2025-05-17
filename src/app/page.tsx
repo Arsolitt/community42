@@ -5,14 +5,14 @@ import { ServicesList } from '@/components/Services';
 import { Team } from '@/components/Team';
 import { Typography } from '@/components/Typography';
 import { Video } from '@/components/Video';
+import { allProjects } from '@/data/projects';
 import { CloseIcon } from '@/shared/assets/icons/close';
-import { projects } from '@/shared/assets/projects';
 
 import styles from './page.module.css';
 
 const Home = () => {
   // const lastProject = [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
-  const lastProject = projects[2];
+  const lastProject = allProjects()[2];
   return (
     <>
       <Header />

@@ -6,8 +6,7 @@ import path from 'node:path';
 import type { ProjectSlug } from '@/data/projects/data';
 
 import { ProjectPageLayout } from '@/components/ProjectPageLayout/ProjectPageLayout';
-import { projectBySlug } from '@/data/projects';
-import { projects as allProjects } from '@/shared/assets/projects';
+import { allProjects, projectBySlug } from '@/data/projects';
 
 export async function generateStaticParams() {
   const projectsDirPath = path.join(process.cwd(), 'src', 'app', 'projects');
@@ -20,12 +19,12 @@ export async function generateStaticParams() {
       .map((dirent) => dirent.name);
   } catch (error) {
     console.error('Could not read static project directories:', error);
-    return allProjects.map((project) => ({
+    return allProjects().map((project) => ({
       slug: project.slug
     }));
   }
 
-  const dynamicProjects = allProjects.filter((project) => !staticDirNames.includes(project.slug));
+  const dynamicProjects = allProjects().filter((project) => !staticDirNames.includes(project.slug));
 
   return dynamicProjects.map((project) => ({
     slug: project.slug

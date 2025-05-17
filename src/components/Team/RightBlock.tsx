@@ -4,13 +4,13 @@ import { ImageSet } from '@/components/ImageSet/ImageSet';
 import { RouterLink } from '@/components/RouterLink';
 import { Typography } from '@/components/Typography';
 import { TEAM_PATH } from '@/core/config/paths';
-import { team } from '@/shared/assets/team';
+import { allTeamMembers } from '@/data/team';
 
 import cls from './Team.module.css';
 
 export const TeamRightBlock = () => (
   <div className={cls.rightBlock}>
-    {team.map((t) => (
+    {allTeamMembers().map((t) => (
       <div key={t.slug} className={cls.persona}>
         <Link href={`${TEAM_PATH}/${t.slug}`} className={cls.persona__image}>
           <ImageSet images={t.images} />

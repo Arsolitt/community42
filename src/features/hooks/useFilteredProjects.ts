@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 
-import type { Project } from '@/shared/assets/projects';
+import type { Project } from '@/data/projects';
 
-import { projects as allProjects } from '@/shared/assets/projects';
+import { allProjects } from '@/data/projects';
 
 export const useFilteredProjects = (
   searchTerm: string,
   activeTags: string[],
-  initialProjects: readonly Project[] = allProjects
+  initialProjects: readonly Project[] = allProjects()
 ) => {
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([...initialProjects]);
 

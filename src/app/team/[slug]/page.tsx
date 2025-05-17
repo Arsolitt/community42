@@ -1,18 +1,20 @@
 import { notFound } from 'next/navigation';
 
+import type { TeamMemberSlug } from '@/data/team/data';
+
 import { Biography } from '@/components/Biography';
 import { Header } from '@/components/Header';
-import { team } from '@/shared/assets/team';
+import { allTeamMembers, teamMemberBySlug } from '@/data/team/utils';
 
 export async function generateStaticParams() {
-  return team.map((member) => ({
+  return allTeamMembers().map((member) => ({
     slug: member.slug
   }));
 }
 
 const Collaborator = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
-  const member = team.find((m) => m.slug === slug);
+  const member = teamMemberBySlug(slug as TeamMemberSlug);
 
   if (!member) {
     return notFound();

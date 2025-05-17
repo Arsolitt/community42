@@ -3,15 +3,15 @@
 import Link from 'next/link';
 import { useMemo } from 'react';
 
-import type { Project, ProjectTag } from '@/shared/assets/projects';
+import type { Project, ProjectTag } from '@/data/projects';
 import type { Service } from '@/shared/assets/services';
 
 import { ImageSet } from '@/components/ImageSet/ImageSet';
 import { RouterLink } from '@/components/RouterLink';
 import { Typography } from '@/components/Typography';
+import { allProjects } from '@/data/projects';
 import { classNames } from '@/features/helpers/className';
 import { useFilteredProjects } from '@/features/hooks/useFilteredProjects';
-import { projects as allProjects } from '@/shared/assets/projects';
 import { services as allServices } from '@/shared/assets/services';
 
 import cls from './ServicesList.module.css';
@@ -31,7 +31,7 @@ const ServiceItem = ({ service }: { service: Service }) => {
   };
 
   const projectsWithHighestTagOnly = useMemo(() => {
-    return allProjects.map((project) => {
+    return allProjects().map((project) => {
       const highestTag = findHighestPriorityTag(project);
       return {
         ...project,

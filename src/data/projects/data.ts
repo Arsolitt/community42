@@ -1,5 +1,4 @@
 import type { TagWithPriority } from '@/data/tags';
-// import type { ProjectCollaborator } from '@/shared/assets/projects';
 
 import { PROJECT_IMG_URL } from '@/core/config/paths';
 
@@ -235,7 +234,8 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/navigatsiya-i-prorabotka-zon-otdyha-v-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель'),
+      teamMemberWithRole('polina-web-designer', 'Дизайнер')
     ],
     tags: [
       {

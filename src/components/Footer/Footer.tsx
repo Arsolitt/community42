@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import type { Project } from '@/shared/assets/projects';
+import type { Project } from '@/data/projects';
 
 import { Likes } from '@/components/Likes';
 import { Typography } from '@/components/Typography';
