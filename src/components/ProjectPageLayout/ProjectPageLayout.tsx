@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { Project } from '@/shared/assets/projects';
+import type { Project } from '@/data/projects';
 
 import { ProjectFeed } from '@/components/ProjectBlocks/ProjectFeed';
 import { ProjectFeedback } from '@/components/ProjectBlocks/ProjectFeedback';

@@ -4,9 +4,9 @@ import { ImgVertical } from '@/components/ProjectBlocks/ImgVertical/ImgVertical'
 import { TextBlock } from '@/components/ProjectBlocks/TextBlock';
 import { ProjectPageLayout } from '@/components/ProjectPageLayout/ProjectPageLayout';
 import { PROJECT_IMG_URL } from '@/core/config/paths';
-import { projects } from '@/shared/assets/projects';
+import { projectBySlug } from '@/data/projects';
 
-const project = projects.find((project) => project.slug === 'logotip-magazina-monobuketov-modo');
+const project = projectBySlug('logotip-magazina-monobuketov-modo');
 
 const Page = () => {
   return (

@@ -3,13 +3,13 @@
 import Link from 'next/link';
 import React from 'react';
 
-import type { Project } from '@/shared/assets/projects';
+import type { ProjectTag } from '@/data/projects';
 
 import { TagItem } from '@/components/TagItem/TagItem';
 import { CrossIcon } from '@/shared/assets/icons/crossIcon';
 
 interface ProjectTagsProps {
-  tags: Project['tags'];
+  tags: ProjectTag[];
 }
 
 export const ProjectTags = ({ tags }: ProjectTagsProps) => {

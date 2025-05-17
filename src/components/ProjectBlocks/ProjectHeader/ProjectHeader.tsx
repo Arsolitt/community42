@@ -1,4 +1,4 @@
-import type { Project } from '@/shared/assets/projects';
+import type { Project } from '@/data/projects';
 
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Typography } from '@/components/Typography';

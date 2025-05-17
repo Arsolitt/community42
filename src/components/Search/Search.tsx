@@ -1,11 +1,11 @@
 'use client';
 
 import { Projects } from '@/components/ProjectsList';
+import { allTags } from '@/data/tags';
 import { useFilteredProjects } from '@/features/hooks/useFilteredProjects';
 import { useSearchTags } from '@/features/hooks/useSearchTags';
 import { useSearchTerm } from '@/features/hooks/useSearchTerm';
 import { projects } from '@/shared/assets/projects';
-import { tags } from '@/shared/assets/tags';
 
 import { SearchInput } from './SearchInput';
 import { SearchTags } from './SearchTags';
@@ -23,7 +23,7 @@ export const Search = () => {
       />
       <SearchTags
         activeTags={activeTags}
-        tags={tags}
+        tags={allTags()}
         onTagClick={handleTagClick}
       />
       <Projects projects={filteredProjects} />

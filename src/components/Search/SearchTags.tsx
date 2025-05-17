@@ -1,11 +1,11 @@
-import type { Tag } from '@/shared/assets/tags';
+import type { Tag, TagSlug } from '@/data/tags';
 
 import { TagItem } from '@/components/TagItem/TagItem';
 
 interface SearchTagsProps {
   activeTags: string[];
-  tags: readonly Tag[];
-  onTagClick: (slug: Tag['slug']) => void;
+  tags: Tag[];
+  onTagClick: (slug: TagSlug) => void;
 }
 
 export const SearchTags = ({ tags, activeTags, onTagClick }: SearchTagsProps) => (

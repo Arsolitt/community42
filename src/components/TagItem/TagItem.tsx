@@ -1,9 +1,9 @@
-import type { Tag } from '@/shared/assets/tags';
+import type { Tag, TagSlug } from '@/data/tags';
 
 interface TagItemProps {
   isActive: boolean;
   tag: Tag;
-  onTagClick: (slug: Tag['slug']) => void;
+  onTagClick: (slug: TagSlug) => void;
 }
 
 export const TagItem = ({ tag, isActive, onTagClick }: TagItemProps) => (
