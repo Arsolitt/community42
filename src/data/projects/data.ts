@@ -3,8 +3,10 @@ import type { TagWithPriority } from '@/data/tags';
 
 import { PROJECT_IMG_URL } from '@/core/config/paths';
 
+import type { TeamMemberWithRole } from '../team/utils';
+
 import { tagWithPriority } from '../tags/utils';
-import { teamMemberWithRole, TeamMemberWithRole } from '../team/utils';
+import { teamMemberWithRole } from '../team/utils';
 
 export type ProjectCollaborator = TeamMemberWithRole | {
   role: string;
@@ -265,7 +267,7 @@ const projectsArray = [
       teamMemberWithRole('konstantin-graphic-designer', 'Руководитель'),
       teamMemberWithRole('polina-web-designer', 'Дизайнер'),
       teamMemberWithRole('konstantin-graphic-designer', 'Фотограф'),
-      {  name: 'Балбес Балбесов', link: 'https://bimbim.bambam', role: 'Балбес' }
+      { name: 'Балбес Балбесов', link: 'https://bimbim.bambam', role: 'Балбес' }
     ],
     tags: [
       tagWithPriority('logotypes', 3),

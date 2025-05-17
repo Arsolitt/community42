@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { TEAM_PATH } from '@/core/config/paths';
 import type { ProjectCollaborator } from '@/data/projects';
-import { allTeamMembers } from '@/data/team';
+import type { TeamMemberWithRole } from '@/data/team/utils';
 
-import { TeamMemberWithRole } from '@/data/team/utils';
+import { TEAM_PATH } from '@/core/config/paths';
+
 import styles from './ProjectTeam.module.css';
 
 interface ProjectTeamProps {
@@ -13,13 +13,12 @@ interface ProjectTeamProps {
 }
 
 interface ProjectMember {
+  link: string;
   name: string;
   role: string;
-  link: string;
 }
 
 export const ProjectTeam: React.FC<ProjectTeamProps> = ({ collaborators }) => {
-  const team = allTeamMembers();
   const projectMembers: ProjectMember[] = collaborators.map((collaborator) => {
     if ('slug' in collaborator) {
       const teamMember = collaborator as TeamMemberWithRole;

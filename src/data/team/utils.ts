@@ -1,6 +1,8 @@
-import { team, TeamMember, TeamMemberSlug } from "./data";
+import type { TeamMember, TeamMemberSlug } from './data';
 
-export type TeamMemberWithRole = TeamMember & {role: string;};
+import { team } from './data';
+
+export type TeamMemberWithRole = TeamMember & { role: string; };
 
 export function teamMemberBySlug(slug: TeamMemberSlug): TeamMember {
   return team[slug];

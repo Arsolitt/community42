@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 import { AnimatedTitle } from '@/components/AnimatedTitle/AnimatedTitle';
 import { Typography } from '@/components/Typography';
+import { allClients } from '@/data/clients';
 import { classNames } from '@/features/helpers/className';
-import { clients } from '@/shared/assets/clients';
 import { ArrowIcon } from '@/shared/assets/icons';
 
 import cls from './Clients.module.css';
@@ -22,7 +22,7 @@ export const Clients = ({ className }: ClientsProps) => {
       />
 
       <div className={cls.sectionContent}>
-        {clients.map((c) => (
+        {allClients().map((c) => (
           <div key={c.slug} className={cls.client}>
             <div className={cls.container}>
               <Image alt='image' className={cls.image} height={108} src={c.image} width={108} />
