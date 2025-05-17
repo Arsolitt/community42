@@ -1,58 +1,41 @@
 import Link from 'next/link';
 import React from 'react';
 
-import type { ProjectCollaborator } from '@/shared/assets/projects';
-
 import { TEAM_PATH } from '@/core/config/paths';
-import { team } from '@/shared/assets/team';
+import type { ProjectCollaborator } from '@/data/projects';
+import { allTeamMembers } from '@/data/team';
 
+import { TeamMemberWithRole } from '@/data/team/utils';
 import styles from './ProjectTeam.module.css';
 
 interface ProjectTeamProps {
-  members: ProjectCollaborator[];
+  collaborators: ProjectCollaborator[];
 }
 
 interface ProjectMember {
-  link?: string;
-  name?: string;
+  name: string;
   role: string;
+  link: string;
 }
 
-export const ProjectTeam: React.FC<ProjectTeamProps> = ({ members }) => {
-  // const projectMembers = members.map((member) => {
-  //   const teamMember = team.find((tm) => tm.slug === member.slug);
-  //   if (teamMember) {
-  //     return {
-  //       ...teamMember,
-  //       role: member.role
-  //     };
-  //   } else if (member.link && member.name) {
-  //     return member;
-  //   }
-  //   return null;
-  // }).filter(Boolean);
-  const projectMembers = members.map((member) => {
-    const projectMember: ProjectMember = {
-      role: member.role
-    };
-    if (member.slug) {
-      const teamMember = team.find((tm) => tm.slug === member.slug);
-      if (teamMember) {
-        projectMember.link = `${TEAM_PATH}/${member.slug}`;
-        projectMember.name = teamMember.name;
-      }
+export const ProjectTeam: React.FC<ProjectTeamProps> = ({ collaborators }) => {
+  const team = allTeamMembers();
+  const projectMembers: ProjectMember[] = collaborators.map((collaborator) => {
+    if ('slug' in collaborator) {
+      const teamMember = collaborator as TeamMemberWithRole;
+      return {
+        name: teamMember.name,
+        role: teamMember.role,
+        link: `${TEAM_PATH}/${teamMember.slug}`
+      };
+    } else {
+      return {
+        name: collaborator.name,
+        role: collaborator.role,
+        link: collaborator.link
+      };
     }
-    if (member.link) {
-      projectMember.link = member.link;
-    }
-    if (member.name) {
-      projectMember.name = member.name;
-    }
-    if (projectMember.link && projectMember.name) {
-      return projectMember;
-    }
-    return null;
-  }).filter(Boolean);
+  });
 
   return (
     <div className='flex flex-wrap gap-24 py-8'>

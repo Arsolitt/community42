@@ -3,8 +3,6 @@ interface TagElement {
   text: string;
 }
 
-export type TagWithPriority = (typeof tagsArray)[number] & { priority: number };
-
 export type Tag = (typeof tagsArray)[number];
 
 export type TagSlug = typeof tagsArray[number]['slug'];

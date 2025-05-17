@@ -1,4 +1,4 @@
-import type { Tag, TagSlug, TagWithPriority } from './data';
+import type { Tag, TagSlug } from './data';
 
 import { tags } from './data';
 
@@ -6,11 +6,12 @@ export function tagBySlug(slug: TagSlug) {
   return tags[slug];
 }
 
+export type TagWithPriority = Tag & { priority: number };
 export function tagWithPriority(slug: TagSlug, priority: number): TagWithPriority {
   return {
     ...tags[slug],
     priority
-  } as TagWithPriority;
+  };
 }
 
 export function allTags(): Tag[] {

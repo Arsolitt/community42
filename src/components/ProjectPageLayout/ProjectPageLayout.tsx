@@ -20,7 +20,7 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({ project, c
       <ProjectHeader project={project} />
       <ImgLarge alt={project.name} src={project.image} />
       {children}
-      <ProjectTeam members={project.collaborators} />
+      <ProjectTeam collaborators={project.collaborators} />
       <ProjectFeedback
         likes={project.likes}
         creationDate={project.date}

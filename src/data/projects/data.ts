@@ -1,9 +1,16 @@
-import type { TagWithPriority } from '@/data/tags/data';
-import type { ProjectCollaborator } from '@/shared/assets/projects';
+import type { TagWithPriority } from '@/data/tags';
+// import type { ProjectCollaborator } from '@/shared/assets/projects';
 
 import { PROJECT_IMG_URL } from '@/core/config/paths';
 
 import { tagWithPriority } from '../tags/utils';
+import { teamMemberWithRole, TeamMemberWithRole } from '../team/utils';
+
+export type ProjectCollaborator = TeamMemberWithRole | {
+  role: string;
+  name: string;
+  link: string;
+};
 
 interface ProjectElement {
   collaborators: ProjectCollaborator[];
@@ -33,9 +40,9 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
-      { role: 'Дизайнер', slug: 'konstantin-graphic-designer' },
-      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель'),
+      teamMemberWithRole('konstantin-graphic-designer', 'Дизайнер'),
+      teamMemberWithRole('konstantin-graphic-designer', 'Фотограф')
     ],
     tags: [
       tagWithPriority('motion', 1),
@@ -51,7 +58,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -80,7 +87,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/brending-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -139,7 +146,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/firmennye-motion-video-dlya-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -163,7 +170,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/sait-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -197,7 +204,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/sistema-podarochnyh-sertifikatov-dlya-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -226,7 +233,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/navigatsiya-i-prorabotka-zon-otdyha-v-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -255,9 +262,10 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' },
-      { role: 'Дизайнер', slug: 'polina-web-designer' },
-      { role: 'Фотограф', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель'),
+      teamMemberWithRole('polina-web-designer', 'Дизайнер'),
+      teamMemberWithRole('konstantin-graphic-designer', 'Фотограф'),
+      {  name: 'Балбес Балбесов', link: 'https://bimbim.bambam', role: 'Балбес' }
     ],
     tags: [
       tagWithPriority('logotypes', 3),
@@ -274,7 +282,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/video-dlya-magazina-monobuketov-modo/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -298,7 +306,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/aydentika-servisa-dostavki-avtomobilej-iz-yaponi-likemobil/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -332,7 +340,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/landing-uslug-po-videonablyudeniyu-dlya-internet-provaydera-goodline-biznes/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -351,7 +359,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/oformleniya-dlya-soc-setej-internet-provajdera-goodline-biznes/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -370,7 +378,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/firmennye-pakety-dlya-internet-provaydera-goodline-biznes/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -389,7 +397,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/logotip-nauchno-issledovatelьskoj-estafety-po-sledam-chihachyova/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -408,7 +416,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/suvenir-illyustraciya-karta-kuzbassa-dlya-visit-kuzbass/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -427,7 +435,7 @@ const projectsArray = [
     image: `${PROJECT_IMG_URL}/firmennoe-b-roll-video-dlya-stilista-po-brovyam/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
-      { role: 'Руководитель', slug: 'konstantin-graphic-designer' }
+      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
     ],
     tags: [
       {
@@ -452,4 +460,4 @@ const projectsArray = [
 export const projects = projectsArray.reduce((acc, project) => {
   acc[project.slug] = project;
   return acc;
-}, {} as Record<ProjectSlug, ProjectElement>);
+}, {} as Record<ProjectSlug, Project>);

@@ -1,3 +1,5 @@
-export type { Tag, TagSlug, TagWithPriority } from './data';
+export type { Tag, TagSlug } from './data';
+export type { TagWithPriority } from './utils';
+
 
 export { allTags } from './utils';
