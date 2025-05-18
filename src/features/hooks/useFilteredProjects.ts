@@ -1,17 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
 
 import type { Project } from '@/data/projects';
-
-import { allProjects } from '@/data/projects';
 
 export const useFilteredProjects = (
   searchTerm: string,
   activeTags: string[],
-  initialProjects: readonly Project[] = allProjects()
+  initialProjects: readonly Project[]
 ) => {
-  const [filteredProjects, setFilteredProjects] = useState<Project[]>([...initialProjects]);
-
-  useEffect(() => {
+  const filteredProjects = useMemo(() => {
     let results: Project[] = [...initialProjects];
 
     if (searchTerm) {
@@ -36,7 +32,7 @@ export const useFilteredProjects = (
         .map(({ matchingTags, ...project }) => project as Project);
     }
 
-    setFilteredProjects(results);
+    return results;
   }, [searchTerm, activeTags, initialProjects]);
 
   return filteredProjects;
