@@ -1,18 +1,20 @@
-import { SERVICES_IMG_URL } from '@/core/config/paths';
+import type { TagSlug } from '@/data/tags';
 
-import type { Tag } from './tags';
+import { SERVICES_IMG_URL } from '@/core/config/paths';
 
 interface ServiceElement {
   images: string[];
   isNew: boolean;
   slug: string;
-  tags: Tag['slug'][];
+  tags: TagSlug[];
   text: string;
 }
 
-export type Service = typeof services[number];
+export type Service = typeof servicesArray[number];
 
-export const services = [
+export type ServiceSlug = typeof servicesArray[number]['slug'];
+
+export const servicesArray = [
   {
     slug: 'ux-ui-design',
     text: 'UX/UI дизайн',
@@ -77,3 +79,8 @@ export const services = [
     ]
   }
 ] as const satisfies readonly ServiceElement[];
+
+export const services = servicesArray.reduce((acc, service) => {
+  acc[service.slug] = service;
+  return acc;
+}, {} as Record<ServiceSlug, Service>);

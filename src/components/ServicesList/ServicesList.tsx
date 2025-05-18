@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useMemo } from 'react';
 
 import type { Project, ProjectTag } from '@/data/projects';
-import type { Service } from '@/shared/assets/services';
+import type { Service } from '@/data/services';
 
 import { ImageSet } from '@/components/ImageSet/ImageSet';
 import { RouterLink } from '@/components/RouterLink';
@@ -12,12 +12,12 @@ import { Typography } from '@/components/Typography';
 import { allProjects } from '@/data/projects';
 import { classNames } from '@/features/helpers/className';
 import { useFilteredProjects } from '@/features/hooks/useFilteredProjects';
-import { services as allServices } from '@/shared/assets/services';
 
 import cls from './ServicesList.module.css';
 
 interface ServicesListProps {
   className?: string;
+  services: Service[];
 }
 
 const ServiceItem = ({ service }: { service: Service }) => {
@@ -66,10 +66,10 @@ const ServiceItem = ({ service }: { service: Service }) => {
   );
 };
 
-export const ServicesList = ({ className }: ServicesListProps) => {
+export const ServicesList = ({ className, services }: ServicesListProps) => {
   return (
     <div className={classNames(cls.ServicesList, {}, [className])} id='services' style={{ scrollMarginTop: '30px' }}>
-      {allServices.map((s) => (
+      {services.map((s) => (
         <ServiceItem key={s.slug} service={s} />
       ))}
     </div>

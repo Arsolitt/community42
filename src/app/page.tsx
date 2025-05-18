@@ -1,11 +1,12 @@
 import { Clients } from '@/components/Clients';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-import { ServicesList } from '@/components/Services';
+import { ServicesList } from '@/components/ServicesList';
 import { Team } from '@/components/Team';
 import { Typography } from '@/components/Typography';
 import { Video } from '@/components/Video';
 import { allProjects } from '@/data/projects';
+import { allServices } from '@/data/services';
 import { CloseIcon } from '@/shared/assets/icons/close';
 
 import styles from './page.module.css';
@@ -39,7 +40,7 @@ const Home = () => {
           </div>
           <section className={styles.services}>
             <Video />
-            <ServicesList />
+            <ServicesList services={allServices()} />
           </section>
           <Team />
           <Clients />

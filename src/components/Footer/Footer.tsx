@@ -5,9 +5,9 @@ import type { Project } from '@/data/projects';
 
 import { Likes } from '@/components/Likes';
 import { Typography } from '@/components/Typography';
+import { allServices } from '@/data/services';
 import { classNames } from '@/features/helpers/className';
 import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
-import { services } from '@/shared/assets/services';
 
 import cls from './Footer.module.css';
 
@@ -63,7 +63,7 @@ export const Footer = ({ className, isProjectPage, lastProject }: FooterProps) =
               </div>
 
               <div className={cls.services}>
-                {services.map((service) => (
+                {allServices().map((service) => (
                   <div key={service.slug} className={cls.services__item}>
                     <Link href={`/search?tags=${service.tags.join('%2C')}`} className={cls.services__link}>
                       {service.text}
