@@ -1,11 +1,13 @@
 import type { TagWithPriority } from '@/data/tags';
+import type { TeamMemberWithRole } from '@/data/team';
 
 import { PROJECT_IMG_URL } from '@/core/config/paths';
+import { teamMemberWithRole } from '@/data/team';
 
-import type { TeamMemberWithRole } from '../team/utils';
-
-import { tagWithPriority } from '../tags/utils';
-import { teamMemberWithRole } from '../team/utils';
+import { videoDlyaNovojKosmicheskojTemyOformleniyaLiceya } from './data/3d/3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23';
+import { rebrendingProizvoditelyaElektroshhitovojProdukciiElektrokomplekt } from './data/aydentika/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt';
+import { brendingStomatologiiEdemika } from './data/branding/brending-stomatologii-edemika';
+import { logotipMagazinaMonobuketovModo } from './data/logotypes/logotip-magazina-monobuketov-modo';
 
 export type ProjectCollaborator = TeamMemberWithRole | {
   role: string;
@@ -13,12 +15,11 @@ export type ProjectCollaborator = TeamMemberWithRole | {
   link: string;
 };
 
-interface ProjectElement {
+export interface ProjectElement {
   collaborators: ProjectCollaborator[];
   creationTimeText: string;
   date: string;
   image: string;
-  likes: number;
   name: string;
   slug: string;
   summary: string;
@@ -32,118 +33,15 @@ export type ProjectTag = (typeof projectsArray)[number]['tags'][number];
 export type Project = (typeof projectsArray)[number];
 
 const projectsArray = [
-  {
-    name: '3D-видео для новой космической темы оформления Лицея№23',
-    date: '01.09.2024',
-    slug: '3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23',
-    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
-    image: `${PROJECT_IMG_URL}/3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23/main.webp`,
-    creationTimeText: 'Создано за 10 дней',
-    collaborators: [
-      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель'),
-      teamMemberWithRole('konstantin-graphic-designer', 'Дизайнер'),
-      teamMemberWithRole('konstantin-graphic-designer', 'Фотограф')
-    ],
-    tags: [
-      tagWithPriority('motion', 1),
-      tagWithPriority('3D', 2)
-    ]
-  },
-  {
-    name: 'Ребрендинг производителя электрощитовой продукции «Электрокомплект»',
-    date: '31.08.2024',
-    slug: 'rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt',
-    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
-    image: `${PROJECT_IMG_URL}/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt/main.webp`,
-    creationTimeText: 'Создано за 10 дней',
-    collaborators: [
-      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
-    ],
-    tags: [
-      {
-        slug: 'aydentika',
-        text: 'Айдентика',
-        priority: 2
-      },
-      {
-        slug: 'logotypes',
-        text: 'Логотипы',
-        priority: 1
-      },
-      {
-        slug: 'motion',
-        text: 'Motion',
-        priority: 1
-      }
-    ]
-  },
-  {
-    name: 'Брендинг стоматологии «Эдемика»',
-    date: '15.09.2024',
-    slug: 'brending-stomatologii-edemika',
-    summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
-    image: `${PROJECT_IMG_URL}/brending-stomatologii-edemika/main.webp`,
-    creationTimeText: 'Создано за 10 дней',
-    collaborators: [
-      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель')
-    ],
-    tags: [
-      {
-        slug: 'branding',
-        text: 'Брендинг',
-        priority: 2
-      },
-      {
-        slug: 'aydentika',
-        text: 'Айдентика',
-        priority: 1
-      },
-      {
-        slug: 'ux-ui',
-        text: 'UX/UI',
-        priority: 1
-      },
-      {
-        slug: 'logotypes',
-        text: 'Логотипы',
-        priority: 1
-      },
-      {
-        slug: 'motion',
-        text: 'Motion',
-        priority: 1
-      },
-      {
-        slug: '3D',
-        text: '3D',
-        priority: 1
-      },
-      {
-        slug: 'video',
-        text: 'Видео',
-        priority: 1
-      },
-      {
-        slug: 'photo',
-        text: 'Фото',
-        priority: 1
-      },
-      {
-        slug: 'beauty-medicine',
-        text: 'Бьюти и медицина',
-        priority: 1
-      }
-    ]
-  },
+  logotipMagazinaMonobuketovModo,
+  videoDlyaNovojKosmicheskojTemyOformleniyaLiceya,
+  rebrendingProizvoditelyaElektroshhitovojProdukciiElektrokomplekt,
+  brendingStomatologiiEdemika,
   {
     name: 'Фирменные Motion-видео для стоматологии «Эдемика»',
     date: '10.10.2024',
     slug: 'firmennye-motion-video-dlya-stomatologii-edemika',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/firmennye-motion-video-dlya-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -167,7 +65,6 @@ const projectsArray = [
     date: '20.12.2024',
     slug: 'sait-stomatologii-edemika',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/sait-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -201,7 +98,6 @@ const projectsArray = [
     date: '15.02.2025',
     slug: 'sistema-podarochnyh-sertifikatov-dlya-stomatologii-edemika',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/sistema-podarochnyh-sertifikatov-dlya-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -230,7 +126,6 @@ const projectsArray = [
     date: '01.10.2024',
     slug: 'navigatsiya-i-prorabotka-zon-otdyha-v-stomatologii-edemika',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/navigatsiya-i-prorabotka-zon-otdyha-v-stomatologii-edemika/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -255,32 +150,12 @@ const projectsArray = [
       }
     ]
   },
-  {
-    name: 'Логотип магазина монобукетов Modo',
-    date: '12.06.2024',
-    slug: 'logotip-magazina-monobuketov-modo',
-    summary: 'Modo – это новый цветочный сервис в Кемерово, ориентированный на моно (иногда и дуо) букеты. Ребята делают монобукеты с акцентом на цветы в категории премиум и люкс. Их магазин базируется в интернете, а заказ можно делать в мессенджерах Телграм, Вотсап и по телефону. Наша задача была в короткие сроки создать логотип, определииться с графическими элементами и создать некоторые шаблоны для оформления сторис, постов, рекламных банеров и т.п.',
-    likes: 10,
-    image: `${PROJECT_IMG_URL}/logotip-magazina-monobuketov-modo/main.webp`,
-    creationTimeText: 'Создано за 10 дней',
-    collaborators: [
-      teamMemberWithRole('konstantin-graphic-designer', 'Руководитель'),
-      teamMemberWithRole('polina-web-designer', 'Дизайнер'),
-      teamMemberWithRole('konstantin-graphic-designer', 'Фотограф'),
-      { name: 'Балбес Балбесов', link: 'https://bimbim.bambam', role: 'Балбес' }
-    ],
-    tags: [
-      tagWithPriority('logotypes', 3),
-      tagWithPriority('photo', 1),
-      tagWithPriority('flowers', 1)
-    ]
-  },
+
   {
     name: 'Видео для магазина монобукетов Modo',
     date: '28.06.2024',
     slug: 'video-dlya-magazina-monobuketov-modo',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/video-dlya-magazina-monobuketov-modo/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -304,7 +179,6 @@ const projectsArray = [
     date: '05.01.2025',
     slug: 'aydentika-servisa-dostavki-avtomobilej-iz-yaponi-likemobil',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/aydentika-servisa-dostavki-avtomobilej-iz-yaponi-likemobil/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -338,7 +212,6 @@ const projectsArray = [
     date: '22.03.2024',
     slug: 'landing-uslug-po-videonablyudeniyu-dlya-internet-provaydera-goodline-biznes',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/landing-uslug-po-videonablyudeniyu-dlya-internet-provaydera-goodline-biznes/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -357,7 +230,6 @@ const projectsArray = [
     date: '06.03.2024',
     slug: 'oformleniya-dlya-soc-setej-internet-provajdera-goodline-biznes',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/oformleniya-dlya-soc-setej-internet-provajdera-goodline-biznes/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -376,7 +248,6 @@ const projectsArray = [
     date: '06.03.2024',
     slug: 'firmennye-pakety-dlya-internet-provaydera-goodline-biznes',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/firmennye-pakety-dlya-internet-provaydera-goodline-biznes/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -395,7 +266,6 @@ const projectsArray = [
     date: '28.03.2021',
     slug: 'logotip-nauchno-issledovatelьskoj-estafety-po-sledam-chihachyova',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/logotip-nauchno-issledovatelьskoj-estafety-po-sledam-chihachyova/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -414,7 +284,6 @@ const projectsArray = [
     date: '12.06.2022',
     slug: 'suvenir-illyustraciya-karta-kuzbassa-dlya-visit-kuzbass',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/suvenir-illyustraciya-karta-kuzbassa-dlya-visit-kuzbass/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
@@ -433,7 +302,6 @@ const projectsArray = [
     date: '12.06.2022',
     slug: 'firmennoe-b-roll-video-dlya-stilista-po-brovyam',
     summary: 'Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным',
-    likes: 10,
     image: `${PROJECT_IMG_URL}/firmennoe-b-roll-video-dlya-stilista-po-brovyam/main.webp`,
     creationTimeText: 'Создано за 10 дней',
     collaborators: [
