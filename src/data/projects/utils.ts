@@ -14,6 +14,16 @@ export function allProjects(): Project[] {
 
 export function projectsByTeamMember(member: TeamMember): Project[] {
   return allProjects().filter((project) => {
-    return project.collaborators.some((c) => c.slug === member.slug);
+    return project.collaborators.some((c) => {
+      if ('slug' in c) {
+        return c.slug === member.slug;
+      }
+
+      return false;
+    });
   });
+}
+
+export function projectLikes(_slug: ProjectSlug): number {
+  return 10;
 }
