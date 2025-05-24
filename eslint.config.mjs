@@ -13,7 +13,8 @@ export default eslint(
       'node/prefer-global/process': ['error', 'always'],
       'siberiacancode-react/prop-types': 'off',
       'style/max-len': ['warn', 240, 2, { ignoreComments: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
-      'react/prefer-destructuring-assignment': 'off'
+      'react/prefer-destructuring-assignment': 'off',
+      'react-hooks-extra/no-direct-set-state-in-use-effect': 'off'
     }
   },
   {
