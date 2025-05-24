@@ -1,0 +1,7 @@
+node_modules
+next-env.d.ts
+.git
+.vscode
+.cursor
+Dockerfile
+.next

@@ -1,4 +1,4 @@
-FROM harbor.arsolitt.tech/hub/node:22-bookworm-slim AS builder
+FROM harbor.arsolitt.tech/hub/node:24-bookworm-slim AS builder
 ENV TZ=Europe/Moscow
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV HUSKY_SKIP_INSTALL=1
@@ -9,7 +9,8 @@ RUN yarn --frozen-lockfile --ignore-scripts
 COPY . .
 RUN yarn build
 
-FROM harbor.arsolitt.tech/hub/node:22-bookworm-slim
+FROM node:24-bookworm-slim
+ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Moscow
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV HUSKY_SKIP_INSTALL=1
@@ -17,12 +18,13 @@ ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 ENV NODE_ENV=production
 ENV BUILD_MODE=production
+WORKDIR /app
+COPY --from=builder /src/app/.next/standalone .
+COPY --chown=node:node --from=builder /src/app/public /app/public
+COPY --chown=node:node --from=builder /src/app/.next/static /app/.next/static
+RUN mkdir -p /app/.next/cache && \
+  chown -R node:node /app && \
+  chmod -R 700 /app
 USER node
-EXPOSE ${PORT}
-WORKDIR /usr/src/app
-COPY package.json yarn.lock ./
-RUN yarn --frozen-lockfile --ignore-scripts --production=true
-COPY --chown=node --from=builder /src/app/public ./public
-COPY --chown=node --from=builder /src/app/.next .next
-COPY --chown=node --from=builder /src/app/next.config.mjs .
-CMD ["yarn", "start"]
+WORKDIR /app
+CMD ["node", "./server.js"]

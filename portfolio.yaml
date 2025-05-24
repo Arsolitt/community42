@@ -17,7 +17,8 @@ spec:
         app: community-portfolio
     spec:
       containers:
-        - image: harbor.arsolitt.tech/community42/portfolio:v0.11
+        - image: harbor.arsolitt.tech/community42/portfolio:v0.12
+          name: community
           livenessProbe:
             failureThreshold: 3
             httpGet:
@@ -27,7 +28,6 @@ spec:
             periodSeconds: 30
             successThreshold: 1
             timeoutSeconds: 15
-          name: community
           ports:
             - containerPort: 3000
               name: http
@@ -39,6 +39,11 @@ spec:
             requests:
               cpu: 500m
               memory: 512Mi
+          env:
+            - name: HOSTNAME
+              value: "0.0.0.0"
+            - name: PORT
+              value: "3000"
           securityContext:
             allowPrivilegeEscalation: false
             capabilities:
