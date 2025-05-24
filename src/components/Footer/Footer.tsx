@@ -5,6 +5,7 @@ import type { Project } from '@/data/projects';
 
 import { Likes } from '@/components/Likes';
 import { Typography } from '@/components/Typography';
+import { projectLikes } from '@/data/projects';
 import { allServices } from '@/data/services';
 import { classNames } from '@/features/helpers/className';
 import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
@@ -45,7 +46,7 @@ export const Footer = ({ className, isProjectPage, lastProject }: FooterProps) =
                 {lastProject.name}
               </Typography>
             </Link>
-            <Likes className={cls.likes} likes={lastProject.likes} />
+            <Likes className={cls.likes} likes={projectLikes(lastProject.slug)} />
           </div>
         </div>
       )}

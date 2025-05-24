@@ -6,6 +6,7 @@ import { ProjectFeed } from '@/components/ProjectBlocks/ProjectFeed';
 import { ProjectFeedback } from '@/components/ProjectBlocks/ProjectFeedback';
 import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
 import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
+import { projectLikes } from '@/data/projects';
 
 import { ImgLarge } from '../ProjectBlocks/ImgLarge';
 
@@ -22,7 +23,7 @@ export const ProjectPageLayout: React.FC<ProjectPageLayoutProps> = ({ project, c
       {children}
       <ProjectTeam collaborators={project.collaborators} />
       <ProjectFeedback
-        likes={project.likes}
+        likes={projectLikes(project.slug)}
         creationDate={project.date}
         creationTimeText={project.creationTimeText}
       />

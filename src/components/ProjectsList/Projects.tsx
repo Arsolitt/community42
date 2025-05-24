@@ -5,6 +5,7 @@ import type { Project } from '@/data/projects';
 
 import { Typography } from '@/components/Typography';
 import { PROJECTS_PATH } from '@/core/config/paths';
+import { projectLikes } from '@/data/projects';
 import { classNames } from '@/features/helpers/className';
 import { LikeIcon } from '@/shared/assets/icons';
 
@@ -35,7 +36,7 @@ export const Projects = (props: ProjectsProps) => {
             <div className={cls.likes}>
               <LikeIcon />
               <Typography style={{ fontWeight: '500', fontSize: '12px' }} variant='span'>
-                {p.likes}
+                {projectLikes(p.slug)}
               </Typography>
             </div>
           </div>
