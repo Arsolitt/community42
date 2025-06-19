@@ -107,3 +107,7 @@ spec:
                   number: 3000
             path: /
             pathType: Prefix
+  tls:
+    - hosts:
+        - community42.ru
+      secretName: community42.ru-tls
