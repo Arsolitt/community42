@@ -11,7 +11,8 @@ const tags = [
   tagWithPriority("beauty-medicine", 1),
   tagWithPriority("3d", 1),
 ];
-const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+// const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+const image = `${PROJECT_IMG_URL}/fallback.webp`;
 
 export const firmennoeBRollVideoDlyaStilistaPoBrovyam: ProjectElement = {
   name: "Фирменное Б-ролл видео для стилиста по бровям",

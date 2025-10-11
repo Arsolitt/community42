@@ -9,7 +9,8 @@ const date = new Date("2024-03-06").toLocaleDateString("ru-RU", { day: "2-digit"
 const tags = [
   tagWithPriority("vektornaya-graphika", 1),
 ];
-const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+// const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+const image = `${PROJECT_IMG_URL}/fallback.webp`;
 
 export const firmennyePaketyDlyaInternetProvayderaGoodlineBiznes: ProjectElement = {
   name: "Фирменные пакеты для интернет-провайдера Goodline бизнес",

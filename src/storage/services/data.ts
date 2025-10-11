@@ -21,7 +21,7 @@ export const servicesArray = [
     tags: ["ux-ui"],
     isNew: false,
     images: [
-      `${SERVICES_IMG_URL}/albums.png`
+      `${SERVICES_IMG_URL}/fallback.png`
     ]
   },
   {
@@ -30,7 +30,7 @@ export const servicesArray = [
     tags: ["logotypes", "vektornaya-graphika"],
     isNew: false,
     images: [
-      `${SERVICES_IMG_URL}/albums.png`
+      `${SERVICES_IMG_URL}/fallback.png`
     ]
   },
   {
@@ -39,7 +39,7 @@ export const servicesArray = [
     tags: ["branding", "aydentika"],
     isNew: false,
     images: [
-      `${SERVICES_IMG_URL}/albums.png`
+      `${SERVICES_IMG_URL}/fallback.png`
     ]
   },
   {
@@ -48,7 +48,7 @@ export const servicesArray = [
     tags: ["motion", "3d"],
     isNew: false,
     images: [
-      `${SERVICES_IMG_URL}/albums.png`
+      `${SERVICES_IMG_URL}/fallback.png`
     ]
   },
   {
@@ -57,7 +57,7 @@ export const servicesArray = [
     tags: ["fotosessii", "reklamnaya-retush", "photo"],
     isNew: false,
     images: [
-      `${SERVICES_IMG_URL}/albums.png`
+      `${SERVICES_IMG_URL}/fallback.png`
     ]
   },
   {
@@ -66,7 +66,7 @@ export const servicesArray = [
     tags: ["video"],
     isNew: false,
     images: [
-      `${SERVICES_IMG_URL}/albums.png`
+      `${SERVICES_IMG_URL}/fallback.png`
     ]
   },
   {
@@ -75,7 +75,7 @@ export const servicesArray = [
     isNew: true,
     tags: [],
     images: [
-      `${SERVICES_IMG_URL}/albums.png`
+      `${SERVICES_IMG_URL}/fallback.png`
     ]
   }
 ] as const satisfies readonly ServiceElement[];

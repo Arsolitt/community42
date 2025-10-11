@@ -9,7 +9,8 @@ const date = new Date("2024-03-22").toLocaleDateString("ru-RU", { day: "2-digit"
 const tags = [
   tagWithPriority("ux-ui", 1),
 ];
-const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+// const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+const image = `${PROJECT_IMG_URL}/fallback.webp`;
 
 export const landingUslugPoVideonablyudeniyuDlyaInternetProvayderaGoodlineBiznes: ProjectElement = {
   name: "Лэндинг услуг по Видеонаблюдению для интернет-провайдера Goodline бизнес",

@@ -12,7 +12,8 @@ const tags = [
   tagWithPriority("photo", 1),
   tagWithPriority("beauty-medicine", 1)
 ];
-const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+// const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+const image = `${PROJECT_IMG_URL}/fallback.webp`;
 
 export const saitStomatologiiEdemika: ProjectElement = {
   name: "Сайт стоматологии «Эдемика»",

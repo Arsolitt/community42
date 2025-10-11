@@ -10,7 +10,8 @@ const tags = [
   tagWithPriority("3d", 2),
   tagWithPriority("motion", 1)
 ].toSorted((a, b) => b.priority - a.priority );
-const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+// const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+const image = `${PROJECT_IMG_URL}/fallback.webp`;
 
 export const videoDlyaNovojKosmicheskojTemyOformleniyaLiceya: ProjectElement = {
   name: "3d-видео для новой космической темы оформления Лицея№23",

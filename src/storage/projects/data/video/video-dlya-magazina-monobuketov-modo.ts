@@ -10,7 +10,8 @@ const tags = [
   tagWithPriority("video", 2),
   tagWithPriority("flowers", 1),
 ];
-const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+// const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
+const image = `${PROJECT_IMG_URL}/fallback.webp`;
 
 export const videoDlyaMagazinaMonobuketovModo: ProjectElement = {
   name: "Видео для магазина монобукетов Modo",
