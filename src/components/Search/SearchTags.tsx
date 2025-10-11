@@ -1,4 +1,4 @@
-import type { Tag, TagSlug } from "@/data/tags";
+import type { Tag, TagSlug } from "@storage/tags";
 
 import { TagItem } from "@/components/TagItem/TagItem";
 

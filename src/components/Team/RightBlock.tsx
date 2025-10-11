@@ -4,7 +4,7 @@ import { ImageSet } from "@/components/ImageSet/ImageSet";
 import { RouterLink } from "@/components/RouterLink";
 import { Typography } from "@/components/Typography";
 import { TEAM_PATH } from "@/core/config/paths";
-import { allTeamMembers } from "@/data/team";
+import { allTeamMembers } from "@storage/team";
 
 import cls from "./Team.module.css";
 

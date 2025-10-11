@@ -1,8 +1,8 @@
 "use client";
 
 import { Projects } from "@/components/ProjectsList";
-import { allProjects } from "@/data/projects";
-import { allTags } from "@/data/tags";
+import { allProjects } from "@storage/projects";
+import { allTags } from "@storage/tags";
 import { useFilteredProjects } from "@/features/hooks/useFilteredProjects";
 import { useSearchTags } from "@/features/hooks/useSearchTags";
 import { useSearchTerm } from "@/features/hooks/useSearchTerm";

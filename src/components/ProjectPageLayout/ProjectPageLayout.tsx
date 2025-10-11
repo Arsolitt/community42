@@ -1,12 +1,12 @@
 import React from "react";
 
-import type { Project } from "@/data/projects";
+import type { Project } from "@storage/projects";
 
 import { ProjectFeed } from "@/components/ProjectBlocks/ProjectFeed";
 import { ProjectFeedback } from "@/components/ProjectBlocks/ProjectFeedback";
 import { ProjectHeader } from "@/components/ProjectBlocks/ProjectHeader";
 import { ProjectTeam } from "@/components/ProjectBlocks/ProjectTeam";
-import { projectLikes } from "@/data/projects";
+import { projectLikes } from "@storage/projects";
 
 import { ImgLarge } from "../ProjectBlocks/ImgLarge";
 

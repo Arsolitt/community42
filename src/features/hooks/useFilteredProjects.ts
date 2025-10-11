@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-import type { Project } from "@/data/projects";
+import type { Project } from "@storage/projects";
 
 export const useFilteredProjects = (
   searchTerm: string,

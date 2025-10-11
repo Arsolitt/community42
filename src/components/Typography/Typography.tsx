@@ -11,7 +11,7 @@ interface TypographyProps {
 
 export const Typography = (props: TypographyProps) => {
   const { variant, children, className, style } = props;
-  const Tag = variant as keyof JSX.IntrinsicElements;
+  const Tag = variant as React.ElementType;
 
   return (
     <Tag className={classNames(cls.typography, {}, [className, cls[variant]])} style={style}>

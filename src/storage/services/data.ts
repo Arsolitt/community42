@@ -1,4 +1,4 @@
-import type { TagSlug } from "@/data/tags";
+import type { TagSlug } from "@storage/tags";
 
 import { SERVICES_IMG_URL } from "@/core/config/paths";
 

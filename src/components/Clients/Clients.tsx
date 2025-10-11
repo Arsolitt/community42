@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { AnimatedTitle } from "@/components/AnimatedTitle/AnimatedTitle";
 import { Typography } from "@/components/Typography";
-import { allClients } from "@/data/clients";
+import { allClients } from "@storage/clients";
 import { classNames } from "@/features/helpers/className";
 import { ArrowIcon } from "@/shared/assets/icons";
 

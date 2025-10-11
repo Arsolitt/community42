@@ -1,5 +1,5 @@
 import { ProjectPageLayout } from "@/components/ProjectPageLayout/ProjectPageLayout";
-import { projectBySlug } from "@/data/projects";
+import { projectBySlug } from "@storage/projects";
 
 const project = projectBySlug("3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23");
 

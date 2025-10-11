@@ -1,10 +1,10 @@
 "use client";
 import { useMemo } from "react";
 
-import type { TeamMember } from "@/data/team";
+import type { TeamMember } from "@storage/team";
 
-import { projectsByTeamMember } from "@/data/projects/utils";
 import { classNames } from "@/features/helpers/className";
+import { projectsByTeamMember } from "@storage/projects/utils";
 
 import { Projects } from "../ProjectsList";
 import { BiographyLeftBlock } from "./LeftBlock";

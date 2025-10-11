@@ -3,10 +3,10 @@ import console from "node:console";
 import fs from "node:fs";
 import path from "node:path";
 
-import type { ProjectSlug } from "@/data/projects/data";
+import type { ProjectSlug } from "@storage/projects/data";
 
 import { ProjectPageLayout } from "@/components/ProjectPageLayout/ProjectPageLayout";
-import { allProjects, projectBySlug } from "@/data/projects";
+import { allProjects, projectBySlug } from "@storage/projects";
 
 export async function generateStaticParams() {
   const projectsDirPath = path.join(process.cwd(), "src", "app", "projects");

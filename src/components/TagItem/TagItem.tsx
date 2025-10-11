@@ -1,4 +1,4 @@
-import type { Tag, TagSlug } from "@/data/tags";
+import type { Tag, TagSlug } from "@storage/tags";
 
 interface TagItemProps {
   isActive: boolean;

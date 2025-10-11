@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 
-import type { ProjectTag } from "@/data/projects";
+import type { ProjectTag } from "@storage/projects";
 
 import { TagItem } from "@/components/TagItem/TagItem";
 import { CrossIcon } from "@/shared/assets/icons/crossIcon";

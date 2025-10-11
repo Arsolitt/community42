@@ -5,8 +5,8 @@ import { ServicesList } from "@/components/ServicesList";
 import { Team } from "@/components/Team";
 import { Typography } from "@/components/Typography";
 import { Video } from "@/components/Video";
-import { allProjects } from "@/data/projects";
-import { allServices } from "@/data/services";
+import { allProjects } from "@storage/projects";
+import { allServices } from "@storage/services";
 import { CloseIcon } from "@/shared/assets/icons/close";
 
 import styles from "./page.module.css";

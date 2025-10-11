@@ -4,7 +4,7 @@ import { ImgVertical } from "@/components/ProjectBlocks/ImgVertical/ImgVertical"
 import { TextBlock } from "@/components/ProjectBlocks/TextBlock";
 import { ProjectPageLayout } from "@/components/ProjectPageLayout/ProjectPageLayout";
 import { PROJECT_IMG_URL } from "@/core/config/paths";
-import { projectBySlug } from "@/data/projects";
+import { projectBySlug } from "@storage/projects";
 
 const project = projectBySlug("logotip-magazina-monobuketov-modo");
 

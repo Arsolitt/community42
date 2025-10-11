@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { useMemo } from "react";
 
-import type { Project, ProjectTag } from "@/data/projects";
-import type { Service } from "@/data/services";
+import type { Project, ProjectTag } from "@storage/projects";
+import type { Service } from "@storage/services";
 
 import { ImageSet } from "@/components/ImageSet/ImageSet";
 import { RouterLink } from "@/components/RouterLink";
 import { Typography } from "@/components/Typography";
-import { allProjects } from "@/data/projects";
+import { allProjects } from "@storage/projects";
 import { classNames } from "@/features/helpers/className";
 import { useFilteredProjects } from "@/features/hooks/useFilteredProjects";
 

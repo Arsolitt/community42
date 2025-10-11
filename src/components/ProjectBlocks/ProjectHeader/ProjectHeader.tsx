@@ -1,4 +1,4 @@
-import type { Project } from "@/data/projects";
+import type { Project } from "@storage/projects";
 
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Typography } from "@/components/Typography";

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
-import type { ProjectCollaborator } from "@/data/projects";
-import type { TeamMemberWithRole } from "@/data/team/utils";
+import type { ProjectCollaborator } from "@storage/projects";
+import type { TeamMemberWithRole } from "@storage/team/utils";
 
 import { TEAM_PATH } from "@/core/config/paths";
 
