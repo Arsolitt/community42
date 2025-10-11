@@ -6,13 +6,15 @@ export default eslint(
     jsx: true,
     jsxA11y: true,
     react: true,
-    stylistic: true
+    stylistic: true,
+    next: true
   },
   {
     rules: {
       'node/prefer-global/process': ['error', 'always'],
       'siberiacancode-react/prop-types': 'off',
       'style/max-len': ['warn', 240, 2, { ignoreComments: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
+      'style/quotes': ['warn', 'single', { avoidEscape: true, allowTemplateLiterals: 'always' }],
       'react/prefer-destructuring-assignment': 'off',
       'react-hooks-extra/no-direct-set-state-in-use-effect': 'off'
     }
