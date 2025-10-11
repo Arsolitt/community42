@@ -1,6 +1,6 @@
-import { classNames } from "@/features/helpers/className";
-import { LikeIcon } from "@/shared/assets/icons"; // Предполагаем, что иконки есть
-import { ShareIcon } from "@/shared/assets/icons/share";
+import { classNames } from "@features/helpers/className";
+import { LikeIcon } from "@shared/assets/icons"; // Предполагаем, что иконки есть
+import { ShareIcon } from "@shared/assets/icons/share";
 
 import { TimeIcon } from "../../../shared/assets/icons/time";
 

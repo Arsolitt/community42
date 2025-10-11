@@ -4,10 +4,10 @@ import Link from "next/link";
 import type { Project } from "@storage/projects";
 
 import { Typography } from "@/components/Typography";
-import { PROJECTS_PATH } from "@/core/config/paths";
+import { PROJECTS_PATH } from "@core/config/paths";
 import { projectLikes } from "@storage/projects";
-import { classNames } from "@/features/helpers/className";
-import { LikeIcon } from "@/shared/assets/icons";
+import { classNames } from "@features/helpers/className";
+import { LikeIcon } from "@shared/assets/icons";
 
 import cls from "./Projects.module.css";
 

@@ -2,7 +2,7 @@ import type { Project } from "@storage/projects";
 
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Typography } from "@/components/Typography";
-import { classNames } from "@/features/helpers/className";
+import { classNames } from "@features/helpers/className";
 
 import { ProjectTags } from "./ProjectTags";
 

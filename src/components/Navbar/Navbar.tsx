@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import { classNames } from "@/features/helpers/className";
+import { classNames } from "@features/helpers/className";
 
 import { NavbarContacts } from "./NavbarContacts/NavbarContacts";
 import { NavbarDefault } from "./NavbarDefault/NavbarDefault";

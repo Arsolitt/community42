@@ -1,4 +1,4 @@
-import { CLIENTS_IMG_URL } from "@/core/config/paths";
+import { CLIENTS_IMG_URL } from "@core/config/paths";
 
 interface ClientElement {
   image: string;

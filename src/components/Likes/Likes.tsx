@@ -1,5 +1,5 @@
-import { classNames } from "@/features/helpers/className";
-import { LikeIcon } from "@/shared/assets/icons";
+import { classNames } from "@features/helpers/className";
+import { LikeIcon } from "@shared/assets/icons";
 
 import { Typography } from "../Typography";
 

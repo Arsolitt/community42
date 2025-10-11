@@ -1,5 +1,5 @@
-import { classNames } from "@/features/helpers/className";
-import { ArrowIcon } from "@/shared/assets/icons/arrow";
+import { classNames } from "@features/helpers/className";
+import { ArrowIcon } from "@shared/assets/icons/arrow";
 
 import cls from "./RouterLink.module.css";
 

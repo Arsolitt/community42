@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 import { Typography } from "@/components/Typography";
-import { CloseIcon } from "@/shared/assets/icons/close";
+import { CloseIcon } from "@shared/assets/icons/close";
 
 import cls from "./AnimatedTitle.module.css";
 

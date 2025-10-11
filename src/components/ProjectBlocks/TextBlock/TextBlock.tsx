@@ -1,5 +1,5 @@
 // Шаблон текста “основной”
-import { classNames } from "@/features/helpers/className";
+import { classNames } from "@features/helpers/className";
 
 import cls from "./TextBlock.module.css";
 

@@ -10,8 +10,8 @@ import { ImageSet } from "@/components/ImageSet/ImageSet";
 import { RouterLink } from "@/components/RouterLink";
 import { Typography } from "@/components/Typography";
 import { allProjects } from "@storage/projects";
-import { classNames } from "@/features/helpers/className";
-import { useFilteredProjects } from "@/features/hooks/useFilteredProjects";
+import { classNames } from "@features/helpers/className";
+import { useFilteredProjects } from "@features/hooks/useFilteredProjects";
 
 import cls from "./ServicesList.module.css";
 

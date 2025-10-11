@@ -7,8 +7,8 @@ import { Likes } from "@/components/Likes";
 import { Typography } from "@/components/Typography";
 import { projectLikes } from "@storage/projects";
 import { allServices } from "@storage/services";
-import { classNames } from "@/features/helpers/className";
-import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from "@/shared/assets/icons";
+import { classNames } from "@features/helpers/className";
+import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from "@shared/assets/icons";
 
 import cls from "./Footer.module.css";
 

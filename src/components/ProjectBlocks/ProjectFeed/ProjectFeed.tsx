@@ -3,9 +3,9 @@ import Link from "next/link";
 
 import type { Project } from "@storage/projects";
 
-import { PROJECTS_PATH } from "@/core/config/paths";
+import { PROJECTS_PATH } from "@core/config/paths";
 import { allProjects } from "@storage/projects";
-import { classNames } from "@/features/helpers/className";
+import { classNames } from "@features/helpers/className";
 
 import cls from "./ProjectFeed.module.css";
 

@@ -3,7 +3,7 @@ import { useMemo } from "react";
 
 import type { TeamMember } from "@storage/team";
 
-import { classNames } from "@/features/helpers/className";
+import { classNames } from "@features/helpers/className";
 import { projectsByTeamMember } from "@storage/projects/utils";
 
 import { Projects } from "../ProjectsList";

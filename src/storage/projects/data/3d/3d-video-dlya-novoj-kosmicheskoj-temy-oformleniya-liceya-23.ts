@@ -1,6 +1,6 @@
 import type { ProjectElement } from "@storage/projects";
 
-import { PROJECT_IMG_URL } from "@/core/config/paths";
+import { PROJECT_IMG_URL } from "@core/config/paths";
 import { tagWithPriority } from "@storage/tags";
 import { teamMemberWithRole } from "@storage/team";
 

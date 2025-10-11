@@ -8,7 +8,11 @@
     "moduleResolution": "bundler",
     "paths": {
       "@/*": ["./src/*"],
-      "@storage/*": ["./src/storage/*"]
+      "@components/*": ["./src/components/*"],
+      "@core/*": ["./src/core/*"],
+      "@features/*": ["./src/features/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@storage/*": ["./src/storage/*"],
     },
     "resolveJsonModule": true,
     "allowJs": true,

@@ -1,4 +1,4 @@
-import { classNames } from "@/features/helpers/className";
+import { classNames } from "@features/helpers/className";
 
 import cls from "./Typography.module.css";
 

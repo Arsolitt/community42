@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { classNames } from "@/features/helpers/className";
-import { CloseContactsIcon, SearchIcon } from "@/shared/assets/icons";
+import { classNames } from "@features/helpers/className";
+import { CloseContactsIcon, SearchIcon } from "@shared/assets/icons";
 
 import cls from "./SearchButton.module.css";
 

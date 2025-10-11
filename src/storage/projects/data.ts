@@ -1,7 +1,7 @@
 import type { TagWithPriority } from "@storage/tags";
 import type { TeamMemberWithRole } from "@storage/team";
 
-import { PROJECT_IMG_URL } from "@/core/config/paths";
+import { PROJECT_IMG_URL } from "@core/config/paths";
 import { teamMemberWithRole } from "@storage/team";
 
 import { videoDlyaNovojKosmicheskojTemyOformleniyaLiceya } from "./data/3d/3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23";

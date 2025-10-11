@@ -6,7 +6,7 @@ import React from "react";
 import type { ProjectTag } from "@storage/projects";
 
 import { TagItem } from "@/components/TagItem/TagItem";
-import { CrossIcon } from "@/shared/assets/icons/crossIcon";
+import { CrossIcon } from "@shared/assets/icons/crossIcon";
 
 interface ProjectTagsProps {
   tags: ProjectTag[];

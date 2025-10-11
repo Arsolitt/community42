@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-import { BreadcrumbsArrow } from "@/shared/assets/icons/breadcrumbsArrow";
+import { BreadcrumbsArrow } from "@shared/assets/icons/breadcrumbsArrow";
 
 import cls from "./Breadcrumbs.module.css";
 

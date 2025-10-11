@@ -4,9 +4,9 @@ import { Raleway } from "next/font/google";
 import React from "react";
 
 import { Navbar } from "@/components/Navbar";
-import { LocomativeScrollProvider } from "@/core/providers/LocomativeScroll";
+import { LocomativeScrollProvider } from "@core/providers/LocomativeScroll";
 
-import "@/core/styles/globals.css";
+import "@core/styles/globals.css";
 
 const raleway = Raleway({ subsets: ["latin", "cyrillic"], preload: true });
 

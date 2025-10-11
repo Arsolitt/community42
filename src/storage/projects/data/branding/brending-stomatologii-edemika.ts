@@ -1,4 +1,4 @@
-import { PROJECT_IMG_URL } from "@/core/config/paths";
+import { PROJECT_IMG_URL } from "@core/config/paths";
 import type { ProjectElement } from "@storage/projects";
 
 import { tagWithPriority } from "@storage/tags";

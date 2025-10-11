@@ -7,7 +7,7 @@ import { Typography } from "@/components/Typography";
 import { Video } from "@/components/Video";
 import { allProjects } from "@storage/projects";
 import { allServices } from "@storage/services";
-import { CloseIcon } from "@/shared/assets/icons/close";
+import { CloseIcon } from "@shared/assets/icons/close";
 
 import styles from "./page.module.css";
 

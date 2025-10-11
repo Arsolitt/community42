@@ -1,4 +1,4 @@
-import { TEAM_IMG_URL } from "@/core/config/paths";
+import { TEAM_IMG_URL } from "@core/config/paths";
 
 interface Socials {
   href: string;
