@@ -1,30 +1,30 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import type { Project } from '@/data/projects';
+import type { Project } from "@/data/projects";
 
-import { PROJECTS_PATH } from '@/core/config/paths';
-import { allProjects } from '@/data/projects';
-import { classNames } from '@/features/helpers/className';
+import { PROJECTS_PATH } from "@/core/config/paths";
+import { allProjects } from "@/data/projects";
+import { classNames } from "@/features/helpers/className";
 
-import cls from './ProjectFeed.module.css';
+import cls from "./ProjectFeed.module.css";
 
-const GROUP_1_SLUGS = new Set(['logotypes', 'branding', 'aydentika', 'ux-ui', 'vektornaya-graphika']);
-const GROUP_2_SLUGS = new Set(['photo', 'fotosessii', 'video', 'reklamnaya-retush', 'motion', '3D']);
+const GROUP_1_SLUGS = new Set(["logotypes", "branding", "aydentika", "ux-ui", "vektornaya-graphika"]);
+const GROUP_2_SLUGS = new Set(["photo", "fotosessii", "video", "reklamnaya-retush", "motion", "3D"]);
 
-const getProjectGroup = (project: Project): 'group1' | 'group2' | 'none' => {
+const getProjectGroup = (project: Project): "group1" | "group2" | "none" => {
   const highestPriorityTag = project.tags.reduce((highest, current) => {
     return current.priority > highest.priority ? current : highest;
   }, project.tags[0]);
 
   if (GROUP_1_SLUGS.has(highestPriorityTag.slug)) {
-    return 'group1';
+    return "group1";
   }
   if (GROUP_2_SLUGS.has(highestPriorityTag.slug)) {
-    return 'group2';
+    return "group2";
   }
 
-  return 'none';
+  return "none";
 };
 
 interface ProjectFeedProps {
@@ -40,12 +40,12 @@ export const ProjectFeed = ({ className, sourceProject }: ProjectFeedProps) => {
       return false;
     }
     const projectGroup = getProjectGroup(project);
-    return sourceGroup === 'none' ? true : projectGroup === sourceGroup;
+    return sourceGroup === "none" ? true : projectGroup === sourceGroup;
   });
 
   const sortedProjects = [...relevantProjects].sort((a, b) => {
-    const [dayA, monthA, yearA] = a.date.split('.').map(Number);
-    const [dayB, monthB, yearB] = b.date.split('.').map(Number);
+    const [dayA, monthA, yearA] = a.date.split(".").map(Number);
+    const [dayB, monthB, yearB] = b.date.split(".").map(Number);
     const dateA = new Date(yearA, monthA - 1, dayA);
     const dateB = new Date(yearB, monthB - 1, dayB);
     return dateB.getTime() - dateA.getTime();

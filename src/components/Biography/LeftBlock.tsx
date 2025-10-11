@@ -1,7 +1,7 @@
-import { Typography } from '@/components/Typography';
-import { TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
+import { Typography } from "@/components/Typography";
+import { TelegramIcon, VkIcon, WhatsappIcon } from "@/shared/assets/icons";
 
-import cls from './Biography.module.css';
+import cls from "./Biography.module.css";
 
 export const BiographyLeftBlock = ({ collaborator }) => {
   const socialIcons = {
@@ -11,10 +11,10 @@ export const BiographyLeftBlock = ({ collaborator }) => {
   };
   return (
     <div className={cls.leftBlock}>
-      <Typography style={{ fontWeight: '700' }} variant='h2'>
+      <Typography style={{ fontWeight: "700" }} variant='h2'>
         {collaborator?.name}
       </Typography>
-      <Typography style={{ fontSize: '20px', fontWeight: '500', lineHeight: '140%' }} variant='p'>
+      <Typography style={{ fontSize: "20px", fontWeight: "500", lineHeight: "140%" }} variant='p'>
         {collaborator?.description}
       </Typography>
 

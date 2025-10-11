@@ -1,9 +1,9 @@
-import { classNames } from '@/features/helpers/className';
-import { LikeIcon } from '@/shared/assets/icons';
+import { classNames } from "@/features/helpers/className";
+import { LikeIcon } from "@/shared/assets/icons";
 
-import { Typography } from '../Typography';
+import { Typography } from "../Typography";
 
-import cls from './Likes.module.css';
+import cls from "./Likes.module.css";
 
 interface LikesProps {
   className?: string;

@@ -1,13 +1,13 @@
-'use client';
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 
-import { classNames } from '@/features/helpers/className';
+import { classNames } from "@/features/helpers/className";
 
-import { NavbarContacts } from './NavbarContacts/NavbarContacts';
-import { NavbarDefault } from './NavbarDefault/NavbarDefault';
-import { NavbarSearchButton } from './SearchButton/SearchButton';
+import { NavbarContacts } from "./NavbarContacts/NavbarContacts";
+import { NavbarDefault } from "./NavbarDefault/NavbarDefault";
+import { NavbarSearchButton } from "./SearchButton/SearchButton";
 
-import cls from './Navbar.module.css';
+import cls from "./Navbar.module.css";
 
 interface NavbarProps {
   className?: string;

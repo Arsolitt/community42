@@ -1,10 +1,10 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import { Typography } from '@/components/Typography';
-import { classNames } from '@/features/helpers/className';
-import { MarketIcon, MessageIcon } from '@/shared/assets/icons/';
+import { Typography } from "@/components/Typography";
+import { classNames } from "@/features/helpers/className";
+import { MarketIcon, MessageIcon } from "@/shared/assets/icons/";
 
-import cls from './NavbarDefault.module.css';
+import cls from "./NavbarDefault.module.css";
 
 interface NavbarDefaultProps {
   className?: string;
@@ -16,12 +16,12 @@ export const NavbarDefault = (props: NavbarDefaultProps) => {
   return (
     <div className={classNames(null, {}, [className])}>
       <motion.div
-        key={openContacts ? 'shown' : 'normal'}
+        key={openContacts ? "shown" : "normal"}
         animate={{ opacity: 1 }}
         className={cls.navbar_default}
         exit={{ opacity: 0 }}
         initial={{ opacity: 0 }}
-        transition={{ ease: 'easeInOut', duration: 0.5 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
       >
         <button
           className={cls.contacts_button}

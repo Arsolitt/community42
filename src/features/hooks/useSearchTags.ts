@@ -1,5 +1,5 @@
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export const useSearchTags = (initialTags: string[] = []) => {
   const [activeTags, setActiveTags] = useState<string[]>(initialTags);
@@ -8,8 +8,8 @@ export const useSearchTags = (initialTags: string[] = []) => {
   const pathname = usePathname();
 
   useEffect(() => {
-    const tagsParam = searchParams.get('tags');
-    const tagsFromUrl = tagsParam ? tagsParam.split(',') : initialTags;
+    const tagsParam = searchParams.get("tags");
+    const tagsFromUrl = tagsParam ? tagsParam.split(",") : initialTags;
 
     const areTagsEqual =
       activeTags.length === tagsFromUrl.length &&
@@ -29,9 +29,9 @@ export const useSearchTags = (initialTags: string[] = []) => {
 
     const params = new URLSearchParams(searchParams.toString());
     if (newActiveTags.length > 0) {
-      params.set('tags', newActiveTags.join(','));
+      params.set("tags", newActiveTags.join(","));
     } else {
-      params.delete('tags');
+      params.delete("tags");
     }
     router.push(`${pathname}?${params.toString()}`);
   };

@@ -1,6 +1,6 @@
-import type { Tag, TagSlug } from '@/data/tags';
+import type { Tag, TagSlug } from "@/data/tags";
 
-import { TagItem } from '@/components/TagItem/TagItem';
+import { TagItem } from "@/components/TagItem/TagItem";
 
 interface SearchTagsProps {
   activeTags: string[];

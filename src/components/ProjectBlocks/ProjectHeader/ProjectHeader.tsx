@@ -1,12 +1,12 @@
-import type { Project } from '@/data/projects';
+import type { Project } from "@/data/projects";
 
-import { Breadcrumbs } from '@/components/Breadcrumbs';
-import { Typography } from '@/components/Typography';
-import { classNames } from '@/features/helpers/className';
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Typography } from "@/components/Typography";
+import { classNames } from "@/features/helpers/className";
 
-import { ProjectTags } from './ProjectTags';
+import { ProjectTags } from "./ProjectTags";
 
-import cls from './ProjectHeader.module.css';
+import cls from "./ProjectHeader.module.css";
 
 interface ProjectHeaderProps {
   className?: string;
@@ -19,8 +19,8 @@ export const ProjectHeader = ({ project, className }: ProjectHeaderProps) => {
   );
   const links = [
     {
-      text: 'Работы',
-      href: '/#services'
+      text: "Работы",
+      href: "/#services"
     },
     {
       text: mainTag.text,

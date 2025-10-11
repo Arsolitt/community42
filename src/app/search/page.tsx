@@ -1,7 +1,7 @@
-import { Suspense } from 'react';
+import { Suspense } from "react";
 
-import { Header } from '@/components/Header';
-import Search from '@/components/Search';
+import { Header } from "@/components/Header";
+import Search from "@/components/Search";
 
 const SearchPage = () => {
   return (

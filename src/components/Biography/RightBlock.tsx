@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import cls from './Biography.module.css';
+import cls from "./Biography.module.css";
 
 interface BiographyRightBlockProps {
   fullSizeImage: string;

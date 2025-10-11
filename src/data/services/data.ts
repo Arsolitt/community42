@@ -1,6 +1,6 @@
-import type { TagSlug } from '@/data/tags';
+import type { TagSlug } from "@/data/tags";
 
-import { SERVICES_IMG_URL } from '@/core/config/paths';
+import { SERVICES_IMG_URL } from "@/core/config/paths";
 
 interface ServiceElement {
   images: string[];
@@ -12,66 +12,66 @@ interface ServiceElement {
 
 export type Service = typeof servicesArray[number];
 
-export type ServiceSlug = typeof servicesArray[number]['slug'];
+export type ServiceSlug = typeof servicesArray[number]["slug"];
 
 export const servicesArray = [
   {
-    slug: 'ux-ui-design',
-    text: 'UX/UI дизайн',
-    tags: ['ux-ui'],
+    slug: "ux-ui-design",
+    text: "UX/UI дизайн",
+    tags: ["ux-ui"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
-    slug: 'graphic-design',
-    text: 'Графический дизайн',
-    tags: ['logotypes', 'vektornaya-graphika'],
+    slug: "graphic-design",
+    text: "Графический дизайн",
+    tags: ["logotypes", "vektornaya-graphika"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
-    slug: 'branding-i-aydentika',
-    text: 'Брендинг и айдентика',
-    tags: ['branding', 'aydentika'],
+    slug: "branding-i-aydentika",
+    text: "Брендинг и айдентика",
+    tags: ["branding", "aydentika"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
-    slug: 'motion-i-3d',
-    text: 'Motion и 3D',
-    tags: ['motion', '3D'],
+    slug: "motion-i-3d",
+    text: "Motion и 3D",
+    tags: ["motion", "3D"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
-    slug: 'fotosessii-i-retush',
-    text: 'Фотосессии и ретушь',
-    tags: ['fotosessii', 'reklamnaya-retush', 'photo'],
+    slug: "fotosessii-i-retush",
+    text: "Фотосессии и ретушь",
+    tags: ["fotosessii", "reklamnaya-retush", "photo"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
-    slug: 'video-production',
-    text: 'Видео-продакшн',
-    tags: ['video'],
+    slug: "video-production",
+    text: "Видео-продакшн",
+    tags: ["video"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/albums.png`
     ]
   },
   {
-    slug: 'vypusknye-albumy',
-    text: 'Выпускные альбомы',
+    slug: "vypusknye-albumy",
+    text: "Выпускные альбомы",
     isNew: true,
     tags: [],
     images: [

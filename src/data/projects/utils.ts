@@ -1,8 +1,8 @@
-import type { TeamMember } from '@/data/team';
+import type { TeamMember } from "@/data/team";
 
-import type { Project, ProjectSlug } from './data';
+import type { Project, ProjectSlug } from "./data";
 
-import { projects } from './data';
+import { projects } from "./data";
 
 export function projectBySlug(slug: ProjectSlug): Project {
   return projects[slug];
@@ -15,7 +15,7 @@ export function allProjects(): Project[] {
 export function projectsByTeamMember(member: TeamMember): Project[] {
   return allProjects().filter((project) => {
     return project.collaborators.some((c) => {
-      if ('slug' in c) {
+      if ("slug" in c) {
         return c.slug === member.slug;
       }
 
@@ -24,6 +24,7 @@ export function projectsByTeamMember(member: TeamMember): Project[] {
   });
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function projectLikes(_slug: ProjectSlug): number {
   return 10;
 }

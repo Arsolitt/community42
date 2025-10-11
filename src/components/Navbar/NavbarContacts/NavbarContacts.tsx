@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import Link from "next/link";
 
-import { Typography } from '@/components/Typography';
-import { classNames } from '@/features/helpers/className';
-import { CloseContactsIcon, EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
+import { Typography } from "@/components/Typography";
+import { classNames } from "@/features/helpers/className";
+import { CloseContactsIcon, EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from "@/shared/assets/icons";
 
-import cls from './NavbarContacts.module.css';
+import cls from "./NavbarContacts.module.css";
 
 interface NavbarContactsProps {
   className?: string;
@@ -17,12 +17,12 @@ export const NavbarContacts = (props: NavbarContactsProps) => {
   return (
     <div className={classNames(null, {}, [className])}>
       <motion.div
-        key={closeContacts ? 'shown' : 'normal'}
+        key={closeContacts ? "shown" : "normal"}
         animate={{ opacity: 1 }}
         className={cls.navbar_contacts}
         exit={{ opacity: 0 }}
         initial={{ opacity: 0 }}
-        transition={{ ease: 'easeInOut', duration: 0.5 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
       >
         <button className={cls.close_contacts} type='button' onClick={closeContacts}>
           <CloseContactsIcon />

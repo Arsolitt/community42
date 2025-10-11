@@ -1,24 +1,24 @@
-import { notFound } from 'next/navigation';
-import console from 'node:console';
-import fs from 'node:fs';
-import path from 'node:path';
+import { notFound } from "next/navigation";
+import console from "node:console";
+import fs from "node:fs";
+import path from "node:path";
 
-import type { ProjectSlug } from '@/data/projects/data';
+import type { ProjectSlug } from "@/data/projects/data";
 
-import { ProjectPageLayout } from '@/components/ProjectPageLayout/ProjectPageLayout';
-import { allProjects, projectBySlug } from '@/data/projects';
+import { ProjectPageLayout } from "@/components/ProjectPageLayout/ProjectPageLayout";
+import { allProjects, projectBySlug } from "@/data/projects";
 
 export async function generateStaticParams() {
-  const projectsDirPath = path.join(process.cwd(), 'src', 'app', 'projects');
+  const projectsDirPath = path.join(process.cwd(), "src", "app", "projects");
   let staticDirNames: string[] = [];
 
   try {
     const dirents = fs.readdirSync(projectsDirPath, { withFileTypes: true });
     staticDirNames = dirents
-      .filter((dirent) => dirent.isDirectory() && dirent.name !== '[slug]')
+      .filter((dirent) => dirent.isDirectory() && dirent.name !== "[slug]")
       .map((dirent) => dirent.name);
   } catch (error) {
-    console.error('Could not read static project directories:', error);
+    console.error("Could not read static project directories:", error);
     return allProjects().map((project) => ({
       slug: project.slug
     }));

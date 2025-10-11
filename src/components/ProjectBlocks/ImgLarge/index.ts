@@ -1,1 +1,1 @@
-export { ImgLarge } from './ImgLarge';
+export { ImgLarge } from "./ImgLarge";

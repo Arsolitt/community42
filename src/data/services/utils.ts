@@ -1,6 +1,6 @@
-import type { Service, ServiceSlug } from './data';
+import type { Service, ServiceSlug } from "./data";
 
-import { services } from './data';
+import { services } from "./data";
 
 export function serviceBySlug(slug: ServiceSlug) {
   return services[slug];

@@ -1,10 +1,10 @@
-import { notFound } from 'next/navigation';
+import { notFound } from "next/navigation";
 
-import type { TeamMemberSlug } from '@/data/team/data';
+import type { TeamMemberSlug } from "@/data/team/data";
 
-import { Biography } from '@/components/Biography';
-import { Header } from '@/components/Header';
-import { allTeamMembers, teamMemberBySlug } from '@/data/team/utils';
+import { Biography } from "@/components/Biography";
+import { Header } from "@/components/Header";
+import { allTeamMembers, teamMemberBySlug } from "@/data/team/utils";
 
 export async function generateStaticParams() {
   return allTeamMembers().map((member) => ({
