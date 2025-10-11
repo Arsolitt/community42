@@ -12,7 +12,7 @@ const tags = [
   tagWithPriority("ux-ui", 1),
   tagWithPriority("logotypes", 1),
   tagWithPriority("motion", 1),
-  tagWithPriority("3D", 1),
+  tagWithPriority("3d", 1),
   tagWithPriority("video", 1),
   tagWithPriority("photo", 1),
   tagWithPriority("beauty-medicine", 1)

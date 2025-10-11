@@ -44,8 +44,8 @@ export const servicesArray = [
   },
   {
     slug: "motion-i-3d",
-    text: "Motion и 3D",
-    tags: ["motion", "3D"],
+    text: "Motion и 3d",
+    tags: ["motion", "3d"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/albums.png`

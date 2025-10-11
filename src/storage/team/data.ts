@@ -42,7 +42,7 @@ const teamArray = [
   {
     slug: "egor-3d-specialist",
     name: "Егор",
-    position: "3D специалист",
+    position: "3d специалист",
     images: [`${TEAM_IMG_URL}/egor.png`],
     fullsizeImage: `${TEAM_IMG_URL}/full-size/egor.png`,
     description:

@@ -4,13 +4,14 @@ import Link from "next/link";
 import type { Project } from "@storage/projects";
 
 import { PROJECTS_PATH } from "@core/config/paths";
-import { allProjects } from "@storage/projects";
 import { classNames } from "@features/helpers/className";
+import { allProjects } from "@storage/projects";
 
+import { TagSlug } from "@/storage/tags";
 import cls from "./ProjectFeed.module.css";
 
-const GROUP_1_SLUGS = new Set(["logotypes", "branding", "aydentika", "ux-ui", "vektornaya-graphika"]);
-const GROUP_2_SLUGS = new Set(["photo", "fotosessii", "video", "reklamnaya-retush", "motion", "3D"]);
+const GROUP_1_SLUGS = new Set<TagSlug>(["logotypes", "branding", "aydentika", "ux-ui", "vektornaya-graphika"]);
+const GROUP_2_SLUGS = new Set<TagSlug>(["photo", "fotosessii", "video", "reklamnaya-retush", "motion", "3d"]);
 
 const getProjectGroup = (project: Project): "group1" | "group2" | "none" => {
   const highestPriorityTag = project.tags.reduce((highest, current) => {

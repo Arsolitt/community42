@@ -13,7 +13,7 @@ const tags = [
 const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 
 export const videoDlyaNovojKosmicheskojTemyOformleniyaLiceya: ProjectElement = {
-  name: "3D-видео для новой космической темы оформления Лицея№23",
+  name: "3d-видео для новой космической темы оформления Лицея№23",
   date,
   slug,
   summary: "Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным",

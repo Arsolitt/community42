@@ -33,7 +33,7 @@ const tagsArray = [
     slug: "motion"
   },
   {
-    text: "3D",
+    text: "3d",
     slug: "3d"
   },
   {

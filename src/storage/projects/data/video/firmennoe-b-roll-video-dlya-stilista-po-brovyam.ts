@@ -9,7 +9,7 @@ const date = new Date("2022-06-12").toLocaleDateString("ru-RU", { day: "2-digit"
 const tags = [
   tagWithPriority("video", 2),
   tagWithPriority("beauty-medicine", 1),
-  tagWithPriority("3D", 1),
+  tagWithPriority("3d", 1),
 ];
 const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 
