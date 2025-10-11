@@ -34,7 +34,7 @@ const tagsArray = [
   },
   {
     text: "3D",
-    slug: "3D"
+    slug: "3d"
   },
   {
     text: "Видео",
