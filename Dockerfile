@@ -4,10 +4,10 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV HUSKY_SKIP_INSTALL=1
 ENV BUILD_MODE=ci
 WORKDIR /src/app
-COPY package.json yarn.lock ./
-RUN yarn --frozen-lockfile --ignore-scripts
+COPY package.json package-lock.json ./
+RUN npm ci
 COPY . .
-RUN yarn build
+RUN npm run build
 
 FROM node:24-bookworm-slim
 ENV DEBIAN_FRONTEND=noninteractive

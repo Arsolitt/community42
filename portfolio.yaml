@@ -17,7 +17,7 @@ spec:
         app: community-portfolio
     spec:
       containers:
-        - image: harbor.arsolitt.tech/community42/portfolio:v0.12
+        - image: harbor.arsolitt.tech/community42/portfolio:v0.13
           name: community
           livenessProbe:
             failureThreshold: 3
@@ -62,8 +62,6 @@ spec:
             periodSeconds: 10
             successThreshold: 1
             timeoutSeconds: 15
-      imagePullSecrets:
-        - name: image-pull-secret
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
