@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
-import type { ProjectTag } from '@/data/projects';
+import type { ProjectTag } from "@/data/projects";
 
-import { TagItem } from '@/components/TagItem/TagItem';
-import { CrossIcon } from '@/shared/assets/icons/crossIcon';
+import { TagItem } from "@/components/TagItem/TagItem";
+import { CrossIcon } from "@/shared/assets/icons/crossIcon";
 
 interface ProjectTagsProps {
   tags: ProjectTag[];

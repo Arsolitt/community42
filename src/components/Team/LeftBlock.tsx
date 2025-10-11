@@ -1,10 +1,10 @@
-import { Typography } from '@/components/Typography';
+import { Typography } from "@/components/Typography";
 
-import cls from './Team.module.css';
+import cls from "./Team.module.css";
 
 export const TeamLeftBlock = () => (
   <div className={cls.leftBlock}>
-    <Typography style={{ fontWeight: '500' }} variant='span'>
+    <Typography style={{ fontWeight: "500" }} variant='span'>
       Вы даёте нам задачу — а мы собираем под неё уникальную команду креативных специалистов. <br />
       <br />
       Все параметры работы подбираются под ваш запрос: время, сложность и стоимость.
@@ -12,7 +12,7 @@ export const TeamLeftBlock = () => (
 
     <Typography variant='h6'>Но!</Typography>
 
-    <Typography style={{ fontWeight: '500' }} variant='span'>
+    <Typography style={{ fontWeight: "500" }} variant='span'>
       Качество креативного продукта остается всегда на высоте — ведь мы в Комьюнити любим мутить стилёк ;)
       <br />
       <br />С нами можно побщаться <br />в мессенджерах и в программах удаленного доступа (Skype, Discord, Zoom и
@@ -20,7 +20,7 @@ export const TeamLeftBlock = () => (
     </Typography>
 
     <Typography variant='h6'>Также</Typography>
-    <Typography style={{ fontWeight: '500' }} variant='span'>
+    <Typography style={{ fontWeight: "500" }} variant='span'>
       Для нас знаком опыт коллабораций с другими специалистами и командами, находящимися даже в разных городах
     </Typography>
   </div>

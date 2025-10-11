@@ -1,6 +1,6 @@
-import type { Tag, TagSlug } from './data';
+import type { Tag, TagSlug } from "./data";
 
-import { tags } from './data';
+import { tags } from "./data";
 
 export function tagBySlug(slug: TagSlug) {
   return tags[slug];

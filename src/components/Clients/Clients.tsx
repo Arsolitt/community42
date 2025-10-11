@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { AnimatedTitle } from '@/components/AnimatedTitle/AnimatedTitle';
-import { Typography } from '@/components/Typography';
-import { allClients } from '@/data/clients';
-import { classNames } from '@/features/helpers/className';
-import { ArrowIcon } from '@/shared/assets/icons';
+import { AnimatedTitle } from "@/components/AnimatedTitle/AnimatedTitle";
+import { Typography } from "@/components/Typography";
+import { allClients } from "@/data/clients";
+import { classNames } from "@/features/helpers/className";
+import { ArrowIcon } from "@/shared/assets/icons";
 
-import cls from './Clients.module.css';
+import cls from "./Clients.module.css";
 
 interface ClientsProps {
   className?: string;
@@ -17,8 +17,8 @@ export const Clients = ({ className }: ClientsProps) => {
   return (
     <section className={classNames(cls.Clients, {}, [className])}>
       <AnimatedTitle
-        header={{ first: 'коллабы', second: 'заказчики' }}
-        customTransformX={{ positive: '89%', negative: '104%' }}
+        header={{ first: "коллабы", second: "заказчики" }}
+        customTransformX={{ positive: "89%", negative: "104%" }}
       />
 
       <div className={cls.sectionContent}>
@@ -30,10 +30,10 @@ export const Clients = ({ className }: ClientsProps) => {
                 <Link
                   href={c.link}
                   style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    fontWeight: '500'
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    fontWeight: "500"
                   }}
                   target='_blank'
                 >
@@ -45,9 +45,9 @@ export const Clients = ({ className }: ClientsProps) => {
             <Link href={c.link} target='_blank'>
               <Typography
                 style={{
-                  fontWeight: '700',
-                  fontSize: '16px',
-                  textAlign: 'center'
+                  fontWeight: "700",
+                  fontSize: "16px",
+                  textAlign: "center"
                 }}
                 variant='p'
               >

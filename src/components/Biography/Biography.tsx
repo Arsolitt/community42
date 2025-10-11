@@ -1,16 +1,16 @@
-'use client';
-import { useMemo } from 'react';
+"use client";
+import { useMemo } from "react";
 
-import type { TeamMember } from '@/data/team';
+import type { TeamMember } from "@/data/team";
 
-import { projectsByTeamMember } from '@/data/projects/utils';
-import { classNames } from '@/features/helpers/className';
+import { projectsByTeamMember } from "@/data/projects/utils";
+import { classNames } from "@/features/helpers/className";
 
-import { Projects } from '../ProjectsList';
-import { BiographyLeftBlock } from './LeftBlock';
-import { BiographyRightBlock } from './RightBlock';
+import { Projects } from "../ProjectsList";
+import { BiographyLeftBlock } from "./LeftBlock";
+import { BiographyRightBlock } from "./RightBlock";
 
-import cls from './Biography.module.css';
+import cls from "./Biography.module.css";
 
 interface BiographyProps {
   className?: string;
@@ -20,10 +20,10 @@ interface BiographyProps {
 export const Biography = ({ className, member }: BiographyProps) => {
   const filteredProjects = useMemo(() => {
     return projectsByTeamMember(member);
-  }, [member.slug]);
+  }, [member]);
 
   return (
-    <section className={classNames(cls.Biography, {}, [className, 'pb-48'])}>
+    <section className={classNames(cls.Biography, {}, [className, "pb-48"])}>
       <div className='container'>
         <BiographyLeftBlock collaborator={member} />
         <BiographyRightBlock fullSizeImage={member.fullsizeImage} name={member.name} />

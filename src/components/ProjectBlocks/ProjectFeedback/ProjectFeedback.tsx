@@ -1,10 +1,10 @@
-import { classNames } from '@/features/helpers/className';
-import { LikeIcon } from '@/shared/assets/icons'; // Предполагаем, что иконки есть
-import { ShareIcon } from '@/shared/assets/icons/share';
+import { classNames } from "@/features/helpers/className";
+import { LikeIcon } from "@/shared/assets/icons"; // Предполагаем, что иконки есть
+import { ShareIcon } from "@/shared/assets/icons/share";
 
-import { TimeIcon } from '../../../shared/assets/icons/time';
+import { TimeIcon } from "../../../shared/assets/icons/time";
 
-import cls from './ProjectFeedback.module.css';
+import cls from "./ProjectFeedback.module.css";
 
 interface ProjectFeedbackProps {
   className?: string;
@@ -19,8 +19,8 @@ interface ProjectFeedbackProps {
 
 export const ProjectFeedback = ({
   className,
-  title = 'Понравился проект?',
-  description = 'Можете поставить лайк и сохранить проект у себя в социальных сетях, как референс или источник вдохновения :)',
+  title = "Понравился проект?",
+  description = "Можете поставить лайк и сохранить проект у себя в социальных сетях, как референс или источник вдохновения :)",
   likes,
   creationTimeText,
   creationDate,

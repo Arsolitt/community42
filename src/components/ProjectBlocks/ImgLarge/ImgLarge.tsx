@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { classNames } from '@/features/helpers/className';
+import { classNames } from "@/features/helpers/className";
 
-import cls from './ImgLarge.module.css';
+import cls from "./ImgLarge.module.css";
 
 interface ImgLargeProps {
   alt: string;

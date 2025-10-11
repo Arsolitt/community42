@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { motion } from "framer-motion";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
-import { classNames } from '@/features/helpers/className';
-import { CloseContactsIcon, SearchIcon } from '@/shared/assets/icons';
+import { classNames } from "@/features/helpers/className";
+import { CloseContactsIcon, SearchIcon } from "@/shared/assets/icons";
 
-import cls from './SearchButton.module.css';
+import cls from "./SearchButton.module.css";
 
 interface SearchButtonProps {
   className?: string;
@@ -17,7 +17,7 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
   const [openSearch, setOpenSearch] = useState(false);
 
   useEffect(() => {
-    if (pathName === '/search') {
+    if (pathName === "/search") {
       setOpenSearch(true);
     } else {
       setOpenSearch(false);
@@ -26,18 +26,18 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
 
   const onToggleSearch = () => {
     setOpenSearch((prev) => !prev);
-    router.push(!openSearch ? '/search' : '/');
+    router.push(!openSearch ? "/search" : "/");
   };
 
   return (
     <div className={classNames(cls.search_button, {}, [className])}>
       <button type='button' onClick={onToggleSearch}>
         <motion.div
-          key={openSearch ? 'shown' : 'normal'}
+          key={openSearch ? "shown" : "normal"}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
-          transition={{ ease: 'easeInOut', duration: 0.5 }}
+          transition={{ ease: "easeInOut", duration: 0.5 }}
         >
           {!openSearch ? <SearchIcon /> : <CloseContactsIcon />}
         </motion.div>

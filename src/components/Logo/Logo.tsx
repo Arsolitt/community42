@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { classNames } from '@/features/helpers/className';
+import { classNames } from "@/features/helpers/className";
 
-import { LogoTheme } from './LogoTheme';
+import { LogoTheme } from "./LogoTheme";
 
-import cls from './Logo.module.css';
+import cls from "./Logo.module.css";
 
 interface LogoProps {
   className?: string;

@@ -1,9 +1,9 @@
 // Шаблон фоток "три вертикальных 10:15"
-import Image from 'next/image';
+import Image from "next/image";
 
-import { classNames } from '@/features/helpers/className';
+import { classNames } from "@/features/helpers/className";
 
-import cls from './ImgVertical.module.css';
+import cls from "./ImgVertical.module.css";
 
 interface ImageInfo {
   alt: string;

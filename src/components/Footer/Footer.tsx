@@ -1,16 +1,16 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import type { Project } from '@/data/projects';
+import type { Project } from "@/data/projects";
 
-import { Likes } from '@/components/Likes';
-import { Typography } from '@/components/Typography';
-import { projectLikes } from '@/data/projects';
-import { allServices } from '@/data/services';
-import { classNames } from '@/features/helpers/className';
-import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from '@/shared/assets/icons';
+import { Likes } from "@/components/Likes";
+import { Typography } from "@/components/Typography";
+import { projectLikes } from "@/data/projects";
+import { allServices } from "@/data/services";
+import { classNames } from "@/features/helpers/className";
+import { EmailIcon, TelegramIcon, VkIcon, WhatsappIcon } from "@/shared/assets/icons";
 
-import cls from './Footer.module.css';
+import cls from "./Footer.module.css";
 
 interface FooterProps {
   className?: string;
@@ -42,7 +42,7 @@ export const Footer = ({ className, isProjectPage, lastProject }: FooterProps) =
           </div>
           <div className={cls.lastProject__characteristics}>
             <Link href={`/projects/${lastProject.slug}`}>
-              <Typography style={{ fontSize: '18px', fontWeight: 600 }} variant='p'>
+              <Typography style={{ fontSize: "18px", fontWeight: 600 }} variant='p'>
                 {lastProject.name}
               </Typography>
             </Link>
@@ -66,7 +66,7 @@ export const Footer = ({ className, isProjectPage, lastProject }: FooterProps) =
               <div className={cls.services}>
                 {allServices().map((service) => (
                   <div key={service.slug} className={cls.services__item}>
-                    <Link href={`/search?tags=${service.tags.join('%2C')}`} className={cls.services__link}>
+                    <Link href={`/search?tags=${service.tags.join("%2C")}`} className={cls.services__link}>
                       {service.text}
                     </Link>
                     <div className={cls.underline} />

@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-export const useSearchTerm = (initialValue = '') => {
+export const useSearchTerm = (initialValue = "") => {
   const [searchTerm, setSearchTerm] = useState(initialValue);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {

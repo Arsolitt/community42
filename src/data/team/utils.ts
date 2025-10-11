@@ -1,6 +1,6 @@
-import type { TeamMember, TeamMemberSlug } from './data';
+import type { TeamMember, TeamMemberSlug } from "./data";
 
-import { team } from './data';
+import { team } from "./data";
 
 export type TeamMemberWithRole = TeamMember & { role: string; };
 

@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
+import { useMemo } from "react";
 
-import type { Project } from '@/data/projects';
+import type { Project } from "@/data/projects";
 
 export const useFilteredProjects = (
   searchTerm: string,
@@ -29,6 +29,7 @@ export const useFilteredProjects = (
         })
         .filter((project) => project.matchingTags > 0)
         .sort((a, b) => b.matchingTags - a.matchingTags)
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         .map(({ matchingTags, ...project }) => project as Project);
     }
 

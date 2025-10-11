@@ -1,19 +1,19 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useMemo } from 'react';
+import Link from "next/link";
+import { useMemo } from "react";
 
-import type { Project, ProjectTag } from '@/data/projects';
-import type { Service } from '@/data/services';
+import type { Project, ProjectTag } from "@/data/projects";
+import type { Service } from "@/data/services";
 
-import { ImageSet } from '@/components/ImageSet/ImageSet';
-import { RouterLink } from '@/components/RouterLink';
-import { Typography } from '@/components/Typography';
-import { allProjects } from '@/data/projects';
-import { classNames } from '@/features/helpers/className';
-import { useFilteredProjects } from '@/features/hooks/useFilteredProjects';
+import { ImageSet } from "@/components/ImageSet/ImageSet";
+import { RouterLink } from "@/components/RouterLink";
+import { Typography } from "@/components/Typography";
+import { allProjects } from "@/data/projects";
+import { classNames } from "@/features/helpers/className";
+import { useFilteredProjects } from "@/features/hooks/useFilteredProjects";
 
-import cls from './ServicesList.module.css';
+import cls from "./ServicesList.module.css";
 
 interface ServicesListProps {
   className?: string;
@@ -40,7 +40,7 @@ const ServiceItem = ({ service }: { service: Service }) => {
     });
   }, []);
 
-  const filteredProjects = useFilteredProjects('', service.tags, projectsWithHighestTagOnly as unknown as Project[]);
+  const filteredProjects = useFilteredProjects("", service.tags, projectsWithHighestTagOnly as unknown as Project[]);
 
   const projectImages = useMemo(() => {
     return filteredProjects.map((project) => project.image).slice(0, 4);
@@ -50,13 +50,13 @@ const ServiceItem = ({ service }: { service: Service }) => {
 
   return (
     <div key={service.slug} className={cls.item}>
-      <Link href={`/search?tags=${service.tags.join('%2C')}`} className={cls.item__image}>
+      <Link href={`/search?tags=${service.tags.join("%2C")}`} className={cls.item__image}>
         <ImageSet images={imagesToShow} />
       </Link>
       {service.isNew && <div className={cls.item__new}>Новое</div>}
-      <Link href={`/search?tags=${service.tags.join('%2C')}`}>
+      <Link href={`/search?tags=${service.tags.join("%2C")}`}>
         <div className={cls.itemDescription}>
-          <Typography style={{ fontWeight: '600', lineHeight: '120%' }} variant='p'>
+          <Typography style={{ fontWeight: "600", lineHeight: "120%" }} variant='p'>
             {service.text}
           </Typography>
           <RouterLink />
@@ -68,7 +68,7 @@ const ServiceItem = ({ service }: { service: Service }) => {
 
 export const ServicesList = ({ className, services }: ServicesListProps) => {
   return (
-    <div className={classNames(cls.ServicesList, {}, [className])} id='services' style={{ scrollMarginTop: '30px' }}>
+    <div className={classNames(cls.ServicesList, {}, [className])} id='services' style={{ scrollMarginTop: "30px" }}>
       {services.map((s) => (
         <ServiceItem key={s.slug} service={s} />
       ))}

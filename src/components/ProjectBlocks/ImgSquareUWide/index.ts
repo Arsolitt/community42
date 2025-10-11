@@ -1,1 +1,1 @@
-export { ImgSquareUWide } from './ImgSquareUWide';
+export { ImgSquareUWide } from "./ImgSquareUWide";

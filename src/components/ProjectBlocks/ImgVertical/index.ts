@@ -1,1 +1,1 @@
-export { ImgVertical } from './ImgVertical';
+export { ImgVertical } from "./ImgVertical";

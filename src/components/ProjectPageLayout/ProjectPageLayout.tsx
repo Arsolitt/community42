@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import type { Project } from '@/data/projects';
+import type { Project } from "@/data/projects";
 
-import { ProjectFeed } from '@/components/ProjectBlocks/ProjectFeed';
-import { ProjectFeedback } from '@/components/ProjectBlocks/ProjectFeedback';
-import { ProjectHeader } from '@/components/ProjectBlocks/ProjectHeader';
-import { ProjectTeam } from '@/components/ProjectBlocks/ProjectTeam';
-import { projectLikes } from '@/data/projects';
+import { ProjectFeed } from "@/components/ProjectBlocks/ProjectFeed";
+import { ProjectFeedback } from "@/components/ProjectBlocks/ProjectFeedback";
+import { ProjectHeader } from "@/components/ProjectBlocks/ProjectHeader";
+import { ProjectTeam } from "@/components/ProjectBlocks/ProjectTeam";
+import { projectLikes } from "@/data/projects";
 
-import { ImgLarge } from '../ProjectBlocks/ImgLarge';
+import { ImgLarge } from "../ProjectBlocks/ImgLarge";
 
 interface ProjectPageLayoutProps {
   children?: React.ReactNode;

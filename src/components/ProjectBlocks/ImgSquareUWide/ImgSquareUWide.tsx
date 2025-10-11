@@ -1,9 +1,9 @@
 // Шаблон фоток “квадрат и 21:10”
-import Image from 'next/image';
+import Image from "next/image";
 
-import { classNames } from '@/features/helpers/className';
+import { classNames } from "@/features/helpers/className";
 
-import cls from './ImgSquareUWide.module.css';
+import cls from "./ImgSquareUWide.module.css";
 
 interface ImageInfo {
   alt: string;

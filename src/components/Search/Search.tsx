@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { Projects } from '@/components/ProjectsList';
-import { allProjects } from '@/data/projects';
-import { allTags } from '@/data/tags';
-import { useFilteredProjects } from '@/features/hooks/useFilteredProjects';
-import { useSearchTags } from '@/features/hooks/useSearchTags';
-import { useSearchTerm } from '@/features/hooks/useSearchTerm';
+import { Projects } from "@/components/ProjectsList";
+import { allProjects } from "@/data/projects";
+import { allTags } from "@/data/tags";
+import { useFilteredProjects } from "@/features/hooks/useFilteredProjects";
+import { useSearchTags } from "@/features/hooks/useSearchTags";
+import { useSearchTerm } from "@/features/hooks/useSearchTerm";
 
-import { SearchInput } from './SearchInput';
-import { SearchTags } from './SearchTags';
+import { SearchInput } from "./SearchInput";
+import { SearchTags } from "./SearchTags";
 
 export const Search = () => {
   const { searchTerm, handleSearchChange } = useSearchTerm();

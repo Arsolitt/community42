@@ -5,60 +5,60 @@ interface TagElement {
 
 export type Tag = (typeof tagsArray)[number];
 
-export type TagSlug = typeof tagsArray[number]['slug'];
+export type TagSlug = typeof tagsArray[number]["slug"];
 
 const tagsArray = [
   {
-    text: 'UX/UI',
-    slug: 'ux-ui'
+    text: "UX/UI",
+    slug: "ux-ui"
   },
   {
-    text: 'Векторная графика',
-    slug: 'vektornaya-graphika'
+    text: "Векторная графика",
+    slug: "vektornaya-graphika"
   },
   {
-    text: 'Логотипы',
-    slug: 'logotypes'
+    text: "Логотипы",
+    slug: "logotypes"
   },
   {
-    text: 'Брендинг',
-    slug: 'branding'
+    text: "Брендинг",
+    slug: "branding"
   },
   {
-    text: 'Айдентика',
-    slug: 'aydentika'
+    text: "Айдентика",
+    slug: "aydentika"
   },
   {
-    text: 'Motion',
-    slug: 'motion'
+    text: "Motion",
+    slug: "motion"
   },
   {
-    text: '3D',
-    slug: '3D'
+    text: "3D",
+    slug: "3D"
   },
   {
-    text: 'Видео',
-    slug: 'video'
+    text: "Видео",
+    slug: "video"
   },
   {
-    text: 'Фотосессии',
-    slug: 'fotosessii'
+    text: "Фотосессии",
+    slug: "fotosessii"
   },
   {
-    text: 'Рекламная ретушь',
-    slug: 'reklamnaya-retush'
+    text: "Рекламная ретушь",
+    slug: "reklamnaya-retush"
   },
   {
-    text: 'Фото',
-    slug: 'photo'
+    text: "Фото",
+    slug: "photo"
   },
   {
-    text: 'Цветы',
-    slug: 'flowers'
+    text: "Цветы",
+    slug: "flowers"
   },
   {
-    text: 'Бьюти и медицина',
-    slug: 'beauty-medicine'
+    text: "Бьюти и медицина",
+    slug: "beauty-medicine"
   }
 ] as const satisfies readonly TagElement[];
 

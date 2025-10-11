@@ -1,1 +1,1 @@
-export { ProjectFeed } from './ProjectFeed';
+export { ProjectFeed } from "./ProjectFeed";
