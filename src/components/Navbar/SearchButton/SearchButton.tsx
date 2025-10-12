@@ -15,18 +15,27 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
   const router = useRouter();
   const pathName = usePathname();
   const [openSearch, setOpenSearch] = useState(false);
+  const [previousPathName, setPreviousPathName] = useState("/search");
 
   useEffect(() => {
     if (pathName === "/search") {
       setOpenSearch(true);
     } else {
+      setPreviousPathName(pathName);
       setOpenSearch(false);
     }
   }, [pathName]);
 
   const onToggleSearch = () => {
-    setOpenSearch((prev) => !prev);
-    router.push(!openSearch ? "/search" : "/");
+    if (openSearch) {
+      if (previousPathName === "/search") {
+        router.push("/");
+      } else {
+        router.back();
+      }
+    } else {
+      router.push("/search");
+    }
   };
 
   return (
