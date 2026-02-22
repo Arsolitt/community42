@@ -26,6 +26,7 @@ const teamArray = [
     name: 'Константин',
     position: 'Граф дизайнер',
     images: [`${TEAM_IMG_URL}/konstantin.png`, `${TEAM_IMG_URL}/egor.png`],
+    gif: `${TEAM_IMG_URL}/konstantin.gif`,
     fullsizeImage: `${TEAM_IMG_URL}/full-size/konstantin.png`,
     description:
       'Работает в индустрии коммуникаций с 2003 года и успел погрузиться практически во все ее сферы: ATL, BTL, Media, PR, Event. С 2006 года — в брендинге. Ведет собственный проект о рекламе в Центральной Азии — AdAsia, выступает сопродюсером фестиваля Red Jolbors Fest. Неоднократный победитель креативных фестивалей различного уровня, включая Cannes Lion',

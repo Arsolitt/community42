@@ -41,6 +41,7 @@ export const MediaSet = ({ className, images, gif }: MediaSetProps) => {
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       priority={false}
+      unoptimized={src.endsWith('.gif')}
     />
   );
 };
