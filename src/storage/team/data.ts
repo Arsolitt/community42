@@ -16,7 +16,7 @@ interface TeamElement {
   socials: Socials[];
 }
 
-export type TeamMember = (typeof teamArray)[number];
+export type TeamMember = TeamElement;
 
 export type TeamMemberSlug = (typeof teamArray)[number]['slug'];
 
