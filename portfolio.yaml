@@ -94,7 +94,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: community42.ru
+    - host: community.arsolitt.tech
       http:
         paths:
           - backend:
@@ -106,5 +106,5 @@ spec:
             pathType: Prefix
   tls:
     - hosts:
-        - community42.ru
-      secretName: wildcard.community42.ru-tls
+        - community.arsolitt.tech
+      secretName: wildcard.arsolitt.tech-tls
