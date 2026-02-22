@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export interface MediaSetProps {
   className?: string;
@@ -14,7 +14,7 @@ export const MediaSet = ({ className, images, gif }: MediaSetProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    if (!isHover) {
+    if (!isHover || images.length === 0) {
       setCurrentImageIndex(0);
       return;
     }
