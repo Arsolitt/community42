@@ -1,8 +1,11 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
+/**
+ * @deprecated Use MediaSet instead. Will be removed in future cleanup.
+ */
 interface ImageSetProps {
   className?: string;
   // height: number;
@@ -10,6 +13,9 @@ interface ImageSetProps {
   // width: number;
 }
 
+/**
+ * @deprecated Use MediaSet instead. Will be removed in future cleanup.
+ */
 export const ImageSet = (props: ImageSetProps) => {
   const [isHover, setIsHover] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -34,9 +40,9 @@ export const ImageSet = (props: ImageSetProps) => {
   return (
     <Image
       fill
-      alt='image'
+      alt="image"
       className={props.className}
-      sizes='(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw'
+      sizes="(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw"
       src={img}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
