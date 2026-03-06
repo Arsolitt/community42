@@ -1,11 +1,13 @@
-import { motion } from "framer-motion";
-import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+'use client';
 
-import { classNames } from "@features/helpers/className";
-import { CloseContactsIcon, SearchIcon } from "@shared/assets/icons";
+import { motion } from 'framer-motion';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
-import cls from "./SearchButton.module.css";
+import { classNames } from '@features/helpers/className';
+import { CloseContactsIcon, SearchIcon } from '@shared/assets/icons';
+
+import cls from './SearchButton.module.css';
 
 interface SearchButtonProps {
   className?: string;
@@ -15,10 +17,10 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
   const router = useRouter();
   const pathName = usePathname();
   const [openSearch, setOpenSearch] = useState(false);
-  const [previousPathName, setPreviousPathName] = useState("/search");
+  const [previousPathName, setPreviousPathName] = useState('/search');
 
   useEffect(() => {
-    if (pathName === "/search") {
+    if (pathName === '/search') {
       setOpenSearch(true);
     } else {
       setPreviousPathName(pathName);
@@ -28,25 +30,25 @@ export const NavbarSearchButton = ({ className }: SearchButtonProps) => {
 
   const onToggleSearch = () => {
     if (openSearch) {
-      if (previousPathName === "/search") {
-        router.push("/");
+      if (previousPathName === '/search') {
+        router.push('/');
       } else {
         router.back();
       }
     } else {
-      router.push("/search");
+      router.push('/search');
     }
   };
 
   return (
     <div className={classNames(cls.search_button, {}, [className])}>
-      <button type='button' onClick={onToggleSearch}>
+      <button type="button" onClick={onToggleSearch}>
         <motion.div
-          key={openSearch ? "shown" : "normal"}
+          key={openSearch ? 'shown' : 'normal'}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
-          transition={{ ease: "easeInOut", duration: 0.5 }}
+          transition={{ ease: 'easeInOut', duration: 0.5 }}
         >
           {!openSearch ? <SearchIcon /> : <CloseContactsIcon />}
         </motion.div>

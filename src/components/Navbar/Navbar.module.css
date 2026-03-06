@@ -15,9 +15,9 @@
   width: 390px;
   height: 46px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 8px;
+  padding: 0 19px;
   border-radius: 16px;
   background: var(--color-black-50);
   border: 1px solid var(--color-white-50);
@@ -25,18 +25,13 @@
 }
 
 .navbar_button {
-  padding: 8px 16px;
-  border-radius: 8px;
-  background: var(--color-white-10);
-  color: var(--color-white-100);
-  border: 1px solid var(--color-white-20);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
   cursor: pointer;
-  transition:
-    background 0.2s,
-    border-color 0.2s;
-}
-
-.navbar_button:hover {
-  background: var(--color-white-20);
-  border-color: var(--color-white-30);
 }

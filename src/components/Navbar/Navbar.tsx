@@ -1,5 +1,3 @@
-'use client';
-
 import { classNames } from '@features/helpers/className';
 
 import { NavbarSearchButton } from './SearchButton/SearchButton';
@@ -14,8 +12,12 @@ export const Navbar = ({ className }: NavbarProps) => {
   return (
     <nav className={classNames(cls.navbar, {}, [className])}>
       <div className={cls.navbar_wrapper}>
-        <button className={cls.navbar_button}>Button 1</button>
-        <button className={cls.navbar_button}>Button 2</button>
+        <button className={cls.navbar_button} type="button">
+          связаться с нами
+        </button>
+        <button className={cls.navbar_button} type="button">
+          заглядашка
+        </button>
       </div>
       <NavbarSearchButton />
     </nav>
