@@ -1,15 +1,15 @@
 .member_position {
   font-size: 26px;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .member_name {
   font-size: 18px;
   font-weight: 500;
-  color: #ff66d0;
+  color: var(--color-pink);
   text-decoration: underline;
-  text-decoration-color: rgba(255, 102, 208, 0.5);
+  text-decoration-color: var(--color-pink-50);
   text-underline-offset: 4px;
 }
 
