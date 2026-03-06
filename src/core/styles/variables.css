@@ -21,4 +21,41 @@
 
   --page-transition-z-index: 99;
   --widget-z-index: 9;
+
+  /* Base Colors */
+  --color-black: #141114;
+  --color-white: #ffffff;
+  --color-gray-light: #bcbcc2;
+  --color-gray-medium: #96969c;
+  --color-pink: #ff66d0;
+
+  /* Black with transparency */
+  --color-black-10: rgba(20, 17, 20, 0.1);
+  --color-black-25: rgba(20, 17, 20, 0.25);
+  --color-black-50: rgba(20, 17, 20, 0.5);
+  --color-black-75: rgba(20, 17, 20, 0.75);
+
+  /* White with transparency */
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-25: rgba(255, 255, 255, 0.25);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-white-75: rgba(255, 255, 255, 0.75);
+
+  /* Gray Light with transparency */
+  --color-gray-light-10: rgba(188, 188, 194, 0.1);
+  --color-gray-light-25: rgba(188, 188, 194, 0.25);
+  --color-gray-light-50: rgba(188, 188, 194, 0.5);
+  --color-gray-light-75: rgba(188, 188, 194, 0.75);
+
+  /* Gray Medium with transparency */
+  --color-gray-medium-10: rgba(150, 150, 156, 0.1);
+  --color-gray-medium-25: rgba(150, 150, 156, 0.25);
+  --color-gray-medium-50: rgba(150, 150, 156, 0.5);
+  --color-gray-medium-75: rgba(150, 150, 156, 0.75);
+
+  /* Pink with transparency */
+  --color-pink-10: rgba(255, 102, 208, 0.1);
+  --color-pink-25: rgba(255, 102, 208, 0.25);
+  --color-pink-50: rgba(255, 102, 208, 0.5);
+  --color-pink-75: rgba(255, 102, 208, 0.75);
 }
