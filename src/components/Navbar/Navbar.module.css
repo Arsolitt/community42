@@ -16,9 +16,27 @@
   height: 46px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   padding: 0 8px;
   border-radius: 16px;
   background: var(--color-black-50);
   border: 1px solid var(--color-white-50);
   backdrop-filter: blur(19.65px);
+}
+
+.navbar_button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--color-white-10);
+  color: var(--color-white-100);
+  border: 1px solid var(--color-white-20);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.navbar_button:hover {
+  background: var(--color-white-20);
+  border-color: var(--color-white-30);
 }
