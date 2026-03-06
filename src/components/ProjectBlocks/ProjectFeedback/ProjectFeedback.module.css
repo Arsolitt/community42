@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 25px 0;
-  color: var(--text-primary, #fff);
+  color: var(--text-primary, var(--color-white));
 }
 
 .leftColumn {
@@ -45,16 +45,16 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  color: var(--text-primary, #fff);
+  color: var(--text-primary, var(--color-white));
   font-size: 16px;
 }
 
 .actionButton:hover {
-  color: var(--accent-color, #a2a2a2);
+  color: var(--accent-color, var(--color-gray-medium));
 }
 
 .actionButton:hover .icon {
-  fill: var(--accent-color, #a2a2a2);
+  fill: var(--accent-color, var(--color-gray-medium));
 }
 
 .icon {
@@ -68,11 +68,11 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 8px;
-  color: var(--text-primary, #fff);
+  color: var(--text-primary, var(--color-white));
 }
 
 .creationInfo .icon {
-  fill: var(--accent-color, #a2a2a2);
+  fill: var(--accent-color, var(--color-gray-medium));
 }
 
 .creationTime {
