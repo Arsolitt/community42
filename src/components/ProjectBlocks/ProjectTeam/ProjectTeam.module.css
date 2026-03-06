@@ -12,3 +12,16 @@
   text-decoration-color: rgba(255, 102, 208, 0.5);
   text-underline-offset: 4px;
 }
+
+.teamWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.memberWrapper {
+  display: flex;
+  flex-direction: column;
+}
