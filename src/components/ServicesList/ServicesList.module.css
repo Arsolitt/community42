@@ -1,14 +1,17 @@
 .ServicesList {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 48px;
   width: 100%;
+  justify-content: center;
 }
 
 .ServicesList .item {
   position: relative;
   transition: color 0.2s;
+  flex: 0 0 280px;
+  max-width: 280px;
 }
 
 .ServicesList .item__image {

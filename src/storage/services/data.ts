@@ -16,18 +16,9 @@ export type ServiceSlug = typeof servicesArray[number]["slug"];
 
 export const servicesArray = [
   {
-    slug: "ux-ui-design",
-    text: "UX/UI дизайн",
+    slug: "ux-ui-digital-products",
+    text: "UX/UI и цифровые продукты",
     tags: ["ux-ui"],
-    isNew: false,
-    images: [
-      `${SERVICES_IMG_URL}/fallback.png`
-    ]
-  },
-  {
-    slug: "graphic-design",
-    text: "Графический дизайн",
-    tags: ["logotypes", "vektornaya-graphika"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/fallback.png`
@@ -43,8 +34,26 @@ export const servicesArray = [
     ]
   },
   {
+    slug: "graphic-design",
+    text: "Графический дизайн",
+    tags: ["logotypes", "vektornaya-graphika"],
+    isNew: false,
+    images: [
+      `${SERVICES_IMG_URL}/fallback.png`
+    ]
+  },
+  {
+    slug: "industrial-design",
+    text: "Промышленный дизайн",
+    isNew: false,
+    tags: [],
+    images: [
+      `${SERVICES_IMG_URL}/fallback.png`
+    ]
+  },
+  {
     slug: "motion-i-3d",
-    text: "Motion и 3d",
+    text: "Motion и 3D",
     tags: ["motion", "3d"],
     isNew: false,
     images: [
@@ -52,32 +61,15 @@ export const servicesArray = [
     ]
   },
   {
-    slug: "fotosessii-i-retush",
-    text: "Фотосессии и ретушь",
-    tags: ["fotosessii", "reklamnaya-retush", "photo"],
+    slug: "photo-video",
+    text: "Фото и видео",
+    tags: ["video", "photo"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/fallback.png`
     ]
   },
-  {
-    slug: "video-production",
-    text: "Видео-продакшн",
-    tags: ["video"],
-    isNew: false,
-    images: [
-      `${SERVICES_IMG_URL}/fallback.png`
-    ]
-  },
-  {
-    slug: "vypusknye-albumy",
-    text: "Выпускные альбомы",
-    isNew: true,
-    tags: [],
-    images: [
-      `${SERVICES_IMG_URL}/fallback.png`
-    ]
-  }
+
 ] as const satisfies readonly ServiceElement[];
 
 export const services = servicesArray.reduce((acc, service) => {

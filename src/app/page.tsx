@@ -5,9 +5,9 @@ import { ServicesList } from "@/components/ServicesList";
 import { Team } from "@/components/Team";
 import { Typography } from "@/components/Typography";
 import { Video } from "@/components/Video";
+import { CloseIcon } from "@shared/assets/icons/close";
 import { allProjects } from "@storage/projects";
 import { allServices } from "@storage/services";
-import { CloseIcon } from "@shared/assets/icons/close";
 
 import styles from "./page.module.css";
 
@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <Header />
       <main className={styles.main}>
-        <h1 className='hiddenTitle'>Комьюнити. Дизайн. Продакшн. Реклама</h1>
+        <h1 className='hiddenTitle'>Комьюнити. Дизайн. Разработка. Контент</h1>
         <div className='container'>
           <div className={styles.mainTitle}>
             <Typography style={{ textAlign: "center" }} variant='h2'>
@@ -26,16 +26,16 @@ const Home = () => {
             </Typography>
             <CloseIcon />
             <Typography style={{ textAlign: "center" }} variant='h2'>
-              продакшн
+              разработка
             </Typography>
             <CloseIcon />
             <Typography style={{ textAlign: "center" }} variant='h2'>
-              реклама
+              контент
             </Typography>
           </div>
           <div className={styles.subtitle}>
             <Typography style={{ textAlign: "center" }} variant='h5'>
-              Здесь вы можете заказать разработку сайта, айдентики, промо-видео, необычного фото и многого другого ;)
+              Мы разрабатываем сайты и цифровые платформы, формируем бренды и айдентику, создаём достойные продукты ;)
             </Typography>
           </div>
           <section className={styles.services}>

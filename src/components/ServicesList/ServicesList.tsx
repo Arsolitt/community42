@@ -7,11 +7,10 @@ import type { Project, ProjectTag } from "@storage/projects";
 import type { Service } from "@storage/services";
 
 import { ImageSet } from "@/components/ImageSet/ImageSet";
-import { RouterLink } from "@/components/RouterLink";
 import { Typography } from "@/components/Typography";
-import { allProjects } from "@storage/projects";
 import { classNames } from "@features/helpers/className";
 import { useFilteredProjects } from "@features/hooks/useFilteredProjects";
+import { allProjects } from "@storage/projects";
 
 import cls from "./ServicesList.module.css";
 
@@ -56,10 +55,10 @@ const ServiceItem = ({ service }: { service: Service }) => {
       {service.isNew && <div className={cls.item__new}>Новое</div>}
       <Link href={`/search?tags=${service.tags.join("%2C")}`}>
         <div className={cls.itemDescription}>
-          <Typography style={{ fontWeight: "600", lineHeight: "120%" }} variant='p'>
+          <Typography style={{ fontWeight: "300", lineHeight: "120%" }} variant='p'>
             {service.text}
           </Typography>
-          <RouterLink />
+          {/* <RouterLink /> */}
         </div>
       </Link>
     </div>
