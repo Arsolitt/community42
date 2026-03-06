@@ -1,12 +1,14 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
-import type { ProjectTag } from "@storage/projects";
+import type { ProjectTag } from '@storage/projects';
 
-import { TagItem } from "@/components/TagItem/TagItem";
-import { CrossIcon } from "@shared/assets/icons/crossIcon";
+import { TagItem } from '@/components/TagItem/TagItem';
+import { CrossIcon } from '@shared/assets/icons/crossIcon';
+
+import styles from './ProjectHeader.module.css';
 
 interface ProjectTagsProps {
   tags: ProjectTag[];
@@ -14,7 +16,7 @@ interface ProjectTagsProps {
 
 export const ProjectTags = ({ tags }: ProjectTagsProps) => {
   return (
-    <div className='flex items-center flex-wrap gap-2'>
+    <div className={styles.tagsWrapper}>
       {tags.map((tag, index) => (
         <React.Fragment key={tag.slug}>
           <Link href={`/search?tags=${tag.slug}`}>

@@ -23,3 +23,10 @@
   color: rgba(255, 255, 255, 0.8);
   max-width: 70%;
 }
+
+.tagsWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
