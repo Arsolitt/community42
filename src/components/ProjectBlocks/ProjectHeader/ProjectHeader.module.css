@@ -20,7 +20,7 @@
 .headerSummary {
   font-size: 22px;
   line-height: 130%;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-white-75);
   max-width: 70%;
 }
 

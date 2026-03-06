@@ -17,7 +17,7 @@
   --card-rgb: 100, 100, 100;
   --card-border-rgb: 200, 200, 200;
 
-  --link-hover-gray: #c0c0c0;
+  --link-hover-gray: var(--color-gray-light);
 
   --page-transition-z-index: 99;
   --widget-z-index: 9;

@@ -11,9 +11,9 @@
 .animation .LogoWrapper {
   padding: 12px 14px;
   top: 48px;
-  background: rgba(14, 11, 14, 0.6);
+  background: var(--color-black-50);
   border-radius: 16px;
-  border: 1px solid #9e9d9e;
+  border: 1px solid var(--color-gray-medium);
 }
 
 .animation .LogoWrapper .Logo {
@@ -31,7 +31,7 @@
 
 .animation:hover {
   padding: 6px 14px;
-  background: rgba(14, 11, 14, 0.6);
+  background: var(--color-black-50);
   border: 1px solid pink;
 }
 

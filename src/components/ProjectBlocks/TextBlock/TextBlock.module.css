@@ -4,7 +4,7 @@
   line-height: 140%;
   font-size: 22px;
   max-width: 70%;
-  color: #FFF;
+  color: var(--color-white);
   white-space: pre-wrap;
   display: block;
 }
@@ -16,4 +16,3 @@
     margin-top: 54px;
   }
 }
-
