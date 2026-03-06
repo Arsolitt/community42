@@ -7,6 +7,7 @@ const nextConfig = {
   output: "standalone",
   reactStrictMode: true,
   compress: false,
+  distDir: process.env.NODE_ENV === "development" ? ".next/dev" : ".next/build",
 };
 
 export default nextConfig;

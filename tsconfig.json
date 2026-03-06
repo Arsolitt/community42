@@ -3,16 +3,32 @@
     "incremental": true,
     "target": "es5",
     "jsx": "preserve",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "esnext",
     "moduleResolution": "bundler",
     "paths": {
-      "@/*": ["./src/*"],
-      "@components/*": ["./src/components/*"],
-      "@core/*": ["./src/core/*"],
-      "@features/*": ["./src/features/*"],
-      "@shared/*": ["./src/shared/*"],
-      "@storage/*": ["./src/storage/*"],
+      "@/*": [
+        "./src/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@core/*": [
+        "./src/core/*"
+      ],
+      "@features/*": [
+        "./src/features/*"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ],
+      "@storage/*": [
+        "./src/storage/*"
+      ]
     },
     "resolveJsonModule": true,
     "allowJs": true,
@@ -27,6 +43,16 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "**/*.yaml"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/dev/types/**/*.ts",
+    ".next/types/**/*.ts",
+    "next-env.d.ts",
+    ".next/build/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.yaml"
+  ]
 }
