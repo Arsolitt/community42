@@ -1,4 +1,7 @@
-import type { Tag, TagSlug } from "@storage/tags";
+import { classNames } from '@features/helpers/className';
+import type { Tag, TagSlug } from '@storage/tags';
+
+import styles from './TagItem.module.css';
 
 interface TagItemProps {
   isActive: boolean;
@@ -7,12 +10,10 @@ interface TagItemProps {
 }
 
 export const TagItem = ({ tag, isActive, onTagClick }: TagItemProps) => (
-  <div className='inline-flex gap-[8px]'>
+  <div className={styles.wrapper}>
     <button
-      className={`rounded-[10px] border px-[10px] py-[4.5px] max-w-max text-[16px] font-medium ${
-        isActive ? "border-[#FF66D0] text-[#FF66D0]" : "border-white"
-      } hover:text-[#FF66D0] hover:border-[#FF66D0]`}
-      type='button'
+      className={classNames(styles.button, { [styles.buttonActive]: isActive })}
+      type="button"
       onClick={() => onTagClick(tag.slug)}
     >
       {tag.text}
