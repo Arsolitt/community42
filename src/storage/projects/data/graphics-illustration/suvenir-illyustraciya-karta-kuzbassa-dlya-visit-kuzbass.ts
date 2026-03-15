@@ -7,7 +7,7 @@ import { teamMemberWithRole } from "@storage/team";
 const slug = "suvenir-illyustraciya-karta-kuzbassa-dlya-visit-kuzbass";
 const date = new Date("2022-06-12").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
 const tags = [
-  tagWithPriority("vektornaya-graphika", 1),
+  tagWithPriority("graphics-illustration", 1),
 ];
 const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 

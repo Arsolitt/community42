@@ -7,15 +7,11 @@ import { teamMemberWithRole } from "@storage/team";
 const slug = "brending-stomatologii-edemika";
 const date = new Date("2024-09-15").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
 const tags = [
-  tagWithPriority("branding", 2),
-  tagWithPriority("aydentika", 1),
+  tagWithPriority("identity", 1),
   tagWithPriority("ux-ui", 1),
   tagWithPriority("logotypes", 1),
   tagWithPriority("motion", 1),
   tagWithPriority("3d", 1),
-  tagWithPriority("video", 1),
-  tagWithPriority("photo", 1),
-  tagWithPriority("beauty-medicine", 1)
 ];
 // const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 const image = `${PROJECT_IMG_URL}/fallback.webp`;

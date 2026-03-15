@@ -8,7 +8,6 @@ const slug = "firmennye-motion-video-dlya-stomatologii-edemika";
 const date = new Date("2024-10-10").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
 const tags = [
   tagWithPriority("motion", 2),
-  tagWithPriority("beauty-medicine", 1)
 ];
 // const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 const image = `${PROJECT_IMG_URL}/fallback.webp`;

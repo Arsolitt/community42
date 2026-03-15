@@ -7,8 +7,7 @@ import { teamMemberWithRole } from "@storage/team";
 const slug = "video-dlya-magazina-monobuketov-modo";
 const date = new Date("2024-06-28").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
 const tags = [
-  tagWithPriority("video", 2),
-  tagWithPriority("flowers", 1),
+  tagWithPriority("commercial-video", 2),
 ];
 // const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 const image = `${PROJECT_IMG_URL}/fallback.webp`;

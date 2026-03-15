@@ -4,16 +4,16 @@ import { PROJECT_IMG_URL } from "@core/config/paths";
 import { tagWithPriority } from "@storage/tags";
 import { teamMemberWithRole } from "@storage/team";
 
-const slug = "firmennye-pakety-dlya-internet-provaydera-goodline-biznes";
-const date = new Date("2024-03-06").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
+const slug = "navigatsiya-i-prorabotka-zon-otdyha-v-stomatologii-edemika";
+const date = new Date("2024-10-01").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
 const tags = [
-  tagWithPriority("vektornaya-graphika", 1),
+  tagWithPriority("identity", 2)
 ];
 // const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 const image = `${PROJECT_IMG_URL}/fallback.webp`;
 
-export const firmennyePaketyDlyaInternetProvayderaGoodlineBiznes: ProjectElement = {
-  name: "Фирменные пакеты для интернет-провайдера Goodline бизнес",
+export const navigatsiyaIProrabotkaZonaOtdyhaVStomatologiiEdemika: ProjectElement = {
+  name: "Навигация и проработка зоны отдыха в стоматологии «Эдемика»",
   date,
   slug,
   summary: "Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным",
@@ -21,6 +21,7 @@ export const firmennyePaketyDlyaInternetProvayderaGoodlineBiznes: ProjectElement
   creationTimeText: "Создано за 10 дней",
   collaborators: [
     teamMemberWithRole("konstantin-graphic-designer", "Руководитель"),
+    teamMemberWithRole("polina-web-designer", "Дизайнер")
   ],
   tags
 };

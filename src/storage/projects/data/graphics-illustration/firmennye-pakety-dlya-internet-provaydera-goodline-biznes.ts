@@ -4,18 +4,16 @@ import { PROJECT_IMG_URL } from "@core/config/paths";
 import { tagWithPriority } from "@storage/tags";
 import { teamMemberWithRole } from "@storage/team";
 
-const slug = "firmennoe-b-roll-video-dlya-stilista-po-brovyam";
-const date = new Date("2022-06-12").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
+const slug = "firmennye-pakety-dlya-internet-provaydera-goodline-biznes";
+const date = new Date("2024-03-06").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
 const tags = [
-  tagWithPriority("video", 2),
-  tagWithPriority("beauty-medicine", 1),
-  tagWithPriority("3d", 1),
+  tagWithPriority("graphics-illustration", 1),
 ];
 // const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 const image = `${PROJECT_IMG_URL}/fallback.webp`;
 
-export const firmennoeBRollVideoDlyaStilistaPoBrovyam: ProjectElement = {
-  name: "Фирменное Б-ролл видео для стилиста по бровям",
+export const firmennyePaketyDlyaInternetProvayderaGoodlineBiznes: ProjectElement = {
+  name: "Фирменные пакеты для интернет-провайдера Goodline бизнес",
   date,
   slug,
   summary: "Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным",

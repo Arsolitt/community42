@@ -8,8 +8,6 @@ const slug = "logotip-magazina-monobuketov-modo";
 const date = new Date("2024-06-12").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
 const tags = [
   tagWithPriority("logotypes", 3),
-  tagWithPriority("photo", 1),
-  tagWithPriority("flowers", 1)
 ];
 const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 

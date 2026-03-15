@@ -13,52 +13,44 @@ const tagsArray = [
     slug: "ux-ui"
   },
   {
-    text: "Векторная графика",
-    slug: "vektornaya-graphika"
+    text: "Цифровые продукты",
+    slug: "digital-products"
+  },
+  {
+    text: "Графика и иллюстрации",
+    slug: "graphics-illustration"
   },
   {
     text: "Логотипы",
     slug: "logotypes"
   },
   {
-    text: "Брендинг",
-    slug: "branding"
-  },
-  {
     text: "Айдентика",
-    slug: "aydentika"
+    slug: "identity"
   },
   {
     text: "Motion",
     slug: "motion"
   },
   {
-    text: "3d",
+    text: "3D",
     slug: "3d"
   },
   {
-    text: "Видео",
-    slug: "video"
+    text: "Промышленный дизайн",
+    slug: "industrial-design"
   },
   {
-    text: "Фотосессии",
-    slug: "fotosessii"
+    text: "SMM-контент",
+    slug: "smm-content"
   },
   {
-    text: "Рекламная ретушь",
-    slug: "reklamnaya-retush"
+    text: "Рекламная фотография",
+    slug: "commercial-photo"
   },
   {
-    text: "Фото",
-    slug: "photo"
-  },
-  {
-    text: "Цветы",
-    slug: "flowers"
-  },
-  {
-    text: "Бьюти и медицина",
-    slug: "beauty-medicine"
+    text: "Рекламные ролики",
+    slug: "commercial-video"
   }
 ] as const satisfies readonly TagElement[];
 

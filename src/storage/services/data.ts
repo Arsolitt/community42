@@ -27,7 +27,7 @@ export const servicesArray = [
   {
     slug: "branding-i-aydentika",
     text: "Брендинг и айдентика",
-    tags: ["branding", "aydentika"],
+    tags: ["identity"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/fallback.png`
@@ -36,7 +36,7 @@ export const servicesArray = [
   {
     slug: "graphic-design",
     text: "Графический дизайн",
-    tags: ["logotypes", "vektornaya-graphika"],
+    tags: ["logotypes", "graphics-illustration"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/fallback.png`
@@ -63,7 +63,7 @@ export const servicesArray = [
   {
     slug: "photo-video",
     text: "Фото и видео",
-    tags: ["video", "photo"],
+    tags: ["commercial-photo", "commercial-video"],
     isNew: false,
     images: [
       `${SERVICES_IMG_URL}/fallback.png`

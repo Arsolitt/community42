@@ -8,8 +8,6 @@ const slug = "sistema-podarochnyh-sertifikatov-dlya-stomatologii-edemika";
 const date = new Date("2025-02-15").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
 const tags = [
   tagWithPriority("ux-ui", 2),
-  tagWithPriority("branding", 1),
-  tagWithPriority("beauty-medicine", 1)
 ];
 // const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 const image = `${PROJECT_IMG_URL}/fallback.webp`;

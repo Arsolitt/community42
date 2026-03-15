@@ -2,9 +2,9 @@ import type { TagWithPriority } from "@storage/tags";
 import type { TeamMemberWithRole } from "@storage/team";
 
 import { videoDlyaNovojKosmicheskojTemyOformleniyaLiceya } from "./data/3d/3d-video-dlya-novoj-kosmicheskoj-temy-oformleniya-liceya-23";
-import { aydentikaServisaDostavkiAvtomobilejIzYaponiLikemobil } from "./data/aydentika/aydentika-servisa-dostavki-avtomobilej-iz-yaponi-likemobil";
-import { navigatsiyaIProrabotkaZonaOtdyhaVStomatologiiEdemika } from "./data/aydentika/navigatsiya-i-prorabotka-zon-otdyha-v-stomatologii-edemika";
-import { rebrendingProizvoditelyaElektroshhitovojProdukciiElektrokomplekt } from "./data/aydentika/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt";
+import { aydentikaServisaDostavkiAvtomobilejIzYaponiLikemobil } from "./data/identity/aydentika-servisa-dostavki-avtomobilej-iz-yaponi-likemobil";
+import { navigatsiyaIProrabotkaZonaOtdyhaVStomatologiiEdemika } from "./data/identity/navigatsiya-i-prorabotka-zon-otdyha-v-stomatologii-edemika";
+import { rebrendingProizvoditelyaElektroshhitovojProdukciiElektrokomplekt } from "./data/identity/rebrending-proizvoditelya-elektroshhitovoj-produkcii-elektrokomplekt";
 import { brendingStomatologiiEdemika } from "./data/branding/brending-stomatologii-edemika";
 import { logotipMagazinaMonobuketovModo } from "./data/logotypes/logotip-magazina-monobuketov-modo";
 import { logotipNauchnoIssledovatelьskojEstafetyPoSledamChihachyova } from "./data/logotypes/logotip-nauchno-issledovatelьskoj-estafety-po-sledam-chihachyova";
@@ -12,11 +12,11 @@ import { firmennyeMotionVideoDlyaStomatologiiEdemika } from "./data/motion/firme
 import { landingUslugPoVideonablyudeniyuDlyaInternetProvayderaGoodlineBiznes } from "./data/ux-ui/landing-uslug-po-videonablyudeniyu-dlya-internet-provaydera-goodline-biznes";
 import { saitStomatologiiEdemika } from "./data/ux-ui/sait-stomatologii-edemika";
 import { sistemaPodarochnyhSertifikatovDlyaStomatologiiEdemika } from "./data/ux-ui/sistema-podarochnyh-sertifikatov-dlya-stomatologii-edemika";
-import { firmennyePaketyDlyaInternetProvayderaGoodlineBiznes } from "./data/vektornaya-graphika/firmennye-pakety-dlya-internet-provaydera-goodline-biznes";
-import { oformleniyaDlyaSocSetejInternetProvajderaGoodlineBiznes } from "./data/vektornaya-graphika/oformleniya-dlya-soc-setej-internet-provajdera-goodline-biznes";
-import { suvenirIllustriaciyaKartaKuzbassaDlyaVisitKuzbass } from "./data/vektornaya-graphika/suvenir-illyustraciya-karta-kuzbassa-dlya-visit-kuzbass";
-import { firmennoeBRollVideoDlyaStilistaPoBrovyam } from "./data/video/firmennoe-b-roll-video-dlya-stilista-po-brovyam";
-import { videoDlyaMagazinaMonobuketovModo } from "./data/video/video-dlya-magazina-monobuketov-modo";
+import { firmennyePaketyDlyaInternetProvayderaGoodlineBiznes } from "./data/graphics-illustration/firmennye-pakety-dlya-internet-provaydera-goodline-biznes";
+import { oformleniyaDlyaSocSetejInternetProvajderaGoodlineBiznes } from "./data/graphics-illustration/oformleniya-dlya-soc-setej-internet-provajdera-goodline-biznes";
+import { suvenirIllustriaciyaKartaKuzbassaDlyaVisitKuzbass } from "./data/graphics-illustration/suvenir-illyustraciya-karta-kuzbassa-dlya-visit-kuzbass";
+import { firmennoeBRollVideoDlyaStilistaPoBrovyam } from "./data/commercial-video/firmennoe-b-roll-video-dlya-stilista-po-brovyam";
+import { videoDlyaMagazinaMonobuketovModo } from "./data/commercial-video/video-dlya-magazina-monobuketov-modo";
 
 export type ProjectCollaborator = TeamMemberWithRole | {
   role: string;

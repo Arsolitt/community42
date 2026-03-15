@@ -10,8 +10,8 @@ import { allProjects } from "@storage/projects";
 import { TagSlug } from "@/storage/tags";
 import cls from "./ProjectFeed.module.css";
 
-const GROUP_1_SLUGS = new Set<TagSlug>(["logotypes", "branding", "aydentika", "ux-ui", "vektornaya-graphika"]);
-const GROUP_2_SLUGS = new Set<TagSlug>(["photo", "fotosessii", "video", "reklamnaya-retush", "motion", "3d"]);
+const GROUP_1_SLUGS = new Set<TagSlug>(["logotypes", "identity", "ux-ui", "graphics-illustration"]);
+const GROUP_2_SLUGS = new Set<TagSlug>(["commercial-photo", "commercial-video", "industrial-design", "smm-content", "motion", "3d"]);
 
 const getProjectGroup = (project: Project): "group1" | "group2" | "none" => {
   const highestPriorityTag = project.tags.reduce((highest, current) => {

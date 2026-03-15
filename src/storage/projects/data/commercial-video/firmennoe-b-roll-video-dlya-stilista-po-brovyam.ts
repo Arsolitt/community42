@@ -4,19 +4,17 @@ import { PROJECT_IMG_URL } from "@core/config/paths";
 import { tagWithPriority } from "@storage/tags";
 import { teamMemberWithRole } from "@storage/team";
 
-const slug = "aydentika-servisa-dostavki-avtomobilej-iz-yaponi-likemobil";
-const date = new Date("2025-01-05").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
+const slug = "firmennoe-b-roll-video-dlya-stilista-po-brovyam";
+const date = new Date("2022-06-12").toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
 const tags = [
-  tagWithPriority("aydentika", 2),
-  tagWithPriority("branding", 1),
-  tagWithPriority("logotypes", 1),
-  tagWithPriority("motion", 1)
+  tagWithPriority("commercial-video", 2),
+  tagWithPriority("3d", 1),
 ];
 // const image = `${PROJECT_IMG_URL}/${tags[0].slug}/${slug}/main.webp`;
 const image = `${PROJECT_IMG_URL}/fallback.webp`;
 
-export const aydentikaServisaDostavkiAvtomobilejIzYaponiLikemobil: ProjectElement = {
-  name: "Айдентика сервиса доставки автомобилей из Японии «Лайкмобиль»",
+export const firmennoeBRollVideoDlyaStilistaPoBrovyam: ProjectElement = {
+  name: "Фирменное Б-ролл видео для стилиста по бровям",
   date,
   slug,
   summary: "Краткое описание проекта, бла-бла-бла, оно должно быть не слишком кратким и не слишком длинным",
