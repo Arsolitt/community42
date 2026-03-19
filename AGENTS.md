@@ -189,7 +189,7 @@ export const Component = async ({ slug }: Props) => {
 
 Key rules from `eslint.config.mjs`:
 
-- `quotes`: double quotes (Prettier overrides to single)
+- `quotes`: double quotes
 - `semi`: always
 - `indent`: 2 spaces
 - `no-multiple-empty-lines`: max 1 empty line
@@ -202,7 +202,7 @@ Key rules from `eslint.config.mjs`:
   "trailingComma": "all",
   "tabWidth": 2,
   "semi": true,
-  "singleQuote": true,
+  "singleQuote": false,
   "arrowParens": "always",
   "printWidth": 120
 }
