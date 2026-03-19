@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { ArrowButton } from "@/components/ArrowButton";
 import { AnimatedTitle } from "@/components/AnimatedTitle/AnimatedTitle";
 import { Typography } from "@/components/Typography";
 import { classNames } from "@features/helpers/className";
@@ -35,7 +36,7 @@ export const Clients = ({ className }: ClientsProps) => {
                   <Link className={cls.overlayLink} href={`/search?q=${c.name}`} target="_blank">
                     Посмотреть проекты
                   </Link>
-                  <span className={cls.arrowButton} />
+                  <ArrowButton className={cls.arrowButton} />
                 </div>
               </div>
               <Link href={`/search?q=${c.name}`} target="_blank">
@@ -62,7 +63,7 @@ export const Clients = ({ className }: ClientsProps) => {
                   <Link className={cls.overlayLink} href={`/search?q=${c.name}`} target="_blank">
                     Посмотреть проекты
                   </Link>
-                  <span className={cls.arrowButton} />
+                  <ArrowButton className={cls.arrowButton} />
                 </div>
               </div>
               <Link href={`/search?q=${c.name}`} target="_blank">
