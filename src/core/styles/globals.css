@@ -1,12 +1,12 @@
-@import './reset.css';
-@import './variables.css';
+@import "./reset.css";
+@import "./variables.css";
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-  -webkit-font-feature-settings: 'lnum';
-  -moz-font-feature-feature-settings: 'lnum';
-  font-feature-settings: 'lnum';
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-feature-settings: "lnum";
+  font-feature-settings: "lnum";
 }
 
 .main {
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: calc(100% - 92px);
   width: 100%;
   margin: 0 auto;
 }
