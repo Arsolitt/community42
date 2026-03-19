@@ -37,7 +37,7 @@
 }
 
 .ServicesList .item:hover {
-  color: var(--link-hover-gray);
+  color: var(--color-gray-medium);
 }
 
 .ServicesList .item__new {
