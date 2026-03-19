@@ -29,7 +29,7 @@ export const Clients = ({ className }: ClientsProps) => {
               <Image alt="image" className={cls.image} height={108} src={c.image} width={108} />
               <div className={cls.overlay}>
                 <Link
-                  href={`/search?tags=${c.name}`}
+                  href={`/search?q=${c.name}`}
                   style={{
                     display: "flex",
                     flexDirection: "column",
@@ -43,7 +43,7 @@ export const Clients = ({ className }: ClientsProps) => {
                 </Link>
               </div>
             </div>
-            <Link href={`/search?tags=${c.name}`} target="_blank">
+            <Link href={`/search?q=${c.name}`} target="_blank">
               <Typography
                 style={{
                   fontWeight: "700",
