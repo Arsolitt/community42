@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 import { MediaSet } from "@/components/MediaSet/MediaSet";
-import { ArrowButton } from "@/components/ArrowButton";
 import { Typography } from "@/components/Typography";
 import { TEAM_PATH } from "@core/config/paths";
 import { allTeamMembers } from "@storage/team";
 
+import { ArrowButton } from "../ArrowButton";
 import cls from "./Team.module.css";
 
 export const TeamRightBlock = () => (
@@ -23,7 +23,6 @@ export const TeamRightBlock = () => (
                 {t.name}
               </Typography>
             </Link>
-            <ArrowButton />
           </div>
           <div className={cls.persona__position}>
             <Typography
@@ -36,6 +35,7 @@ export const TeamRightBlock = () => (
             >
               {t.position}
             </Typography>
+            <ArrowButton />
           </div>
         </div>
       </div>

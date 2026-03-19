@@ -13,31 +13,31 @@
 }
 
 .Team .sectionContent .leftBlock {
-  max-width: 399px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 32px;
 }
 
 .Team .sectionContent .rightBlock {
+  flex: 1;
   display: grid;
   direction: rtl;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 32px;
-  row-gap: 48px;
+  grid-template-columns: repeat(3, minmax(auto, 174px));
+  column-gap: 36px;
+  row-gap: 54px;
 }
 
 .Team .sectionContent .rightBlock .persona {
   direction: ltr;
-  max-width: 154px;
+  max-width: 174px;
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
   transition: color 0.2s;
 }
 
 .Team .sectionContent .rightBlock .persona:hover {
-  color: var(--link-hover-gray);
+  color: var(--color-gray-medium);
 }
 
 .Team .sectionContent .rightBlock .persona .personaInfo {
@@ -63,4 +63,11 @@
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
+}
+
+.Team .sectionContent .rightBlock .persona__position {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
 }
