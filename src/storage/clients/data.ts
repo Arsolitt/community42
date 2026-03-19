@@ -29,32 +29,37 @@ export const clientsArray = [
   {
     slug: "t-bank2",
     image: `${CLIENTS_IMG_URL}/t-bank.png`,
-    name: "Т-банк",
+    name: "Т-банк2",
   },
   {
     slug: "t-bank3",
     image: `${CLIENTS_IMG_URL}/t-bank.png`,
-    name: "Т-банк",
+    name: "Т-банк3",
   },
   {
     slug: "t-bank4",
     image: `${CLIENTS_IMG_URL}/t-bank.png`,
-    name: "Т-банк",
+    name: "Т-банк4",
   },
   {
     slug: "t-bank5",
     image: `${CLIENTS_IMG_URL}/t-bank.png`,
-    name: "Т-банк",
+    name: "Т-банк5",
   },
   {
     slug: "t-bank6",
     image: `${CLIENTS_IMG_URL}/t-bank.png`,
-    name: "Т-банк",
+    name: "Т-банк6",
   },
   {
     slug: "t-bank7",
     image: `${CLIENTS_IMG_URL}/t-bank.png`,
-    name: "Т-банк",
+    name: "Т-банк7",
+  },
+  {
+    slug: "t-bank8",
+    image: `${CLIENTS_IMG_URL}/t-bank.png`,
+    name: "Т-банк8",
   }
 ] as const satisfies readonly ClientElement[];
 
