@@ -13,6 +13,10 @@ interface ClientsProps {
 }
 
 export const Clients = ({ className }: ClientsProps) => {
+  const clients = allClients().slice(0, 10);
+  const firstGroup = clients.slice(0, 5);
+  const secondGroup = clients.slice(5, 10);
+
   return (
     <section className={classNames(cls.Clients, {}, [className])}>
       <AnimatedTitle
@@ -22,31 +26,60 @@ export const Clients = ({ className }: ClientsProps) => {
       />
 
       <div className={cls.sectionContent}>
-        {allClients().map((c) => (
-          <div key={c.slug} className={cls.client}>
-            <div className={cls.container}>
-              <Image alt="image" className={cls.image} height={134} src={c.image} width={134} />
-              <div className={cls.overlay}>
-                <Link className={cls.overlayLink} href={`/search?q=${c.name}`} target="_blank">
-                  Посмотреть проекты
-                </Link>
-                <span className={cls.arrowButton} />
+        <div className={cls.clientGroup}>
+          {firstGroup.map((c) => (
+            <div key={c.slug} className={cls.client}>
+              <div className={cls.container}>
+                <Image alt="image" className={cls.image} height={134} src={c.image} width={134} />
+                <div className={cls.overlay}>
+                  <Link className={cls.overlayLink} href={`/search?q=${c.name}`} target="_blank">
+                    Посмотреть проекты
+                  </Link>
+                  <span className={cls.arrowButton} />
+                </div>
               </div>
+              <Link href={`/search?q=${c.name}`} target="_blank">
+                <Typography
+                  style={{
+                    fontWeight: "700",
+                    fontSize: "20px",
+                    textAlign: "center",
+                  }}
+                  variant="span"
+                >
+                  {c.name}
+                </Typography>
+              </Link>
             </div>
-            <Link href={`/search?q=${c.name}`} target="_blank">
-              <Typography
-                style={{
-                  fontWeight: "700",
-                  fontSize: "16px",
-                  textAlign: "center",
-                }}
-                variant="p"
-              >
-                {c.name}
-              </Typography>
-            </Link>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className={cls.clientGroup}>
+          {secondGroup.map((c) => (
+            <div key={c.slug} className={cls.client}>
+              <div className={cls.container}>
+                <Image alt="image" className={cls.image} height={134} src={c.image} width={134} />
+                <div className={cls.overlay}>
+                  <Link className={cls.overlayLink} href={`/search?q=${c.name}`} target="_blank">
+                    Посмотреть проекты
+                  </Link>
+                  <span className={cls.arrowButton} />
+                </div>
+              </div>
+              <Link href={`/search?q=${c.name}`} target="_blank">
+                <Typography
+                  style={{
+                    fontWeight: "700",
+                    fontSize: "20px",
+                    textAlign: "center",
+                  }}
+                  variant="span"
+                >
+                  {c.name}
+                </Typography>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
