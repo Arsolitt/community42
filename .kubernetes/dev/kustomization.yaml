@@ -5,8 +5,8 @@ nameSuffix: "-dev"
 resources:
   - ../base
 images:
-  - name: harbor.arsolitt.tech/community42/portfolio
-    newTag: v0.19
+  - name: harbor.arsolitt.tech/community42/frontend
+    newTag: v0.22
 labels:
   - pairs:
       app.kubernetes.io/community-env: dev

@@ -19,12 +19,11 @@ ENV HOSTNAME="0.0.0.0"
 ENV NODE_ENV=production
 ENV BUILD_MODE=production
 WORKDIR /app
-COPY --from=builder /src/app/.next/standalone .
+COPY --from=builder /src/app/.next/build/standalone .
 COPY --chown=node:node --from=builder /src/app/public /app/public
-COPY --chown=node:node --from=builder /src/app/.next/static /app/.next/static
+COPY --chown=node:node --from=builder /src/app/.next/build/static /app/.next/static
 RUN mkdir -p /app/.next/cache && \
   chown -R node:node /app && \
   chmod -R 700 /app
 USER node
-WORKDIR /app
 CMD ["node", "./server.js"]

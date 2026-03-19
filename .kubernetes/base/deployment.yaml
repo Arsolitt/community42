@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 1
   strategy:
-    type: RollingUpdate
+    type: Recreate
   selector:
     matchLabels:
       app: community-frontend
@@ -14,18 +14,17 @@ spec:
       labels:
         app: community-frontend
     spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+        seccompProfile:
+          type: RuntimeDefault
+      terminationGracePeriodSeconds: 10
       containers:
-        - image: harbor.arsolitt.tech/community42/frontend:v0.19
+        - image: harbor.arsolitt.tech/community42/frontend:v0.22
           name: frontend
-          livenessProbe:
-            failureThreshold: 3
-            httpGet:
-              path: /
-              port: http
-              scheme: HTTP
-            periodSeconds: 30
-            successThreshold: 1
-            timeoutSeconds: 15
           ports:
             - containerPort: 3000
               name: http
@@ -44,13 +43,11 @@ spec:
               value: "3000"
           securityContext:
             allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            runAsUser: 1000
             capabilities:
               drop:
                 - ALL
-            runAsNonRoot: true
-            runAsUser: 2342
-            seccompProfile:
-              type: RuntimeDefault
           startupProbe:
             failureThreshold: 10
             httpGet:
@@ -60,8 +57,19 @@ spec:
             periodSeconds: 10
             successThreshold: 1
             timeoutSeconds: 15
-      securityContext:
-        fsGroup: 2342
-        runAsGroup: 2342
-        runAsUser: 2342
-      terminationGracePeriodSeconds: 30
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /
+              port: http
+              scheme: HTTP
+            periodSeconds: 30
+            successThreshold: 1
+            timeoutSeconds: 15
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
+              subPath: tmp
+      volumes:
+        - name: tmp
+          emptyDir: {}
