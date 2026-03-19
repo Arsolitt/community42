@@ -7,5 +7,7 @@ export interface ArrowButtonProps {
 }
 
 export const ArrowButton = ({ className }: ArrowButtonProps) => {
-  return <span className={classNames(cls.arrowButton, {}, [className])} />;
+  return (
+    <span className={classNames(cls.arrowButton, {}, [className])} role="button" tabIndex={0} aria-label="Перейти" />
+  );
 };
