@@ -27,19 +27,10 @@ export const Clients = ({ className }: ClientsProps) => {
             <div className={cls.container}>
               <Image alt="image" className={cls.image} height={134} src={c.image} width={134} />
               <div className={cls.overlay}>
-                <Link
-                  href={`/search?q=${c.name}`}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    fontWeight: "500",
-                  }}
-                  target="_blank"
-                >
+                <Link className={cls.overlayLink} href={`/search?q=${c.name}`} target="_blank">
                   Посмотреть проекты
                 </Link>
-                <span className={cls.arrowButton}>›</span>
+                <span className={cls.arrowButton} />
               </div>
             </div>
             <Link href={`/search?q=${c.name}`} target="_blank">
