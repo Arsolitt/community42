@@ -34,7 +34,7 @@ const Home = () => {
             </Typography>
           </div>
           <div className={styles.subtitle}>
-            <Typography style={{ textAlign: "center" }} variant='h5'>
+            <Typography style={{ textAlign: "center", lineHeight: "135%" }} variant='h5'>
               Мы разрабатываем сайты и цифровые платформы, формируем бренды и айдентику, создаём достойные продукты ;)
             </Typography>
           </div>

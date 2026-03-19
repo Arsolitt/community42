@@ -12,10 +12,11 @@ interface TeamProps {
 
 export const Team = ({ className }: TeamProps) => {
   return (
-    <section className={classNames(cls.Team, {}, [className])} id='team' style={{ scrollMarginTop: "30px" }}>
+    <section className={classNames(cls.Team, {}, [className])} id="team" style={{ scrollMarginTop: "30px" }}>
       <AnimatedTitle
-        header={{ first: "работа", second: "команда" }}
+        header={{ first: "принципы", second: "команда" }}
         customTransformX={{ positive: "122%", negative: "148%" }}
+        titleStyle={{ fontSize: "111px", lineHeight: "100%" }}
       />
       <div className={cls.sectionContent}>
         <TeamLeftBlock />
