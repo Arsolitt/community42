@@ -4,7 +4,6 @@ import Link from "next/link";
 import { AnimatedTitle } from "@/components/AnimatedTitle/AnimatedTitle";
 import { Typography } from "@/components/Typography";
 import { classNames } from "@features/helpers/className";
-import { ArrowIcon } from "@shared/assets/icons";
 import { allClients } from "@storage/clients";
 
 import cls from "./Clients.module.css";
@@ -26,7 +25,7 @@ export const Clients = ({ className }: ClientsProps) => {
         {allClients().map((c) => (
           <div key={c.slug} className={cls.client}>
             <div className={cls.container}>
-              <Image alt="image" className={cls.image} height={108} src={c.image} width={108} />
+              <Image alt="image" className={cls.image} height={134} src={c.image} width={134} />
               <div className={cls.overlay}>
                 <Link
                   href={`/search?q=${c.name}`}
@@ -38,9 +37,9 @@ export const Clients = ({ className }: ClientsProps) => {
                   }}
                   target="_blank"
                 >
-                  К проекту
-                  <ArrowIcon />
+                  Посмотреть проекты
                 </Link>
+                <span className={cls.arrowButton}>›</span>
               </div>
             </div>
             <Link href={`/search?q=${c.name}`} target="_blank">

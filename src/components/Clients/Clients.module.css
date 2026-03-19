@@ -36,16 +36,19 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.9);
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    border-color 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  border: 1px solid var(--color-pink);
+  border: 1px solid transparent;
 }
 
 .overlay:hover {
   opacity: 1;
+  border-color: var(--color-gray-medium);
 }
 
 .overlay svg > path {
@@ -74,5 +77,26 @@
 }
 
 .client:hover {
-  color: var(--link-hover-gray);
+  color: var(--color-gray-medium);
+}
+
+.arrowButton {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-medium);
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover .arrowButton {
+  opacity: 1;
 }
